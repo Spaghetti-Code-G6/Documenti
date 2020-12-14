@@ -1,0 +1,90 @@
+\documentclass{article}
+
+\input{../../risorse/config}
+%Qui ci andrà il percorso delle immagini da includere in analisi dei requisiti
+\appendToGraphicspath{../../risorse/img/}
+
+\setTitle{Studio di Fattibilità}
+
+\setVersione{v0.0.1}
+
+\setResponsabile{
+  Paparazzo Giorgia
+}
+
+\setRedattori{
+  Rizzo Stefano \\ &
+  Contro Daniel Eduardo \\ &
+  Fichera Jacopo \\ &
+  Pagotto Manuel 
+}
+
+\setVerificatori{
+  XX
+}
+
+\setUso{Interno}
+
+\setDestinatari{
+  prof. Vardanega Tullio \\ &
+  prof. Cardin Riccardo \\ &
+  SpaghettiCode
+}
+
+\setDescrizione{Questo documento ha lo scopo di descrivere l'analisi dei capitolati d'appalto realizzata dal gruppo al fine di
+valutarne la fattibilità}
+
+\disabilitaElencoFigure{}
+\disabilitaElencoTabelle{}
+
+\setModifiche{
+  v0.0.4 & YYY & Analista & 2020-12-X & ZZZ \\
+  v0.0.3 & YYY & Analista & 2020-12-X & ZZZ \\
+  v0.0.2 & YYY & Analista & 2020-12-X & ZZZ \\
+  v0.0.1 & Manuel Pagotto & Analista & 2020-12-12 & Creazione del documento 
+}
+
+\begin{document}
+
+\input{../../risorse/template}
+
+\section{Introduzione}%
+\label{sec:introduzione}
+
+\subsection{Scopo del documento}%
+\label{sub:scopo_del_documento}
+Lo scopo dello \textsc{Studio di fattibilità} è quello di fornire le motivazioni che hanno indotto alla scelta del \glossario{capitolato} C4 \emph{HD Viz}, e quindi con l'esclusione degli altri capitolati d'appalto proposti.
+
+\subsection{Glossario}%
+\label{sub:glossario}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
+
+\subsection{Riferimenti}%
+\label{sub:riferimenti}
+
+\subsubsection{Normativi}%
+\label{subs:normativi}
+
+\begin{itemize}
+  \item \textbf{Norme di progetto}: \textsc{Norme di progetto vX.X.X}
+\end{itemize}
+
+\subsubsection{Informativi}%
+\label{subs:informativi}
+
+\begin{itemize}
+  \item \textbf{Capitolato d'appalto C1 - BlockCOVID: supporto digitale al contrasto della pandemia}: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C1.pdf};
+  \item \textbf{Capitolato d'appalto C2 - EmporioLambda: piattaforma di e-commerce in stile Serverless}: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C2.pdf};
+  \item \textbf{Capitolato d'appalto C3 - GDP: Gathering Detection Platform}: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C3.pdf};
+  \item \textbf{Capitolato d'appalto C4 - HD Viz: visualizzazione di dati multidimensionali}: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C4.pdf};
+  \item \textbf{Capitolato d'appalto C5 - PORTACS: piattaforma di controllo mobilità autonoma}: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C5.pdf};
+  \item \textbf{Capitolato d'appalto C6 - RGP: Realtime Gaming Platform}: \url{https://sesaspa-my.sharepoint.com/:b:/g/personal/s_dindo_vargroup_it/EThvay0f6KVCoXydYOce2lkBt-MYcnW1yafRXFXVIOIsHg?e=2emZZI};
+  \item \textbf{Capitolato d'appalto C7 - SSD: soluzioni di sincronizzazione desktop}: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C7.pdf}.
+\end{itemize}
+
+\newpage
+\section{Capitolato C1 - BlockCOVID}
+\label{sec:c1}
+\subfile{componenti/studio-c1.tex}
+
+\end{document}
