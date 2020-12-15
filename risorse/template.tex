@@ -1,8 +1,11 @@
 \pagenumbering{gobble}
 
+
+% variabile prima pagina (serve nell'istruzione dopo per stampare il bg solo nella prima pagina)
 \newif\iffirstpage
 \firstpagetrue
 
+% setta l'immagina di bg
 \backgroundsetup{
   scale=1,
   opacity=0.2,
@@ -18,15 +21,11 @@
 
 \begin{titlepage}% per non stampare il numero della pagina
   
-  
-
-
-  \raggedright % allinea a destra la pagina
-  %\rule{1pt}{\textheight}% linea verticale
+  \centering % allinea al centro la pagina
   \hspace{0.05\textwidth}% spazio tra linea e testo
   % lasciare questa riga per il corretto funziomento di \parbox
-  \parbox[b]{0.75\textwidth}{% paragrafo che tiene il testo a destra della riga cambiando la larghezza il testo si muove a destra o a sinistra
-  {\hspace{0.07\textwidth}\includegraphics[width=3.5cm,height=3.5cm]{logo-nero.png}}\\[3\baselineskip] % logo
+  \parbox[b]{0.5\textwidth}{% cambiando la larghezza del testo il paragrafo si muove a destra o a sinistra 
+  {\hspace{0.07\textwidth}\includegraphics[width=4cm,height=4cm]{logo-nero.png}}\\[3\baselineskip] % logo
   {\Huge\bfseries SpaghettiCode}\\ [\baselineskip] %titolo
   {\texttt{spaghetti.code.g6@gmail.com}}\\[\baselineskip]\\[4\baselineskip] % 
   {\Large\textsc{\placeholderTitle{}}}\\[4\baselineskip] % nome del documento
