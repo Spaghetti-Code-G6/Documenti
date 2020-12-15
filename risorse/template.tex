@@ -9,7 +9,6 @@
 \backgroundsetup{
   scale=1,
   opacity=0.2,
-  angle=0,
   placement=top,
   contents={%
     \iffirstpage
@@ -24,8 +23,8 @@
   \centering % allinea al centro la pagina
   \hspace{0.05\textwidth}% spazio tra linea e testo
   % lasciare questa riga per il corretto funziomento di \parbox
-  \parbox[b]{0.5\textwidth}{% cambiando la larghezza del testo il paragrafo si muove a destra o a sinistra 
-  {\hspace{0.07\textwidth}\includegraphics[width=4cm,height=4cm]{logo-nero.png}}\\[3\baselineskip] % logo
+  \parbox[b]{0.4\textwidth}{% cambiando la larghezza del testo il paragrafo si muove a destra o a sinistra 
+  {\hspace{0.05\textwidth}\includegraphics[width=4cm,height=4cm]{logo-nero.png}}\\[3\baselineskip] % logo
   {\Huge\bfseries SpaghettiCode}\\ [\baselineskip] %titolo
   {\texttt{spaghetti.code.g6@gmail.com}}\\[\baselineskip]\\[4\baselineskip] % 
   {\Large\textsc{\placeholderTitle{}}}\\[4\baselineskip] % nome del documento
@@ -42,16 +41,21 @@
     \rule{0pt}{3ex}%  EXTRA vertical height 
     \textbf{Uso}          & \uso{}                    \\
     \rule{0pt}{3ex}%  EXTRA vertical height 
-    \textbf{Destinato a}  & \destinatari{}            \\
-    \rule{0pt}{3ex}%  EXTRA vertical height 
+    \textbf{Destinato a}  & \destinatari{}
     \ifthenelse{\equal{\uso}{Esterno}}{
-                          & Zucchetti S.p.A.       \\
+                          \\ & Zucchetti S.p.A.       
     }{}
+            
+    
   \end{tabular}}\\[4\baselineskip]
 
+  
+  }
+  
   {\bfseries Descrizione}\\
   {\descrizione{}}\\[1\baselineskip]
-  }
+  
+
 
 \end{titlepage}
 
