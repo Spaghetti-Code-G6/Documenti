@@ -12,29 +12,58 @@
 
 \subsection{Descrizione}%
 \label{sub:descrizione}
-Il capitolato C1 prevede la creazione di una \glossario{applicazione web} ecc ecc
+L’utente professionista si aspetta di avere accesso dinamico a tutti i contenuti, creati o modificati con il loro dispositivo principale, con tutti i propri dispositivi (es. mobile o web).
+Viene richiesto di sviluppare un \glossario{algoritmo} di sincronizzazione desktop, il quale si appoggerà alla piattaforma Zextras Drive, e un’interfaccia multipiattaforma (Linux, MacOs, Windows).
+Il prodotto finale dovrà aderire al \glossario{design pattern} MVC.
 
 \subsection{Finalità del progetto}%
 \label{sub:finalita_del_progetto}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
+Il progetto consiste nello sviluppare un’applicazione di sincronizzazione Desktop strutturata nel seguente modo:
+\begin{itemize}
+  \item \textbf{Algoritmo di sincronizzazione}: un algoritmo solido ed efficiente in grado di garantire il salvataggio in cloud del lavoro e contemporaneamente la sincronizzazione dei cambiamenti presenti in cloud;
+  \item \textbf{Interfaccia multipiattaforma}: interfaccia pensata per l’uso dell’algoritmo. Deve essere sviluppata per i tre sistemi operativi più popolari (Linux, MacOs, Windows);
+  \item \textbf{Integrazione con Zextras Drive}: entrambi i punti sviluppati sopra, dovranno essere integrate con Zextras Drive e quindi poter fruire dei contenuti di questo prodotto.
+\end{itemize}
 
+L’algoritmo e l’interfaccia sviluppati dovranno poter essere utilizzabili senza richiedere all’utente l’installazione manuale di ulteriori prodotti.\\ \\
 
+Le seguenti funzionalità base dovrebbero essere integrate:
+\begin{itemize}
+  \item Configurazione e autenticazione dell’utente;
+  \item Sincronizzazione costante dei contenuti (locali o remoti);
+  \item Gestione dei file da sincronizzare e da ignorare nelle cartelle locali e in quelle cloud, con la possibilità di modificare in qualsiasi momento le preferenze di sincronizzazione;
+  \item Sistema di notifica l’utente dei cambiamenti relativi ai file; 
+  \item Altre funzionalità avanzate presente nei principali competitor:
+  \begin{itemize}
+    \item Gestione delle condivisioni;
+    \item Integrazione con il protocollo MAPI;
+    \item Integrazione con il prodotto web.
+  \end{itemize}
+\end{itemize}
 
 \subsection{Tecnologie interessate}%
 \label{sub:tecnologie_interessate}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
+Per questo capitolato viene consigliato di utilizzare le seguenti tecnologie:
+\begin{itemize}
+  \item \textbf{Qt Framework}: basato su C++, è consigliato per lo sviluppo dell’interfaccia grafica e del controller d’architettura;
+  \item \textbf{Python}: linguaggio di programmazione, consigliato per lo sviluppo della Business Logic (algoritmo di sincronizzazione). Include le chiamate API verso i sistemi di Zextras Drive, facilitandone l’integrazione.
+\end{itemize}
 
+Tecnologie necessaria alla realizzazione del progetto:
+\begin{itemize}
+  \item \textbf{Zextras Drive}: sistema di gestione file in cloud;
+  \item \textbf{Zimbra}: \glossario{software applicativo di gruppo} per la gestione della posta elettronica.
+\end{itemize}
 
 \subsection{Aspetti positivi}%
 \label{sub:aspetti_positivi}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
+Il capitolato risulta interessante per la scelta delle tecnologie di sviluppo consigliate, python infatti non è presente nel nostro percorso di studi e potrebbe essere una buona occasione per il suo apprendimento.
 
 \subsection{Rischi}%
 \label{sub:rischi}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
-
-\subsection{Conclusione}%
-\label{sub:conclusione}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
+Il gruppo ha poca familiarità con lo sviluppo delle applicazioni desktop; inoltre la documentazione delle API Zextras Drive sembra poco accurata.
+\subsection{Conclusioni}%
+\label{sub:Conclusioni}
+In seguito alla valutazione da parte del gruppo, è stato deciso di non prendere in considerazione il capitolato come prima scelta.
 
 \end{document}

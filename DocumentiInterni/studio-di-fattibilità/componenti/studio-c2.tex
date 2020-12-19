@@ -12,29 +12,43 @@
 
 \subsection{Descrizione}%
 \label{sub:descrizione}
-Il capitolato C1 prevede la creazione di una \glossario{applicazione web} ecc ecc
+EmporioLambda è una piattaforma di e-commerce costruita interamente con tecnologie serverless.
+Viene richiesto di creare una generica piattaforma di e-commerce che possa essere presentata come prototipo software da vendere a dei commercianti.
+
 
 \subsection{Finalità del progetto}%
 \label{sub:finalita_del_progetto}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
-
+Viene richiesta una piattaforma di e-commerce serverless costruita mediante un’architettura a microservizi. Questa piattaforma dovrà soddisfare i seguenti requisiti:
+\begin{itemize}
+  \item \textbf{Calcolo delle tasse}: paesi diversi possono prevedere accise differenti sullo stesso prodotto;
+  \item \textbf{Sistemi di fidelizzazione}: si vuole avere un sistema di punti, sconti e promozioni che fidelizzi il cliente;
+  \item \textbf{Presenza di un Inventario}: si vuole tenere traccia dello stato dei prodotti, in maniera tale da automatizzare i rifornimenti ed avvisare il cliente quando un prodotto va out of stock;
+  \item \textbf{Soddisfare vincoli geografici e/o legali}: certi prodotti possono essere vietati all’acquisto o la spedizione potrebbe non essere effettuata da/verso certi stati;
+  \item \textbf{Interfaccia riusabile}: distinzione tra Model e View, permettendo di scollegare la logica dell’e-commerce dalla sua presentazione.
+\end{itemize}
 
 
 \subsection{Tecnologie interessate}%
 \label{sub:tecnologie_interessate}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
-
+Il capitolato richiede l’utilizzo obbligatorio di alcune tecnologie, tra le quali:
+\begin{itemize}
+  \item \textbf{Amazon Web Services}: EmporioLambda dovrà necessariamente funzionare senza la necessità di installazioni su server dedicati. L’utilizzo di questa architettura permette di ottenere un sistema scalabile, ridurre i costi di installazione e di manutenzione. Amazon AWS è la suite consigliata suite che permette di adempiere allo scopo;
+  \item \textbf{TypeScript}: variante di Javascript tipizzato. Dovrà essere il linguaggio adottato per lo sviluppo;
+  \item \textbf{Next.js}: framework Javascript da adottare per lo sviluppo dell’interfaccia grafica;
+  \item \textbf{Auth0}: identity manager consigliato per la gestione delle credenziali;
+  \item \textbf{isStripe}: provider obbligatorio per la gestione del pagamento.
+\end{itemize}
 
 \subsection{Aspetti positivi}%
 \label{sub:aspetti_positivi}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
+Uno degli aspetti più interessanti di questo capitolato è lo sviluppo mediante microservizi. L’approccio serverless ed i microservizi sono tecnologie che si stanno affermando in maniera sempre più decisa nel mondo dell’informatica negli ultimi anni. Approfondire questi argomenti potrebbe essere un buon tornaconto personale. Inoltre, il proponente Red Babel sembra essere stata chiaro nell’esposizione dei requisiti.
 
 \subsection{Rischi}%
 \label{sub:rischi}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
+Il rischio maggiore è che questo capitolato richiede molto lavoro di integrazione di tecnologie diverse, che sembra essere un timore diffuso all’interno del gruppo, inoltre l’utilizzo massiccio di Javascript potrebbe essere un ulteriore ostacolo.
 
-\subsection{Conclusione}%
-\label{sub:conclusione}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget eros quis lorem iaculis varius. Suspendisse mauris eros, convallis id sem quis, condimentum laoreet sem. Duis scelerisque, dolor ut pretium iaculis, mauris dui gravida nibh, ac porttitor eros purus quis leo. Sed in fermentum sem. Nulla vitae pellentesque quam.
+\subsection{Conclusioni}%
+\label{sub:Conclusioni}
+Per i motivi sopracitati, è stato scelto di non considerare questo capitolato come prima scelta. Visto comunque il potenziale apporto positivo alla crescita personale e l’interesse da parte del gruppo, il capitolato è stato classificato come terza scelta.
 
 \end{document}
