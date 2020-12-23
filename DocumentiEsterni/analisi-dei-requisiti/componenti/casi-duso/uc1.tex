@@ -1,2 +1,39 @@
 \subsection{UC1}
 \label{sub:uc1}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{risorse/img/UC1.jpg}
+    \caption{Caso d'uso 1}
+    \label{fig:UC1}
+\end{figure}
+\begin{itemize}
+    \item{\textbf{Descrizione}}: L'utente effettua l'inserimento dei dati da elaborare;
+    \item{\textbf{Attore primario}}: Utente;
+    \item{\textbf{Precondizione}}: L'utente possiede un file contenente i dati da importare o ha già salvato un progetto precedente;
+    \item{\textbf{Postcondizione}}: I dati o il progetto vengono importati in HDViz;
+    \item{\textbf{Scenario principale}}:
+    \begin{enumerate}
+        \item L'utente apre l'applicativo;
+        \item All'utente viene proposto di importare un file contenente i dati o di aprire un vecchio progetto;
+        \item L'utente seleziona l'opzione desiderata;
+        \item I dati o il progetto vengono importati all'interno di HDViz.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{UC 1.1: inserimento dei dati tramite file}
+\begin{itemize}
+    \item{\textbf{Descrizione}}: L'utente effettua l'inserimento dei dati da elaborare mediante file .csv;
+    \item{\textbf{Attore primario}}: Utente;
+    \item{\textbf{Precondizione}}: L'utente possiede un file .csv contenente i dati da importare;
+    \item{\textbf{Postcondizione}}: I dati vengono importati in HDViz;
+    \item{\textbf{Scenario principale}}: l'utente seleziona il file .csv da importare;
+\end{itemize}
+
+\subsection{UC 1.2: apertura di un progetto precedente}
+\begin{itemize}
+    \item{\textbf{Descrizione}}: L'utente effettua l'inserimento dei dati da elaborare;
+    \item{\textbf{Attore primario}}: Utente;
+    \item{\textbf{Precondizione}}: L'utente possiede un progetto precedente;
+    \item{\textbf{Postcondizione}}: il progetto viene importato in HDViz;
+    \item{\textbf{Scenario principale}}: all'utente vengono presentati i progetti precedentemente creati. L'utente, una volta scelto quello desiderato, dovrà poter riprendere l'esplorazione dei dati da dove l'aveva lasciata.
+\end{itemize}
