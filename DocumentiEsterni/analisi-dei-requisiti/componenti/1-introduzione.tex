@@ -1,74 +1,45 @@
-\documentclass{article}
-
-\input{../../risorse/config}
-%aggiungere percorsi dai quali il documento prende le immagini
-\appendToGraphicspath{../../risorse/img/}
-
-\setTitle{Analisi dei Requisiti}
-
-\setVersione{v0.0.1}
-
-\setResponsabile{
-  Paparazzo Giorgia
-}
-
-\setRedattori{
-  Rizzo Stefano \\ &
-  Contro Daniel Eduardo \\ &
-  Fichera Jacopo \\ &
-  Pagotto Manuel
-}
-
-\setVerificatori{
-  XX
-}
-
-\setUso{Esterno}
-
-\setDestinatari{
-  prof. Vardanega Tullio \\ &
-  prof. Cardin Riccardo \\ &
-  SpaghettiCode
-}
-
-\setDescrizione{Il documento ha lo scopo di descrivere i \glossario{requisti} che il progetto \emph{HD Viz} richede, valutandoli ed analizzandoli.}
-
-%\disabilitaElencoFigure{}
-%\disabilitaElencoTabelle{}
-
-
-%TODO impostare registro delle modifiche sensato
-\setModifiche{
-  v0.0.4 & YYY & Analista & 2020-12-X & ZZZ \\
-  v0.0.3 & YYY & Analista & 2020-12-X & ZZZ \\
-  v0.0.2 & YYY & Analista & 2020-12-X & ZZZ \\
-  v0.0.1 & Manuel Pagotto & Analista & 2020-12-X & Creazione del documento
-}
+\documentclass[../analisi-dei-requisiti.tex]{subfiles}
 
 \begin{document}
 
-\input{../../risorse/template}
+\subsection{Scopo del documento}%
+\label{subs:scopo_del_documento}
+Questo documento ha lo scopo di descrivere i requisiti e i casi d'uso individuati in seguito allo studio del \glossario{capitolato} \emph{HD Viz} proposto da \emph{Zucchetti S.p.A.}. 
 
-\section{Introduzione}%
-\label{sec:introduzione}
-\subfile{componenti/1-introduzione.tex}
+\subsection{Scopo del prodotto}%
+\label{subs:scopo_del_prodotto}
+Il capitolato richiede lo sviluppo di una \glossario{web application} che abbia come scopo la 
+traduzione di dati con molte dimensioni in grafici che aiutino l’utente a trarre delle interpretazioni e conclusioni. Questi dati dovranno essere inseriti tramite file \glossario{CSV} oppure ottenuti tramite \glossario{query} da un \glossario{database}.
+Verrà utilizzata la librerira \glossario{JavaScript} \glossario{D3.js} per creare le visualizzazioni dei dati in modo dinamico ed interattvo.
+Il back end verrà scritto utilizzando \glossario{JavaScript}. 
 
-\newpage
 
-\section{Descrizione generale}
-\label{sec:descrizione_generale}
-\subfile{componenti/2-descrizione-generale.tex}
+\subsection{Glossario}
+\label{subs:glossario}
+Alcuni termini all'interno di questo documento possono risultare ambigui a secondo del contesto in cui sono utlizzati.
+Questi termini sono segnalati con un 'G' a pedice del termine ambiguo; nel documento \textsc{Glossario vX.X.X} sono presenti questi termini con il loro significato specifico.
 
-\newpage
 
-\section{Casi d'uso}
-\label{sec:casi-duso}
-\subfile{componenti/3-casi-duso.tex}
+\subsection{Riferimenti}
+\label{subs:riferimenti}
 
-\newpage
+\subsubsection{Normativi}%
+\label{sssec:normativi}
 
-\section{Requisiti}
-\label{sec:requisiti}
-\subfile{componenti/4-requisiti.tex}
+%TODO Sistemare versioni
+\begin{itemize}
+  \item \textbf{Norme di progetto}: \textsc{Norme di progetto vX.X.X};
+  \item \textbf{Capitolato d'appalto C4 - HD Viz}: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C4.pdf};
+  \item \textbf{Verbale esterno}: \textsc{Verbale Esterno 2020-12-17 vX.X.X}.
+\end{itemize}
+
+\subsubsection{Informativi}%
+\label{sssec:informativi}
+%TODO aggiungere i vari riferimenti usati nel documento
+\begin{itemize}
+  \item \textbf{Studio di fattibilità}: \textsc{Studio di fattibilità v1.0.0};
+  \item \textbf{Capitolato d'appalto C4 - HD Viz}: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C4.pdf};
+  \item \textbf{Documentazione libreria D3.js}: \url{https://github.com/d3/d3/wiki}
+\end{itemize}
 
 \end{document}
