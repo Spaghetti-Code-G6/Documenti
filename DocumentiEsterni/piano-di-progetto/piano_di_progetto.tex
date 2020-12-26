@@ -1,0 +1,119 @@
+\documentclass{article}
+
+\input{../../risorse/config}
+%aggiungere percorsi dai quali il documento prende le immagini
+\appendToGraphicspath{../../risorse/img/}
+
+\setTitle{Analisi dei Requisiti}
+
+\setVersione{v0.0.1}
+
+\setResponsabile{
+  Giorgia Paparazzo
+}
+
+\setRedattori{
+  Giorgia Paparazzo
+}
+
+\setVerificatori{
+  XX
+}
+
+\setUso{Esterno}
+
+\setDestinatari{
+  prof. Vardanega Tullio \\ &
+  prof. Cardin Riccardo \\ &
+  Zucchetti S.p.A.
+}
+
+\setDescrizione{Questo documento ha lo scopo di descrivere la pianificazione del gruppo SpaghettiCode nello sviluppo del progetto HD Viz}
+
+%\disabilitaElencoFigure{}
+%\disabilitaElencoTabelle{}
+
+\setModifiche{
+  v0.0.4 & YYY & XYZ & 2020-12-X & ZZZ \\
+  v0.0.3 & Giorgia Paparazzo & Redattore & 2020-12-21 & Inizio capitolo 5, proseguimento capitolo 4  \\
+  v0.0.2 & Giorgia Paparazzo & Redattore & 2020-12-18 & Stesura capitolo 1, 2, 3, inizio stesura capitolo 4  \\
+  v0.0.1 & Giorgia Paparazzo & Redattore & 2020-12-17 & Inizio stesura capitolo 7 
+}
+
+\begin{document}
+
+\input{../../risorse/template}
+
+\section{Introduzione}%
+\label{sec:introduzione}
+
+\subsection{Scopo del documento}%
+\label{sub:scopo_del_documento}
+Lo scopo del documento è fornire una descrizione sulle modalità con cui il gruppo SpaghettiCode realizzerà il progetto HD Viz. Nello specifico verranno trattati i seguenti punti:
+\begin{itemize}
+\item Modello di sviluppo adottato
+\item Pianificazione delle attività
+\item Stima dei costi e dei ruoli
+\item Organigramma 
+\end{itemize}
+
+\subsection{Scopo del prodotto}%
+\label{sub:scopo_prodotto}
+Il capitolato C4 - HD Viz nasce dalla necessità di trasformare grosse moli di dati multidimensionali in grafici che diano la possibilità di interpretare le informazioni o apprenderne di nuove. Il gruppo SpaghettiCode si offre quindi di sviluppare la web-application commissionata dall’azienda Zucchetti S.p.A. seguendo le tecnologie richieste dal proponente. 
+
+
+\subsection{Glossario}%
+\label{sub:glossario}
+Per aiutare il lettore nella comprensione di tale documento verrà allegato un Glossario. Ogni parola contenuta in esso verrà qui indicata con una G a pedice.
+
+
+\subsection{Riferimenti}%
+\label{sub:riferimenti}
+\begin{itemize}
+\item Regolamento organigramma e specifica tecnico-economica: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/RO.html };
+\item Capitolato d’appalto C4: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C4.pdf};
+\item Slide "Gestione di progetto": \url{https://www.math.unipd.it/~tullio/IS-1/2020/Dispense/L06.pdf};
+\end{itemize}
+
+\subsection{Scadenze}%
+\label{sub:scad}
+
+\begin{itemize}
+    \item Revisione dei requisiti: 18 gennaio 2021
+	\item Revisione di Progettazione: 8 marzo 2021
+	\item Revisione di Qualifica: 9 aprile 2021
+	\item Revisione di Accettazione: 10 maggio 2021
+
+    \end{itemize}
+
+\newpage
+\section{Analisi dei rischi}
+\label{sec:rischi}
+\subfile{componenti/analisi_rischi.tex}
+
+\newpage
+\section{Modello di sviluppo}
+\label{sec:sviluppo}
+\subfile{componenti/modello_di_sviluppo.tex}
+
+\newpage
+\section{Pianificazione}
+\label{sec:pianif}
+\subfile{componenti/pianificazione.tex}
+
+\newpage
+\section{Preventivo}
+\label{sec:prev}
+\subfile{componenti/preventivo.tex}
+
+\newpage
+\section{Consultivo}
+\label{sec:cons}
+\subfile{componenti/consultivo.tex}
+
+\newpage
+\section{Organigramma}
+\label{sec:org}
+\subfile{componenti/organigramma.tex}
+
+\end{document}
