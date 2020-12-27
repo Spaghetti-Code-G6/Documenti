@@ -140,3 +140,8 @@
 \newcommand{\disabilitaElencoTabelle}{%
   \renewcommand{\elencoTabelle}{}%
 }
+
+% comando per riferirsi ad una sezione
+\newcommand{\refSec}[1]{%
+  \hyperref[#1]{\S\ref*{#1}}%
+}
