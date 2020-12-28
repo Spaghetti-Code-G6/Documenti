@@ -60,10 +60,20 @@
 		\item Piccoli Gregorio
 	\end{itemize}
 \end{itemize}
-	
+    
+\subsection{Riferimenti}%
+\label{sub:riferimenti}
 
-\section{Ordine del giorno}
-\label{sec:ordine_del_giorno}
+\begin{itemize}
+    \item \textbf{link1}: \url{https://observablehq.com/@mbostock/the-wealth-health-of-nations};
+    \item \textbf{link1}: \url{https://github.com/mljs/distance};
+    \item \textbf{link1}: \url{https://cs.stanford.edu/people/karpathy/convnetjs};
+    \item \textbf{link1}: \url{https://github.com/karpathy/tsnejs};
+    \item \textbf{link1}: \url{https://github.com/PAIR-code/umap-js}.
+  \end{itemize}
+
+\section{Domande poste}
+\label{sec:domande_poste}
 	Vengono riportate le domande che sono state poste nel corso del meeting:
 	\begin{itemize}
 		\item \nameref{sub:domanda_01};
@@ -84,23 +94,23 @@
 \section{Resoconto}
 \label{sec:resoconto}
 
-	\subsection{Quali tipi di utente devono essere presenti? Si devono poter registrare ed autenticare?}
+	\subsection{Gli utenti si devono poter registrare ed autenticare?}
 	\label{sub:domanda_01}
     No, siamo liberi di fare quello che riusciamo, non dobbiamo gestire la sicurezza. Le visualizzazioni dei grafici hanno priorità assoluta. Se vogliamo aggiungere l'autentificazione è una scelta nostra.
     
-    \subsection{Formato dati in input, nei documenti è previsto un formato .csv, basta quello o dobbiamo prevedere altri formati obbligatori?}
+    \subsection{Oltre ai file .csv dobbiamo prevedere altri formati obbligatori?}
 	\label{sub:domanda_02}
     In qualche modo il dato deve essere portato nell'ambiente client, così come richiesto nei i requisiti. Il modo più naturale è avere un server, tipicamente i dati possono provenire da una query su database oppure da un file. Il formato .csv è quello più comune e più facile da ottenere. Si può anche fare l'upload diretto del file senza passare per il server. I dati possono essere estrapolati da un database SQL o NoSQL. I dati possono provenire da più fonti.
 
-    \subsection{Il software deve essere compatibile con determinate versioni di browser o possiamo focalizzarci nel renderlo accessibile a quelli più moderni?}
+    \subsection{Dobbiamo supportare determinate versioni di browser?}
     \label{sub:domanda_03}
     Non è un requisito necessario. I browser che possiamo prendere in considerazione sono Firefox e Google Chrome. Sarebbe desiderabile poter usare il software anche da iPad e simili quindi si potrebbe ampliare lì, ma è un requisito non obbligatorio.
 
-    \subsection{Visualizzazione dei grafici: deve essere possibile vedere più grafici contemporaneamente per confrontarli oppure bastra uno per volta?}
+    \subsection{Dobbiamo permettere la visualizzazione di più grafici contemporaneamente?}
     \label{sub:domanda_04}
     La documentazione richiede almeno un grafico per volta. La possibilità di mettere insieme più grafici è cosa gradita. Poter mettere due grafici affiancati sarebbe carino.
 
-    \subsection{Quando l'utente sceglie un determinato grafico da visualizzare, il sistema deve dirgli cosa riesce a percepire? Deve aiutare l'utente a capire quello che sta vedendo?}
+    \subsection{Dobbiamo aiutare l'utente a capire quello che sta vedendo?}
     \label{sub:domanda_05}
     È un'idea interessante, se si riesce a far dire al sistema cosa vede.
 
@@ -120,7 +130,7 @@
     \label{sub:domanda_09}
     No non è previsto, se si vuole condividere un grafico si fa uno screenshot.
     
-    \subsection{I dati forniti saranno da scremare/filtrare prima di visualizzare i grafici oppure sono già pronti all'uso?}
+    \subsection{I dati forniti saranno da filtrare prima di visualizzare i grafici oppure sono già pronti all'uso?}
     \label{sub:domanda_10}
     Ci verrano forniti dati anonimi a molte dimensione. Possiamo partire con set di dati che troviamo liberamente su Internet, ad esempio quello dell'iris. Se ci saranno da fare scremature ci verrà detto più avanti, tendenzialmente comunque ci danno dati da visualizzare così come sono. L'analisi che faranno non è un'analisi sul contenuto dei dati, bensì sulla visualizzazione. Quindi anche una possibile filtratura sarà sempre finalizzata alla visualizzazione grafica.
 
@@ -128,11 +138,9 @@
     \label{sub:domanda_11}
     D3 fa già bei grafici, quindi è meglio fare qualcosa di visivamente gradevole anche per il resto del software. Che il grafico sia informativo è più importante, poi se è carino ancora meglio.
 
-
-    DA RIVEDERE:
     \subsection{Avremo file o database da cui prendere i dati?}
     \label{sub:domanda_12}
-    Non dobbiamo collegarci a database esterni. ci daranno file csv, se poi vogliamo caricarli su un database ok così. loro devono esportarci dei file che saranno csv.
+    Non dovete collegarvi a database esterni. Vi saranno forniti file .csv, se poi volete caricarli su un database ok.
 
     \subsection{Potremmo avere un esempio tipico di utilizzo del prodotto finale?}
     \label{sub:domanda_13}
@@ -144,15 +152,15 @@
     Ad esempio
     Gli scatter plot sono grafici animati che riescono a includere più dimensioni come: continente, paese, popolazione, tempo, vita media, PIL. Ci sono 6 dimensioni messe in uno scatter plot normale, per le altre 9 dimensioni rimanenti si useranno altri grafici.
 
-    \subsection{Verrà fornito qualche tipo di formazione per le tecnologie consigliate o è parte del nostro auto apprendimento?}
+    \subsection{Verrà fornita qualche tipo di formazione o è parte del nostro auto apprendimento?}
     \label{sub:domanda_15}
     Provate, se avete difficoltà ci si sente. È già capitato in passato di fare un pochino di formazione, ci si mette d'accordo.
 
-    \subsection{Tra le tecnologie consigliate c'è JavaScript. È possibile usare TypeScript o è un requisito JavaScript?}
+    \subsection{È possibile usare TypeScript o è un requisito JavaScript?}
     \label{sub:domanda_16}
     Meglio lasciare stare TypeScript. TypeScript permette di fare controlli sul tipo rispetto a JavaScript. Purtroppo ad oggi TypeScript si sta scontrando con i limiti dell'approccio.
 
-    \subsection{In merito a ml.js di D3.js esistono librerie altre da consigliare?}
+    \subsection{In merito a ml.js di D3.js consigliate altre librerie?}
     \label{sub:domanda_17}
     È comodo ml.js perchè c'è una grande raccolta di distanze. D3.js è l'asse portante perchè permette le visualizzazioni. Sicuramente ci sono librerie per leggere file .csv, se vogliamo possiamo usare altre librerie di grafici. D3.js è un consiglio non un obbligo. Se volete avventurarvi con il machine learning ml.js è una raccolta di algoritmi interessante. Se seguite carpati c'è convnet.js per le reti neurali, che può essere un mezzo di riduzione dimensionale. Con auto-encoder si costruiscono reti neurali. L'esempio di convnet.js è un auto-encoder che fa riduzione dimensionale. Mentre karpathy-tsne è uno di quelli che mantiene vicine le distanze piccole ed evidenzia le distanze grandi. Invece umap-js è un metodo simile a tsne con basi più teoriche. 
 
@@ -160,7 +168,7 @@
     \label{sub:domanda_18}
     No, nessuno.
 
-    \subsection{A seconda del tipo di dati che noi abbiamo; deve essere specificato che tipo di grafico usare tra i vari obbligatori dai requisiti?}
+    \subsection{Dobbiamo usare un grafico a seconda del tipo di dato?}
     \label{sub:domanda_19}
     Se ho un tipo di dati vorrei vederli con vari grafici. Li devo provare perché questa attività è molto esplorativa.
 
@@ -169,16 +177,5 @@
 Zucchetti cercherà di anonimizzeranno i dati, però dovremo comunque poter capire di cosa si sta parlando. Se queste dimensioni sono troppo indicative le dovranno scartare o rinominare per non farci capire a cosa sono riferite. La scelta del posizionamento dei dati sui vari assi è una scelta che spetta all'utente. Potrebbe anche essere la macchina che sottolina delle somiglianze tra i dati. È probabile che chi ha fatto il grafico dell'aspettativa di vita, preso d'esempio durante le domande, abbia fatto delle prove per evidenziare certe proprietà. Ad esempio ci siamo resi conto che la popolazione non influenza molto il PIL.
 
 Zucchetti chiude per Natale, quindi non li troveremo fino al loro rientro.
-
-LINK PROPOSTI:
-https://observablehq.com/@mbostock/the-wealth-health-of-nations
-https://github.com/mljs/distance
-https://cs.stanford.edu/people/karpathy/convnetjs/
-https://github.com/karpathy/tsnejs
-https://github.com/PAIR-code/umap-js
-
-TODO: togli questo sotto
-\glossario{Google Docs}
-\textit{Studio di Fattibilità}
 
 \end{document}
