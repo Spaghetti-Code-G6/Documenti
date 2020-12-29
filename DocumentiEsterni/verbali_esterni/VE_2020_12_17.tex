@@ -17,7 +17,7 @@
 }
 
 \setVerificatori{
-	Cognome Nome
+	Rizzo Stefano
 }
 
 \setUso{Esterno}
@@ -31,6 +31,7 @@
 \setDescrizione{Riassunto dell'incontro realizzato dal gruppo SpaghettiCode tenutosi il 17 Dicembre 2020 in forma di meeting online con Piccoli Gregorio.}
 
 \setModifiche{
+	v0.1.0 & Rizzo Stefano & Verificatore & 2020-12-29 & Verifica del documento
 	v0.0.1 & Masevski Martin & Amministratore & 2020-12-17 & Creazione del documento e prima stesura
 }
 
@@ -94,88 +95,88 @@
 \section{Resoconto}
 \label{sec:resoconto}
 
-	\subsection{Gli utenti si devono poter registrare ed autenticare?}
+	\subsection{Necessità di gestire autentificazione e registrazione}
 	\label{sub:domanda_01}
-    No, siamo liberi di fare quello che riusciamo, non dobbiamo gestire la sicurezza. Le visualizzazioni dei grafici hanno priorità assoluta. Se vogliamo aggiungere l'autentificazione è una scelta nostra.
+    La gestione della sicurezza non è una priorità: la visualizzazione dei grafici lo è. L'autentificazione viene lasciata a discrezione del gruppo.
     
-    \subsection{Oltre ai file .csv dobbiamo prevedere altri formati obbligatori?}
+    \subsection{Necessità di prevedere formati di file diversi da .csv}
 	\label{sub:domanda_02}
-    In qualche modo il dato deve essere portato nell'ambiente client, così come richiesto nei i requisiti. Il modo più naturale è avere un server, tipicamente i dati possono provenire da una query su database oppure da un file. Il formato .csv è quello più comune e più facile da ottenere. Si può anche fare l'upload diretto del file senza passare per il server. I dati possono essere estrapolati da un database SQL o NoSQL. I dati possono provenire da più fonti.
-
-    \subsection{Dobbiamo supportare determinate versioni di browser?}
+	Per recuperare i dati si potrà eseguire query da database o da file, il formato .csv è quello più comune e facile da ottenere. è necessario permettere l'upload diretto di un file.
+	
+    \subsection{Supporto ai browser}
     \label{sub:domanda_03}
-    Non è un requisito necessario. I browser che possiamo prendere in considerazione sono Firefox e Google Chrome. Sarebbe desiderabile poter usare il software anche da iPad e simili quindi si potrebbe ampliare lì, ma è un requisito non obbligatorio.
+    La retrocompatibilità con i browser più datati non è un requisito necessario. I browser presi in considerazione sono Firefox e Google Chrome. Viene espresso il desiderio di poter usare il software anche da piattaforme mobile, ma l'implementazione viena lasciata a discrezione del gruppo.
 
-    \subsection{Dobbiamo permettere la visualizzazione di più grafici contemporaneamente?}
+    \subsection{Visualizzazione contemporanea di più grafici}
     \label{sub:domanda_04}
-    La documentazione richiede almeno un grafico per volta. La possibilità di mettere insieme più grafici è cosa gradita. Poter mettere due grafici affiancati sarebbe carino.
+    Il capitolato richiede almeno un grafico per volta. La possibilità di visualizzare insieme più grafici è gradita.
 
-    \subsection{Dobbiamo aiutare l'utente a capire quello che sta vedendo?}
+    \subsection{Necessità di implementare algoritmi di clustering}
     \label{sub:domanda_05}
-    È un'idea interessante, se si riesce a far dire al sistema cosa vede.
+    Viene considerata un'idea interessante.
 
-    \subsection{Deve essere disponibile per l'utente una breve guida introduttiva?}
+    \subsection{Guida introduttiva nell'applicativo}
     \label{sub:domanda_06}
-    Sì non fa mai male. I meno esperti potrebbero essere aiutati con delle interfacce introduttive o dei percorsi di presentazione.
+    Deve essere presente una guida che aiuti i meno esperti con delle interfacce introduttive o dei percorsi di presentazione.
 
-    \subsection{Il progetto avrà un uso interno a scopo didattico o esterno?}
+    \subsection{Scopo del progetto}
     \label{sub:domanda_07}
-    Si vogliono raccogliere idee, se la cosa deve uscire dallo scopo didattico il progetto verrà rimaneggiato.
+    Con il progetto si vuole solamente raccogliere delle idee, altrimenti il progetto verrà rimaneggiato.
 
-    \subsection{È desiderabile salvare il lavoro in corso oppure si comincia una nuova sessione ogni volta?}
+    \subsection{Necessità di salvare il lavoro}
     \label{sub:domanda_08}
-    Dato che dobbiamo fare test automatici, preparare l'ambiente e poi testarlo diventa difficile, quindi meglio di no.
+    Viene consigliato di non introdurre questa funzionalità, in quanto renderebbe più complessa la preparazione degli ambienti di test.
     
-    \subsection{È desiderabile prevedere un sistema di esportazione?}
+    \subsection{Necessità di esportare i grafici}
     \label{sub:domanda_09}
-    No non è previsto, se si vuole condividere un grafico si fa uno screenshot.
+    La funzionalità non è prevista.
     
-    \subsection{I dati forniti saranno da filtrare prima di visualizzare i grafici oppure sono già pronti all'uso?}
+    \subsection{Necessità di effettuare pulizia sui dati forniti}
     \label{sub:domanda_10}
-    Ci verrano forniti dati anonimi a molte dimensione. Possiamo partire con set di dati che troviamo liberamente su Internet, ad esempio quello dell'iris. Se ci saranno da fare scremature ci verrà detto più avanti, tendenzialmente comunque ci danno dati da visualizzare così come sono. L'analisi che faranno non è un'analisi sul contenuto dei dati, bensì sulla visualizzazione. Quindi anche una possibile filtratura sarà sempre finalizzata alla visualizzazione grafica.
+    Verrano forniti dati a molte dimensioni anonimizzati. Viene consigliato di cominciare lo sviluppo con dataset facilmente reperibili su Internet. Se ci sarà la necessità di pulire i dataset forniti ci verrà detto più avanti. Verosimilmente i dati saranno da visualizzare as-is. Non si dovrà fare analisi sul contenuto dei dati, ma sulla loro visualizzazione. Ogni possibile scrematura dei dati dovrà essere sempre finalizzata alla visualizzazione.
 
-    \subsection{È importante l'aspetto estetico del software?}
+    \subsection{Necessità di dare importanza all'aspetto grafico}
     \label{sub:domanda_11}
-    D3 fa già bei grafici, quindi è meglio fare qualcosa di visivamente gradevole anche per il resto del software. Che il grafico sia informativo è più importante, poi se è carino ancora meglio.
+    Viene consigliato di rendere visivamente gradevole il software. Il grafico dovrà necessariamente essere informativo, in secondo luogo potrà essere gradevole alla vista.
 
-    \subsection{Avremo file o database da cui prendere i dati?}
+    \subsection{Presenza di file o database da cui prendere i dati}
     \label{sub:domanda_12}
-    Non dovete collegarvi a database esterni. Vi saranno forniti file .csv, se poi volete caricarli su un database ok.
+    Non sarà necessario collegarsi a database esterni. Saranno forniti file .csv. La presenza di un database interno all'applicativo a scopo interno viene lasciato a discrezione del gruppo.
 
-    \subsection{Potremmo avere un esempio tipico di utilizzo del prodotto finale?}
+    \subsection{Esempio di utilizzo del prodotto finale}
     \label{sub:domanda_13}
-    Si parte da una query o da un file .csv, lo si importa nel sistema, il quale mi mostra i grafici che producono le proiezioni, quindi a questo punto ho un grafico in 2D o 3D prodotto a partire da N dimensioni iniziali. Se sono contento del grafico bene, altrimenti proseguo con altre modifiche sulla proiezione dei dati per ottenere una riduzione che sia utile.
+    Si parte da una query o da un file .csv, la si importa nel sistema il quale mostra i grafici che producono le proiezioni. Quindi a questo punto si ha un grafico in 2D o 3D prodotto a partire da dati con N dimensioni. Se sono contento del grafico bene, altrimenti proseguo con modifiche sulla proiezione dei dati per ottenere una riduzione che sia utile.
 
-    \subsection{Limite delle dimensioni: sono massimo 15 o almeno 15?}
+    \subsection{Limite alle dimensioni dei dati}
     \label{sub:domanda_14}
-    Se si fa un'analisi di riduzione dimensionale è facile escludere delle dimensioni trovando delle scorciatoie. Il numero 15 è per dire che effettivamente c'è stata una operazione di riduzione dimensionali. Anche se ci fermiamo a 9 dimensioni va bene lo stesso.
-    Ad esempio
-    Gli scatter plot sono grafici animati che riescono a includere più dimensioni come: continente, paese, popolazione, tempo, vita media, PIL. Ci sono 6 dimensioni messe in uno scatter plot normale, per le altre 9 dimensioni rimanenti si useranno altri grafici.
+    Mediante operazioni di riduzione dimensionale è possibile ridurre il numero di dimensionio. Sarà necessario effettuare operazioni di riduzione dimensionale.  
+    Viene presentato un esempio relativo al grafico scatter plot, che è in grado di includere al massimo 6 dimensioni. le rimanenti (15-6) 9 verranno rappresentate mediante altri grafici.
 
-    \subsection{Verrà fornita qualche tipo di formazione o è parte del nostro auto apprendimento?}
+    \subsection{Formazione autonoma o verranno forniti materiali di studio}
     \label{sub:domanda_15}
-    Provate, se avete difficoltà ci si sente. È già capitato in passato di fare un pochino di formazione, ci si mette d'accordo.
+    La formazione sarà autonoma, in caso di difficoltà si potrà discutere.
 
-    \subsection{È possibile usare TypeScript o è un requisito JavaScript?}
+    \subsection{Obbligo sull'utilizzo di javascript}
     \label{sub:domanda_16}
-    Meglio lasciare stare TypeScript. TypeScript permette di fare controlli sul tipo rispetto a JavaScript. Purtroppo ad oggi TypeScript si sta scontrando con i limiti dell'approccio.
+    Non ci sono obblighi ma viene sconsigliato l'utilizzo di TypeScript per via della tipizzazione.
 
-    \subsection{In merito a ml.js di D3.js consigliate altre librerie?}
+    \subsection{Consigli sulle libererie}
     \label{sub:domanda_17}
-    È comodo ml.js perchè c'è una grande raccolta di distanze. D3.js è l'asse portante perchè permette le visualizzazioni. Sicuramente ci sono librerie per leggere file .csv, se vogliamo possiamo usare altre librerie di grafici. D3.js è un consiglio non un obbligo. Se volete avventurarvi con il machine learning ml.js è una raccolta di algoritmi interessante. Se seguite carpati c'è convnet.js per le reti neurali, che può essere un mezzo di riduzione dimensionale. Con auto-encoder si costruiscono reti neurali. L'esempio di convnet.js è un auto-encoder che fa riduzione dimensionale. Mentre karpathy-tsne è uno di quelli che mantiene vicine le distanze piccole ed evidenzia le distanze grandi. Invece umap-js è un metodo simile a tsne con basi più teoriche. 
+    ml.js raccoglie molti modi diversi di calcolare le distanza. D3.js permette la visualizzazione ed è caldamente consigliata, tuttavia non è un obbligo. 
+    convnet.js fornisce metodi di riduzione dimensionale. Vengono anche mostrati algoritmi per la visualizzazione di cluster come karpathy/tsnejs e umap-js. 
 
-    \subsection{Ci sono requisiti particolari per il Front-End?}
+    \subsection{Presenza di requisiti particolari per il Front-End?}
     \label{sub:domanda_18}
-    No, nessuno.
+    Nessuno.
 
-    \subsection{Dobbiamo usare un grafico a seconda del tipo di dato?}
+    \subsection{Utilizzo di tipi diversi di grafici per dati diversi}
     \label{sub:domanda_19}
-    Se ho un tipo di dati vorrei vederli con vari grafici. Li devo provare perché questa attività è molto esplorativa.
+    Bisogna poter visualizzare i dati con vari grafici. 
 
 \section{Conclusione dell'incontro}
 \label{sec:conclusione}
-Zucchetti cercherà di anonimizzeranno i dati, però dovremo comunque poter capire di cosa si sta parlando. Se queste dimensioni sono troppo indicative le dovranno scartare o rinominare per non farci capire a cosa sono riferite. La scelta del posizionamento dei dati sui vari assi è una scelta che spetta all'utente. Potrebbe anche essere la macchina che sottolina delle somiglianze tra i dati. È probabile che chi ha fatto il grafico dell'aspettativa di vita, preso d'esempio durante le domande, abbia fatto delle prove per evidenziare certe proprietà. Ad esempio ci siamo resi conto che la popolazione non influenza molto il PIL.
+Zucchetti anonimizzerà i dati. Il posizionamento dei dati sui vari assi è una scelta che spetta all'utente. Il software potrebbe sottolineare somiglianze tra i dati. È probabile che chi ha fatto il grafico dell'aspettativa di vita, preso d'esempio durante le domande, abbia fatto delle prove per evidenziare certe proprietà. Ad esempio, ci siamo resi conto che la popolazione non influenza molto il PIL.
 
-Zucchetti chiude per Natale, quindi non li troveremo fino al loro rientro.
+Zucchetti chiuderà per Natale, quindi non saranno reperibili fino al loro rientro.
 
 \end{document}
