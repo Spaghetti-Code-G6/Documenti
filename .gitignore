@@ -1,3 +1,6 @@
+## Non considerare .pdf dentro le cartelle componenti
+**/componenti/*.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
