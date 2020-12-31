@@ -4,6 +4,7 @@
 %aggiungere percorsi dai quali il documento prende le immagini
 \appendToGraphicspath{../../risorse/img/}
 
+
 \setTitle{Piano di Qualifica}
 
 \setVersione{v0.0.1}
@@ -34,6 +35,7 @@
 %\disabilitaElencoTabelle{}
 
 \setModifiche{
+  v0.0.4 & Giorgia Paparazzo & Redattore & 2020-12-31 & Inserito capitolo \S6 \\
   v0.0.3 & Giorgia Paparazzo & Redattore & 2020-12-30 & Modifica capitolo \S2,  \S3 \\
   v0.0.2 & Giorgia Paparazzo & Redattore & 2020-12-29 & Continuo capitolo \S2, stesura capitolo \S3, \S4 \\
   v0.0.1 & Giorgia Paparazzo & Redattore & 2020-12-23 & Inizio stesura capitolo \S2
@@ -93,8 +95,7 @@ Per aiutare il lettore nella comprensione di tale documento verrà allegato un G
 \subfile{componenti/3-qualita_prodotto.tex}
 
 \newpage
-\usepackage[toc,page]{appendix} 
-\begin{appendices}
+
 \section{Specifica dei test}
 \label{sec:spectest}
 \subfile{componenti/4-specifica_test.tex}
@@ -107,13 +108,12 @@ Per aiutare il lettore nella comprensione di tale documento verrà allegato un G
 \newpage
 \section{Lista di Controllo}
 \label{sec:lista}
-%\subfile{componenti/lista_controllo.tex}
+%\subfile{componenti/5-lista_controllo.tex}
 
 \newpage
 \section{Valutazioni per il miglioramento}
 \label{sec:valutazioni}
-\end{appendices}
-%\subfile{componenti/valutazioni_miglioramento.tex}
+\subfile{componenti/6-valutazioni_miglioramento.tex}
 
 
 \end{document}
