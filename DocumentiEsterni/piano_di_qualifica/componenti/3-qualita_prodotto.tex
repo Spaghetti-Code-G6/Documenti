@@ -2,18 +2,18 @@
 
 \begin{document}
 
-Per garantire la qualità del prodotto il gruppo ha deciso di fare riferimento allo standard
-ISO/IEC 9126, il quale regolamenta le modalità con cui produrre un prodotto di buona qualità. Di questo standard il gruppo sceglie di seguire alcune delle metriche esposte, e sceglie di stabilirne altre da seguire per rendere il prodotto qualitativamente valido; qui di seguito vengono elencate.
+Per garantire la qualità del prodotto il gruppo ha deciso di fare riferimento allo \glossario{standard
+ISO/IEC 9126}, il quale regolamenta le modalità con cui produrre un software di buona qualità. Di questo standard il gruppo sceglie di seguire alcune delle metriche esposte, e sceglie di stabilirne altre da seguire per rendere il prodotto qualitativamente valido; qui di seguito vengono elencate.
 
 \subsection{Modello di qualità}
 Il gruppo intende seguire a pieno le caratteristiche descritte nello standard adottato circa il modello di qualità.\\
 Il prodotto che SpaghettiCode intende rilasciare deve essere:\\
 \begin{enumerate}
-\item Funzionale: è la capacità di un prodotto software di fornire funzioni che soddisfano esigenze stabilite, necessarie per operare sotto condizioni specifiche.
+\item Funzionale: è la capacità di un prodotto software di fornire funzioni che soddisfino esigenze stabilite, necessarie per operare sotto condizioni specifiche.
 	\begin{itemize}
 	\item Il prodotto software sarà in grado di fornire un appropriato insieme di funzioni per i compiti prefissati dall’utente; sarà in grado di fornire i risultati concordati con il proponente; sarà in grado di interagire ed operare con più sistemi specificati dal proponente; sarà in grado di proteggere informazioni negando accessi non autorizzati, in base agli accordi presi con il proponente.
 	\end{itemize}
-\item Affidabile: è la capacità del prodotto software di mantenere uno specificato livello di prestazioni quando usato in date condizioni per un dato periodo.
+\item Affidabile: è la capacità del prodotto software di mantenere uno specificato livello di prestazioni quando usato in date condizioni e per un dato periodo.
 	\begin{itemize}
 	\item Il prodotto software sarà in grado di evitare errori e malfunzionamenti; in caso questi dovessero presentarsi sarà possibile recuperare i dati su cui si stava lavorando; sarà in grado di aderire agli standard delineati con il proponente.
 	\end{itemize}
@@ -27,7 +27,7 @@ Il prodotto che SpaghettiCode intende rilasciare deve essere:\\
 	\end{itemize}
 \item Manutenibile è la capacità del software di essere modificato, includendo correzioni, miglioramenti o adattamenti.
 	\begin{itemize}
-	\item Il prodotto software sarà in grado di essere analizzato lato codice, sarà in grado di essere modificato e soggetto ad evoluzioni; sarà facilmente testabile per verificare le modifiche apportate
+	\item Il prodotto software sarà in grado di essere analizzato lato codice; sarà in grado di essere modificato e soggetto ad evoluzioni; sarà facilmente testabile per verificare le modifiche apportate
 	\end{itemize}
 \item Portabile: è la capacità del software di essere trasportato da un ambiente di lavoro ad un altro.
 	\begin{itemize}
@@ -43,12 +43,12 @@ Si intende la percentuale di requisiti implementati rispetto a quelli dichiarati
 
 dove
 \begin{itemize}
-\item N\textsubscript{FnI} è il numero di funzionalità non implementate 
-\item N\textsubscript{FI} è il numero di funzionalito implementate 
+\item N\textsubscript{FnI} è il numero di funzionalità non implementate ;
+\item N\textsubscript{FI} è il numero di funzionalità implementate ;
 \end{itemize}
 
 Per quanto riguarda i requisiti obbligatori il gruppo intende implementare il 100\% dei requisiti concordati. \\
-Per quanto riguarda i requisiti opzionali il gruppo intende implementare il 100\% dei requisiti concordati, e si pone come soglia di accettazione l’80\%. 
+Per quanto riguarda i requisiti opzionali il gruppo intende implementare il 100\% dei requisiti concordati, ma si pone come soglia di accettazione l’80\%. 
 
 \subsubsection{Densità di errori}
 La densità di errori è l'abilità del prodotto di resistere a malfunzionamenti. Si calcola così:\\
@@ -57,24 +57,24 @@ La densità di errori è l'abilità del prodotto di resistere a malfunzionamenti
 
 dove
 \begin{itemize}
-\item N\textsubscript{ER} indica il numero di errori rilevati durante il testing
-\item N\textsubscript{TE} indica il numero di test eseguiti
+\item N\textsubscript{ER} indica il numero di errori rilevati durante il testing;
+\item N\textsubscript{TE} indica il numero di test eseguiti;
 \end{itemize}
 
 Il valore preferibile è lo 0\%; il valore accettabile è inferiore al 10\%.
 
-\subsubsection{Matriche di usabilità}
+\subsubsection{Metriche di usabilità}
 Facilità di utilizzo: è la facilità con cui l’utente raggiunge ciò che vuole; viene rappresentata tramite il numero di click necessari per arrivare al contenuto desiderato.\\
 \begin{itemize}
 \item misurazione: click per raggiungere la schermata di checkout;
 \item valore preferibile: inferiore a 10;
-\item valore accettabile: inferiore a 15
+\item valore accettabile: inferiore a 15;
 \end{itemize}
 
 \subsubsection{Qualità dei documenti}
 
 Tutti i documenti devono essere leggibili e comprensibili, e per renderli tali devono essere corretti dal punto di vista lessicografico, grammaticale e semantico.
-Per misurare la leggibilità dei documenti si è deciso di usare l’indice di Gulpease. L'Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana e considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.
+Per misurare la leggibilità dei documenti si è deciso di usare l’indice di Gulpease. L'Indice Gulpease è un indice di leggibilità di un testo, è tarato sulla lingua italiana, e considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.
 La formula è la seguente:  \\
 inserire equazione corretta:\\
 
