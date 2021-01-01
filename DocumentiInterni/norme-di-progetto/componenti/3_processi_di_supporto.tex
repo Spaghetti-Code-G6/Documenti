@@ -8,7 +8,7 @@
 Lo scopo della documentazione è quello di scrivere in uno o più documenti tutto ciò che è necessario sapere per utilizzare correttamente il prodotto software prodotto alla fine del progetto.
 
 \subsubsection{Descrizione}
-La produzione della documentazione è un processo che si svolge durante tutto il corso temporale del progetto. Consiste nello scrivere dei documenti di varia natura (riportati in PLACEHOLDER), ognuno dei quali ha una specifica funzione. In questa sezione del documento sono riportate le norme per una buona scrittura della documentazione.
+La produzione della documentazione è un processo che si svolge durante tutto il corso temporale del progetto. Consiste nello scrivere dei documenti di varia natura (riportati nella sezione "Documenti prodotti"), ognuno dei quali ha una specifica funzione. In questa sezione del documento sono riportate le norme per una buona scrittura della documentazione.
 
 \subsubsection{Aspettative}
 Questo processo ha un'aspettativa principale,  ovvero la stesura di documenti, ognuno funzionale al suo scopo, scritti in maniera chiara e che rispetti le regole di seguito definite.
@@ -44,7 +44,7 @@ I documenti prodotti sono diversi e si dividono in due categorie:
     \begin{itemize}
         \item \textbf{Norme di progetto}: Documento che racchiude tutte le norme che regolamentano il progetto nella sua interezza. Questo documento rientra nella categoria dei documenti interni;
         \item \textbf{Glossario}: Documento che elenca tutti i termini che, secondo il gruppo, necessitano di una spiegazione esplicita. Questo documento rientra nella categoria dei documenti esterni;
-        \item \textbf{Studio di fattibilità}: Documento che raccoglie i singoli studi di fattibilità sui capitolati secondo lo schema descritto in questo documento al PLACEHOLDER. Questo documento rientra nella categoria dei documenti interni;
+        \item \textbf{Studio di fattibilità}: Documento che raccoglie i singoli studi di fattibilità sui capitolati secondo lo schema descritto in questo documento al paragrafo "Struttura dei documenti". Questo documento rientra nella categoria dei documenti interni;
         \item \textbf{Piano di progetto}: Documento che espone la pianificazione delle attività di progetto previste dal gruppo. In allegato a questo documento, che ricade nella categoria di quelli esterni, viene presentato un preventivo sia degli impegni orari che dei costi;
         \item \textbf{Piano di qualifica}: Documento che espone i criteri di valutazione della qualità del progetto. Questo documento rientra nella categoria dei documenti esterni;
         \item \textbf{Analisi dei requisiti}: Documento che raccoglie tutti i requisiti del progetto e che il prodotto software deve avere. Questo documento rientra nella categoria dei documenti esterni.
@@ -53,7 +53,7 @@ I documenti prodotti sono diversi e si dividono in due categorie:
 \end{itemize}
 
 \subsubsection{Directory dei documenti}
-(?)
+Ogni directory contenente un documento prende il nome dal documento stesso e utlizza la convenzione snake\_case. All'interno della directory si trova un file .tex principale con lo stesso nome del documento, anch'esso scritto con la convenzione snake\_case. In caso il documento sia strutturato attraverso la creazione di più sottofile, tutti i sottofile si devono trovare all'interno di una cartella detta componenti, la quale conterrà tutti i sottofile in formato .tex, nominati con una numerazione progressiva seguita dal nome della sezione che quel file rappresenta. Anche qui la convenzione usata è lo snake\_case.
 
 \subsubsection{Struttura dei documenti}
 Tutti i documenti prodotti si rifanno ad un template predefinito scritto in formato .tex che ne definisce la struttura e le parti comuni. Ogni documento è caratterizzato, nella prima pagina, che forma il frontespizio, da una serie di elementi. Dall'alto verso il basso ci sono:
@@ -105,7 +105,11 @@ Per l'attribuzione del nome si segue la convenzione detta snake\_case. La conven
 Per gli elenchi puntati la convenzione utilizzata è il punto. Nel caso in cui l'elenco sia annidato si usa il trattino alto (-).
 
 \paragraph{Formati di dato}
-(?)
+Le date vengono indicate con il formato:
+\begin{center}
+    \textbf{[YYYY]-[MM]-[DD]}
+\end{center}
+Secondo lo standard ISO 8601. In questa notazione YYYY indica l'anno, MM indica il mese e DD indica il giorno.
 
 \paragraph{Sigle}
 Le sigle utilizzate sono riportate di seguito.
@@ -128,13 +132,34 @@ Per quanto riguarda le revisioni di progetto le sigle utilizzate sono:
     \item Revisione di accettazione: RA
 \end{itemize}
 
+\subsubsection{Elementi grafici}
 
-\subsection{Gestione della configurazione}
+\paragraph{Immagini}
+Le immagini devono essere centrate nella pagina e devono avere un'opportuna didascalia.
 
-\subsection{Gestione della qualità}
+\paragraph{Grafici UML}
+I grafici UML sono inseriti come immagini.
 
-\subsection{Verifica}
+\paragraph{Tabelle}
+Ogni tabella, ad eccezione del registro delle modifiche, è accompagnata da una didascalia e deve essere centrata nella pagina.
 
-\subsection{Validazione}
+\subsubsection{Strumenti}
+
+\paragraph{\LaTeX}
+Questo strumento è stato scelto dal gruppo per far si che ci fosse uniformità nella stesura dei documenti e al contempo per avere uno strumento che permettesse grande flessibilità nella stesura stessa.
+
+\paragraph{Draw.io}
+
+
+\subsubsection{Metriche}
+
+\paragraph{Indice gulpease}
+Quest'indice riporta il grado di leggibilità di un documento. Viene adottato, per calcolarlo, il sito \url{https://farfalla-project.org/readability_static/} che permette di calcolarlo semplicemente incollando il testo nell'apposita casella dedicata.
+
+\paragraph{Correzione errori ortografici}
+Per la correzione di errori ortografici viene utilizzato lo strumento di correzione automatica dell'editor usato per la stesura del documento.
+
+
+
 
 \end{document}

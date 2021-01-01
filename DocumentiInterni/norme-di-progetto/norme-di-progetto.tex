@@ -1,19 +1,20 @@
 \documentclass{article}
 
-\input{../../risorse/config}
+\input{risorse/config}
 %aggiungere percorsi dai quali il documento prende le immagini
-\appendToGraphicspath{../../risorse/img/}
+%\appendToGraphicspath{../../risorse/img/}
 
 \setTitle{Norme di Progetto}
 
-\setVersione{v0.0.6}
+\setVersione{v0.0.7}
 
 \setResponsabile{Giorgia Paparazzo}
+
 
 %TODO inserire redattori
 \setRedattori{
     Samuel Kostadinov \\
-	Martin Masevski \\
+    Martin Masevski
 }
 
 %TODO inserire verificatori
@@ -33,6 +34,7 @@
 per lo sviluppo del capitolato \emph{HD Viz}.}
 
 \setModifiche{
+  v0.0.7 & Samuel Kostadinov & Amministratore & 2021-01-01 & Continuazione stesura capitolo 3\\
   v0.0.6 & Samuel Kostadinov & Amministratore & 2020-12-30 & Inizio stesura capitolo 3\\
   v0.0.5 & Masevski Martin & Amministratore & 2020-12-29 & Stesura capitolo 4\\
   v0.0.4 & Samuel Kostadinov & Amministratore & 2020-12-28 & Fine stesura 2\\
@@ -43,16 +45,20 @@ per lo sviluppo del capitolato \emph{HD Viz}.}
 
 \begin{document}
 
-\input{../../risorse/template}
+\input{risorse/template}
 
-\section{Introduzione}%
+\section{Introduzione}
 \label{sec:introduzione}
 \subfile{componenti/1-introduzione.tex}
 
+
 \newpage
+
 \section{Processi primari}
-\label{sec:processi_primari}
+\label{sec:processi-primari}
 \subfile{componenti/2-processi-primari.tex}
+
+\newpage
 
 \newpage
 \section{Processi di supporto}
@@ -64,4 +70,8 @@ per lo sviluppo del capitolato \emph{HD Viz}.}
 \label{sec:processi_organizativi}
 \subfile{componenti/4_processi_organizzativi.tex}
 
-\end{document}
+
+\end{document}\setVersione{v0.0.4}
+
+    \item Revisione di qualifica: RQ
+

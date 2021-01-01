@@ -158,13 +158,13 @@ Lo scopo dell'analisi dei requisiti è scrivere un documento che raccolga tutti 
 La struttura del documento è contraddistinta dalle seguenti parti:
 \begin{itemize}
     \item \textbf{Introduzione}: Contiene informazioni riguardanti lo scopo del documento, lo scopo del progetto, sul glossario, sui riferimenti (normativi e informativi);
-    \item \textbf{Descrizione generale}: Contiene una descrizione del documento di analisi dei requisiti, che riporta informazioni a proposito del prodotto (in particolare i suoi obbiettivi e le sue funzioni), sugli utenti (nello specifico le loro caratteristiche), le architetture e le tecnologie (PLACEHOLDER), e sui vincoli generali;
+    \item \textbf{Descrizione generale}: Contiene una descrizione del documento di analisi dei requisiti, che riporta informazioni a proposito del prodotto (in particolare i suoi obbiettivi e le sue funzioni), sugli utenti (nello specifico le loro caratteristiche), le architetture e le tecnologie, e sui vincoli generali;
     \item \textbf{Casi d'uso}: Sezione in cui è possibile trovare la struttura e gli attori primari e secondari dei vari casi d'uso, seguita da una lista dei casi d'uso individuati;
     \item \textbf{Requisiti}: In questa sezione del documento è possibile trovare una lista dei requisiti divisi tra funzionali, di qualità e vincoli.
 \end{itemize}
 
 \paragraph{Classificazione dei requisiti}
-La rappresentazione dei requisiti avviene secondo un codice, non variabile, concordato internamente che si presenta nella seguente forma:
+La rappresentazione dei requisiti avviene secondo un codice, non variabile, concordato internamente che si presenta nella seguente forma:\\
 \begin{center}
     \textbf{R[Tipologia][Importanza][Codice]}
 \end{center}
@@ -227,8 +227,8 @@ Ogni caso d'uso ha, inoltre, una struttura ben definita, riportata a seguito:
 Per tenere traccia dei casi d'uso e dei requisiti il gruppo ha deciso di usare come strumento l'issue tracking system di gitHub, strumento che tramite il workflow delle issue stesse, diviso tra "To do", "In progress" e "Done", allo stesso tempo tiene sempre aggiornati i membri del gruppo e spinge i componenti del gruppo stesso ad aggiornarne lo stato per far si che il resto del gruppo sia informato sullo stato di avanzamento di tutti i requisiti e dei casi d'uso.
 
 \paragraph{Metriche}
- (?)
- 
+ Il gruppo ha deciso di tenere traccia del completamento del progetto in base ai requisiti. A questo scopo è stato deciso di calcolare una percentuale di completamento del progetto come il rapporto tra il numero di requisiti implementati e dei requisiti totali moltiplicato per 100. Questo da un metodo molto immediato per capire lo stato di avanzamento del progetto ed è facile da calcolare. Il valore di questo indice varia tra 0 e 100, dove 100 indica che il progetto è completato, mentre 0 indica che deve ancora essere iniziato.\\
+ \textbf{NOTA}: Il gruppo ha deciso di considerare, inizialmente, il numero totale di requisiti uguale al numero totale di requisiti obbligatori e si riserva la possibilità di aumentare il numero totale di requisiti in seguito ad eventuali negoziazioni con il proponente.
  
  \subsubsection{Progettazione}
  
@@ -267,19 +267,20 @@ Per tenere traccia dei casi d'uso e dei requisiti il gruppo ha deciso di usare c
  La scelta dei \glossario{design pattern} da utilizzare è lasciata ai \emph{progettisti}, i quali dovranno assicurarsi che le loro scelte portino a una soluzione che sia flessibile e lasci una certa libertà ai \emph{Programmatori}. Ogni design pattern utilizzato andrà spiegato e rappresentato in modo da poterne esporre significato e struttura.
  
  \paragraph{Diagrammi UML}
- (?)
+ Il gruppo ha scelto di utilizzare, allo scopo di rendere più chiare le scelte compiute in ambito di progettazione, dei diagrammi UML. Tra questi spiccano i diagrammi delle attività e quelli di sequenza. I primi vengono usati per descrivere il flusso di operazioni di un'attività, i secondi per illustrare sequenze di azioni.\\
+ Ci potranno essere, oltre ai due tipi già menzionati, diagrammi di altro tipo se i progettisti lo riterranno utile.
  
  
  \paragraph{Test}
-  Come specificato all'inizio, ogni la definizione dei test è parte dell'attività di progettazione, quindi ogni progettista dovrà definire i test necessari. Le regole di nomenclatura saranno specificate nel in (PLACEHOLDER)
+  Come specificato all'inizio, ogni la definizione dei test è parte dell'attività di progettazione, quindi ogni progettista dovrà definire i test necessari. Le regole di nomenclatura da seguire sono le stesse valide per la nomenclatura dei metodi, descritte nella sezione "Stile di codifica" della parte relativa alla codifica.
   
   \paragraph{Nota}
-  \emph{Il gruppo si riserva di modificare e in particolar modo di ampliare, in caso fosse necessario, la progettazione nelle fasi successive alla sua definizione}
+  \emph{Il gruppo si riserva di modificare e in particolar modo di ampliare, in caso fosse necessario, la progettazione nelle fasi successive alla sua definizione.}
   
   \subsubsection{Codifica}
  
  \paragraph{Scopo}
-    Quest'attività, svolta dai \emph{programmatori}, ha lo scopo di scrivere del codice che traduca l'architettura pensata dai \emph{progettisti}. Quest'attività è soggetta alle regole descritte in seguito (al paragrafo PLACEHOLDER).
+    Quest'attività, svolta dai \emph{programmatori}, ha lo scopo di scrivere del codice che traduca l'architettura pensata dai \emph{progettisti}. Quest'attività è soggetta alle regole descritte in seguito (al paragrafo "Stile di codifica") per far si che il codice sia più leggibile possibile.
  
  \paragraph{Descrizione}
  La scrittura del codice dovrà tradurre l'architettura pensata dai \emph{progettisti} mantenendo lo standard qualitativo richiesto e descritto nel \emph{piano di qualifica}.
@@ -295,16 +296,26 @@ Per tenere traccia dei casi d'uso e dei requisiti il gruppo ha deciso di usare c
  \paragraph{Stile di codifica}
  Al fine di garantire uniformità nel codice prodotto, si è deciso di stabilire delle regole nella scrittura del codice:
  \begin{itemize}
-     \item Indentazioni:
-     \item Parentesi:
-     \item Struttura dei metodi:
-     \item Univocità dei nomi: le variabili e i metodi devono avere un nome univoco e rappresentativo che permetta di identificarli univocamente e che eviti ambiguità
-     \item Costanti:
-     \item Lingua:
+     \item Indentazioni: I blocchi di codice innestati, ad esclusione dei commenti, devono presentare 4 spazi di rientro rispetto al livello precedente;
+     \item Parentesi: Inserire le parentesi sulla stessa riga del costrutto che le usa;
+     \item Struttura dei metodi: La struttura dei metodi deve sempre avere alcune caratteristiche:
+     \begin{itemize}
+         \item I nomi dei metodi devono rispettare la convenzione snake\_case;
+         \item I metodi devono essere il più brevi possibile e non possono essere contenute più istruzioni nella stessa riga;
+         \item Deve essere presente una spaziatura tra la parentesi tonda che contiene i parametri dei metodi e la parentesi graffa di apertura deve essere inserita una spaziatura.
+     \end{itemize}
+     \item Univocità dei nomi: le variabili e i metodi devono avere un nome univoco e rappresentativo che permetta di identificarli univocamente e che eviti ambiguità;
+     \item Costanti: I nomi delle costanti devono essere scritte in stampatello maiuscolo;
+     \item Lingua: La lingua utilizzata per i nomi delle variabili e dei metodi devono essere scritti in inglese.
  \end{itemize}
+ Il gruppo si riserva la possibilità di cambiare, prima di iniziare l'attività di codifica, le norme qui specificate in caso ce se ne sentisse la necessità.
  
  \paragraph{Metriche}
- (?)
+  Il gruppo ritiene prematuro stabilire una metrica definitiva per misurare la leggibilità del codice, perciò ha definito un indice indicativo che verrà integrato nei successivi stadi del progetto.\\
+  La formula momentaneamente adottata è:
+  \begin{center}
+      $Leggibilità = \frac{numero\ di\ linee\ di\ commento}{numero\ di\ linee\ di\ codice}$
+  \end{center}
  
  \paragraph{Strumenti}
  Sono riportati di seguito gli strumenti utilizzati nel processo di sviluppo.
@@ -313,7 +324,7 @@ Per tenere traccia dei casi d'uso e dei requisiti il gruppo ha deciso di usare c
  HTML e CSS sono due linguaggi usati nello sviluppo di pagine web. Vista la natura di web application di HD Viz, saranno necessari, anche se non come parte principale.
  
  \subparagraph{Database}
- (?)
+ Il proponente vuole lasciare aperta la possibilità di caricare dati da un database, senza tuttavia fornire dei vincoli a tale proposito. Sarà perciò compito dei progettisti scegliere il database più adatto al progetto.
  
  \subparagraph{JavaScript}
  Linguaggio richiesto dal proponente, è un linguaggio di scripting per web application. Viene richiesto questo linguaggio per la possibilità di utilizzare d3.js.
