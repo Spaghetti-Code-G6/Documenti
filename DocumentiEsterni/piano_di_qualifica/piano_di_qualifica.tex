@@ -7,14 +7,14 @@
 
 \setTitle{Piano di Qualifica}
 
-\setVersione{v0.0.1}
+\setVersione{v1.0.0}
 
 \setResponsabile{
-  Giorgia Paparazzo
+  Paparazzo Giorgia
 }
 
 \setRedattori{
-  Giorgia Paparazzo
+  Paparazzo Giorgia
 }
 
 \setVerificatori{
@@ -34,86 +34,50 @@
 %\disabilitaElencoTabelle{}
 
 \setModifiche{
-  v0.0.5 & Giorgia Paparazzo & Redattore & 2021-01-01 & Stesura capitolo \S6 \\
-  v0.0.4 & Giorgia Paparazzo & Redattore & 2020-12-31 & Stesura capitolo \S7, inizio capitolo \S5 \\
-  v0.0.3 & Giorgia Paparazzo & Redattore & 2020-12-30 & Modifica capitolo \S2,  \S3 \\
-  v0.0.2 & Giorgia Paparazzo & Redattore & 2020-12-29 & Continuo capitolo \S2, stesura capitolo \S3, \S4 \\
-  v0.0.1 & Giorgia Paparazzo & Redattore & 2020-12-23 & Inizio stesura capitolo \S2
+  v0.0.5 & Paparazzo Giorgia & Redattore & 2021-01-01 & Stesura capitolo \S6 \\
+  v0.0.4 & Paparazzo Giorgia & Redattore & 2020-12-31 & Stesura capitolo \S7, inizio capitolo \S5 \\
+  v0.0.3 & Paparazzo Giorgia & Redattore & 2020-12-30 & Modifica capitolo \S2,  \S3 \\
+  v0.0.2 & Paparazzo Giorgia & Redattore & 2020-12-29 & Continuo capitolo \S2, stesura capitolo \S3, \S4 \\
+  v0.0.1 & Paparazzo Giorgia & Redattore & 2020-12-23 & Inizio stesura capitolo \S2
 }
 
 \begin{document}
 
 \input{../../risorse/template}
 
-\section{Introduzione}%
+\section{Introduzione}
 \label{sec:introduzione}
-
-\subsection{Scopo del documento}%
-\label{sub:scopo_del_documento}
-Il documento ha come scopo presentare i metodi di verifica e validazione adottati dal gruppo \emph{SpaghettiCode} per garantire qualità nel prodotto e nel processo. Per poterle garantire verrà usato un sistema di verifica continua che permetta l'individuazione di errori nel minor tempo possibile e con estrema facilità, al fine di risolverli rapidamente ed evitare sprechi di tempo.\\
-Questo documento verrà redatto seguendo una \glossario{filosofia incrementale}: i contenuti iniziali sono da considerarsi incompleti, verranno sottoposti a significative modifiche durante lo svolgimento del progetto. 
-
-\subsection{Scopo del prodotto}%
-\label{sub:scopo_prodotto}
-Il capitolato C4 - HD Viz nasce dalla necessità di trasformare grosse moli di dati multidimensionali in grafici che diano la possibilità di interpretare le informazioni o apprenderne di nuove. Il gruppo SpaghettiCode si offre quindi di sviluppare la web-application commissionata dall’azienda Zucchetti S.p.A. seguendo le tecnologie richieste dal proponente. 
-
-
-\subsection{Glossario}%
-\label{sub:glossario}
-Per aiutare il lettore nella comprensione di tale documento verrà allegato un Glossario. Ogni parola contenuta in esso verrà qui indicata con una G a pedice.
-
-
-\subsection{Riferimenti}%
-\label{sub:riferimenti}
-\begin{itemize}
-\item Norme di progetto: Norme di progetto v1.0.0
-\item Regolamento organigramma e specifica tecnico-economica: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/RO.html };
-\item Capitolato d’appalto C4: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C4.pdf};
-\item Slide "Gestione di progetto": \url{https://www.math.unipd.it/~tullio/IS-1/2020/Dispense/L06.pdf};
-\end{itemize}
-
-\subsection{Informativi}%
-\label{sub:info}
-\begin{itemize}
-\item ISO/IEC 9126 \url{https://en.wikipedia.org/wiki/ISO/IEC_9126}
-%\item ISO/IEC 12207: \url{math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO_12207-1995.pdf}
-\item Slide del corso di Ingegneria del Software, qualità software: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Dispense/L12.pdf}
-\item Slide del corso di Ingegneria del Software, qualità di processo: \url{https://www.math.unipd.it/~tullio/IS-1/2020/Dispense/L13.pdf}
-\item Slide del corso di Ingegneria del Software, verifica e validazione: introduzione \url{https://www.math.unipd.it/~tullio/IS-1/2020/Dispense/L14.pdf}
-\item Indice Gulpease: \url{https://it.wikipedia.org/wiki/Indice_Gulpease}
-\end{itemize}
-
+\subfile{componenti/1_introduzione.tex}
 
 \newpage
 \section{Qualità del processo}
 \label{sec:qproc}
-\subfile{componenti/2-qualita_processo.tex}
+\subfile{componenti/2_qualita_processo.tex}
 
 \newpage
 \section{Qualità del prodotto}
 \label{sec:qprod}
-\subfile{componenti/3-qualita_prodotto.tex}
+\subfile{componenti/3_qualita_prodotto.tex}
 
 \newpage
 
 \section{Specifica dei test}
 \label{sec:spectest}
-\subfile{componenti/4-specifica_test.tex}
+\subfile{componenti/4_specifica_test.tex}
 
 \newpage
 \section{Resoconto di attività di verifica}
 \label{sec:resoconto}
-\subfile{componenti/5-resoconto_attivita.tex}
+\subfile{componenti/5_resoconto_attivita.tex}
 
 \newpage
 \section{Lista di Controllo}
 \label{sec:lista}
-\subfile{componenti/6-lista_controllo.tex}
+\subfile{componenti/6_lista_controllo.tex}
 
 \newpage
 \section{Valutazioni per il miglioramento}
 \label{sec:valutazioni}
-\subfile{componenti/7-valutazioni_miglioramento.tex}
-
+\subfile{componenti/7_valutazioni_miglioramento.tex}
 
 \end{document}
