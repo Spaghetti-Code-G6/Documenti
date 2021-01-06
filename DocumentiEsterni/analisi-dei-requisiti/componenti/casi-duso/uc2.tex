@@ -5,7 +5,7 @@
 %TODO: Add correct image
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{componenti/casi-duso/diagrammi/UC4.pdf}
+    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC2.pdf}
     \caption{Diagramma rappresentante UC2}
     \label{fig:UC2}
 \end{figure}
@@ -20,24 +20,19 @@
     \item \textbf{Attore primario}: Utente;
     
     \item \textbf{Precondizione}:   Nella sessione è stato importato un dataset e ogni 
-                                    suo campo ha un metatag associato;
+                                    suo campo ha un metatag associato.
 
     \item \textbf{Postcondizione}:  Viene calcolato il grafico della tipologia scelta dai dati 
-                                    del progetto corrente e visualizzato;
+									dal dataset importato dotato di metatag validi e successivamente 
+									visualizzato all'utente.
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente seleziona l'opzione che desidera tra le tipologie di grafico:
-			\begin{enumerate}
-				\item Un grafico Scatterplot matrix (UC2.1.1);
-				\item Un grafico Force Field (UC2.1.2);
-				\item Un grafico Heat Map (UC2.1.3);
-				\item Un grafico Proiezione Lineare Multiasse (UC2.4);
-			\end{enumerate}
-			\item HDviz visualizza il grafico ottenuto dalla costruzione dei dati;
+			\item L'utente seleziona l'opzione che desidera tra le tipologie di grafico.
+			\item HDviz visualizza il grafico ottenuto dalla costruzione dei dati.
         \end{enumerate}
-	%TODO: Rimuoviamo la lista da qui? Visto che si riferisce a tutto?
-    \item \textbf{Generalizzazioni:}:  L'utente seleziona il grafico desiderato:
+
+    \item \textbf{Generalizzazioni:}:  L'utente seleziona il grafico desiderato tra:
 
     \begin{enumerate}
         
@@ -46,7 +41,7 @@
         \item Grafico heat map (UC2.3).
         \item Grafico proiezione lineare multiasse (UC2.4).
         
-    \end{enumerate}
+	\end{enumerate}
 
 \end{itemize}
 
@@ -60,8 +55,21 @@
     \item \textbf{Precondizione}:   Un dataset è stato correttamente importato e ad ogni campo ha associato
                                     un metatag valido;
 
-    \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo Scatterplot matrix;
-  
+    \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo Scatterplot Matrix;
+
+	\item \textbf{Scenario Principale}: HDviz costruisce un grafico Scatterplot matrix con il dataset 
+										importato.
+	
+	% Secondo me fa in scenario alternativo e in estensione solo lo UC a cui si riferisce. Pensaci
+	% I pro apes fanno tutto in estensioni mentre i Qbeam fanno scenario alternativo e mettono in estensione solo UC riferimento
+	\item \textbf{Estensioni}:
+	\begin{enumerate}
+		\item Se il dataset corrente non è compatibile con il grafico di tipo Scatterplot Matrix:
+		\begin{enumerate}
+			\item La costruzione del grafico fallisce.
+			\item Viene visualizzato un messaggio di errore. (UC4.2.1)
+		\end{enumerate}
+	\end{enumerate}
 \end{itemize}
 
 
@@ -75,7 +83,18 @@
                                     un metatag valido;
 
     \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo Force Field;
-  
+	
+	\item \textbf{Scenario Principale}: HDviz costruisce un grafico Force Field con il dataset importato.
+	% Secondo me fa in scenario alternativo e in estensione solo lo UC a cui si riferisce. Pensaci
+	% I pro apes fanno tutto in estensioni mentre i Qbeam fanno scenario alternativo e mettono in estensione solo UC riferimento
+	\item \textbf{Estensioni}:
+	\begin{enumerate}
+		\item Se il dataset corrente non è compatibile con il grafico di tipo Force Field:
+		\begin{enumerate}
+			\item La costruzione del grafico fallisce.
+			\item Viene visualizzato un messaggio di errore. (UC4.2.2)
+		\end{enumerate}
+	\end{enumerate}
 \end{itemize}
 
 
@@ -85,15 +104,25 @@
 
     \item \textbf{Attore primario}: Utente;
 
-    \item \textbf{Precondizione}:   Un dataset è stato correttamente importato e ad ogni campo ha associato
-                                    un metatag;
+	\item \textbf{Precondizione}:   Un dataset è stato correttamente importato e ad ogni campo 
+									ha associato un metatag;
 
     \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo Heat map dal progetto corrente
-  
+	\item \textbf{Scenario Principale}: HDviz costruisce un grafico Heat Map con il dataset importato.
+	% Secondo me fa in scenario alternativo e in estensione solo lo UC a cui si riferisce. Pensaci
+	% I pro apes fanno tutto in estensioni mentre i Qbeam fanno scenario alternativo e mettono in estensione solo UC riferimento
+	\item \textbf{Estensioni}:
+	\begin{enumerate}
+		\item Se il dataset corrente non è compatibile con il grafico di tipo Heat Map:
+		\begin{enumerate}
+			\item La costruzione del grafico fallisce.
+			\item Viene visualizzato un messaggio di errore. (UC4.2.3)
+		\end{enumerate}
+	\end{enumerate}
 \end{itemize}
 
 
-\subsection{UC2.4 Selezione di Proiezione lineare multiasse}
+\subsection{UC2.4 Selezione di Proiezione Lineare Multiasse}
 
 \begin{itemize}
 
@@ -103,7 +132,18 @@
                                     un metatag;
 
     \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo \emph{"Proiezione lineare multiasse"} dal progetto corrente
-  
+
+	\item \textbf{Scenario Principale}: HDviz costruisce un grafico Proiezione Lineare Multiasse con il dataset importato.
+	% Secondo me fa in scenario alternativo e in estensione solo lo UC a cui si riferisce. Pensaci
+	% I pro apes fanno tutto in estensioni mentre i Qbeam fanno scenario alternativo e mettono in estensione solo UC riferimento
+	\item \textbf{Estensioni}:
+	\begin{enumerate}
+		\item Se il dataset corrente non è compatibile con il grafico di tipo Proiezione Lineare Multiasse:
+		\begin{enumerate}
+			\item La costruzione del grafico fallisce.
+			\item Viene visualizzato un messaggio di errore. (UC4.2.4)
+		\end{enumerate}
+	\end{enumerate}
 \end{itemize}
 
 

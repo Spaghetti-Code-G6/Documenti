@@ -1,12 +1,16 @@
+\newpage
 \subsection{UC1 - Creazione ambiente}
-\label{sub:uc2}
+\label{sub:uc1}
 
 %TODO: Add correct image
+% Se uno use case esce dalla post allora non mettiamo in scenario secondario ma in estensione
+% se invece la post rimane la stessa non è estensione.
+
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{componenti/casi-duso/diagrammi/UC2.pdf}
-    \caption{Diagramma rappresentante UC3}
-    \label{fig:UC2}
+    \includegraphics[width=0.9\textwidth]{componenti/casi-duso/diagrammi/UC1.pdf}
+    \caption{Diagramma rappresentante UC1}
+    \label{fig:UC1}
 \end{figure}
 
 
@@ -23,16 +27,25 @@
     \item \textbf{Postcondizione}:  Viene caricato un dataset. 
     
                                     Ogni colonna del dataset ha associato
-                                    un metatag che indica la tipologia del dato;
+                                    un metatag che indica la tipologia del dato.
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente seleziona l'opzione di aggiunta dei dati;
+			\item L'utente seleziona l'opzione di aggiunta dei dati.
             \item L'utente seleziona la fonte dei dati da importare: (UC1.1)
             \begin{itemize}
                 \item L'utente ha scelto di reperire i dati mediante file (UC1.1.1)
                 \item L'utente ha scelto di reperire i dati da database (UC1.1.2)
             \end{itemize}
+            \item Il dataset caricato è corretto e provvisto di validi metatag.
+        \end{enumerate}
+   
+    \item \textbf{Scenario alternativo}:
+		\begin{enumerate}
+            \item Il dataset caricato presenta metatag non validi o ne è sprovvisto:
+            \begin{enumerate}
+                \item L'utente inserisce manualmente i metatag (UC2.1).
+            \end{enumerate}
         \end{enumerate}
     %TODO: Rimuovo da qui e metto ad ogni use case che è coinvolto il suo? Non sarebbe corretto
     % magari in quanto la post non sarebbe poi più rispettata.
@@ -48,106 +61,119 @@
                 \item La creazione del dataset fallisce.
                 \item Viene visualizzato il messaggio di errore. (UC1.1.2e)
             \end{enumerate}
-            \item Il dataset caricato presenta metatag non validi o ne è provvisto:
-            \begin{enumerate}
-                \item L'utente inserisce manualmente un metatag per ogni colonna del dataset. (UC1.2)
-            \end{enumerate}
         \end{enumerate}
 \end{itemize}
 
 
-\subsection{UC1.1 - Inserimento dati}
+\subsubsection{UC1.1 - Inserimento dati}
+\label{ssub:UC1.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente importa un dataset provvisto
-                                di metatag validi per il corretto utilizzo del programma.
+    \item \textbf{Descrizione}: L'utente importa un dataset contentente dati.
 
-    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Attore primario}: Utente.
     
     \item \textbf{Precondizione}:   L'utente decide di caricare i dati.
 
-    \item \textbf{Postcondizione}:  Viene caricato un dataset. 
-
-                                    Ogni colonna del dataset ha associato
-                                    un metatag che indica la tipologia del dato;
+    \item \textbf{Postcondizione}:  Viene caricato un dataset non vuoto. 
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente seleziona l'opzione di aggiunta dei dati;
-            \begin{itemize}
-                \item L'utente sceglie di importare i dati da file (UC1.1.1);
-                \item L'utente seleziona di importare i dati da database (UC1.1.2);
-            \end{itemize}
-            
-        \end{enumerate}
-    %TODO: Aggiungere scenario secondario qui?
-    \item \textbf{Estensioni}:
-        \begin{enumerate}
-            \item Il dataset caricato presenta metatag non validi o ne è provvisto:
+			\item L'utente seleziona l'opzione di aggiunta dei dati:
             \begin{enumerate}
-                \item L'utente inserisce manualmente un metatag per ogni colonna del dataset. (UC1.2)
-            \end{enumerate}    
+                \item L'utente sceglie di importare i dati da file (UC1.1.1)
+                \item L'utente seleziona di importare i dati da database (UC1.1.2)
+            \end{enumerate}
         \end{enumerate}
+     
 \end{itemize}
 
-\subsection{UC1.1.1 - Inserimento dati da file}
+\subsubsection{UC1.1.1 - Inserimento dati da file}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente importa un dataset non vuoto da un file del suo dispostivo.
 
-    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   L'utente selezione l'opzione di caricare i dati.
+    \item \textbf{Precondizione}:   L'utente selezione l'opzione di caricare i dati da un file .csv .
 
-    \item \textbf{Postcondizione}:  Viene caricato un dataset da file. 
-
-                                    Ogni colonna del dataset ha associato
-                                    un metatag che indica la tipologia del dato;
+    \item \textbf{Postcondizione}:  Viene caricato un dataset. 
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente seleziona l'opzione di aggiunta dei dati mediante file;
-			\item L'utente seleziona file di dati da importare;
+			\item L'utente seleziona l'opzione di aggiunta dei dati mediante file.
+			\item L'utente seleziona file di dati da importare.
         \end{enumerate}
-
+     
     \item \textbf{Estensioni}
     \begin{enumerate}
-  
-    \item L'utente importa un file di un formato non valido oppure vuoto:
+    
+        \item Se l'utente importa un file di un formato non valido oppure vuoto:
         \begin{enumerate}
-            \item La creazione del dataset fallisce.
-            \item Viene visualizzato il messaggio di errore. (UC1.1.1e)
+            \item La creazione del dataset falllsice
+            \item Viene visualizzato il messaggio di errore. (UC1.1.1E)
         \end{enumerate}
     \end{enumerate}
 \end{itemize}
+
+%TODO: Spostare in UC4.1
+\subsubsection{UC4.1.1 - Visualizzazione errore inserimento dati da file}
+\begin{itemize}
+    \item \textbf{Descrizione}: All'utente viene mostrato un messaggio d'errore al reperimento
+                                dei dati dal file e continua ad utilizzare 
+                                il software senza aver correttamente caricato un dataset valido.
+
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   Il caricamento di dati dal file.
+
+    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore sul reperimento dei 
+                                    dati che lo avvisa della mancata formazione di un dataset per il
+                                    corretto utilizzo di HDviz.
+
+\end{itemize}
+
 
 \subsection{UC1.1.2 - Inserimento dati da database}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente importa un dataset non vuoto dal database.
 
-    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Attore secondario}: Database; 
+    \item \textbf{Attore secondario}: Database.
     
-    \item \textbf{Precondizione}:   L'utente decide di caricare i dati.
+    \item \textbf{Precondizione}:   L'utente decide di caricare i dati ed è connesso al db di HDviz.
 
-    \item \textbf{Postcondizione}:  Viene caricato un dataset dal database. 
-
-                                    Ogni colonna del dataset ha associato
-                                    un metatag che indica la tipologia del dato;
+    \item \textbf{Postcondizione}:  Viene caricato un dataset dal database.
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente seleziona l'opzione di aggiunta dei dati mediante accesso al database;
-			\item L'utente seleziona i dati da importare;
+			\item L'utente seleziona l'opzione di aggiunta dei dati mediante accesso al database
+			\item L'utente effettua una query SQL che ritorna i campi e dati che gli interessano
         \end{enumerate}
 
     \item \textbf{Estensioni}:
-        \begin{enumerate}
-            \item L'operazione sul database fallisce:
+        \begin{enumerate}   
+            \item Se dati selezionati dall'utente non sono validi oppure la connessione con il database fallisce:
             \begin{enumerate}
-                \item La creazione del dataset fallisce.
-                \item Viene visualizzato il messaggio di errore. (UC1.1.2e)
-            \end{enumerate}  
+                \item La creazione del dataset falllsice
+                \item Viene visualizzato il messaggio di errore. (UC1.1.2E)
+            \end{enumerate}
          \end{enumerate}
+\end{itemize}
+
+\subsection{UC4.1.2 - Visualizzazione errore inserimento dati da database}
+\begin{itemize}
+    \item \textbf{Descrizione}: All'utente viene mostrato un messaggio d'errore al reperimento
+                                dei dati dal database e continua ad utilizzare 
+                                il software senza aver correttamente caricato un dataset valido.
+
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   Il caricamento di dati dal database fallisce.
+
+    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore sul reperimento dei 
+                                    dati che lo avvisa della mancata formazione di un dataset per il
+                                    corretto utilizzo di HDviz.
+
 \end{itemize}
 
 
@@ -156,10 +182,10 @@
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente assegna ad ogni colonna del dataset importato,
                                 in cui non è già correttamente definito,
-                                un metadato che ne descrive la tipologia del dato;
+                                un metadato che ne descrive la tipologia del dato.
 
 
-    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Attore primario}: Utente.
     
     \item \textbf{Precondizione}:   L'utente ha caricato un dataset e non tutti i suoi 
                                     metatag sono validi o definiti.
@@ -168,7 +194,7 @@
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente assegna ad ogni colonna del dataset il tipo di dato che rappresenta (metatag);
+			\item L'utente assegna ad ogni colonna del dataset il tipo di dato che rappresenta (metatag).
         \end{enumerate}
 
 \end{itemize}
