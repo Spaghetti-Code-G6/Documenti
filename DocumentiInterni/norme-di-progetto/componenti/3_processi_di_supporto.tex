@@ -1,0 +1,372 @@
+\documentclass[../norme_di_progetto.tex]{subfiles}
+
+\begin{document}
+
+\subsection{Documentazione}
+
+\subsubsection{Scopo}
+Lo scopo della documentazione è quello di scrivere in uno o più documenti tutto ciò che è necessario sapere per utilizzare correttamente il prodotto software creato alla fine del progetto.
+
+\subsubsection{Descrizione}
+La produzione della documentazione è un processo che si svolge durante tutto il corso temporale del progetto. Consiste nello scrivere dei documenti di varia natura (riportati nella sezione "Documenti prodotti"), ognuno dei quali ha una specifica funzione. In questa sezione del documento sono riportate le norme per una buona scrittura della documentazione.
+
+\subsubsection{Aspettative}
+Questo processo ha come aspettativa principale la stesura di documenti, funzionali al loro scopo, scritti in maniera chiara e che rispettino le regole di seguito definite.
+
+\subsubsection{Ciclo di vita di un documento}
+Il ciclo di vita deve seguire passi:
+\begin{itemize}
+    \item \textbf{Creazione del documento}: il documento viene creato a partire da un template, viene già fornito del registro delle modifiche e degli elenchi di figure e tabelle;
+    \item \textbf{Stesura}: il documento viene scritto da più membri del gruppo, riportando i vari incrementi nel registro delle modifiche;
+    \item \textbf{Revisione}: dopo la stesura il documento viene revisionato da una o più persone che valutano se il documento rispetta o meno le norme decise. È obbligatorio che un redattore non verifichi il suo stesso documento, nel caso in cui il documento sia stato scritto da più persone un redattore può essere anche verificatore a patto che non verifichi una sezione da lui scritta;
+    \item \textbf{Approvazione}: dopo la revisione il \emph{responsabile} deve approvare il documento. Da quel momento il documento è considerato completo.
+\end{itemize}
+
+\subsubsection{Template}
+Il gruppo ha deciso di utilizzare, per il progetto, il linguaggio \LaTeX per la stesura dei documenti. Allo scopo di uniformare i documenti e velocizzare il processo di creazione e strutturazione del documento stesso è stato definito un template su cui ogni documento si basa.
+
+\subsubsection{Documenti prodotti}
+I documenti prodotti sono diversi e si dividono in due categorie:
+\begin{itemize}
+    \item \textbf{Informali}: In questa categoria rientrano i documenti non soggetti a versionamento. In particolare fanno parte di questa categoria i verbali. Questi si dividono in:
+    \begin{itemize}
+        \item \textbf{Interni}: A questa categoria appartengono i verbali degli incontri interni del gruppo. Riportano in breve dei resoconti degli incontri;
+        \item \textbf{Esterni}: Questa, al contrario della precedente, è la categoria a cui appartengono i verbali degli incontri con membri esterni al gruppo, quali potrebbero essere i committenti e/o i proponenti.
+    \end{itemize}
+    
+    \item \textbf{Formali}: In questa categoria rientrano tutti i documenti soggetti a versionamento e regolano l'intera attività del gruppo. Questi documenti devono essere approvati dal \emph{responsabile} di progetto. In alcuni casi è possibile che un documento abbia più versioni, in questo caso il \emph{responsabile} deve dare l'approvazione ad ognuna e si considera quella corrente la più recente tra le versioni approvate.\par
+    \begin{itemize}
+        \item \textbf{Interni}: I documenti appartenenti a questa categoria sono destinati ad uso interno del gruppo e non sono quindi di interesse primario per i committenti e il proponente;
+        \item \textbf{Esterni}:I documenti appartenenti a questa categoria sono, al contrario, destinati ad essere consegnati al proponente e ai committenti. Verrà consegnata l'ultima versione approvata.
+    \end{itemize}
+    Di seguito viene riportato un elenco dei documenti formali prodotti:
+    \begin{itemize}
+        \item \textbf{Norme di progetto}: documento che racchiude tutte le norme che regolamentano il progetto nella sua interezza. Questo documento rientra nella categoria dei documenti interni;
+        \item \textbf{Glossario}: documento che elenca tutti i termini che, secondo il gruppo, necessitano di una spiegazione esplicita. Questo documento rientra nella categoria dei documenti esterni;
+        \item \textbf{Studio di fattibilità}: documento che raccoglie i singoli studi di fattibilità sui capitolati secondo lo schema descritto in questo documento al paragrafo "Struttura dei documenti". Questo documento rientra nella categoria dei documenti interni;
+        \item \textbf{Piano di progetto}: documento che espone la pianificazione delle attività di progetto previste dal gruppo. In allegato a questo documento, che ricade nella categoria di quelli esterni, viene presentato un preventivo sia degli impegni orari che dei costi;
+        \item \textbf{Piano di qualifica}: documento che espone i criteri di valutazione della qualità del progetto. Questo documento rientra nella categoria dei documenti esterni;
+        \item \textbf{Analisi dei requisiti}: documento che raccoglie tutti i requisiti del progetto e che il prodotto software deve avere. Questo documento rientra nella categoria dei documenti esterni.
+  \end{itemize}
+  
+\end{itemize}
+
+\subsubsection{Cartella dei documenti}
+Ogni cartella contenente un documento prende il nome dal documento stesso e utlizza la convenzione snake\_case. All'interno della cartella si trova un file .tex principale con lo stesso nome del documento, anch'esso scritto con la convenzione snake\_case. In caso il documento sia strutturato attraverso la creazione di più sottofile, tutti i sottofile si devono trovare all'interno di una cartella detta componenti, la quale conterrà tutti i sottofile in formato .tex, nominati con una numerazione progressiva seguita dal nome della sezione che quel file rappresenta. Anche qui la convenzione usata è lo snake\_case.
+
+\subsubsection{Struttura dei documenti}
+Tutti i documenti prodotti si rifanno ad un template predefinito scritto in formato .tex che ne definisce la struttura e le parti comuni. Ogni documento è caratterizzato, nella prima pagina, che forma il frontespizio, da una serie di elementi. Dall'alto verso il basso ci sono:
+\begin{itemize}
+    \item Il logo a colori del gruppo;
+    \item Il nome del gruppo;
+    \item Il contatto e-mail del gruppo;
+    \item Il nome del documento;
+    \item Una tabella riportante la versione, l'approvatore, i redattori, i verificatori, l'uso e i destinatari;
+    \item Una breve descrizione del contenuto del documento.
+\end{itemize}
+A seguire c'è una pagina che riporta il registro delle modifiche, in cui vengono specificati:
+\begin{itemize}
+    \item Versione del documento;
+    \item Cognome e nome di chi ha apportato la modifica;
+    \item Ruolo all'interno del gruppo;
+    \item Data della modifica;
+    \item Descrizione della modifica.
+\end{itemize}
+Di seguito si trova una sezione in cui c'è l'indice del documento ed eventualmente, se necessarie, una lista di tabelle e una lista di figure.\\
+A seguire c'è il corpo del documento, una sezione molto variabile a seconda del documento considerato. Nonostante questa variabilità la struttura della singola pagina rimane fissa ed è così strutturata:
+\begin{itemize}
+    \item In alto a sinistra ci sono il nome del gruppo e il nome del documento;
+    \item In alto a destra c'è il logo del gruppo nella versione colorata di nero;
+    \item Al di sotto di questi due elementi c'è una linea nera che li separa dal contenuto della pagina;
+    \item Il contenuto della pagina ;
+    \item Nel piè di pagina si trova, a destra, il numero della pagina corrente e il numero di pagine totali.
+\end{itemize}
+Ai documenti informali, ovvero ai verbali, non viene applicato nessun versionamento, questo fa si che il registro delle modifiche abbia sempre 3 righe: una corrispondente alla stesura, una corrispondente alla verifica e una corrispondente all'approvazione. I verbali hanno la seguente struttura:
+\begin{itemize}
+    \item Frontespizio;
+    \item Registro delle modifiche;
+    \item Indice;
+    \item Informazioni generali formate da: luogo dell'incontro, data dell'incontro, orario dell'incontro, partecipanti;
+    \item Ordine del giorno;
+    \item Resoconto;
+    \item Conclusione.
+\end{itemize}
+
+\subsubsection{Norme tipografiche}
+
+\paragraph{Attribuzione del nome}
+Per l'attribuzione del nome si segue la convenzione detta snake\_case. La convenzione scelta prevede la scrittura di tutti i nomi con stampatello minuscolo e in caso di multiple parole di separarle con l'underscore.
+
+\paragraph{Stili di testo}
+Di seguito sono indicati gli stili del testo:
+\begin{itemize}
+    \item \textbf{Grassetto}: Stile utilizzato per singole parole da enfatizzare;
+    \item \textbf{Corsivo}: Utilizzato per i nomi propri o per evidenziare frasi complete;
+    \item \textbf{Monospace}: utilizzato per riportare frammenti di codice;
+    \item \textbf{Stampatello maiuscolo}: utilizzato per le sigle.
+\end{itemize}
+
+\paragraph{Elenchi puntati}
+Per gli elenchi puntati la convenzione utilizzata è il punto. Nel caso in cui l'elenco sia annidato si usa il trattino alto (-).
+
+\paragraph{Formati di dato}
+Le date vengono indicate con il formato:
+\begin{center}
+    \textbf{[YYYY]-[MM]-[DD]}
+\end{center}
+Secondo lo standard ISO 8601. In questa notazione YYYY indica l'anno, MM indica il mese e DD indica il giorno.
+
+\paragraph{Sigle}
+Le sigle utilizzate sono riportate di seguito.
+Per quanto riguarda i documenti, le sigle utilizzate sono:
+\begin{itemize}
+    \item Analisi dei requisiti: AdR;
+    \item Piano di progetto: PdP;
+    \item Piano di qualifica: PdQ;
+    \item Studio di fattibilità: SdF;
+    \item Norme di progetto: NdP;
+    \item Verbali interni: VI;
+    \item Verbali esterni: VE.
+\end{itemize}
+
+Per quanto riguarda le revisioni di progetto le sigle utilizzate sono:
+\begin{itemize}
+    \item Revisione dei requisiti: RR;
+    \item Revisione di progettazione: RP;
+    \item Revisione di qualifica: RQ;
+    \item Revisione di accettazione: RA.
+\end{itemize}
+
+\subsubsection{Elementi grafici}
+
+\paragraph{Immagini}
+Le immagini devono essere centrate nella pagina e devono avere un'opportuna didascalia.
+
+\paragraph{Grafici UML}
+I grafici UML sono inseriti come immagini.
+
+\paragraph{Tabelle}
+Ogni tabella, ad eccezione del registro delle modifiche, è accompagnata da una didascalia e deve essere centrata nella pagina.
+
+\subsubsection{Strumenti}
+
+\paragraph{\LaTeX}
+Questo strumento è stato scelto dal gruppo per far si che ci fosse uniformità nella stesura dei documenti e al contempo per avere uno strumento che permettesse grande flessibilità nella stesura stessa.
+
+\paragraph{Draw.io}
+Applicazione web molto versatile per disegnare grafici UML che offre la possibilità di collaborare con più persone costantemente.
+
+\subsubsection{Metriche}
+
+\paragraph{Indice gulpease}
+Quest'indice riporta il grado di leggibilità di un documento. Viene usato il sito \url{https://farfalla-project.org/readability_static/} che permette di calcolarlo semplicemente incollando il testo nell'apposita casella dedicata.
+
+\paragraph{Correzione errori ortografici}
+Per la correzione di errori ortografici viene utilizzato lo strumento di correzione automatica dell'editor usato per la stesura del documento.
+
+\subsection{Gestione delle configurazioni}
+
+\subsubsection{Scopo}
+Questo processo ha lo scopo di gestire in maniera ordinata e sistematica la produzione di documenti e di codice.
+
+\subsubsection{Descrizione}
+La gestione della configurazione ha lo scopo di raggruppare, normare e organizzare tutti gli strumenti necessari alla produzione di documenti e di codice.
+
+\subsubsection{Aspettative}
+Le aspettative per questo processo sono le seguenti:
+\begin{itemize}
+    \item Sistematizzare la produzione di codice e documenti;
+    \item Uniformare gli strumenti utilizzati.
+\end{itemize}
+
+\subsubsection{Versionamento}
+
+\paragraph{Codice di versione}
+Un documento ha sempre associato un codice di versione, che si presenta nella forma:
+\begin{center}
+    \textbf{[X].[Y].[Z]}
+\end{center}
+
+In questa notazione i significati sono i seguenti:
+\begin{itemize}
+    \item La \textbf{X} indica l'ultima versione approvata dal \emph{responsabile};
+    \item La \textbf{Y} indica l'ultima versione verificata da uno dei \emph{verificatori}. La numerazione ricomincia da 0 quando cambia \textbf{X}
+    \item La \textbf{Z} indica l'ultima versione stesa dai \emph{redattori}. La numerazione ricomincia da 0 quando cambia \textbf{X} o \textbf{Y}
+\end{itemize}
+
+\paragraph{Tecnologie adottate}
+Per il versionamento dei file è stato deciso di adottare il sistema di versionamento \emph{Git}. Ci sono inoltre due repositroy remoti su \emph{gitHub}.
+
+\paragraph{Repository}
+Il gruppo ha creato, per il progetto, un'organizzazione su gitHub in cui sono presenti 2 repository:
+\begin{itemize}
+    \item \textbf{Documenti}: Al link \url{https://github.com/Spaghetti-Code-G6/Documenti} si trova il repository di tutti i documenti prodotti dal gruppo;
+    \item \textbf{Codice}: Al link \url{https://github.com/Spaghetti-Code-G6/Codice} è possibile, invece, trovare il repository con il codice prodotto dal gruppo.
+\end{itemize}
+
+\paragraph{Struttura del repository}
+Il repository Codice è ancora inutilizzato, mentre il repository Documenti è così strutturato:
+\begin{itemize}
+    \item \textbf{Documenti esterni}: questa directory contiene tutti i documenti destinati ad uso esterno, ovvero indirizzati al proponente e ai committenti. All'interno ogni documento si trova all'interno dell'omonima directory, la quale a sua volta segue le regole di struttura descritte nel paragrafo "Directory dei documenti" nella sezione dedicata alla documentazione;
+    \item \textbf{Documenti interni}: questa directory ha una struttura analoga a quella dei documenti esterni. Raggruppa i documenti destinati ad uso interno;
+    \item \textbf{Presentazione}: in questa directory è presente solo la presentazione preparata per la RR;
+    \item \textbf{Risorse}: in questa directory è presente una sottodirectory che raggruppa tutte le immagini che il gruppo utilizza in tutti i documenti prodotti. Inoltre sono presenti i file \emph{config.tex} e \emph{template.tex} che vegono utilizzati nel template dei documenti;
+    \item \textbf{.gitignore}
+    \item \textbf{Readme}
+\end{itemize}
+
+\paragraph{Tipi di file}
+Nella directory dei documenti sono presenti i seguenti tipi di file:
+\begin{itemize}
+    \item File \textbf{.tex}: sono i file che il gruppo usa per scrivere i documenti. File sorgenti per \LaTeX;
+    \item File \textbf{.pdf}: sono i risultati della compilazione dei file .tex;
+    \item Immagini da inserire nei documenti;
+    \item File \textbf{.md}: il formato del file README;
+    \item \textbf{.gitignore}: contiene un riferimento a tutti i file non versionati.
+\end{itemize}
+
+\paragraph{Comandi Git}
+La repo dei documenti ha diversi branch: un branch main e diversi branch per la stesura dei singoli documenti. Per lavorare su un documento si eseguono i seguenti passi:
+\begin{itemize}
+    \item Bisogna per prima cosa posizionarsi sul repository locale;
+    \item Aprire il terminale;
+    \item Spostarsi sul branch in cui si vuole lavorare con il comando git branch seguito dal nome del branch;
+    \item Eseguire il comando git pull per sincronizzare eventuali cambiamenti del repository remoto;
+    \item Modificare il file;
+    \item Sul terminale, eseguire il comando git add seguito dai nomi dei file modificati;
+    \item Lanciare il comando git commit -m, seguito da un commento che riassume i cambiamenti tra doppi apici;
+    \item Lanciare il comando git push per aggiornare il repository remoto;
+    \item Se la stesura è completa e il documento è stato verificato, si esegue una pull request che verrà accettata soltanto quando il \emph{reponsabile} approva il documento.
+\end{itemize}
+
+\paragraph{Gestione delle modifiche}
+Ogni membro del gruppo può modificare i file nel repository dei documenti, tranne i file presenti sul ramo master, per i quali serve fare una \glossario{pull request} che deve essere approvata.\\
+È possibile trovarsi in una situazione in cui è necessario modificare un documento già approvato. In questo caso si deve necessariamente contattare il \emph{responsabile} e chiedere l'autorizzazione prima di apportare qualsiasi modifica.
+
+\subsection{Gestione della qualità}
+
+\subsubsection{Scopo}
+La gestione della qualità ha lo scopo di garantire qualità del prodotto, ovvero il fatto che il prodotto rispetti gli standard di qualità imposti e che le esigenze siano soddisfatte.
+
+\subsubsection{Descrizione}
+Alla gestione della qualità è dedicato il documento "Piano di Qualifica", in cui vengono descritte le metriche usate per valutare la qualità dei prodotti e dei processi. Questo documento contiene informazioni sui seguenti temi:
+\begin{itemize}
+    \item Qualità del prodotto: definizione del modello seguito e delle metriche adottate;
+    \item Specifiche dei test.
+\end{itemize}
+
+\subsubsection{Aspettative}
+Le aspettative sono le seguenti:
+\begin{itemize}
+    \item Conseguimento della qualità del prodotto;
+    \item Prova oggettiva della qualità;
+    \item Raggiungimento della soddisfazione del proponente.
+\end{itemize}
+
+\subsubsection{Attività}
+Il processo di gestione della qualità è suddiviso nelle seguenti parti:
+\begin{itemize}
+    \item \textbf{Pianificazione}: Vengono stabiliti gli obbiettivi dei controlli di qualità;
+    \item \textbf{Esecuzione}: Vengono messe in pratica le regole prefissate nella pianificazione;
+    \item \textbf{Valutazione}: Confronto dei valori ottenuti cono quelli attesi.
+\end{itemize}
+Se i valori attesi non sono quelli specificati nelle norme il gruppo si impegna ad apportare le modifiche necessarie perchè i valori siano conformi a quelli attesi.
+
+\subsubsection{Denominazione delle metriche}
+Le metriche seguono la seguente denominazione:
+\begin{center}
+    \textbf{M[Categoria][Numero]}
+\end{center}
+In questa notazione:
+\begin{itemize}
+    \item La categoria indica a quale categoria la metrica appartiene;
+    \item Il numero indica l'identificativo numerico della metrica.
+\end{itemize}
+Il gruppo si riserva la possibilità di integrare le metriche, in caso fosse necessario, successivamente.
+
+\subsubsection{Istanziazione di un processo}
+Il gruppo ha deciso di seguire delle regole per l'istanziazione dei processi in modo da perseguire in maniera più efficiente la qualità e rendere più semplice l'esecuzione del processo di gestione della qualità. Le regole sono le seguenti:
+\begin{itemize}
+    \item Ogni processo deve avere un solo obbiettivo;
+    \item L'obbiettivo di un processo non deve sovrapporsi agli obbiettivi di altri processi;
+    \item L'organizzazione delle risorse affidate a un processo deve tenere conto delle risorse già assegnate agli altri processi, allo scopo di massimizzare l'efficienza dell'impiego delle risorse umane;
+    \item Ogni processo deve essere pianificato;
+    \item Deve essere nota la durata dei processi e questi devono essere costantemente monitorati per far si che eventuali anticipi o ritardi vengano segnalati immediatamente.
+\end{itemize}
+
+\subsection{Verifica}
+
+\subsubsection{Scopo}
+Lo scopo della verifica è quello di avere dei prodotti che siano completi e coesi, oltre che corretti.
+
+\subsubsection{Descrizione}
+Questo processo prende in input un prodotto finito e lo restituisce conforme alle norme stabilite. Se il prodotto è già conforme allora il processo lo restituisce inalterato.
+
+\subsubsection{Aspettative}
+La verifica rispetta i seguenti punti:
+\begin{itemize}
+    \item Viene effettuata seguendo passi precisi e predefiniti;
+    \item I criteri di verifica sono chiari, oggettivi e affidabili;
+    \item Tutti i prodotti vengono verificati, in ognuna delle fasi che attraversano;
+    \item La verifica lascia il prodotto o, nel caso di prodotti molto corposi, una sua sezione stabile;
+    \item Solo se il prodotto è interamente validato può passare ad essere validato.
+\end{itemize}
+
+\subsubsection{Attività}
+\paragraph{Analisi}
+\subparagraph{Analisi statica}
+Questo tipo di analisi si effettua sia sui documenti che sul codice e ne valuta la correttezza e la conformità alle regole. Questo tipo di analisi può essere sia manuale che automatico. Un esempio di controllo automatico è il controllo sugli errori ortografici o sugli errori di battitura, un esempio di controllo manuale è il controllo sul lessico utilizzato in un documento.
+\subparagraph{Analisi dinamica}
+Questo tipo di analisi, applicata al solo prodotto software, prevede la sua esecuzione. Viene effettuata tramite test.
+
+\paragraph{Test}
+I test sono il cuore dell'analisi dinamica. Il loro scopo è mostrare che il prodotto software funziona come richiesto. Per definire un test bisogna definire una serie di parametri:
+\begin{itemize}
+    \item \textbf{Ambiente}: Sistema in cui il test viene eseguito;
+    \item \textbf{Stato iniziale}: Stato iniziale dal quale il test viene eseguito;
+    \item \textbf{Input}: I dati in ingresso che il test richiede;
+    \item \textbf{Output}: I dati che sono attesi;
+    \item \textbf{Eventuali istruzioni aggiuntive}: Ulteriori specifiche necessarie per l'esecuzione del test o sull'interpretazione dei risultati ottenuti
+\end{itemize}
+
+Il gruppo si riserva di elencare successivamente i tipi di test previsti in quanto ritiene prematuro vincolare i test prima della progettazione.
+
+\paragraph{Codice identificativo dei test}
+I test vengono descritti da un codice identificativo univoco che permette di distinguerli. Inoltre viene fornita una descrizione e uno stato. I valori che lo stato può assumere sono:
+\begin{itemize}
+    \item Implementato;
+    \item Non implementato;
+    \item Non eseguito;
+    \item Superato;
+    \item Non superato.
+\end{itemize}
+Il codice identificativo si presenta nella forma:
+\begin{center}
+    \textbf{T[Tipologia][Id]}
+\end{center}
+La tipologia del test varia tra alcuni valori identificativi della tipologia di test, tuttavia, non essendo ancora i tipi di test definiti, queste saranno elencate successivamente.\\
+L'id invece è un campo numerico che permette di identificare il test in base ad una numerazione progressiva.
+
+\subsubsection{Metriche}
+\paragraph{Densità degli errori}
+Questo è un indice che permette di capire quanto un prodotto software è capace di resistere agli errori. La formula adottata è:
+\begin{center}
+    \textbf{$M = \frac{numero\ test\ con\ errori}{numero\ test\ eseguiti} * 100$}
+\end{center}
+\emph{Il gruppo ritiene sia prematuro stabilire un valore soglia al di sotto del quale non scendere, perciò si riserva di ampliare questa sezione successivamente.}
+
+\subsection{Validazione}
+
+\subsubsection{Scopo}
+Lo scopo della validazione è stabilire se il prodotto soddisfa il compito per il quale è stato creato. A seguito della validazione è garantito che il prodotto rispetti i requisiti imposti.
+
+\subsubsection{Descrizione}
+Il processo prende in input il risultato della verifica e lo restituisce con la garanzia che rispetti i requisiti imposti dal committente e dal proponente. Questo compito è svolto dal \emph{responsabile}
+
+\subsubsection{Aspettative}
+Ci si aspetta, da questo processo, un modo per avere la garanzia della correttezza e della completezza del prodotto rispetto ai requisiti imposti.
+
+\subsubsection{Attività}
+Il \emph{responsabile} ha il compito di controllare il prodotto e decidere se approvare il prodotto o se rigettarlo chiedendo una nuova verifica.
+
+\end{document}
