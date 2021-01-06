@@ -5,7 +5,7 @@
 \subsection{Obiettivo del prodotto}
 \label{subs:obiettivo_del_prodotto}
 Il progetto \emph{HD Viz} ha come scopo la realizzazione di una \glossario{applicazione web}, nella quale verranno visualizzati dati con multiple dimensioni in vari grafici proposti.
-I dati caricati, tramite file CSV esterno o query a database, andranno a fornire supporto all'untene nella fase esplorativa dell'analisi dei dati, facilitando la visualizzione di schemi e situazioni particolarmente interessanti.
+I dati caricati, tramite file CSV esterno o query a database, andranno a fornire supporto all'utente nella fase esplorativa dell'analisi dei dati, facilitando la visualizzazione di schemi e situazioni particolarmente interessanti.
 
 
 \subsection{Funzioni del prodotto}
@@ -14,14 +14,14 @@ I dati caricati, tramite file CSV esterno o query a database, andranno a fornire
 
 \subsection{Caratteristiche degli utenti}
 \label{subs:caratteristiche_degli_utenti}
-Il prodotto è destinato ad utenti con discrete conoscenze analitiche e con l'intenzione di analizzare una grande mole di dati.
+Il prodotto è destinato ad utenti con discrete conoscenze statistiche e matematiche e con l'intenzione di analizzare una grande mole di dati.
 Per l'utilizzo dell'applicazione \emph{HD Viz} gli utenti non dovranno necessariamente essere autenticanti o registrati, ma potranno usufruirne liberamente.
 Agli utenti viene fornita una breve guida introduttiva per orientarsi nell'interfaccia e per usare al meglio i vari strumenti offerti da \emph{HD Viz}.
 
 \subsection{Architetture del progetto}
 \label{subs:architetture_e_tecnologie_del_progetto}
 \subsubsection{Back-end}
-Il \glossario{back-end} verrà sviluppato in JavaScript con server \glossario{Node.js}. L'applicazione ricaverà dati immagazinati in un database \glossario{NoSQL} all'interno del server Node.js.
+Il \glossario{back-end} verrà sviluppato in JavaScript con server \glossario{Node.js}. L'applicazione ricaverà dati immagazzinati in un database \glossario{NoSQL} all'interno del server Node.js.
 
 
 \subsubsection{Front-end}
@@ -32,16 +32,16 @@ Il \glossario{back-end} verrà sviluppato in JavaScript con server \glossario{No
 
 L'implementazione del progetto deve rispettare i seguente vincoli:
 \begin{itemize}
-    \item Il proponente consiglia di utlizzare JavaScript, e più in particolare la libreria \glossario{D3.js}, per lo sviluppo dei grafici usati per la visulizzazione dei dati: \\ \url{https://github.com/d3/d3};
+    \item Il proponente consiglia di utilizzare JavaScript, e più in particolare la libreria \glossario{D3.js}, per lo sviluppo dei grafici usati per la visualizzazione dei dati: \\ \url{https://github.com/d3/d3};
     \item Il front-end dell'applicazione viene sviluppato prevalentemente con i linguaggi \glossario{HTML}/\glossario{CSS} uniti al JavaScript;
     \item La tipologia di grafici da utilizzare sono:
     \begin{itemize}
         \item \glossario{Scatter plot Matrix}, rappresentazione a quadrati disposti a matrice di tutte le matrici di \glossario{Scatter plot}. Questo grafico deve avere un massimo di 5 dimensioni. \\ \url{https://observablehq.com/@d3/brushable-scatterplot-matrix};
         \item Il \glossario{Force Field} traduce le distanze tra punti nello spazio a molte dimensioni in forze di attrazione e repulsione proiettate in uno spazio bi/tridimensionale. \\  \url{https://observablehq.com/@d3/force-directed-graph};
-        \item L'\glossario{Heat Map} trasforma la distanza tra i punti in colori più o meno accesi. In questo grafico dovrà essere svolto l'ordinamento dei dati in modo che le strutture presenti siano più visibili all'utente; inoltre è possibile assocciare un \glossario{dendrogramma} lungo i bordi del grafico. \\ \url{https://observablehq.com/@eliaslevy/d3-heatmap}; 
+        \item L'\glossario{Heat Map} trasforma la distanza tra i punti in colori più o meno accesi. In questo grafico dovrà essere svolto l'ordinamento dei dati in modo che le strutture presenti siano più visibili all'utente; inoltre è possibile associare un \glossario{dendrogramma} lungo i bordi del grafico. \\ \url{https://observablehq.com/@eliaslevy/d3-heatmap}; 
         \item La \glossario{Proiezione Lineare Multi Asse} lascia all'utente il controllo dello spostamento degli assi del grafico, in modo da favorire l'individuazione di strutture e di raggruppamenti. \\ \url{https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/visualize/linearprojection.html};
     \end{itemize}
-    I dati da visulizzare dovranno poter avere almeno fino a 15 dimensioni; inoltre deve essere possibile visualizzare dati con meno di 15 dimensioni. 
+    I dati da visualizzare dovranno poter avere almeno fino a 15 dimensioni; inoltre deve essere possibile visualizzare dati con meno di 15 dimensioni. 
     \item I dati devono poter essere forniti al sistema tramite caricamento di file CSV o tramite query al database.
 \end{itemize}
 
@@ -50,8 +50,8 @@ L'implementazione del progetto deve rispettare i seguente vincoli:
     \item Inserire, all'interno dell'applicazione web, altri grafici adatti alla visualizzazione di dati con più di tre dimensioni;
     \item Utilizzare funzioni di calcolo della distanza diverse dalla \glossario{distanza euclidea} in tutte le visualizzazioni che la utilizzano;
     \item Nel grafico Force Field, utilizzare funzioni di forza diverse da quelle previste nella libreria D3.js;
-    \item Analisi automantica dei dati per dare evidenza a situzioni particolarmente interessanti.
-    \item Implementare algoritmi di preparazione del dato che precede la fase di visulizzazione di quest'ultimo.
+    \item Analisi automatica dei dati per dare evidenza a situazioni particolarmente interessanti.
+    \item Implementare algoritmi di preparazione del dato che precede la fase di visualizzazione di quest'ultimo.
 \end{itemize}
 
 \end{document}
