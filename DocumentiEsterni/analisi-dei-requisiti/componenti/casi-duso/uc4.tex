@@ -1,13 +1,13 @@
 \newpage
 \subsection{UC4 - Modifica Grafico}
-\label{sub:uc2}
+\label{sub:uc4}
 
 %TODO: Add correct image
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC2.pdf}
     \caption{Diagramma rappresentante UC2}
-    \label{fig:UC2}
+    \label{fig:UC4}
 \end{figure}
 
 
@@ -25,7 +25,8 @@
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente decide di modificare il grafico corrente.
-			\item All'utente vengono fornite le opzioni del tipo di grafico che è stato costruito precedentemente.
+			\item L'utente effettua le modifiche desiderate.
+            \item L'utente conferma le modifiche apportate aggiornado il grafico costruito che viene visualizzato.
         \end{enumerate}
 
     \item \textbf{Generalizzazioni}:
@@ -40,4 +41,57 @@
 
 \subsection{UC4.1 Modifica Scatterplot Matrix}
 
+
+
+
+
 \subsection{UC4.2 Modifica Force Field}
+% TODO: Create image for force field graph.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC2.pdf}
+    \caption{Diagramma rappresentante UC2}
+    \label{fig:UC2}
+\end{figure}
+
+
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione del grafo Force Field
+                                costruito dal dataset corrente.
+	
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è un Force Field.
+
+    \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
+
+	\item \textbf{Scenario principale}:
+		\begin{enumerate}
+            \item L'utente apporta le modifiche desiderate tra quelle offerte dal Force Field.
+        \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.2.1 Modifica posizione dei nodi}
+
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente vuole modificare la posizione dei nodi del 
+                                grafico trascinandoli con il cursore.
+	
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è un Force Field.
+
+    \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
+
+	\item \textbf{Scenario principale}:
+        \begin{enumerate}
+            \item L'utente tiene premuto e trascina il cursore per spostare il punto nello spazio del grafico.
+            \item Il grafico si muove mantentendo le connessioni tra i nodi.
+        \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.2.2 Modifica dell'algoritmo delle distanze}
+
+\subsubsection{UC4.2.3 Modifica intensità forza attrattiva tra nodi}
+
+\subsubsection{UC4.2.4 Modifica di un nodo per dimensione}
