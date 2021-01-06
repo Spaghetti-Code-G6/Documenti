@@ -10,6 +10,20 @@ I dati caricati, tramite file CSV esterno o query a database, andranno a fornire
 
 \subsection{Funzioni del prodotto}
 \label{subs:funzioni_del_prodotto}
+L'applicativo deve fornire all'utente degli strumenti per l'analisi di dati. L'utente deve: 
+\begin{itemize}
+    \item Importare i dati contenuti in un file CSV oppure ricavarli attraverso una query al database;
+    \item I dati importati in precedenza devono essere tipizzati in quanto non tutti i grafici sono predisposti a visualizzare tutti i tipi di dato. Se i dati caricati sono sprovvisti di \glossario{metadati} devono essere aggiunti manualmente al \glossario{DataFrame} in modo che l'applicazione possa decidere quali grafici sono adatti alla visualizzazione dei dati;
+    \item Selezionare il tipo di grafico più adatto per il tipo di dati e analisi che effettuerà.
+\end{itemize} 
+
+In seguito al completamento delle azioni precedentemente descritte, l'applicazione mostrerà a video il grafico dei dati caricati.
+
+
+In questa fase l'utente analizza i dati attraverso l'esplorazione e la manipolazione del grafico appena creato; i metadati per la tipizzazione dei dati possono essere modificati anche in seguito alla creazione del grafico, in modo tale da correggere se necessario il tipo dei dati.
+
+
+Successivamente alla visualizzazione dei dati nel grafico selezionato, questo può essere cambiato per effettuare un diverso tipo di analisi così da poter evidenziare situazioni interessanti che altrimenti non si sarebbero presentate.
 
 
 \subsection{Caratteristiche degli utenti}
@@ -18,13 +32,15 @@ Il prodotto è destinato ad utenti con discrete conoscenze statistiche e matemat
 Per l'utilizzo dell'applicazione \emph{HD Viz} gli utenti non dovranno necessariamente essere autenticanti o registrati, ma potranno usufruirne liberamente.
 Agli utenti viene fornita una breve guida introduttiva per orientarsi nell'interfaccia e per usare al meglio i vari strumenti offerti da \emph{HD Viz}.
 
+
 \subsection{Architetture del progetto}
 \label{subs:architetture_e_tecnologie_del_progetto}
-\subsubsection{Back-end}
-Il \glossario{back-end} verrà sviluppato in JavaScript con server \glossario{Node.js}. L'applicazione ricaverà dati immagazzinati in un database \glossario{NoSQL} all'interno del server Node.js.
-
-
-\subsubsection{Front-end}
+%\subsubsection{Back-end}
+Il \glossario{back-end} verrà sviluppato in JavaScript utilizzando l'ausilio del framework \glossario{Node.js}. L'applicazione ricaverà dati immagazzinati in un database \glossario{NoSQL} all'interno del server. \\
+%\subsubsection{Front-end}
+Il \glossario{front-end} sarà costituito da varie pagine web accessibili dai principali \glossario{browser} (Mozilla Firefox e Google Chrome) nella versione desktop. \\
+La \glossario{UI} verrà sviluppata principalmente in \glossario{HTML} e \glossario{CSS}, verranno inoltre aggiunti elementi dinamici in JavaScript. I grafici che verranno visualizzati saranno sviluppati con JavaScript utilizzando la libreria D3.js.
+Sarà messa a disposizione dell'utente una piccola guida introduttiva per orientarsi e usare al meglio l'applicazione.
 
 
 \subsection{Vincoli generali}
@@ -33,7 +49,7 @@ Il \glossario{back-end} verrà sviluppato in JavaScript con server \glossario{No
 L'implementazione del progetto deve rispettare i seguente vincoli:
 \begin{itemize}
     \item Il proponente consiglia di utilizzare JavaScript, e più in particolare la libreria \glossario{D3.js}, per lo sviluppo dei grafici usati per la visualizzazione dei dati: \\ \url{https://github.com/d3/d3};
-    \item Il front-end dell'applicazione viene sviluppato prevalentemente con i linguaggi \glossario{HTML}/\glossario{CSS} uniti al JavaScript;
+    \item Il front-end dell'applicazione viene sviluppato prevalentemente con i linguaggi HTML/CSS uniti al JavaScript;
     \item La tipologia di grafici da utilizzare sono:
     \begin{itemize}
         \item \glossario{Scatter plot Matrix}, rappresentazione a quadrati disposti a matrice di tutte le matrici di \glossario{Scatter plot}. Questo grafico deve avere un massimo di 5 dimensioni. \\ \url{https://observablehq.com/@d3/brushable-scatterplot-matrix};
