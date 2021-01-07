@@ -55,7 +55,7 @@
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è uno Scatterplot Matrix.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
 
     \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
 
@@ -70,18 +70,22 @@
 \label{subsec:uc4.1.1}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente dispone di dati con metadati assegnati e può 
-                                scegliere fino a 5 dimensioni che possono essere visualizzate nello Scatterplot Matrix.
+                                scegliere fino a 5 dimensioni che possono essere  visualizzate nello Scatterplot Matrix.
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è uno Scatterplot Matrix.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
     \item \textbf{Postcondizione}:  Vengono modificate le dimensioni visualizzate nei plot dello Scatterplot Matrix.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente seleziona l'opzione di selezione delle dimensioni.
-            \item L'utente seleziona fino a cinque dimensioni scartandone una ogni volta.
-            \item La visualizzazione sostituisce le dimensioni scartate con le nuove selezionate.
+            \item   L'utente seleziona l'opzione di selezione delle dimensioni.
+            \item   L'utente seleziona fino a cinque dimensioni. 
+           
+            \item   Ad ogni selezione l'utente
+                    sceglie una delle dimensioni attuali del grafico e la scarta.
+           
+            \item   La visualizzazione sostituisce le dimensioni scartate con le nuove selezionate.
         \end{enumerate}
 \end{itemize}
 
@@ -89,24 +93,25 @@
 \subsubsection{UC4.1.2 Selezione punto all'interno del grafico}
 \label{subsec:uc4.1.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente seleziona un punto in uno scatterplot della Matrice per vedere come 
-                                esso viene rappresentato negli altri grafici a dispersione.
+    \item \textbf{Descrizione}: L'utente seleziona un punto in uno Scatterplot della matrice per vedere come 
+                                esso viene rappresentato negli altri grafici a dispersione della visualizzazione corrente.
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è uno Scatterplot Matrix.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
     \item \textbf{Postcondizione}:  Le proiezioni del punto selezionato, se appartentente allo Scatterplot, 
                                     venogno evidenziate in tutti i grafici della visualizzazione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente seleziona un punto contente un vertice dello Scatterplot.
+            \item L'utente seleziona un punto contente dati di uno Scatterplot della matrice.
             \item La proiezione del punto viene evidenziata in tutti i diversi Scatterplot della visualizzazione.
         \end{enumerate}
 
     \item \textbf{Scenario alternativo}:
         \begin{enumerate}
-            \item Se l'utente seleziona un punto vuoto dello Scatterplot la visualizzazione non evidenzia alcun punto del grafico.
+            \item L'utente seleziona un punto vuoto di uno Scatterplot della matrice.
+            \item Non viene evidenziato alcun punto della matrice.
         \end{enumerate}
 
 \end{itemize}
@@ -115,24 +120,25 @@
 \subsubsection{UC4.1.3 Selezione di un insieme di punti del grafico}
 \label{subsec:uc4.1.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente seleziona un insieme di punti in uno scatterplot della Matrice per vedere come 
-                                essi vengono rappresentati negli altri grafici a dispersione.
+    \item \textbf{Descrizione}: L'utente seleziona un insieme di punti in uno Scatterplot della matrice per vedere come 
+                                essi vengono rappresentati negli altri grafici a dispersione della visualizzazione corrente.
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è uno Scatterplot Matrix.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
     \item \textbf{Postcondizione}:  Le proiezioni dei punti selezionati, se appartentente allo Scatterplot, 
                                     vengono evidenziate in tutti i grafici della visualizzazione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
             \item L'utente seleziona un'aerea di punti di uno Scatterplot della matrice.
-            \item Le proiezioni dei punti vengono evidenziate in tutti i diversi Scatterplot della visualizzazione.
+            \item Le proiezioni dei punti contenteni dati vengono evidenziati in tutti i diversi Scatterplot della visualizzazione.
         \end{enumerate}
 
     \item \textbf{Scenario alternativo}:
         \begin{enumerate}
-            \item Se l'utente seleziona un'area di punti vuota dello Scatterplot la visualizzazione non evidenzia alcun punto della matrice.
+            \item L'utente seleziona un insieme di punti vuoto.
+            \item Non viene evidenziato alcun punto della matrice.
         \end{enumerate}
 
 \end{itemize}
@@ -158,7 +164,7 @@
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è un Force Field.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
 
     \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
 
@@ -177,7 +183,7 @@
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è un Force Field.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
     \item \textbf{Postcondizione}:  Viene modificata la posizione dei nodi del grafo nella visualizzazione.
 
 	\item \textbf{Scenario principale}:
@@ -195,7 +201,7 @@
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è un Force Field.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
     \item \textbf{Postcondizione}:  Viene modificata la distanza tra i nodi del grafo nella visualizzazione.
 
 	\item \textbf{Scenario principale}:
@@ -214,7 +220,7 @@
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è un Force Field.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
     \item \textbf{Postcondizione}:  Viene modificata l'intensità della forza attrattiva tra i nodi del grafo nella visualizzazione.
 
 	\item \textbf{Scenario principale}:
@@ -233,7 +239,7 @@
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Il grafico precedentemente costruito dal dataset corrente è un Force Field.
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
 
     \item \textbf{Postcondizione}:  Viene modificato lo stile dei nodi per una determinata dimensione del grafo costruito.
 
