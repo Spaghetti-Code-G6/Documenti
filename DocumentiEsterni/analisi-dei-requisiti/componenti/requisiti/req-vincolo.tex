@@ -1,23 +1,88 @@
 \subsection{Requisiti di vincolo}
 \label{sub:requisiti_di_vincolo}
 
-\rowcolors{2}{white!80!lightgray!90}{white}
-\renewcommand{\arraystretch}{2}
-\begin{longtable}[H]{>{\centering\bfseries}m{2cm} >{\centering}m{9cm} >{\centering}m{2.5cm} >{\centering\arraybackslash}m{2.5cm}}
+\rowcolors{2}{white}{white!80!lightgray!90}
+\renewcommand{\arraystretch}{2} %
+\begin{longtable}[H]{|>{\raggedright\arraybackslash}p{20mm} | p{90mm} | p{22mm} | p{30mm} |}
     \caption{Requisiti di vincolo}%
     \label{tab:requisiti_di_vincolo} \\
+    \hline
     \rowcolor{lightgray}
-    {\textbf{Requisito}} & {\textbf{Descrizione}} & {\textbf{Classificazione}} & {\textbf{Fonte}}  \\
-    \endfirsthead%
-    \rowcolor{lightgray}
-    {\textbf{Requisito}} & {\textbf{Descrizione}} & {\textbf{Classificazione}} & {\textbf{Fonte}}  \\
-    \endhead%
-    \rowcolor{white}
-    \multicolumn{4}{c}{\textit{Continua alla pagina successiva}}
-    \endfoot%
-    \endlastfoot%
+    \multicolumn{1}{| >{\centering\bfseries}m{20mm} |}{\textbf{Requisito}} 
+    & \multicolumn{1}{ >{\centering}m{90mm} |}{\textbf{Descrizione}} 
+    & \multicolumn{1}{ >{\centering}m{22mm} |}{\textbf{Rilevanza}} 
+    & \multicolumn{1}{ >{\centering\arraybackslash}m{30mm} |}{\textbf{Fonte}} \\
 
+    \endfirsthead%
+    \hline
+    \rowcolor{lightgray}
+    \multicolumn{1}{| >{\centering\bfseries}m{20mm} |}{\textbf{Requisito}} 
+    & \multicolumn{1}{ >{\centering}m{90mm} |}{\textbf{Descrizione}} 
+    & \multicolumn{1}{ >{\centering}m{22mm} |}{\textbf{Rilevanza}} 
+    & \multicolumn{1}{ >{\centering\arraybackslash}m{30mm} |}{\textbf{Fonte}} \\
+    \hline
+    \endhead%
+    \hline
+    \rowcolor{lightgray!40}
+    \multicolumn{4}{|c|}{\textit{Continua alla pagina successiva}} \\
+    \hline
+    \endfoot%
+    \hline
+    \endlastfoot%
     %CORPO TABELLA
 
+    RVO1
+        & L'applicativo deve essere sviluppato in tecnologia HTML/CSS/Javascript
+        & Obbligatorio
+        & Capitolato \\
 
+    RVO2
+        & L'applicativo deve essere sviluppato utilizzando la libreria D3.js
+        & Obbligatorio
+        & Capitolato \\
+
+    RVO3
+        & La parte server dell'applicativo deve essere sviluppata in Java o in Node.js
+        & Obbligatorio
+        & Capitolato \\
+
+    RVO4
+        & L'applicativo deve poter visualizzare dati ad almeno 15 dimensioni
+        & Obbligatorio
+        & Capitolato \\
+
+    RVO5
+        & L'applicativo deve presentare la modalità di visualizzazione Scatter Plot Matrix
+        & Obbligatorio
+        & Capitolato \\
+
+    RVO6
+        & L'applicativo deve presentare la modalità di visualizzazione Force Field
+        & Obbligatorio
+        & Capitolato \\
+    
+    RVO7
+        & L'applicativo deve presentare la modalità di visualizzazione Heat Map
+        & Obbligatorio
+        & Capitolato \\
+    
+    RVO8
+        & L'applicativo deve presentare la modalità di visualizzazione Proiezione Lineare Multi Asse
+        & Obbligatorio
+        & Capitolato \\
+
+    RVD9
+        & L'applicativo deve fornire l'ordinamento dei punti mediante clustering gerarchico nel grafico Heat Map
+        & Desiderabile
+        & Capitolato \\
+
+    RVD10
+        & L'applicativo deve fornire un metodo di analisi automatica che permetta di individuare le dimensioni di particolare interesses
+        & Desiderabile
+        & Capitolato \\
+
+    RVF11
+        & L'applicativo deve permettere il salvataggio del lavoro svolto in una sessione in un file di progetto
+        & Facoltativo
+        & Decisione interna \\
 \end{longtable}

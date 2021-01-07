@@ -1,22 +1,181 @@
-\subsection{Requisiti di funzionalità}
-\label{sub:requisiti_di_funzionalita}
+\subsection{Requisiti funzionali}
+\label{sub:requisiti_funzionali}
 
-\rowcolors{2}{white!80!lightgray!90}{white}
+\rowcolors{2}{white}{white!80!lightgray!90}
 \renewcommand{\arraystretch}{2} %
-\begin{longtable}[H]{>{\centering\bfseries}m{2cm} >{\centering}m{9cm} >{\centering}m{2.5cm} >{\centering\arraybackslash}m{2.5cm}}
+\begin{longtable}[H]{|>{\raggedright\arraybackslash}p{20mm} | p{90mm} | p{22mm} | p{30mm} |}
     \caption{Requisiti funzionali}%
     \label{tab:requisiti_funzionali} \\
+    \hline
     \rowcolor{lightgray}
-    {\textbf{Requisito}} & {\textbf{Descrizione}} & {\textbf{Classificazione}} & {\textbf{Fonte}}  \\
+    \multicolumn{1}{| >{\centering\bfseries}m{20mm} |}{\textbf{Requisito}} 
+    & \multicolumn{1}{ >{\centering}m{90mm} |}{\textbf{Descrizione}} 
+    & \multicolumn{1}{ >{\centering}m{22mm} |}{\textbf{Rilevanza}} 
+    & \multicolumn{1}{ >{\centering\arraybackslash}m{30mm} |}{\textbf{Fonte}} \\
+
     \endfirsthead%
+    \hline
     \rowcolor{lightgray}
-    {\textbf{Requisito}} & {\textbf{Descrizione}} & {\textbf{Classificazione}} & {\textbf{Fonte}}  \\
+    \multicolumn{1}{| >{\centering\bfseries}m{20mm} |}{\textbf{Requisito}} 
+    & \multicolumn{1}{ >{\centering}m{90mm} |}{\textbf{Descrizione}} 
+    & \multicolumn{1}{ >{\centering}m{22mm} |}{\textbf{Rilevanza}} 
+    & \multicolumn{1}{ >{\centering\arraybackslash}m{30mm} |}{\textbf{Fonte}} \\
+    \hline
     \endhead%
-    \rowcolor{white}
-    \multicolumn{4}{c}{\textit{Continua alla pagina successiva}}
+    \hline
+    \rowcolor{lightgray!40}
+    \multicolumn{4}{|c|}{\textit{Continua alla pagina successiva}} \\
+    \hline
     \endfoot%
+    \hline
     \endlastfoot%
 
     %CORPO TABELLA
+    
+    % Creazione ambiente
+    RFO1
+        & L'utente deve poter inserire dati nel sistema 
+        & Obbligatorio 
+        & \\
+        % \hyperref[UC1]{sub:uc1} \\
+    RFO1.1 
+        & L'utente deve poter inserire dati nel sistema a partire da un file .csv 
+        & Obbligatorio 
+        & \\
+        % & \hyperref[UC1.1]{ssub:uc1.1} \\
+    RFO1.2 
+        & L'utente deve poter inserire dati nel sistema da database esterno 
+        & Obbligatorio 
+        &  \\
+        % & \hyperref[UC1.2]{ssub:uc1.2} \\
+    % RFD1 
+    %     & L'utente deve poter inserire dati nel sistema da file di progetto 
+    %     & Desiderabile 
+    %     & \hyperref[UC1.3]{ssub:uc1.3} \\
 
+    RFD2 
+        & L'utente deve poter inserire metadati inerenti ai dati precedentemente inseriti 
+        & Desiderabile 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    RFD3 
+        & L'utente deve poter modificare metadati precedentemente inseriti 
+        & Desiderabile 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    RFO4 
+        & L'utente deve poter selezionare la tipologia di grafico da visualizzare 
+        & Obbligatorio 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    RFO4.1 
+        & L'utente deve poter selezionare Scatter Plot Matrix come tipologia di grafico da visualizzare 
+        & Obbligatorio 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    RFO4.2 
+        & L'utente deve poter selezionare Force Field come tipologia di grafico da visualizzare 
+        & Obbligatorio 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    RFO4.3 
+        & L'utente deve poter selezionare Heat Map come tipologia di grafico da visualizzare 
+        & Obbligatorio 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    RFO4.4 
+        & L'utente deve poter selezionare Proiezione Lineare Multi Asse come tipologia di grafico da visualizzare 
+        & Obbligatorio 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    RFD5 
+        & L'utente deve poter modificare il grafico che sta visualizzando 
+        & Desiderabile 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    
+    % RF Scatter Plot to be decided con Zucchetti
+
+    % Force Field
+    RFD5.2.1 
+        & L'utente deve poter spostare i nodi del grafico Force Field 
+        & Desiderabile 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    % Forse é necessario specificare quali distanze proponiamo
+    RFD5.2.2 
+        & L'utente deve poter modificare la tipologia di distanza utilizzata per il calcolo della matrice delle 
+        distanze nel grafico Force Field 
+        & Desiderabile 
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    RFD5.2.3 
+        & L'utente deve poter 
+        & 
+        & \\
+
+    % Heat Map
+    RFD5.3.1 
+        & L'utente deve poter modificare l'intervallo di colori utilizzato nel grafico Heat Map
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    RFD5.4.1
+        & L'utente deve poter aggiungere una delle dimensione dei dati non presenti nel grafico PLMA
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    
+    RFD5.4.2
+        & L'utente deve poter rimuovere una delle dimensioni dei dati presenti nel grafico PLMA
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    RFD5.4.3
+        % Specificare quali proprietà in requisiti diversi?
+        & L'utente deve poter modificare le proprietà grafiche delle dimensioni
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    RFD6
+        & L'utente deve essere notificato quando si verifica un errore
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    % Requisiti diversi per scenari alternativi (?)
+    RFD6.1
+        & L'utente deve essere notificato quando avviene un errore durante 
+        l'inserimento dei dati da file
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    % Requisiti diversi per scenari alternativi (?)
+    RFD6.2
+        & L'utente deve essere notificato quando avviene un errore durante 
+        l'inserimento di dati da database esterno
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    % Aggiungere altro codice puntato per errori di modifica grafico(?)
+    % Eventuale errore scatter plot
+    RFD6.3
+        & L'utente deve essere notificato quando viene scelta la visualizzazione di un grafico Force Field e nessuna delle dimensioni dei dati caricati é categorica
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+
+    RFD6.4
+        & L'utente deve essere notificato quando viene scelta la visualizzazione di un grafico Heat Map e nessuna delle dimensioni dei dati caricati é numerica
+        & Desiderabile
+        & \\
+        % & \hyperref[UC]{ssub:uc.} \\
+    
 \end{longtable}

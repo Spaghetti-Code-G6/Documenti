@@ -6,20 +6,61 @@
 
 \rowcolors{2}{white!80!lightgray!90}{white}
 \renewcommand{\arraystretch}{2} % 
-\begin{longtable}[H]{>{\centering\bfseries}m{8cm}  >{\centering\arraybackslash}m{8cm}}
-    \caption{Fonte - Requisiti}%
-    \label{tab:fonte_requisiti} \\
+\begin{longtable}[H]{| >{\centering\bfseries}p{8cm} | >{\centering\arraybackslash}p{8cm} |}
+    \caption{Fonte - Requisiti}
+    \label{tab:fonte_requisiti}\\
+    \hline
     \rowcolor{lightgray}
-    {\textbf{Fonte}} & {\textbf{Requisiti}}  \\
+    \multicolumn{1}{| >{\centering\bfseries}m{8cm} |}{\textbf{Fonte}} 
+    & \multicolumn{1}{>{\centering\arraybackslash}m{8cm} |}{\textbf{Requisiti}}  \\
+    \hline
     \endfirsthead%
+    \hline
     \rowcolor{lightgray}
-    {\textbf{Fonte}} & {\textbf{Requisiti}}  \\
+    \multicolumn{1}{| >{\centering\bfseries}m{8cm} |}{\textbf{Fonte}} 
+    & \multicolumn{1}{>{\centering\arraybackslash}m{8cm} |}{\textbf{Requisiti}}  \\
+    \hline
     \endhead%
-    \rowcolor{white}
-    \multicolumn{2}{c}{\textit{Continua alla pagina successiva}}
+    \hline
+    \rowcolor{lightgray!40}
+    \multicolumn{2}{|c|}{\textit{Continua alla pagina successiva}} \\
+    \hline
     \endfoot%
+    \hline
     \endlastfoot%
 
     %CORPO DELLA TABELLA
+
+    Capitolato 
+        & \makecell{
+            \rule{0pt}{2.6ex} \\
+            RQO1 \\ 
+            RQO2 \\
+            RQO3 \\
+            RQD6 \\
+            RVO1 \\
+            RVO2 \\
+            RVO3 \\
+            RVO4 \\
+            RVO5 \\
+            RVO6 \\
+            RVO7 \\
+            RVO8 \\
+            RVO9 \\
+            RVO10 \\
+            \rule[-1.2ex]{0pt}{0pt}
+        } \\
+
+    Decisione interna 
+        & \makecell{
+            \rule{0pt}{2.6ex} \\
+            RQO4 \\
+            RQO5 \\
+            RQO7 \\
+            RVF11 \\
+            \rule[-1.2ex]{0pt}{0pt}
+        } \\
+
+
 
 \end{longtable}
