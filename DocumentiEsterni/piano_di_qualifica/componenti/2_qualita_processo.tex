@@ -2,57 +2,116 @@
 
 \begin{document}
 
-\subsection{Obiettivi di qualità}
-In questa sezione saranno presentati gli obiettivi di qualità che si vogliono raggiungere, dei processi implementati e i dei loro prodotti, così da rendere efficace la valutazione della qualità e di selezionare le metriche migliori.
+\subsection{Scopo}
+In questa sezione saranno presentati gli obiettivi di qualità che si vogliono raggiungere, dei processi implementati e dei loro prodotti, così da rendere efficace la valutazione della qualità e di selezionare le migliori metriche.
+La qualità di un prodotto è fortemente influenzata dai processi utilizzati, per questo motivo si è deciso di usare come riferimento lo standard ISO/IEC 15504 (SPICE) per la qualità di processo e il metodo PDCA (o ciclo di Deming) per il miglioramento continuo della qualità durante tutto l'arco del progetto.
 
-\subsubsection{Obiettivi di qualità di processo}
-Si è deciso di usare come riferimento lo standard ISO/IEC 15504 (SPICE) per la qualità di processo e il metodo PDCA (o ciclo di Deming) per il miglioramento continuo della qualità durante tutto l'arco del progetto.
-%Per una trattazione esaustiva di tale standard si rimanda all’appendice §A delle Norme di Progetto 2.0.0. 
-%Per una trattazione esaustiva di tale modello si rimanda all’appendice §B delle Norme di Progetto 2.0.0.
-
-\begin{itemize}
-	\item OQPC01 Monitoraggio risorse: tenere sotto osservazione il consumo delle risorse;
-	\item OQPC02 Rispetto pianificazione: rispettare le scadenze prefissate nel Piano di Progetto;
-	\item OQPC03 Gestione rischi: tenere sempre sotto controllo i rischi per poterne evitare o mitigare gli effetti;
-	\item OQPC04 Miglioramento continuo: seguendo il metodo DPCA, migliorare sempre il processo.
-\end{itemize}
-
-\subsubsection{Obiettivi di qualità di prodotto}
-Si è deciso di usare come riferimento lo standard ISO/IEC 9126 per la qualità di prodotto. 
-%Per una trattazione esaustiva di tale modello si rimanda all’appendice §C delle Norme di Progetto 2.0.0.
+\subsection{Nomenclatura obiettivi di qualità e metriche}
+In questa sezione si riassumono brevemente le nomenclature che sono state utilizzate, per una spiegazione più approfondita si rimanda alle Norme di Progetto.
 
 \begin{itemize}
-	\item OQPD01 Correttezza documenti: tutti gli errori grammaticali e lessicali devono essere corretti;
-	\item OQPD02 Leggibilità documenti: chiunque abbia una licenza media deve poter comprendere i documenti (secondo l'indice Gulpease);
-	\item OQPD03 Coerenza documenti: tutte le inconsistenze tra i documenti devono essere corrette.
+	\item \textbf{Obiettivi}:
+	      \begin{center}
+		      \textbf{QPR[ID] [Nome]}
+	      \end{center}
+	      \subitem \textbf{QPR}: sigla identificativa per "Qualità di processo";
+	      \subitem \textbf{ID}: numero identificativo a due cifre;
+	      \subitem \textbf{Nome}: parola che designa il processo.
+
+	\item \textbf{Metriche}:
+	      \begin{center}
+		      \textbf{MPR[ID] [Nome]}
+	      \end{center}
+	      \subitem \textbf{QPR}: sigla identificativa per "Metrica di processo";
+	      \subitem \textbf{ID}: numero identificativo a due cifre;
+	      \subitem \textbf{Nome}: parola che designa la metrica.
 \end{itemize}
 
-\subsection{Metriche di qualità}
+\subsection{Processi}
 
+\subsubsection{Nomenclatura processi}
+Per ogni processo sono elencate le sue funzioni principali, gli obiettivi prefissati per ottenere la qualità desiderata e le metriche adottate per raggiungere quell’obiettivo.
 
+\begin{itemize}
+	\item \textbf{Processi}:
+	      \begin{center}
+		      \textbf{PROC[ID] [Nome]}
+	      \end{center}
+	      \subitem \textbf{QPR}: sigla identificativa per "Processo";
+	      \subitem \textbf{ID}: numero identificativo a due cifre;
+	      \subitem \textbf{Nome}: parola che designa il processo.
+\end{itemize}
 
+\subsubsection{PROC01 Gestione progetto}
+Lo scopo di questo macro-processo è quello di pianificare ed organizzare il lavoro da svolgere per adempiere ai requisiti trovati. L'esito dell'intero progetto è dipendente da questo processo, che deve strutturare il way of working del gruppo.
 
+\textbf{Funzioni:}
+\begin{itemize}
+	\item \textbf{Scelta standard}: trovare gli standard che si adattano meglio allo sviluppo di questo progetto;
+	\item \textbf{Sviluppo sotto-processi}: i processi devo poter essere associati ad azioni precise;
+	\item \textbf{Suddivisione lavoro}: assegnazione di compiti ai membri del gruppo;
+	\item \textbf{Programmare scadenze}: stabilire delle baseline;
+	\item \textbf{Prevedere formazione}: prevedere dei periodi di autoformazione;
+	\item \textbf{Rispettare budget}: rimanere nei limiti di budget stimati durante il preventivo.
+\end{itemize}
 
+\textbf{Obiettivi:}
+\begin{itemize}
+	\item \textbf{QPR01 Scadenze}: rispettare il più possibile le date di scadenza presenti all'interno del Piano di Progetto;
+	\item \textbf{QPR02 Budget}: mantenere le risorse messe a disposizione ad inzio progetto per tutta la sua durata;
+	\item \textbf{QPR03 Miglioramento}: i processi devono seguire le fasi del ciclo di vita di Deming per migliorare la qualità;
+	\item \textbf{QPR04 Versionamento}: i prodotti devono essere versionati per poter conoscere lo storico delle modifiche e stabilire quale di esse li ha generati.
+\end{itemize}
 
+\textbf{Metriche:}
+\begin{itemize}
+	\item \textbf{MPR01 Rispetto degli standard};
+	\item \textbf{MPR02 Varianza della pianificazione};
+	\item \textbf{MPR03 Varianza dei costi}.
+\end{itemize}
 
+\subsubsection{PROC02 Analisi}
+Questo macro-processo si riferisce ad ogni tipo di analisi presente in questo progetto, non solo l'analisi dei requisiti.
 
+\textbf{Funzioni:}
+\begin{itemize}
+	\item \textbf{Individuare requisti}: individuare i requisiti espliciti e impliciti e classificarli;
+	\item \textbf{Individuare rischi}: individuare i rischi e classificarli per poterli evitare o per mitigare i loro effetti;
+	\item \textbf{Individuare obiettivi}: individuare gli obiettivi per poter perseguire la qualità nel progetto;
+	\item \textbf{Individuare norme}: trovare delle norme e poi adattarle per miglioare il lavoro del gruppo.
+\end{itemize}
 
+\textbf{Obiettivi:}
+\begin{itemize}
+	\item \textbf{QPR05 Adempimento requisiti obbligatori}: tutti i requisiti obbligatori devono essere soddisfatti;
+	\item \textbf{QPR06 Adempimento requisiti obbligatori}: i requisiti non obbligatori potranno essere soddisfatti solo se tutti o requisiti obbligatori sono stati completati prima della fine del progetto;
+	\item \textbf{QPR07 Rischi non previsti}: non dovranno verificarsi rischi non previsti che potrebbero portare rallentamenti;
+	\item \textbf{QPR08 Rispetto obiettivi}: tutti gli obiettivi dovranno essere rispettati per avere un prodotto di qualità;
+	\item \textbf{QPR09 Rispetto delle norme}: tutte le norme dovranno essere seguire, se si necessitasse di fare diversamente, le norme dovranno essere adattate.
+\end{itemize}
 
+\textbf{Metriche:}
+\begin{itemize}
+	\item \textbf{MPR04 Requisiti obbligatori};
+	\item \textbf{MPR05 Requisiti desiderabili};
+	\item \textbf{MPR06 Requisiti opzionali};
+	\item \textbf{MPR07 Rischi non previsti};
+	\item \textbf{MPR08 Obiettivi soddisfatti};
+	\item \textbf{MPR09 Norme rispettate}.
+\end{itemize}
 
+I risultati di queste metriche saranno pubblicati ed analizzati solo a progetto completato.
 
-%\subsection{Introduzione}
-%Durante lo svolgimento di questo progetto, verranno usati i processi, che permetteranno di raggiungere la soddisfazione dei criteri di qualità prefissando un continuo miglioramento. Si è scelto di usare lo \glossario{standard ISO/IEC 12207:1995} come riferimento per una \glossario{best practice} e di fare uso del \glossario{metodo PDCA}. Così facendo, è possibile garantire l'evoluzione dei processi che, attraverso l'esperienza, migliora e assicura un prodotto di qualità. Vengono di seguito esposti i parametri di qualità tollerabili e preferibili sulla base delle metriche scelte nel documento Norme di Progetto. %I parametri riguardano:
-%\begin{itemize}
-%\item Budget: per evitare differenze eccessive rispetto al costo preventivato si seguiranno le metriche di seguito descritte;
-%\item Calendario: assicurare la pianificazione adatta ai compiti da svolgere.
-%\end{itemize}
+\subsubsection{PROC03 Redazione documenti}
 
-%\subsection{Metriche di budget}
-%\label{sub:metr_bud}
-%Si cercherà di rispettare a pieno il budget preventivato, tuttavia ci si è posto come valore tollerabile una differenza di ${\pm 5\%}$ il totale stabilito.
+%TODO
 
-%\subsection{Metriche di pianificazione}
-%\label{sub: metr_pianif}
-%Nella \glossario{pianificazione} descritta nel Piano di Progetto si è tenuto conto di un ampio margine per far fronte ad eventuali ritardi. Per ogni step del progetto vi sarà una pianificazione fatta a priori dove verranno stabiliti micro-processi da svolgere e le tempistiche entro cui svolgerli. Il ritardo aggiuntivo per ogni compito assegnato non deve essere superiore a 4 giorni. 
+\subsubsection{PROC04 Verifica}
+
+%TODO
+
+\subsection{Tabella qualità di processo}
+
+%TODO
 
 \end{document}
