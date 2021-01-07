@@ -1,6 +1,6 @@
 \newpage
 \subsection{UC3 - Modifica Metadati}
-\label{sub:uc2}
+\label{subsec:uc3}
 
 
 \begin{itemize}
@@ -8,14 +8,24 @@
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Nel programma è stato importato un dataset dotato di metatag per ogni
-                                    colonna dei dati.
+    \item \textbf{Precondizione}:   Nel programma è stato importato un dataset dotato di metatag 
+                                    per ogni colonna dei dati.
 
     \item \textbf{Postcondizione}:  Vengono aggiornati i metadati del dataset.
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente decide se effettuare modifiche ai metatag e le effettua.
+			\item L'utente conferma le modifiche premendo il pulsante di conferma.
         \end{enumerate}
+    %TODO: Riprisino è comunque un aggiornamento giusto? Dovremmo mettere un'estensione?
+    \item \textbf{Scenario alternativo}:
+		\begin{enumerate}
+			\item L'utente decide di annullare le modifiche.
+			\item Vengono ripristinati i metatag precedenti alla modifica.
+        \end{enumerate}
+
+    
+    
 
 \end{itemize}
