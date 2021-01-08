@@ -2,6 +2,7 @@
 \subsection{UC5 - Visualizzazione Errore}
 \label{subsec:uc5}
 
+%TODO: Cambiare numerazione? Al momento ha senso da una parte ma non è giustificata qui visto che sottocasi non sono veri e propri.
 
 \subsubsection{UC5.1.1 - Visualizzazione errore inserimento dati da file}
 \label{subsec:uc5.1.1}
@@ -38,3 +39,48 @@
 
 \end{itemize}
 
+
+
+\subsubsection{UC5.2.1 - Visualizzazione errore tipo dati per un grafo Force Field}
+\label{subsec:uc5.1.2}
+\begin{itemize}
+    \item \textbf{Descrizione}: Dopo aver caricato un dataset non contentente campi categorici, 
+                                l’utente seleziona la costruzione di “Force Field” ma 
+                                la sua rappresentazione risulta impossibile.
+
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   è stato caricato un dataset che non contentiene campi categorici e l’utente 
+                                    seleziona la costruzione di una visualizzazione “Force Field”.
+
+    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore.
+    
+    \item \textbf{Scenario Principale}: 
+    \begin{enumerate}
+        \item L'utente seleziona la creazione di una visualizzazione per un "Force Field".
+        \item L'utente viene informato dell'impossibilità di creare il grafico mediante un messaggio pop-up.
+    \end{enumerate}
+\end{itemize}
+
+
+
+\subsubsection{UC5.2.3 - Visualizzazione errore tipo dati per una Heat Map}
+\label{subsec:uc5.1.2}
+\begin{itemize}
+    \item \textbf{Descrizione}: Dopo aver caricato un dataset non contentente campi numerici, 
+                                l’utente seleziona la costruzione di una "Heat Map" ma 
+                                la sua rappresentazione risulta impossibile.
+
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   è stato caricato un dataset che non contentiene campi numerici e l’utente 
+                                    seleziona la costruzione di una visualizzazione di una "Heat Map".
+
+    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore.
+    
+    \item \textbf{Scenario Principale}: 
+    \begin{enumerate}
+        \item L'utente seleziona la creazione di una visualizzazione per una "Heat Map".
+        \item L'utente viene informato dell'impossibilità di creare il grafico mediante un messaggio pop-up.
+    \end{enumerate}
+\end{itemize}
