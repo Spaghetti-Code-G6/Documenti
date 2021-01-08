@@ -4,43 +4,19 @@
 
 \subsection{Scopo}
 In questa sezione saranno presentati gli obiettivi di qualità che si vogliono raggiungere, dei processi implementati e dei loro prodotti, così da rendere efficace la valutazione della qualità e di selezionare le migliori metriche.
-La qualità di un prodotto è fortemente influenzata dai processi utilizzati, per questo motivo si è deciso di usare come riferimento lo standard ISO/IEC 15504 (SPICE) per la qualità di processo e il metodo PDCA (o ciclo di Deming) per il miglioramento continuo della qualità durante tutto l'arco del progetto.
+La qualità di un prodotto è fortemente influenzata dai processi utilizzati, per questo motivo si è deciso di usare come riferimento lo standard ISO/IEC 15504 (SPICE) per la qualità di processo e il metodo PDCA (o ciclo di Deming) per il miglioramento continuo della qualità durante tutto l'arco del progetto.\\
+Saranno adottati i seguenti codici identificativi:\par
 
-\subsection{Nomenclatura obiettivi di qualità e metriche}
-In questa sezione si riassumono brevemente le nomenclature che sono state utilizzate, per una spiegazione più approfondita si rimanda alle Norme di Progetto.
+\begin{center}
+	      \textbf{QPR[Qualità di processo]ID[Indice]N[Nome]}\\
+		\textbf{MPR[Metrica di processo]ID[Indice]N[Nome]}
+\end{center}
 
-\begin{itemize}
-	\item \textbf{Obiettivi}:
-	      \begin{center}
-		      \textbf{QPR[ID] [Nome]}
-	      \end{center}
-	      \subitem \textbf{QPR}: sigla identificativa per "Qualità di processo";
-	      \subitem \textbf{ID}: numero identificativo a due cifre;
-	      \subitem \textbf{Nome}: parola che designa il processo.
-
-	\item \textbf{Metriche}:
-	      \begin{center}
-		      \textbf{MPR[ID] [Nome]}
-	      \end{center}
-	      \subitem \textbf{QPR}: sigla identificativa per "Metrica di processo";
-	      \subitem \textbf{ID}: numero identificativo a due cifre;
-	      \subitem \textbf{Nome}: parola che designa la metrica.
-\end{itemize}
-
-\subsection{Processi}
-
-\subsubsection{Nomenclatura processi}
 Per ogni processo sono elencate le sue funzioni principali, gli obiettivi prefissati per ottenere la qualità desiderata e le metriche adottate per raggiungere quell’obiettivo.
 
-\begin{itemize}
-	\item \textbf{Processi}:
-	      \begin{center}
-		      \textbf{PROC[ID] [Nome]}
-	      \end{center}
-	      \subitem \textbf{QPR}: sigla identificativa per "Processo";
-	      \subitem \textbf{ID}: numero identificativo a due cifre;
-	      \subitem \textbf{Nome}: parola che designa il processo.
-\end{itemize}
+\begin{center}
+	\textbf{PROC[Processo]ID[Indice]N [Nome]}
+\end{center}
 
 \subsubsection{PROC01 Gestione progetto}
 Lo scopo di questo macro-processo è quello di pianificare ed organizzare il lavoro da svolgere per adempiere ai requisiti trovati. L'esito dell'intero progetto è dipendente da questo processo, che deve strutturare il way of working del gruppo.
@@ -100,12 +76,20 @@ Questo macro-processo si riferisce ad ogni tipo di analisi presente in questo pr
 \begin{itemize}
 	\item \textbf{MPR04 Requisiti obbligatori};
 	\item \textbf{MPR05 Requisiti non obbligatori desiderabili};
-	\item \textbf{MPR06 Rischi non previsti};
-	\item \textbf{MPR07 Obiettivi soddisfatti};
-	\item \textbf{MPR08 Norme rispettate}.
+	\item \textbf{MPR06 Obiettivi soddisfatti};
+	\item \textbf{MPR07 Norme rispettate}.
 \end{itemize}
 
-I risultati di queste metriche saranno pubblicati ed analizzati solo a progetto completato.
+Nello specifico il calcolo usato per verificare la percentuale di requisiti soddisfatti sarà il secuente: \par
+\begin{center}
+	$C = \frac{N_{fni}}{N_{fi}} * 100$
+\end{center}
+
+dove
+\begin{itemize}
+\item N\textsubscript{FnI} è il numero di funzionalità non implementate ;
+\item N\textsubscript{FI} è il numero di funzionalità implementate ;
+\end{itemize}
 
 \subsubsection{PROC03 Documentazione}
 Questo processo ha lo scopo di produrre documenti che riportino le scelte effettuate, gli strumenti utilizzati e le modifiche attuate durante l'intero progetto.
@@ -123,12 +107,6 @@ Questo processo ha lo scopo di produrre documenti che riportino le scelte effett
 \begin{itemize}
 	\item \textbf{QPR10 Ciclo di vita dei documenti}: i documenti devono rispettare ogni fase del loro ciclo di vita e le scadenze prefissate;
 	\item \textbf{QPR11 Leggibilità}: i documenti devono poter essere letti e capiti da chiunque abbia almeno una licenza media.
-\end{itemize}
-
-\textbf{Metriche:}
-\smallbreak
-\begin{itemize}
-	\item \textbf{MPR9 Indice di Gulpease};
 \end{itemize}
 
 \subsubsection{PROC04 Verifica}
@@ -152,12 +130,11 @@ Questo processo ha lo scopo di valutare i prodotti per stabilire se presentano e
 \textbf{Metriche:}
 \smallbreak
 \begin{itemize}
-	\item \textbf{MPR10 Frequenza di controllo};
+	\item \textbf{MPR8 Frequenza di controllo};
 \end{itemize}
 
 \subsection{Tabella qualità di processo}
-La tabella seguente indica gli obiettivi di qualità che i processi devono possedere.
-
+La seguente tabella indica gli obiettivi di qualità che i processi devono possedere.\\
 Ogni obiettivo di qualità è indicato con:
 \smallbreak
 \begin{itemize}
@@ -169,56 +146,29 @@ Ogni obiettivo di qualità è indicato con:
 
 \begin{table}[!ht]
 	\centering
-	\begin{tabular}{|l|l|c|c|}
+	\begin{tabular}{|p{3.5cm}|p{3.5cm}|c|c|}
 		\hline
 		\rowcolor{lightgray}
-		\textbf{Obiettivo}                          & \textbf{Metrica}                & \textbf{Accettabile} & \textbf{Preferibile} \\
+		\textbf{Obiettivo}  & \textbf{Metrica} & \textbf{Accettabile} & \textbf{Preferibile} \\
 		\hline
-		QPR01 Scadenze                              & MPR02 Varianza della pianificazione  & 4 giorni                 & 0 giorni               \\
+		QPR01 Scadenze & MPR02 Varianza della pianificazione  & 4 giorni  & 0 giorni   \\
 		\hline
-		QPR02 Budget                                & MPR03 Varianza dei costi   &     $\pm$5\%            & 0\%                \\
+		QPR02 Budget   & MPR03 Varianza dei costi   &  $\pm$5\%    & 0\%  \\
 		\hline
-		QPR03 Miglioramento                         & MPR01 Rispetto degli standard   & xx\%                 & yyy\%                \\
+		QPR05 Adempimento requisiti obbligatori  & MPR04 Requisiti obbligatori     & 100\%  & 100\%   \\
 		\hline
-		QPR04 Versionamento                         & -   & -                & -                \\
+		QPR06 Adempimento requisiti non obbligatori & MPR05 Requisiti non obbligatori & 75\%   & 0\%     \\
 		\hline
-		QPR05 Adem. requisiti obbligatori     & MPR04 Requisiti obbligatori     & 100\%                 & 100\%                \\
+		QPR08 Rispetto obiettivi   & MPR07 Obiettivi soddisfatti     & 100\%   & 100\%   \\
 		\hline
-		QPR06 Adem. requisiti non obbligatori & MPR05 Requisiti non obbligatori & 0\%                 & 60\%                \\
+		QPR09 Rispetto delle norme  & MPR08 Norme rispettate   & 100\%  & 100\%   \\
 		\hline
-		QPR07 Rischi non previsti                   & MPR06 Rischi non previsti       & 0                 & 0                \\
-		\hline
-		QPR08 Rispetto obiettivi                    & MPR07 Obiettivi soddisfatti     & 100\%                 & 100\%                \\
-		\hline
-		QPR09 Rispetto delle norme                  & MPR08 Norme rispettate          & 100\%                & 100\%                \\
-		\hline
-		QPR10 Ciclo di vita dei documenti           & -   & -                 & -                \\
-		\hline
-		QPR11 Leggibilità                           & MPR09 Indice di Gulpease        & 60                   & 80                   \\
-		\hline
-		QPR12 Verifica costante                     & MPR10 Frequenza di controllo    & Ad ogni Milestone    & Ad ogni modifica     \\
+		QPR12 Verifica costante   & MPR10 Frequenza di controllo    & Ad ogni Milestone    & Ad ogni modifica     \\
 		\hline
 	\end{tabular}
-	\caption{Qualità di processo}
+	\caption{Metriche qualità di processo}
 \end{table}
 
 \end{document}
-
-
-MPR01 Rispetto degli standard
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -4,10 +4,11 @@
 
 Per garantire la qualità del prodotto il gruppo ha deciso di fare riferimento allo \glossario{standard
 ISO/IEC 9126}, il quale regolamenta le modalità con cui produrre un software di buona qualità. Di questo standard il gruppo sceglie di seguire alcune delle metriche esposte, e sceglie di stabilirne altre da seguire per rendere il prodotto qualitativamente valido; qui di seguito vengono elencate. \\
-Le metriche adottate verranno identificate tramite dei codici identificativi, nello specifico:\par
+Saranno adottati i seguenti codici identificativi:\par
 
 \begin{center}
-	\textbf{M[Metrica]QP[Qualità Prodotto]ID[Indice]}
+	\textbf{M[Metrica]QP[Qualità Prodotto]ID[Indice]} \\
+	\textbf{O[Obiettivo]QP[Qualità Prodotto]ID[Indice]}
 \end{center}
 
 \subsection{Modello di qualità}
@@ -40,63 +41,33 @@ Il prodotto che SpaghettiCode intende rilasciare deve essere:\par
 	\end{itemize}
 \end{enumerate}
 
-\emph{Poichè è ancora prematuro definire delle metriche relative al codice scritto, il gruppo si riserva di integrarle in futuro.}
+\subsection{Prodotti}
+Per prodotto si intende ciò che è concretamente utilizzabile, consultabile o eseguibile. In questo caso si parla dei documenti e del software.
 
-\subsubsection{MQP01 - Completezza dell'implementazione}
-Si intende la percentuale di requisiti implementati rispetto a quelli dichiarati .
+\paragraph{Documenti}
+Come trattato nel precedente capitolo i documenti devono essere letti e capiti da chiunque abbia almeno la licenza media.\\
+Gli obiettivi per un documento sono quindi:
 
-\begin{center}
-	$C = \frac{N_{fni}}{N_{fi}} * 100$
-\end{center}
-
-dove
+\textbf{Obiettivi:}
+\smallbreak
 \begin{itemize}
-\item N\textsubscript{FnI} è il numero di funzionalità non implementate ;
-\item N\textsubscript{FI} è il numero di funzionalità implementate ;
+\item \textbf{OQP01 Leggibilità del testo}: i documenti devono essere letti in modo fluido evitando periodi troppo lunghi
+\item \textbf{OQP02 Correttezza ortografica}: i documenti non prevono persentare errori
 \end{itemize}
 
-Per quanto riguarda i requisiti obbligatori il gruppo intende implementare il 100\% dei requisiti concordati. \\
-Per quanto riguarda i requisiti opzionali il gruppo intende implementare il 100\% dei requisiti concordati, ma si pone come soglia di accettazione l’80\%. 
-
-\subsubsection{MQP02 - Densità di errori}
-La densità di errori è l'abilità del prodotto di resistere a malfunzionamenti. Si calcola così:\par
-
-\begin{center}
-	$M = \frac{N_{er}}{N_{te}} * 100$
-\end{center}
-
-dove
+\textbf{Metriche:}
+\smallbreak
 \begin{itemize}
-\item N\textsubscript{ER} indica il numero di errori rilevati durante il testing;
-\item N\textsubscript{TE} indica il numero di test eseguiti;
+	\item \textbf{MQP01 Indice di Gulpease};
+	\item \textbf{MQP02 Errori ortografici};
 \end{itemize}
 
-Il valore preferibile è lo 0\%; il valore accettabile è inferiore al 10\%.
-
-%\subsubsection{Metriche di usabilità}
-%Facilità di utilizzo: è la facilità con cui l’utente raggiunge ciò che vuole; viene rappresentata tramite il numero di click necessari per arrivare al contenuto desiderato.\\
-%\begin{itemize}
-%\item misurazione: click per raggiungere l'obiettivo;
-%\item valore preferibile: inferiore a 6;
-%\item valore accettabile: inferiore a 10;
-%\end{itemize}
-
-\subsubsection{MQP03 - Qualità dei documenti}
-
-Tutti i documenti devono essere leggibili e comprensibili, e per renderli tali devono essere corretti dal punto di vista lessicografico, grammaticale e semantico.\par
-Per misurare la leggibilità dei documenti si è deciso di usare l’indice di Gulpease. L'Indice Gulpease è un indice di leggibilità di un testo, è tarato sulla lingua italiana, e considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.\par
+Per verificare questi requisiti si farà ricorso all’indice di Gulpease. L'Indice Gulpease è un indice di leggibilità di un testo, è tarato sulla lingua italiana, e considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.\\
 La formula è la seguente:\par
-
 \begin{center}
 	$G = 89\ +\ \frac{300 * (numero\ di\ frasi) - 10 * (numero\ di\ lettere)}{numero\ di\ parole} $
 \end{center}
-
-
-\begin{itemize}
-\item QM-PROD-1 INDICE DI GULPEASE;
-\item QM-PROD-2 Correttezza ortografica.
-\end{itemize}
-
+Come descritto nella seguente tabella, ci aspettiamo che i documenti siano entro uno specifico range di valori, e che siano correttezza, quindi che la quantità di errori presenti sia 0. \par
 
 \begin{table}[!ht]
 \centering
@@ -105,12 +76,96 @@ La formula è la seguente:\par
 		\rowcolor{lightgray}
 		\textbf{ID metrica} & \textbf{Valore preferibile} & \textbf{Valore accettabile} \\
 		\hline 
-		QM-PROD-1 (GULP) & \(\ge 80\) & \(\ge 60\) \\
+		MQP01 Indice di Gulpease & \(\ge 80\) & \(\ge 60\) \\
  		\hline
-		QM-PROD-2 (CORT) & \(= 0\) & \(= 0\) \\
+		MQP02 Errori ortografici & \(= 0\) & \(= 0\) \\
 		\hline
 \end{tabular}
 \caption{Indici di qualità per le metriche di comprensione del prodotto}
+\end{table}
+
+\paragraph{Software}
+Il software rilasciato deve essere di qualità, e per renderlo tale si farà riferimento al \emph{Modello di qualità}. \\
+Di seguito presentiamo alcune delle metriche che intendiamo adottare. \\
+\emph{Questo paragrafo verrà ampliato in futuro, in quanto attualmente è ancora prematuro definire delle metriche più complete.}
+
+\smallbreak
+\textbf{Obiettivi:}
+\smallbreak
+\begin{itemize}
+	\item \textbf{OQP03 Assenza di bug}: il prodotto non deve presentare bug;
+	\item \textbf{OQP04 Assenza di errori}: il prodotto deve presentare meno errori possibile;
+	\item \textbf{OQP05 Assenza di file senza intestazione}: non ci devono essere file senza intestazione;
+	\item \textbf{OQP05 Usabilità del prodotto}: il prodotto deve essere facilmente usabile;
+\end{itemize}
+
+\textbf{Metriche:}
+\smallbreak
+\begin{itemize}
+	\item \textbf{MQP03 Presenza di bug};
+	\item \textbf{MQP04 Densità di errori};
+	\item \textbf{MQP05 File senza intestazione};
+	\item \textbf{MQP06 Usabilità del prodotto};
+\end{itemize}
+
+
+\paragraph{MQP04 - Densità di errori}
+La densità di errori è l'abilità del prodotto di resistere a malfunzionamenti. Si calcola così:\par
+
+\begin{center}
+$M = \frac{N_{er}}{N_{te}} * 100$
+\end{center}
+
+dove
+\smallbreak
+\begin{itemize}
+\item N\textsubscript{ER} indica il numero di errori rilevati durante il testing;
+\item N\textsubscript{TE} indica il numero di test effettuati;
+\end{itemize}
+
+Il valore preferibile è lo 0\%; il valore accettabile è inferiore al 10\%.
+
+\paragraph{MQP06 Usabilità del prodotto}
+L'usabilità del prodotto è la facilità con cui l’utente raggiunge ciò che vuole; viene rappresentata tramite il numero di click necessari per arrivare al contenuto desiderato, infatti un software poco annidato è più usabile per l'utente medio.
+\smallbreak
+\begin{itemize}
+\item misurazione: quantità di click per raggiungere l'obiettivo;
+\item valore preferibile: inferiore a 6;
+\item valore accettabile: inferiore a 10;
+\end{itemize}
+
+\subsection{Tabella qualità di prodotto}
+La seguente tabella indica gli obiettivi di qualità che i prodotti devono possedere.\\
+Ogni obiettivo di qualità è indicato con:
+\smallbreak
+\begin{itemize}
+	\item \textbf{Obiettivo}: contrasegnato dal suo codice identificativo;
+	\item \textbf{Metrica}: contrasegnato dal suo codice identificativo, indica come sarà garantita la qualità dell'obiettivo;
+	\item \textbf{Accettabile}: indica il valore sotto il quale non sarà garantita la qualità;
+	\item \textbf{Preferibile}: indica il valore a cui si punta per avere la massima qualità;
+\end{itemize}
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{|l|l|c|c|}
+		\hline
+		\rowcolor{lightgray}
+	\textbf{Obiettivo}  & \textbf{Metrica} & \textbf{Accettabile} & \textbf{Preferibile} \\
+		\hline
+		OQP01 Leggibilità del testo & MQP01 Indice di Gulpease  & \(\ge 60\)  & \(\ge 80\)   \\
+		\hline
+		OQP02 Correttezza ortografica   & MQP02 Errori ortografici   &     0    &  0  \\
+		\hline
+		OQP03 Assenza di bug   & MQP03 Presenza di bug    & 0  & 0   \\
+		\hline
+		OQP04 Assenza di errori & MQP04 Densità di errori & 10\%     & 0\%     \\
+		\hline
+		OQP05 Assenza file senza intestazione  & MQP05 File senza intestazione     & 0   & 0   \\
+		\hline
+		OQP06 Usabilità del prodotto  & MQP06 Usabilità del prodotto  & \(\leq10\) click  & \(\leq6\) click   \\
+		\hline
+	\end{tabular}
+	\caption{Metriche qualità di prodotto}
 \end{table}
 
 

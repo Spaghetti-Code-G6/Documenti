@@ -1,11 +1,39 @@
 \documentclass[../piano_di_qualifica.tex]{subfiles}
 \begin{document}
+\subsection{Test fase di analisi}
+Qui di seguito verranno presentati i resoconti relativi ai test effettuati nella fase di analisi. \par
 
-\subsection{Esiti verifica indici di Gulpease}
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{|p{3.5cm}|p{3.5cm}|l|c|c|}
+		\hline
+		\rowcolor{lightgray}
+		\textbf{Obiettivo}  & \textbf{Metrica} & \textbf{Risultato} & \textbf{Accettabile} & \textbf{Esito} \\
+		\hline
+		Ritardo maturato & MPR02 Varianza pianificazione  & 2,5 giorni  & \(\leq 4\) & Superato  \\
+		\hline
+		Budget intaccato   & MPR03 Varianza costi   &  Non è stato intaccato il budget totale    &  0\%  &  Superato\\
+		\hline
+		Rispetto obiettivi   & MPR07 Obiettivi soddisfatti     & 100\%   & 100\% & Superato  \\
+		\hline
+		QPR09 Rispetto delle norme  & MPR08 Norme rispettate   & 100\%  & 100\%   & Superato\\
+		\hline
+		Verifica documenti   & MPR10 Frequenza controllo    & Ogni Milestone e ogni modifica   & Ogni mileston    & Superato \\
+		\hline
+		Leggibilità testo & MQP01 Indice di Gulpease  & inserire la media  & \(\ge 60\)  & Superato \\
+		\hline
+		Correttezza ortografica   & MQP02 Errori ortografici   &     0    &  0 & Superato  \\
+		\hline
+	\end{tabular}
+	\caption{Metriche qualità di processo}
+\end{table}
+
+
+\paragraph{Esiti verifica indici di Gulpease}
 \label{sub:verif_gul}
 
 \begin{center}
-	\begin{longtable}{|p{4.5cm}|p{2.5cm}|p{3cm}|}
+	\begin{longtable}{|l|c|c|}
 		\hline
 		\rowcolor{lightgray}
             \textbf{Documento} & \textbf{Risultato} &  \textbf{Esito} \\
@@ -37,40 +65,5 @@
 \end{longtable}
 \end{center}
 
-\subsection{Esiti verifica pianificazione}
-\label{sub:verif_pianif}
-
-\begin{table}[!ht]
-\centering
-\begin{tabular}{|c|c|c|}
-		\hline
-		\rowcolor{lightgray}
-		\textbf{Documento} & \textbf{Ritardo nella conclusione} & \textbf{Valore accettabile} \\
-		\hline 
-		Piano di Progetto & 3  & \(\leq 4\) \\
- 		\hline
-		Analisi dei Requisiti & 4 &\(\leq 4\)\\
-		\hline
-		Glossario & 5 & \(\leq 4\) \\
-		\hline
-		Piano di Qualifica & 4 & \(\leq 4\) \\
-		\hline
-		Verbali & 0 & \(\leq 4\) \\
-		\hline
-		Norme di Progetto & 2 & \(\leq 4\) \\
-		\hline
-		Studio di fattibilità & 0 & \(\leq 4\)\\
-		\hline
-		Totale media & 2,5 & \(\leq 4\) \\
-		\hline
-\end{tabular}
-\caption{Indici di qualità per le metriche di comprensione del prodotto}
-\end{table}
-
-Il ritardo medio nella produzione dei documenti è stato inferiore a quello già preventivato in fase di pianificazione, quindi la verifica ha esito positivo.
-
-\subsection{Esiti monitoraggio risorse}
-\label{sub:verif_monit}
-Questa fase di analisi non è rendicontata nel bilancio finale, quindi il budget non è stato intaccato. Inoltre sono stati rispettati i costi preventivati quindi anche il parziale non ha subito modifiche.
 
 \end{document}
