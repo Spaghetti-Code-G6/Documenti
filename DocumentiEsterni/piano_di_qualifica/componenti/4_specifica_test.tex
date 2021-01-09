@@ -1,0 +1,71 @@
+\documentclass[../piano_di_qualifica.tex]{subfiles}
+
+\begin{document}
+
+Per garantire la qualità di prodotto è necessario stabilire delle metriche per l’esecuzione e il soddisfacimento dei test. Tuttavia in questa fase di del progetto è prematuro stabilire delle metriche precise e complete.
+
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\rowcolor{lightgray}
+		\textbf{Metrica} & \textbf{Nome}                          & \textbf{Valore accettabile} & \textbf{Valore preferibile} \\
+		\hline
+		MTS1             & Test eseguiti in rapporto ai requisiti & 100\%                       & 100\%                       \\
+		\hline
+		MTS2             & Percentuale test passati               & 85\%                        & 100\%                       \\
+		\hline
+	\end{tabular}
+	\caption{Metriche dei test}
+\end{table}
+
+\subsection{Test di accettazione}%
+\label{sub:test_accett}
+Sono test che dimostrano che il prodotto realizzato soddisfa i requisiti concordati con il proponente.
+Questi test si dividono in test di sistema, test di integrazione e test di unità.
+
+\subsection{Test di sistema}%
+\label{sub:test_sist}
+Per assicurare che il progetto rispetti i requisiti identificati nel documento Analisi dei Requisiti verranno eseguiti i seguenti test. Attualmente questo documento deve considerarsi incompleto, altri test verranno preventivati in futuro. \par
+
+\begin{center}
+	\begin{longtable}{|c|c|p{8.5cm}|c|}
+		\hline
+		\rowcolor{lightgray}
+		{\textbf{Codice}}                & {\textbf{Riferimento}} & {\textbf{Descrizione}}                                                                                            & {\textbf{implementazione}} \\
+		\hline
+		TS0                              & RF01                   & Si verifichi che l'utente deve poter inserire dati nel sistema                                                    & NI                         \\ \hline
+		TS1                              & RFO1.1                 & Si verifichi che l'utente possa importare dati tramite file .csv                                                  & NI                         \\ \hline
+		TS2                              & RF01.2                 & Si verifichi che l'utente possa importare dati tramite un database esterno                                        & NI                         \\ \hline
+		TS3                              & RF04                   & Si verifichi che l'utente possa scegliere qualche grafico visualizzare                                            & NI                         \\ \hline
+		TS4                              & RF04.1                 & Si verifichi che l'utente possa selezionare il grafico Scatter Plot Matrix                                        & NI                         \\ \hline
+		TS5                              & RF04.2                 & Si verifichi che l'utente possa selezionare il grafico Force Field                                                & NI                         \\ \hline
+		TS6                              & RF04.3                 & Si verifichi che l'utente possa selezionare il grafico Heat Map                                                   & NI                         \\ \hline
+		TS7                              & RF04.4                 & Si verifichi che l'utente possa selezionare il grafico Proiezione multi-asse                                      & NI                         \\ \hline
+		TS8                              & RFO1                   & Si verifichi che l'utente possa importare dati tramite file .csv                                                  & NI                         \\ \hline
+		TS9                              & RFD3                   & Si verifichi che l'utente possa modificare metadati precedentemente inseriti                                      & NI                         \\ \hline
+		TS10                             & RFD5                   & Si verifichi che l'utente possa modificare il grafico che sta visualizzando                                       & NI                         \\ \hline
+		TS11                             & RDF5.2.1               & Si verifichi che l'utente possa spostare i nodi del grafico Force Field                                           & NI                         \\ \hline
+		TS12                             & RDF5.2.2               & Si verifichi che l'utente possa modificare la tipologia di distanza utilizzata per il calcolo della matrice delle
+		distanze nel grafico Force Field & NI                                                                                                                                                                      \\ \hline
+		TS13                             & RDF5.3.1               & Si verifichi che l'utente possa modificare l'intervallo di colori utilizzato nel grafico Heat Map                 & NI                         \\ \hline
+		TS14                             & RDF6                   & Si verifichi che l'utente venga notificato quando si verifica un errore                                           & NI                         \\
+		\hline
+		\rowcolor{white}
+		\caption{Tabella contenente un riepilogo dei test di sistema}
+	\end{longtable}
+
+\end{center}
+
+
+\subsection{Test di integrazione}%
+\label{sub:test_int}
+Le specifiche di questi test verranno redatte successivamente.
+
+\subsection{Test di unità}%
+\label{sub:test_unit}
+Le specifiche di questi test verranno redatte successivamente.
+
+
+\end{document}
