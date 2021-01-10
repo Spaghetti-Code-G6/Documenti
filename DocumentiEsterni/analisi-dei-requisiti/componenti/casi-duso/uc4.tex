@@ -12,7 +12,7 @@
 
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente modifica la visualizzazione del grafico precedentemente costruito;
+    \item \textbf{Descrizione}: L’utente modifica il grafico attuale del quale viene fornita la visualizzazione aggiornata.
 	
     \item \textbf{Attore primario}: Utente.
     
@@ -22,14 +22,15 @@
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente modifica i parametri di visualizzazione interagendo con gli strumenti resi disponbili dal grafico che sta visualizzando;
-            \item La visualizzazione del grafico viene aggiornata in accordo con i parametri seleziona.
+            \item L'utente modifica i parametri di visualizzazione, interagendo con gli strumenti resi disponbili dal grafico che sta visualizzando,
+                    dal menu di modifica.
+            \item La visualizzazione del grafico viene aggiornata in accordo con i parametri modificati.
         \end{enumerate}
 
     \item \textbf{Scenario alternativo}:
         \begin{enumerate}
-            \item L'utente decide di annullare le modifiche effettuate (UC4.5) al posto di confermarle.   
-            \item Le modifiche vengono scartate e viene ripristinata la visualizzazione del grafico prima delle modifiche.
+            \item L'utente seleziona la voce "Annulla" dal menù di modifica.
+            \item Le modifiche vengono scartate e viene ripristinata la visualizzazione del grafico precedente.  (UC4.8)
         \end{enumerate}
     
 \end{itemize}
@@ -38,42 +39,29 @@
 \subsubsection{UC4.1 Modifica grafico}
 \label{ssub:uc4.1}
 
-%Immagine dello use case.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4_1.pdf}
-    \caption{Diagramma rappresentante UC4.1}
-    \label{fig:UC4}
-\end{figure}
-
-%Lista che lo definisce
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente effettua modifica specifiche al tipo di grafico precedentemente costruito e visualizzato, 
                                 su parametri quindi validi solo per tale visualizzazone, e ne vede le modifiche.
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Nel programma è stato importato un dataset dotato di metatag per ogni
-                                    colonna dei dati ed è stato costruito un grafico di una tipologia scelta dall'utente.
+    \item \textbf{Precondizione}:   È stato costruito correttamente un grafico. (UC2 \refSec{sub:uc2})
 
     \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
 
-	\item \textbf{Scenario principale}:
-		\begin{enumerate}
-			\item L'utente decide di modificare il grafico corrente e di modificare paraemtri specifici alla sua visualizzazione.
-			\item L'utente effettua le modifiche desiderate tra quelle rese possibili.
-        \end{enumerate}
     \item \textbf{Generalizzazioni}:
         \begin{itemize}
             \item Modifica Scatterplot Matrix (UC4.2 \refSec{ssub:uc4.2})
-            \item Modifica Force Field (UC4.3 \refSec{ssub:uc4.3})
-            \item Modifica Heat Map (UC4.4 \refSec{ssub:uc4.4})
-            \item Modifica Proiezione Lineare Multiasse (UC4.5 \refSec{ssub:uc4.5})
+            \item Modifica a grafico con matrice delle distanze (UC4.3 \refSec{ssub:uc4.3})
+            \begin{itemize}
+                \item Modifica Force Field (UC4.4 \refSec{ssub:uc4.4})
+                \item Modifica Distance Map (UC4.5 \refSec{ssub:uc4.5})
+             \end{itemize}
+            \item Modifica Heat Map (UC4.6 \refSec{ssub:uc4.6})
+            \item Modifica Proiezione Lineare Multi Asse (UC4.7 \refSec{ssub:uc4.7})
         \end{itemize}
-
 \end{itemize}
 
-\newpage
 \subsubsection{UC4.2 Modifica Scatterplot Matrix}
 \label{ssub:uc4.2}
 
