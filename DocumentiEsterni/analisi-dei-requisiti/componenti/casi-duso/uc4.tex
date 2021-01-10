@@ -214,19 +214,31 @@
 % TODO: Insert UC4.3 image
 \begin{figure}[h]
     \centering
-    % \includegraphics[width=0.6  \textwidth]{componenti/casi-duso/diagrammi/UC4_3.pdf}
+    \includegraphics[width=0.8  \textwidth]{componenti/casi-duso/diagrammi/UC4_3.pdf}
     \caption{Diagramma rappresentante UC4.3}
     \label{fig:UC4.3}
 \end{figure}
 
 \begin{itemize}
-    \item \textbf{Descrizione}:     
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
+    \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione di un grafico che sfrutta la matrice delle distanze
+                                nella sua costruzione, Force Field o Distance Map.
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Force Field o una Distance Map. 
+    \item \textbf{Postcondizione}: Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
     \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item   L’utente apporta le modifiche desiderate tra quelle offerte dal grafico con matrice
+                delle distanze e quelle specifiche al tipo di grafico che la visualizzazione attuale rappresenta.
+    \end{enumerate}
+    \item \textbf{Generalizzazioni}:
     \begin{itemize}
-        \item L'utente
+        \item Modifica Force Field. (UC4.4)
+        \item Modifica Distance Map. (UC4.5)
+    \end{itemize}
+    
+    \item \textbf{Inclusioni}:
+    \begin{itemize} 
+        \item La \emph{Modifica delle dimensioni considerate} (UC4.3.5) include la modifica dei metadati di visibilità. (UC3.2)
     \end{itemize}
 \end{itemize}
 
