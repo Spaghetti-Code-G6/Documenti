@@ -23,25 +23,39 @@
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-                \item L'utente sceglie una dimensione da modificare.
-                \item L'utente esegue le modifiche che preferisce tra quelle rese possibili.
-                \item L'utente valida le modifiche apportate selezionando un pulsante di "conferma"
+                \item L'utente sceglie una dimensione da modificare. (UC3.1)
+                \item L'utente esegue le modifiche che preferisce tra quelle rese possibili. (UC3.2 e UC3.3)
+                \item L'utente valida le modifiche apportate selezionando un pulsante di "Conferma".
         \end{enumerate}
     
     \item \textbf{Scenario alternativo}:
 		\begin{enumerate}
-			\item L'utente decide di annullare le modifiche selezionando il pulsante "annulla".
-			\item Vengono ripristinati i metadati della dimensione precedenti alla modifica.
+			\item L'utente decide di annullare le modifiche selezionando il pulsante "Annulla". 
+			\item Vengono ripristinati i metadati della dimensione precedenti alla modifica. (UC3.4)
         \end{enumerate}
 \end{itemize}
 
 \newpage
-\subsubsection{UC3.1 - Modifica metadato di tipo}
+
+\subsubsection{UC3.1 - Scelta della dimensione da modificare}
+\label{subsubsec:uc3.2}
+
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente seleziona una dimensione della quale modificare i metadati.	
+    \item \textbf{Attore primario}: Utente.
+
+    \item \textbf{Precondizione}:   L'utente ha aperto il modulo di modifica dei metadati.
+    \item \textbf{Postcondizione}:  Viene selezionata la dimensione del dataset da modificare.
+
+	\item \textbf{Scenario principale}: L'utente sceglie una dimensione tra quelle del dataset corrente.
+\end{itemize}
+
+\subsubsection{UC3.2 - Modifica metadato di tipo}
 \label{subsubsec:uc3.1}
 
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente vuole modificare il metadato di tipo attualmente assegnato 
-                                alla dimensione del dataset da lui selezionata. Egli sceglie il nuovo valore le opzioni che gli vengono rese disponibili.
+                                alla dimensione del dataset da lui selezionata. Egli sceglie il nuovo valore tra le opzioni che gli vengono rese disponibili.
 	
     \item \textbf{Attore primario}: Utente.
     
@@ -54,7 +68,7 @@
 \end{itemize}
 
 
-\subsubsection{UC3.2 - Modifica metadato di visibilità}
+\subsubsection{UC3.3 - Modifica metadato di visibilità}
 \label{subsubsec:uc3.2}
 
 \begin{itemize}
@@ -71,4 +85,20 @@
 
 	\item \textbf{Scenario principale}: L'utente imposta la nuova impostazione di visibilità tra "visibile" e "nascosta".
 \end{itemize}
+
+
+\subsubsection{UC3.4 - Annula modifiche dei metadati}
+\label{subsubsec:uc3.4}
+
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente vuole annullare l'operazione di modifica dei metadati di una dimensione.
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   L'utente ha selezionato il modulo di modifica dei metadati e ha effettuato 
+                                    modifiche ai metadati di una dimensione da lui scelta.
+    \item \textbf{Postcondizione}:  Vengono ripristinati i metadati della dimensione scelta.
+
+	\item \textbf{Scenario principale}: L'utente seleziona l'opzione di annulamento delle modifiche.
+\end{itemize}
+
 
