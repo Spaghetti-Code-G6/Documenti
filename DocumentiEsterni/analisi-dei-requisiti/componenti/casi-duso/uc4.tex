@@ -1,6 +1,6 @@
 \newpage
-\subsection{UC4 - Modifica Grafico}
-\label{subsec:uc4}
+\subsection{UC4 - Modifica visualizzazione}
+\label{sub:uc4}
 
 %TODO: Add correct image
 \begin{figure}[h]
@@ -12,24 +12,21 @@
 
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente modifica la visualizzazione del grafico precedentemente costruito
-                                e ne vede le modifiche.
+    \item \textbf{Descrizione}: L’utente modifica la visualizzazione del grafico precedentemente costruito;
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Nel programma è stato importato un dataset dotato di metatag per ogni
-                                    colonna dei dati ed è stato costruito un grafico di una tipologia scelta dall'utente.
+    \item \textbf{Precondizione}:   È stato costruito correttamente un grafico (UC2 \refSec{sub:uc2})
 
-    \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
+    \item \textbf{Postcondizione}:  Viene visualizzato il grafico modificato con i nuovi parametri.
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente decide di modificare il grafico corrente.
-			\item L'utente effettua le modifiche desiderate tra quelle rese possibili.
-            \item L'utente conferma le modifiche apportate selezionando il pulsante di conferma.
+			\item L'utente modifica i parametri di visualizzazione interagendo con gli strumenti resi disponbili dal grafico che sta visualizzando;
+            \item La visualizzazione del grafico viene aggiornata in accordo con i parametri seleziona.
         \end{enumerate}
 
-    \item \textbf{Scenario alternativo}: % Si tratta di estensione?
+    \item \textbf{Scenario alternativo}:
         \begin{enumerate}
             \item L'utente decide di annullare le modifiche effettuate (UC4.5) al posto di confermarle.   
             \item Le modifiche vengono scartate e viene ripristinata la visualizzazione del grafico prima delle modifiche.
@@ -38,13 +35,13 @@
 \end{itemize}
 
 \newpage
-\subsection{UC4.1 Modifiche specifiche}
-\label{subsec:uc4.1}
+\subsubsection{UC4.1 Modifica grafico}
+\label{ssub:uc4.1}
 
 %Immagine dello use case.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4.1.pdf}
+    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4_1.pdf}
     \caption{Diagramma rappresentante UC4.1}
     \label{fig:UC4}
 \end{figure}
@@ -68,24 +65,23 @@
         \end{enumerate}
     \item \textbf{Generalizzazioni}:
         \begin{itemize}
-            \item Modifica Scatterplot Matrix (UC4.1.1)
-            \item Modifica Force Field (UC4.1.2)
-            \item Modifica Heat Map (UC4.1.3)
-            \item Modifica Proiezione Lineare Multiasse (UC4.1.4)
+            \item Modifica Scatterplot Matrix (UC4.2 \refSec{ssub:uc4.2})
+            \item Modifica Force Field (UC4.3 \refSec{ssub:uc4.3})
+            \item Modifica Heat Map (UC4.4 \refSec{ssub:uc4.4})
+            \item Modifica Proiezione Lineare Multiasse (UC4.5 \refSec{ssub:uc4.5})
         \end{itemize}
 
 \end{itemize}
 
-
 \newpage
-\subsection{UC4.1.1 Modifica Scatterplot Matrix}
-\label{subsec:uc4.1}
+\subsubsection{UC4.2 Modifica Scatterplot Matrix}
+\label{ssub:uc4.2}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{componenti/casi-duso/diagrammi/UC4.1.1.pdf}
-    \caption{Diagramma rappresentante UC4.1.1}
-    \label{fig:UC2}
+    \includegraphics[width=0.6\textwidth]{componenti/casi-duso/diagrammi/UC4_2.pdf}
+    \caption{Diagramma rappresentante UC4.2}
+    \label{fig:UC4.2}
 \end{figure}
 
 
@@ -106,16 +102,17 @@
 \end{itemize}
 
 
-\subsubsection{UC4.1.1.1 Selezione dimensioni del grafico}
-\label{subsec:uc4.1.1}
+\subsubsection{UC4.2.1 Modifica dimensioni della matrice}
+\label{ssub:uc4.2.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente dispone di dati con metadati assegnati e può 
-                                scegliere fino a 5 dimensioni che possono essere  visualizzate nello Scatterplot Matrix.
+    \item \textbf{Descrizione}:     L’utente dispone di dati con metadati assegnati e può 
+                                    scegliere fino a 5 dimensioni che possono essere visualizzate nello Scatter Plot 
+                                    Matrix.
 	
     \item \textbf{Attore primario}: Utente.
     
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
-    \item \textbf{Postcondizione}:  Vengono modificate le dimensioni visualizzate nei plot dello Scatterplot Matrix.
+    \item \textbf{Postcondizione}:  Vengono modificate le dimensioni visualizzate nei plot dello Scatter Plot Matrix.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
@@ -129,9 +126,48 @@
         \end{enumerate}
 \end{itemize}
 
+\subsubsection{UC4.2.2 Modifica dimensione rappresentata mediante tinta}
+\label{ssub:uc4.2.2}
+\begin{itemize}
+    
+    \item \textbf{Descrizione}:     L'utente assegna ad una dimensione un insieme di tinte per poterla rappresentare 
+                                    graficamente;
+    
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è uno Scatter Plot Matrix;
+    \item \textbf{Postcondizione}:  Viene modificata la dimensione rappresentata mediante tinta;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        
+        \item   Interagendo con l'apposito pulsante, l'utente seleziona la dimensione che desidera rappresentare 
+                mediante tinta, sostituendo così quella precedente;
 
-\subsubsection{UC4.1.1.2 Selezione di un punto nel grafico}
-\label{subsec:uc4.1.1}
+        \item   L'utente seleziona tra gli intervalli di tinte suggeriti quello con cui i diversi elementi della 
+                dimensione scelta saranno visualizzati;
+        
+        \item   La visualizzazione viene aggiornata in accordo con le modifiche effettuate.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.2.3 Modifica dimensione rappresentata mediante brillanza}
+\label{ssub:uc4.2.3}
+\begin{itemize}
+
+    \item \textbf{Descrizione}:     L'utente assegna ad una dimensione la rappresentazione mediante brillanza;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è uno Scatter Plot Matrix;
+    \item \textbf{Postcondizione}:  Viene modificata la dimensione rappresentata mediante brillanza;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item   Interagendo con l'apposito pulsante, l'utente seleziona la dimensione che desidera rappresentare 
+                mediante brillanza, sostituendo così quella precedente;
+
+        \item   La visualizzazione viene aggiornata in accordo con la modifica effettuata.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.2.4 Selezione punto}
+\label{ssub:uc4.2.4}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente seleziona un punto in uno Scatterplot della matrice per vedere come 
                                 esso viene rappresentato negli altri grafici a dispersione della visualizzazione corrente.
@@ -157,8 +193,8 @@
 \end{itemize}
 
 
-\subsubsection{UC4.1.1.3 Selezione di un insieme di punti del grafico}
-\label{subsec:uc4.1.1}
+\subsubsection{UC4.2.5 Selezione insieme di punti}
+\label{ssub:uc4.2.5}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente seleziona un insieme di punti in uno Scatterplot della matrice per vedere come 
                                 essi vengono rappresentati negli altri grafici a dispersione della visualizzazione corrente.
@@ -183,16 +219,108 @@
 
 \end{itemize}
 
+\newpage
+\subsubsection{UC4.3 Modifica a grafico con matrice delle distanze}
+\label{ssub:uc4.3}
+
+% TODO: Insert UC4.3 image
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.6  \textwidth]{componenti/casi-duso/diagrammi/UC4_3.pdf}
+    \caption{Diagramma rappresentante UC4.3}
+    \label{fig:UC4.3}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Descrizione}:     
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.3.1 Modifica a matrice delle distanze}
+\label{ssub:uc4.3.1}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.3.2 Modifica della distanza}
+\label{subsec:uc4.3.2}
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente decide di cambiare l’algoritmo usato per il calcolo delle distanze.
+
+	
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
+    \item \textbf{Postcondizione}:  Viene modificata la distanza tra i nodi del grafo nella visualizzazione.
+
+	\item \textbf{Scenario principale}:
+        \begin{enumerate}
+            \item L'utente seleziona il menu delle distanze e seleziona uno degli algoritmi presentati nel menù.
+            \item La visualizzazione modifica la distanza tra i nodi secondo l'algoritmo scelto.
+        \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.3.3 Modifica preprocessing dei dati}
+\label{ssub:uc4.3.3}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.3.4 Modifica influenza di una dimensione}
+\label{ssub:uc4.3.4}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.3.5 Modifica delle dimensioni considerate}
+\label{ssub:uc4.3.5}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
 
 \newpage
-\subsection{UC4.1.2 Modifica Force Field}
-\label{subsec:uc4.1.2}
+\subsubsection{UC4.4 Modifica Force Field}
+\label{ssub:uc4.4}
 % TODO: Create image for force field graph.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6  \textwidth]{componenti/casi-duso/diagrammi/UC4.1.2.pdf}
-    \caption{Diagramma rappresentante UC4.1.2}
-    \label{fig:UC2}
+    % \includegraphics[width=0.6  \textwidth]{componenti/casi-duso/diagrammi/UC4_4.pdf}
+    \caption{Diagramma rappresentante UC4.4}
+    \label{fig:UC4.4}
 \end{figure}
 
 
@@ -212,8 +340,8 @@
         \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.1.2.1 Modifica posizione dei nodi}
-\label{subsec:uc4.1.2.1}
+\subsubsection{UC4.4.1 Modifica posizione dei nodi}
+\label{ssub:uc4.4.1}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente vuole esplorare meglio i dati e decide di 
                                 modificare la posizione dei nodi del grafo, trascinandoli con il 
@@ -231,26 +359,53 @@
         \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.1.2.2 Modifica dell'algoritmo delle distanze}
-\label{subsec:uc4.1.2.2}
+\subsubsection{UC4.4.2 Taglio degli archi}
+\label{ssub:uc4.4.2}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide di cambiare l’algoritmo usato per il calcolo delle distanze.
-
-	
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
-    \item \textbf{Postcondizione}:  Viene modificata la distanza tra i nodi del grafo nella visualizzazione.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item L'utente seleziona il menu delle distanze e seleziona uno degli algoritmi presentati nel menù.
-            \item La visualizzazione modifica la distanza tra i nodi secondo l'algoritmo scelto.
-        \end{enumerate}
+    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia sulla distanza, gli archi corrispondenti ad una distanza che non rispetta la soglia vengono rimossi;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é un Force Field;
+    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi in base al valore di soglia impostato;
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente inserisce nell'apposito campo il valore di soglia;
+        \item Gli archi le cui coordinate nella matrice delle distanze non rispettano il valore di soglia vengono rimossi;
+        \item La visualizzazione viene aggiornata rimuovendo gli archi secondo il valore di soglia stabilito.
+    \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.1.2.3 Modifica intensità forza attrattiva tra nodi}
-\label{subsec:uc4.1.2.3}
+\subsubsection{UC4.4.3 Taglio degli archi su limite inferiore}
+\label{ssub:uc4.4.3}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia minimo sulla distanza, gli archi corrispondenti ad una distanza inferiore vengono rimossi;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é un Force Field;
+    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi associati ad una distanza inferiore al valora di soglia minimo;
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente inserisce nell'apposito campo il valore di soglia minimo;
+        \item Gli archi le cui coordinate nella matrice delle distanze corrispondono ad una distanza inferiore al valore di soglia minimo vengono rimossi;
+        \item La visualizzazione viene aggiornata rimuovendo gli archi con una distanza associata inferiore al valore di soglia minimo.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.4.4 Taglio degli archi su limite superiore}
+\label{ssub:uc4.4.4}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia massimo sulla distanza, gli archi corrispondenti ad una distanza superiore vengono rimossi;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é un Force Field;
+    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi associati ad una distanza superiore al valore di soglia massimo;
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente inserisce nell'apposito campo il valore di soglia massimo;
+        \item Gli archi le cui coordinate nella matrice delle distanze corrispondono ad una distanza superiore al valore di soglia massimo vengono rimossi;
+        \item La visualizzazione viene aggiornata rimuovendo gli archi con una distanza associata superiore al valore di soglia massimo.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.4.5 Modifica scala della forza}
+\label{ssub:uc4.4.5}
 \begin{itemize}
     \item \textbf{Descrizione}: Per poter visualizzare meglio i cluster di dati l’utente 
                                 decide di scalare la forza di attrattiva tra i nodi.
@@ -268,20 +423,207 @@
         \end{enumerate}
 \end{itemize}
 
-
-%%  _________________________
-%
-%%  Sezione della Heat Map
-%%  _________________________
 \newpage
-\subsection{UC4.1.3 Modifica Heat Map}
-\label{subsec:uc4.1.3}
+\subsubsection{UC4.5 Modifica Distance Map}
+\label{ssub:uc4.5}
+% TODO: Insert image for Distance Map
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4_5.pdf}
+    \caption{Diagramma rappresentante UC4.5}
+    \label{fig:UC4.2}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.5.1 Modifica della scala di colori}
+\label{ssub:uc4.5.1}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.5.2 Ordinamento delle righe}
+\label{ssub:uc4.5.2}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.5.3 Ordinamento delle colonne}
+\label{ssub:uc4.5.3}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.5.4 Visualizzazione etichette di riga}
+\label{ssub:uc4.5.4}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.5.5 visualizzazione etichette di colonna}
+\label{ssub:uc4.5.5}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.5.6 Modifica etichette di riga}
+\label{ssub:uc4.5.6}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{UC4.5.7 Modifica etichette di colonna}
+\label{ssub:uc4.5.7}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{itemize}
+        \item L'utente
+    \end{itemize}
+\end{itemize}
+
+\newpage
+\subsubsection{UC4.6 Modifica Proiezione Lineare Multi Asse}
+\label{ssub:uc4.6}
+% TODO: Create image for PLMA
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4_6.pdf}
+    \caption{Diagramma rappresentante UC4.6}
+    \label{fig:UC4.6}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione della Proiezione Lineare Multiasse
+                                costruita dal dataset corrente.
+	
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un grafico di tipo Proiezione Lineare Multiasse.
+    \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
+
+	\item \textbf{Scenario principale}:
+		\begin{enumerate}
+            \item L'utente apporta le modifiche desiderate tra quelle offerte dalla Proiezione Lineare Multiasse.
+        \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.6.1 Aggiunta dimensione}
+\label{ssub:uc4.6.1}
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente decide di visualizzare maggiori informazioni
+                                aggiungendo una dimensione al grafico.
+
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   La visualizzazione costruita corrente è una Proiezione Lineare Multiasse
+                                    e rappresenta al più una dimensione in meno al numero di dimensioni del dataset.
+    \item \textbf{Postcondizione}:  La visualizzazione della PLA aggiunge una dimenisone.
+
+	\item \textbf{Scenario principale}:
+        \begin{enumerate}
+            \item L'utente seleziona la voce "Dimensioni" e seleziona una dimensione da aggiungere alla proiezione.
+            \item La visualizzazione aggiugne la dimensione selezionata e riposiziona i punti.
+           
+        \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.6.2 Rimozione dimensione}
+\label{ssub:uc4.6.2}
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente decide di rimuovere una dimensione dalla Proiezione Lineare Multiasse
+                                a patto che essa non sia monodimensionale.
+
+    \item \textbf{Attore primario}: Utente.
+    
+    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Proiezione Lineare Multiasse
+                                    e rappresenta almeno due dimensioni.
+    \item \textbf{Postcondizione}:  La visualizzazione della PLA rimuove una dimenisone.
+
+	\item \textbf{Scenario principale}:
+        \begin{enumerate}
+            \item L'utente seleziona la voce "Dimensioni" e seleziona una dimensione da rimuovere dalla proiezione.
+            \item La visualizzazione rimuove la dimensione selezionata e riposiziona i punti.
+           
+        \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.6.3 Rotazione asse}
+\label{ssub:uc4.6.3}
+\begin{itemize}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente
+    \end{enumerate}
+\end{itemize}
+
+\newpage
+\subsubsection{UC4.7 Modifica Heat Map}
+\label{ssub:uc4.7}
 % TODO: Create image for force field graph.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{componenti/casi-duso/diagrammi/UC4.1.3.pdf}
-    \caption{Diagramma rappresentante UC4.1.3}
-    \label{fig:UC2}
+    % \includegraphics[width=0.6\textwidth]{componenti/casi-duso/diagrammi/UC4_7.pdf}
+    \caption{Diagramma rappresentante UC4.7}
+    \label{fig:UC4.7}
 \end{figure}
 
 
@@ -301,8 +643,8 @@
         \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.1.3.1 Modifica scala dei colori}
-\label{subsec:uc4.1.3.1}
+\subsubsection{UC4.7.1 Modifica scala dei colori}
+\label{ssub:uc4.7.1}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente vuole esplorare meglio i dati e decide di 
                                 modificare la scala dei colori applicata alla Heat Map scegliendo una 
@@ -320,8 +662,8 @@
         \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.1.3.2 Applicare ordinamento alle righe}
-\label{subsec:uc4.1.3.2}
+\subsubsection{UC4.7.2 Ordinamento delle righe}
+\label{ssub:uc4.7.2}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente per esplorare meglio i dati decide di ordinare le righe della Heat Map
                                 seguendo l'algortimo di clustering gerarchico il quale aggiunge un dendogramma alla visualizzazione corrente.
@@ -339,8 +681,8 @@
         \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.1.3.3 Applicare ordinamento alle colonne}
-\label{subsec:uc4.1.3.3}
+\subsubsection{UC4.7.3 Ordinamento delle colonne}
+\label{ssub:uc4.7.3}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente per esplorare meglio i dati decide di ordinare le colonne della Heat Map
                                 seguendo l'algortimo di clustering gerarchico il quale aggiunge un dendogramma alla visualizzazione corrente.
@@ -359,8 +701,8 @@
 \end{itemize}
 
 
-\subsubsection{UC4.1.3.4 Impostazione etichette righe}
-\label{subsec:uc4.1.3.4}
+\subsubsection{UC4.7.4 Visualizzazione etichette di riga}
+\label{ssub:uc4.7.4}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente decide se visualizzare le etichette relative alle righe della Heat Map.
 
@@ -379,8 +721,8 @@
 
 
 
-\subsubsection{UC4.1.3.5 Impostazione etichette colonne}
-\label{subsec:uc4.1.3.5}
+\subsubsection{UC4.7.5 Visualizzazione etichette di colonna}
+\label{ssub:uc4.7.5}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente decide se visualizzare le etichette relative alle colonne della Heat Map.
 
@@ -397,9 +739,8 @@
         \end{enumerate}
 \end{itemize}
 
-
-\subsubsection{UC4.1.3.6 Modifica etichette}
-\label{subsec:uc4.1.3.6}
+\subsubsection{UC4.7.6 Modifica etichette di riga}
+\label{ssub:uc4.7.6}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente decide di modificare una o più etichette associate alla Heat Map.
 
@@ -414,161 +755,34 @@
         \end{enumerate}
 \end{itemize}
 
-
-
-\newpage
-\subsection{UC4.1.4 Modifica Proiezione Lineare Multiasse}
-\label{subsec:uc4.1.4}
-% TODO: Create image for force field graph.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4.1.4.pdf}
-    \caption{Diagramma rappresentante UC4.1.4}
-    \label{fig:UC4.1.4}
-\end{figure}
-
-
+\subsubsection{UC4.7.7 Aggiunta dimensione}
+\label{ssub:4.7.7}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione della Proiezione Lineare Multiasse
-                                costruita dal dataset corrente.
-	
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un grafico di tipo Proiezione Lineare Multiasse.
-    \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
-
-	\item \textbf{Scenario principale}:
-		\begin{enumerate}
-            \item L'utente apporta le modifiche desiderate tra quelle offerte dalla Proiezione Lineare Multiasse.
-        \end{enumerate}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente
+    \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.1.4.1 Aggiunta di una dimensione}
-\label{subsec:uc4.1.4.1}
+\subsubsection{UC4.7.8 Rimozione dimensione}
+\label{ssub:4.7.8}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide di visualizzare maggiori informazioni
-                                aggiungendo una dimensione al grafico.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita corrente è una Proiezione Lineare Multiasse
-                                    e rappresenta al più una dimensione in meno al numero di dimensioni del dataset.
-    \item \textbf{Postcondizione}:  La visualizzazione della PLA aggiunge una dimenisone.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item L'utente seleziona la voce "Dimensioni" e seleziona una dimensione da aggiungere alla proiezione.
-            \item La visualizzazione aggiugne la dimensione selezionata e riposiziona i punti.
-           
-        \end{enumerate}
+    \item \textbf{Descrizione}:
+    \item \textbf{Attore primario}:
+    \item \textbf{Precondizione}:
+    \item \textbf{Postcondizione}:
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente
+    \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.1.4.2 Rimozione di una dimensione}
-\label{subsec:uc4.1.4.2}
-\begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide di rimuovere una dimensione dalla Proiezione Lineare Multiasse
-                                a patto che essa non sia monodimensionale.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Proiezione Lineare Multiasse
-                                    e rappresenta almeno due dimensioni.
-    \item \textbf{Postcondizione}:  La visualizzazione della PLA rimuove una dimenisone.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item L'utente seleziona la voce "Dimensioni" e seleziona una dimensione da rimuovere dalla proiezione.
-            \item La visualizzazione rimuove la dimensione selezionata e riposiziona i punti.
-           
-        \end{enumerate}
-\end{itemize}
-
-
-\newpage
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4.2.pdf}
-    \caption{Diagramma rappresentante UC4.2}
-    \label{fig:UC4.2}
-\end{figure}
-
-
-\subsection{UC4.2 Modifica proprietà punti di una dimensione}
-\label{subsec:uc4.2}
-\begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide di manipolare la rappresentazione dei punti del grafico.
-	
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente non è una Heat Map.
-
-    \item \textbf{Postcondizione}:  Viene modificato lo stile dei punti per una determinata dimensione della visualizzazione.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-        
-            \item L'utente seleziona il menu delle dimensioni e ne sceglie una.
-            \item L'utente manipola le proprietà che gli interessano.
-            \item La visualizzazione mostra i nuovi punti per la dimensione selezionata.
-                
-        \end{enumerate}
-\end{itemize}
-
-
-\subsubsection{UC4.2.1 Modifica colore}
-\label{subsec:uc4.2.1}
-\begin{itemize}
-    \item \textbf{Descrizione}: L'utente decide di modificare il colore di nodi relativi ad una dimensione.
-
-	
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   L'utente ha selezionato l'opzione di modifica delle proprietà dei nodi per dimensione (UC4.2.4).
-    \item \textbf{Postcondizione}:  Viene aggiornato il colore dei nodi della dimensione selezionata.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item L'utente seleziona il nuovo colore da assegnare ai nodi tra quelli resi disponbili.
-        \end{enumerate}
-\end{itemize}
-
-\subsubsection{UC4.2.2 Modifica raggio}
-\label{subsec:uc4.2.2}
-\begin{itemize}
-    \item \textbf{Descrizione}: L'utente decide di modificare il raggio di nodi relativi ad una dimensione.
-	
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   L'utente ha selezionato l'opzione di modifica delle proprietà dei nodi per dimensione (UC4.2.4).
-    \item \textbf{Postcondizione}:  Viene aggiornato il raggio dei nodi della dimensione selezionata.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item L'utente fa variare il raggio dei nodi mediante uno slider.
-        \end{enumerate}
-\end{itemize}
-
-\subsubsection{UC4.2.3 Modifica opacità}
-\label{subsec:uc4.2.3}
-\begin{itemize}
-    \item \textbf{Descrizione}:  L'utente decide di modificare l'opacità dei nodi relativi ad una dimensione.
-
-	
-    \item \textbf{Attore primario}: Utente.
-
-    \item \textbf{Precondizione}: L'utente ha selezionato l'opzione di modifica delle proprietà dei nodi per dimensione (UC4.2.4).
-    \item \textbf{Postcondizione}:  Viene aggiornata l'opacità dei nodi della dimensione selezionata.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item L'utente fa variare l'opacità dei nodi mediante uno slider.
-        \end{enumerate}
-\end{itemize}
-
-
-\subsection{UC4.3 Annulamento delle modifiche}
-
+\subsection{UC4.8 Annullamento delle modifiche}
+\label{ssub:uc4.8}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente decide di scartare le modifiche fatte nella corrente selezione di modifica.
 
