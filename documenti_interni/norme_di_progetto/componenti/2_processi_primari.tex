@@ -7,7 +7,7 @@
 Il processo di fornitura consiste nelle seguenti attività:
 \begin{itemize}
     \item Analisi di strumenti e competenze fondamentali e individuazione di rischi e \glossario{criticità} per il completamento del progetto. Questa analisi viene redatta nel documento \textsc{Studio di Fattibilità};
-    \item Stabilire ed esporre l'organizzazione del lavoro che il gruppo seguirà per la realizzazione del prodotto; queste possono essere trovate nel \textsc{Piano di Progetto}. Il Piano di Progetto sarà, come questo documento, ancora non del tutto completo in quanto non è facile pianificare a lungo termine, perciò quella che viene presentata al momento è una versione che verrà poi aggiornata successivamente in base ad eventuali anticipi e/o ritardi sulle scadenze presenti al momento;
+    \item Stabilire ed esporre l'organizzazione del lavoro che il gruppo seguirà per la realizzazione del prodotto; queste possono essere trovate nel \textsc{\glossario{Piano di Progetto}}. Il Piano di Progetto sarà, come questo documento, ancora non del tutto completo in quanto non è facile pianificare a lungo termine, perciò quella che viene presentata al momento è una versione che verrà poi aggiornata successivamente in base ad eventuali anticipi e/o ritardi sulle scadenze presenti al momento;
     \item Verificare la qualità del materiale elaborato, sia per quanto riguarda i documenti, sia per quanto riguarderà, più avanti nel tempo, le attività di progettazione e verifica. Le linee guida per la gestione della qualità sono descritte nel documento \textsc{Piano di Qualifica}.
 \end{itemize}
 
@@ -31,7 +31,7 @@ Successivamente all'avvenuta consegna, il gruppo \emph{SpaghettiCode}, non segui
 
 \subsubsection{Attività}
 \paragraph{Studio di Fattibilità}
-Nel documento \textsc{Studio di Fattibilità}, redatto dagli \emph{analisti} dopo aver deciso la prima scelta del gruppo tra i vari progetti disponibili, viene fornita un'analisi generale di tutti i capitolati proposti, e le motivazioni che hanno spinto il gruppo \emph{SpaghettiCode} a proporsi o meno come \glossario{fornitore} di uno specifico capitolato. Questo documento è il prodotto dell'omonima attività, la quale è strutturata come segue: 
+Nel documento \textsc{\glossario{Studio di Fattibilità}}, redatto dagli \emph{analisti} dopo aver deciso la prima scelta del gruppo tra i vari progetti disponibili, viene fornita un'analisi generale di tutti i capitolati proposti, e le motivazioni che hanno spinto il gruppo \emph{SpaghettiCode} a proporsi o meno come \glossario{fornitore} di uno specifico capitolato. Questo documento è il prodotto dell'omonima attività, la quale è strutturata come segue: 
 \begin{itemize}
     \item \textbf{Raccolta di informazioni generali}: raccolta delle informazioni basilari riguardanti il capitolato che comprendono nome, proponente e committente;
     \item \textbf{Comprensione delle caratteristiche}: si studiano e comprendono le caratteristiche del prodotto che deve essere sviluppato;
@@ -61,8 +61,31 @@ Il gruppo deve quindi creare un \textsc{piano di progetto}, ovvero pianificare c
     \item \textbf{Preventivo e consuntivo}: viene stimata la quantità di lavoro necessaria per ogni processo del \glossario{ciclo di vita} del progetto. Viene quindi esposto un \glossario{preventivo} e un successivo \glossario{consuntivo}, entrambi relativi ad un dato periodo.
 \end{itemize}
 
+In questo documento si fa uso di un codice identificativo dei rischi. Il codice avrà questa forma:
+\begin{center}
+	\textbf{[Tipologia][Codice]}
+\end{center}
+Dove:
+\begin{itemize}
+
+	\item \textbf{Tipologia}: indica la tipologia di rischio e può assumere 3 valori:
+	\begin{itemize}
+		\item \textbf{RR}: Indica un rischio legato ai requisiti;
+		\item \textbf{RT}: Indica un rischio legato alle tecnologie;
+		\item \textbf{RO}: Indica un rischio legato all'organizzazione.
+	\end{itemize}
+	\item \textbf{Codice}: Il codice è un numero progressivo univoco all'interno della tipologia. Questo permette di identificare univocamente il rischio.
+\end{itemize}
+
+Ogni rischio avrà, oltre al codice, due informazioni: 
+\begin{itemize}
+	\item \textbf{Occorrenza}: La frequenza con cui occorre il rischio;
+	\item \textbf{Gravità}: Indica la gravità del rischio.
+\end{itemize}
+
+
 \paragraph{Piano di Qualifica}
-Il \textsc{Piano di Qualifica} raccoglie tutte le regole e le linee guida per garantire che i materiali prodotti siano di qualità. Questo insieme di regole deve essere, come per il piano di progetto, formalizzato in un omonimo documento redatto dai \emph{verificatori}.
+Il \textsc{\glossario{Piano di Qualifica}} raccoglie tutte le regole e le linee guida per garantire che i materiali prodotti siano di qualità. Questo insieme di regole deve essere, come per il piano di progetto, formalizzato in un omonimo documento redatto dai \emph{verificatori}.
 Questo documento è strutturato nel seguente modo:
 \begin{itemize}
     \item \textbf{Qualità di processo}: sono individuati i processi dagli \glossario{standard di processo}, definiti degli obbiettivi, strategie per attuarli e \glossario{metriche} per controllarli e misurarli;
@@ -70,8 +93,11 @@ Questo documento è strutturato nel seguente modo:
     \item \textbf{Specifiche dei test}: vengono definiti dei \glossario{test} attraverso cui il prodotto deve passare per garantire il soddisfacimento dei requisiti;
     \item \textbf{Standard di qualità}: descritti gli \glossario{standard di qualità} selezionati;
     \item \textbf{Resoconto delle attività di verifica}: vengono esposti i risultati dei test eseguiti durante il periodo di revisione; le metriche usate per l'ottenimento di questi risultati sono redatte nel documento;
+	\item \textbf{Lista di controllo}:  Lista che contiene gli errori riscontrati. Questa sezione è in continua fase di aggiornamento per l'intera durata del progetto.
     \item \textbf{Valutazioni per il miglioramento}: vengono elencati i problemi riscontrati durante lo sviluppo del progetto e vengono proposte delle soluzioni che potrebbero portare alla risoluzione o alla mitigazione dei problemi individuati.
 \end{itemize} 
+
+
 
 \subsubsection{Strumenti}
 Saranno riportati di seguito gli strumenti che il gruppo ha deciso di utilizzare durante il progetto.
