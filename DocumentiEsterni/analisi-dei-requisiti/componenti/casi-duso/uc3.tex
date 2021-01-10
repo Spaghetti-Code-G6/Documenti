@@ -1,5 +1,5 @@
 \newpage
-\subsection{UC3 - Modifica Metadati}
+\subsection{UC3 - Modifica dei Metadati}
 \label{subsec:uc3}
 
 \begin{figure}[h]
@@ -9,65 +9,66 @@
     \label{fig:UC3}
 \end{figure}
 
+%TODO: Al posto di cosi fare cosà:
+        % Utente vuole modificare i metadati relativi ad una dimensione.
+        % UTente sceglie dimensione. 
+        % Utente modifca i metadati che preferisce.
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole modificare uno o più metadati attualmente assegnati al dataset.
+    \item \textbf{Descrizione}: L’utente vuole modificare un metadato attualmente assegnati ad una dimensione del dataset.
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Nel programma è stato importato un dataset dotato di metadati per ogni sua colonna.
-    \item \textbf{Postcondizione}:  Vengono aggiornati i metadati del dataset se modificati.
+    \item \textbf{Precondizione}:   Nel programma è stato importato un dataset dotato di metadati per ogni sua dimensione.
+    \item \textbf{Postcondizione}:  Vengono aggiornati i metadati della dimensione scelta dall'utente.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-			\item L'utente effettua modifiche che ritiene necessarie tra quelle possibili.
-			\item L'utente conferma le modifiche premendo il pulsante di salvataggio.
+                \item L'utente sceglie una dimensione da modificare.
+                \item L'utente esegue le modifiche che preferisce tra quelle rese possibili.
+                \item L'utente valida le modifiche apportate selezionando un pulsante di "conferma"
         \end{enumerate}
-
-    %TODO: Riprisino è comunque un aggiornamento giusto? Dovremmo mettere un'estensione?
+    
     \item \textbf{Scenario alternativo}:
 		\begin{enumerate}
 			\item L'utente decide di annullare le modifiche selezionando il pulsante "annulla".
-			\item Vengono ripristinati i metatag precedenti alla modifica.
+			\item Vengono ripristinati i metadati della dimensione precedenti alla modifica.
         \end{enumerate}
 \end{itemize}
 
 \newpage
-\subsubsection{UC3.1 - Modifica metadati di tipo}
+\subsubsection{UC3.1 - Modifica metadato di tipo}
 \label{subsubsec:uc3.1}
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole modificare uno o più metadati di tipo attualmente assegnati alle dimensioni del dataset.
+    \item \textbf{Descrizione}: L’utente vuole modificare il metadato di tipo attualmente assegnato 
+                                alla dimensione del dataset da lui selezionata. Egli sceglie il nuovo valore le opzioni che gli vengono rese disponibili.
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Nel programma è stato importato un dataset dotato di metadati per 
-                                    ogni sua colonna e l'utene seleziona la voce di modifica dei metadati di tipo.
-    \item \textbf{Postcondizione}:  Vengono aggiornati i metadati di tipo del dataset che sono stati modificati.
+    \item \textbf{Precondizione}:   L'utente ha selezionato una dimensione del dataset  da modificare
+                                    e la voce "modifica metadato di tipo" dal menu di modifica dei metadati.
+    \item \textbf{Postcondizione}:  Viene aggiornato il metadato di tipo della dimensione selezionata.
 
 	\item \textbf{Scenario principale}:
-		\begin{enumerate}
-            \item L'utente seleziona le dimensioni del dataset che vuole modificare.
-            \item L'utente modifica il metadato di tipo di ogni dimensione selezionata tra le opzioni possibili.
-        \end{enumerate}
+        L'utente imposta il nuovo tipo tra le opzioni possibili per la dimensione selezionata.
 \end{itemize}
 
 
-\subsubsection{UC3.2 - Modifica metadati di visibilità}
+\subsubsection{UC3.2 - Modifica metadato di visibilità}
 \label{subsubsec:uc3.2}
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole modificare i metadati di visibilità attualmente assegnati al dataset.
+    \item \textbf{Descrizione}: L’utente vuole modificare il metadato di visibilità attualmente 
+                                assegnato alla dimensione del dataset da lui scelta.
+                                Egli sceglie se rendere la dimensione visibile o nascosta.
 	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   Nel programma è stato importato un dataset dotato di metadati per 
-                                    ogni sua colonna e l'utene seleziona la voce di modifica dei metadati di visibilità.
-    \item \textbf{Postcondizione}:  Vengono aggiornati i metadati di visibilità del dataset che sono stati modificati.
+    \item \textbf{Precondizione}:   L'utente ha selezionato una dimensione del dataset da modificare
+                                    e la voce "modifica metadato di visibilità" dal menu di modifica dei metadati.
 
-	\item \textbf{Scenario principale}:
-		\begin{enumerate}
-            \item L'utente seleziona le dimensioni del dataset che vuole modificare.
-            \item L'utente decide se rendere visibile o meno le dimensioni selezionate.
-        \end{enumerate}
+    \item \textbf{Postcondizione}:  Viene aggiornato il metadato di visibilità della dimensione selezionata.
+
+	\item \textbf{Scenario principale}: L'utente imposta la nuova impostazione di visibilità tra "visibile" e "nascosta".
 \end{itemize}
 
