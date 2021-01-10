@@ -8,7 +8,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{componenti/casi-duso/diagrammi/UC1.pdf}
+    \includegraphics[width=0.7\textwidth]{componenti/casi-duso/diagrammi/UC1.pdf}
     \caption{Diagramma rappresentante UC1}
     \label{fig:UC1}
 \end{figure}
@@ -18,7 +18,7 @@
     \item \textbf{Descrizione}: L'utente prepara l'applicativo HDviz alla rappresentazione
                                 grafica dei dati importando l'opportuno dataset e assegna, 
                                 se non già definiti, dei metadati 
-                                che descrivono il tipo del dato di ogni colonna.
+                                che descrivono il tipo del dato di ogni sua dimensione.
 	
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Attore secondario}: Database;
@@ -29,7 +29,7 @@
     \item \textbf{Postcondizione}:  Viene caricato un dataset. 
     
                                     Ogni colonna del dataset ha associato
-                                    un metatag che indica la tipologia del dato.
+                                    un metatag che indica la tipologia della dimensione.
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
@@ -53,7 +53,7 @@
     \end{enumerate}
 \end{itemize}
 
-
+\newpage
 \subsection{UC1.1 - Inserimento dati}
 \label{ssub:UC1.1}
 \begin{itemize}
@@ -84,14 +84,6 @@
 \end{itemize}
 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC1.pdf}
-    \caption{Diagramma rappresentante UC1}
-    \label{fig:UC1}
-\end{figure}
-
-
 \subsubsection{UC1.2 - Inserimento dati da file csv}
 \label{ssub:UC1.1.1}
 \begin{itemize}
@@ -99,7 +91,7 @@
 
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   L'utente selezione l'opzione di caricare i dati da un file .csv .
+    \item \textbf{Precondizione}:   L'utente selezione l'opzione di caricare i dati da un file csv.
     \item \textbf{Postcondizione}:  Viene caricato un dataset. 
 
 	\item \textbf{Scenario principale}:
@@ -138,14 +130,13 @@
     
     \item \textbf{Attore secondario}: Database.
     
-    \item \textbf{Precondizione}:   L'utente decide di caricare i dati ed ha accesso ad un database.
-
-    \item \textbf{Postcondizione}:  Viene caricato un dataset dal database.
+    \item \textbf{Precondizione}:   L'utente decide di caricare i dati mediante un database. 
+    \item \textbf{Postcondizione}:  Viene caricato un dataset da un database. 
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente effettua la connessione con un database da lui fornito.
-			\item L'utente importa i dati secondo la modalità che lui sceglie.
+			\item L'utente effettua la connessione con un database da lui fornito. (UC1.3.1)
+			\item L'utente importa i dati dal form di caricamento dati. (UC1.3.2)
         \end{enumerate}
 
     \item \textbf{Estensioni}:
@@ -162,9 +153,8 @@
             \item Viene visualizzato un messaggio di errore (UC5.3).
         \end{enumerate}
 
-        \item Se la query utente è vuota o il risultano non ha almeno due dimensioni:
+        \item Se la query utente è vuota:
         \begin{enumerate}
-            %TODO: Qui potrebbe continuare il flow normale basta fargli rimettere la cosa.
             \item L'inserimento dei dati viene interrotto.
             \item Viene visualizzato un messaggio di errore (UC5.4).
         \end{enumerate}
@@ -175,7 +165,7 @@
 \newpage
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{componenti/casi-duso/diagrammi/UC1.3.1.pdf}
+    \includegraphics[width=0.5\textwidth]{componenti/casi-duso/diagrammi/UC1.3.1.pdf}
     \caption{Diagramma rappresentante UC1.3.1}
     \label{fig:UC1.3}
 \end{figure}
@@ -286,12 +276,7 @@
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
             \item L'utente assegna ad ogni colonna del dataset il tipo di dato che rappresenta (metatag) scegliendo tra:
-                \begin{enumerate}
-                    \item Nominale 
-                    \item Ordinale 
-                    \item Intervallo
-                    \item Rapporto
-                \end{enumerate}
+                    Nominale, Ordinale, Intervallo o Rapporto.
         \end{enumerate}
 
 \end{itemize}
