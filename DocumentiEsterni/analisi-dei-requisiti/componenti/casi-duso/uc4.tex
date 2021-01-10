@@ -135,7 +135,7 @@
     
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è uno Scatter Plot Matrix;
-    \item \textbf{Postcondizione}:  Viene modificata la dimensione rappresentata mediante tinta;
+    \item \textbf{Postcondizione}:  Viene aggiunta una dimensione rappresentata mediante tinta;
     \item \textbf{Scenario principale}:
     \begin{enumerate}
         
@@ -175,7 +175,7 @@
     \item \textbf{Attore primario}: Utente.
     
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
-    \item \textbf{Postcondizione}:  Le proiezioni del punto selezionato, se appartentente allo Scatterplot, 
+    \item \textbf{Postcondizione}:  Le proiezioni del punto selezionato, se appartiene al dataset importato, 
                                     venogno evidenziate in tutti i grafici della visualizzazione.
 
 	\item \textbf{Scenario principale}:
@@ -186,7 +186,7 @@
 
     \item \textbf{Scenario alternativo}:
         \begin{enumerate}
-            \item L'utente seleziona un punto vuoto di uno Scatterplot della matrice.
+            \item L'utente seleziona un punto che non rappresenta nessun dato del dataset.
             \item Non viene evidenziato alcun punto della matrice.
         \end{enumerate}
 
@@ -197,17 +197,17 @@
 \label{ssub:uc4.2.5}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente seleziona un insieme di punti in uno Scatterplot della matrice per vedere come 
-                                essi vengono rappresentati negli altri grafici a dispersione della visualizzazione corrente.
+                                essi vengono rappresentati negli altri Scatterplot della matrice.
 	
     \item \textbf{Attore primario}: Utente.
     
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
-    \item \textbf{Postcondizione}:  Le proiezioni dei punti selezionati, se appartentente allo Scatterplot, 
+    \item \textbf{Postcondizione}:  Le proiezioni degli insiemi di punti selezionati, se appartentente al dataset importato, 
                                     vengono evidenziate in tutti i grafici della visualizzazione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente seleziona un'aerea di punti di uno Scatterplot della matrice.
+            \item L'utente seleziona un insieme di punti di uno Scatterplot della matrice.
             \item Le proiezioni dei punti contenteni dati vengono evidenziati in tutti gli Scatterplot della visualizzazione.
         \end{enumerate}
 
