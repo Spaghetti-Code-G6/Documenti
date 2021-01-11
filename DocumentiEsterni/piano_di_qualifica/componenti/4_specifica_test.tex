@@ -33,24 +33,47 @@ Per assicurare che il progetto rispetti i requisiti identificati nel documento A
 	\begin{longtable}{|c|c|p{8.5cm}|c|}
 		\hline
 		\rowcolor{lightgray}
-		{\textbf{Codice}}                & {\textbf{Riferimento}} & {\textbf{Descrizione}}                                                                                            & {\textbf{implementazione}} \\
+		{\textbf{Codice}}   & {\textbf{Riferimento}} & {\textbf{Descrizione}}  & {\textbf{implementazione}} \\
 		\hline
-		TS0                              & RF01                   & Si verifichi che l'utente deve poter inserire dati nel sistema                                                    & NI                         \\ \hline
-		TS1                              & RFO1.1                 & Si verifichi che l'utente possa importare dati tramite file .csv                                                  & NI                         \\ \hline
-		TS2                              & RF01.2                 & Si verifichi che l'utente possa importare dati tramite un database esterno                                        & NI                         \\ \hline
-		TS3                              & RF04                   & Si verifichi che l'utente possa scegliere qualche grafico visualizzare                                            & NI                         \\ \hline
-		TS4                              & RF04.1                 & Si verifichi che l'utente possa selezionare il grafico Scatter Plot Matrix                                        & NI                         \\ \hline
-		TS5                              & RF04.2                 & Si verifichi che l'utente possa selezionare il grafico Force Field                                                & NI                         \\ \hline
-		TS6                              & RF04.3                 & Si verifichi che l'utente possa selezionare il grafico Heat Map                                                   & NI                         \\ \hline
-		TS7                              & RF04.4                 & Si verifichi che l'utente possa selezionare il grafico Proiezione multi-asse                                      & NI                         \\ \hline
-		TS8                              & RFO1                   & Si verifichi che l'utente possa importare dati tramite file .csv                                                  & NI                         \\ \hline
-		TS9                              & RFD3                   & Si verifichi che l'utente possa modificare metadati precedentemente inseriti                                      & NI                         \\ \hline
-		TS10                             & RFD5                   & Si verifichi che l'utente possa modificare il grafico che sta visualizzando                                       & NI                         \\ \hline
-		TS11                             & RDF5.2.1               & Si verifichi che l'utente possa spostare i nodi del grafico Force Field                                           & NI                         \\ \hline
-		TS12                             & RDF5.2.2               & Si verifichi che l'utente possa modificare la tipologia di distanza utilizzata per il calcolo della matrice delle
-		distanze nel grafico Force Field & NI                                                                                                                                                                      \\ \hline
-		TS13                             & RDF5.3.1               & Si verifichi che l'utente possa modificare l'intervallo di colori utilizzato nel grafico Heat Map                 & NI                         \\ \hline
-		TS14                             & RDF6                   & Si verifichi che l'utente venga notificato quando si verifica un errore                                           & NI                         \\
+		TS0    & RF01             & Si verifichi che l'utente possa inserire dati nel sistema                   & NI   \\ \hline
+		TS1    & UC1 RFO2      & Si verifichi che l'utente possa importare dati tramite file .csv           & NI   \\ \hline
+		TS2    & UC1.1 RFO3   & Si verifichi che l'utente possa importare dati tramite un database esterno        & NI   \\ \hline
+		TS3    & UC1.3 RF04    & Si verifichi che l'utente possa aprire un collegamento con un server dati per accedere ad uno dei suoi database  & NI  \\ \hline
+		TS4    & UC1.3.1 RFO5 & Si verifichi che l’utente possa poter immettere l’indirizzo del server & NI \\ \hline
+		TS5    & UC1.3.1.1 RFO6 & Si verifichi che l’utente possa poter immettere il nome di accesso al server & NI \\ \hline
+		TS6    & UC1.3.1.2 RFO7 & Si verifichi che l’utente possa poter immettere la password di accesso al server & NI \\ \hline
+		TS7    & UC1.3.1.3 RFO8 & Si verifichi che l’utente possa poter importare i dati nel sistema mediante la ricerca su un database tra quelli disponibili & NI \\ \hline
+		TS8    & UC1.3.2 RFO9 & Si verifichi che l’utente possa inserire il metadato relativo alla categoria del dato delle dimensioni del dataset. & NI \\ \hline
+		TS9    & UC1.4 RFO10 & Si verichi che l'utente possa creare un grafico di sua scelta. & NI \\ \hline
+		TS10  & UC2.1 RFO11& Si verichi che l'utente possa  selezionare l’opzione di costruzione di un grafico di tipo Scatter plot matrix & NI \\ \hline
+		TS11  & UC2.2 RFO12 & Si verichi che l'utente possa selezionare l’opzione di costruzione di un grafico di tipo Force Field & NI \\ \hline
+		TS12  & UC2.3 RFD13 &Si verichi che l'utente possa selezionare l’opzione di costruzione di un grafico di tipo Heat Map & NI \\ \hline
+		TS13  & UC2.4 RFO14 & Si verichi che l'utente possa selezionare l’opzione di costruzione di un grafico di tipo PLMA & NI \\ \hline
+		TS14  & UC2.5 RFO15 & Si verichi che l'utente possa selezionare l’opzione di costruzione di un grafico di tipo Distance Map & NI \\ \hline
+		TS15 & UC2.6 RFO16 & Si verichi che l'utente possa modificare le proprietà dei metadati associati al dataset  & NI \\ \hline
+		TS16 & UC3.1 RFO17 & Si verichi che l'utente possa modificare il tipo dei metadati associati al dataset & NI \\ \hline
+		TS17 & UC3.2 RFO18 & Si verichi che l'utente possa modificare il metadato relativo alla visibilità di una dimensione del dataset & NI \\ \hline
+		TS18  & RQ01  & Si verifichi che l'applicativo sia accompaganto dalla documentazione richiesta   & NI \\ \hline
+      		TS19  & RQ02  & Si verifichi che l'applicativo sia accompagnato da un manualte di utilizzo  & NI \\ \hline
+      		TS20  & RQ03  & Si verifichi che l'applicativo sia accompagnato da un manualte tecnico    & NI \\ \hline
+      		TS21  & RQ04  & Si verifichi che il manuale di utlizzo sia scritto in italiano e in formato pdf     & NI \\ \hline
+      		TS22  & RQ05  & Si verifichi che il manuale tecnico sia scritto in italiano e in formato pdf  & NI \\ \hline
+      		TS23  & RQ07  & Si verifichi che il prodotto rispetti le norme di progetto    & NI \\   \hline
+		TS24  & RVO4 & Si verichi che l’applicativo deve poter visualizzare dati ad almeno 15 dimensioni & NI \\ \hline
+		TS25  & RVO5 & Si verichi che l’applicativo deve presentare la modalità di visualizzazione Scatter Plot Matrix & NI \\ \hline
+		TS26  & RVO6 & Si verichi che l’applicativo deve presentare la modalità di visualizzazione Force Field & NI \\ \hline
+		TS27  & RVD7 & Si verichi che l’applicativo deve presentare la modalità di visualizzazione Heat Map & NI \\ \hline
+		TS28  & RVO8 & Si verichi che l’applicativo deve presentare la modalità di visualizzazione Proiezione Lineare Multi Asse & NI \\ \hline
+		TS28  & RVO9 & Si verichi che l’applicativo deve presentare la modalità di visualizzazione Distance Map & NI \\ \hline
+		TS29   & RV01  & Si verifichi che l'applicativo sia sviluppato con le tecnologie HTML/CSS/JavaScript  & NI \\ \hline
+      		TS30   & RV02   & Si verifichi che l'applicativo sia sviluppato con la libreria D3.js   & NI \\ \hline
+      		TS31   & RV03    & Si verifichi che l'applicativo abbia una parte di server sviluppata in Java o Node.js   & NI \\ \hline
+      		TS32   & RV04   & Si verifichi che l'applicativo dia la possibilità di visualizzare dati in almeno 15 dimensioni   & NI \\ \hline
+      		TS33   & RV05  & Si verifichi che l'applicativo dia la possibilità di visualizzare i dati con la visione "Scatter plot matrix"  & NI \\ \hline
+      		TS34   & RV06   & Si verifichi che l'applicativo dia la possibilità di visualizzare i dati con la visione "Force field"  & NI \\ \hline
+      		TS35   & RV07  & Si verifichi che l'applicativo dia la possibilità di visualizzare i dati con la visione "Heat map"  & NI \\ \hline
+      		TS36   & RV08   & Si verifichi che l'applicativo dia la possibilità di visualizzare i dati con la visione "Proiezione lineare multiasse"    & NI \\ \hline
+      		TS37    & RV09   & Si verifichi che l'applicativo dia la possibilità di visualizzare i dati con la visione "Distance map"   & NI \\ \hline	
 		\hline
 		\rowcolor{white}
 		\caption{Tabella contenente un riepilogo dei test di sistema}
