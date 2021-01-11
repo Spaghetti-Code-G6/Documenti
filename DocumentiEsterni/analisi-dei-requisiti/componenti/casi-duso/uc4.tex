@@ -429,112 +429,107 @@
 % TODO: Insert image for Distance Map
 \begin{figure}[h]
     \centering
-    % \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4_5.pdf}
+    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC4_5.pdf}
     \caption{Diagramma rappresentante UC4.5}
-    \label{fig:UC4.2}
+    \label{fig:UC4.5}
 \end{figure}
 
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
+    \item \textbf{Descrizione}: L'untente vuole modificare la visualizzazione della Distance Map costruita dal dataset corrente;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è un grafico di tipo Distance Map;
+    \item \textbf{Postcondizione}: Viene aggiornato il grafico costruito con i nuovi parametri;
+    \item \textbf{Scenario principale}: 
     \begin{itemize}
-        \item L'utente
+        \item L'utente apporta le modifiche desiderate tra quelle offerte dalla Distance Map.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.5.1 Modifica della scala di colori}
+\subsubsection{UC4.5.1 Modifica gradiente di colori}
 \label{ssub:uc4.5.1}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
+    \item \textbf{Descrizione}: L'utente vuole esplorare meglio i dati e decide di modificare la scala dei colori applicata alla Distance Map scegliendo una tra quelle proposte;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map;
+    \item \textbf{Postcondizione}: Viene modificata la scala dei colori del grafico nella visualizzazione.
+    \item \textbf{Scenario principale}: 
     \begin{itemize}
-        \item L'utente
+        \item L'utente seleziona la voce "Scala dei colori" e seleziona una delle opzioni disponibili.
+        \item La visualizzazione cambia la scala dei colori adottata dalla Distance Map.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.5.2 Ordinamento delle righe}
+\subsubsection{UC4.5.2 Ordinamento}
 \label{ssub:uc4.5.2}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
+    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map il quale aggiunge un dendrogramma alla visualizzazione corrente.
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
+    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzati secondo l'ordine scelto dall'utente.
+    \item \textbf{Scenario principale}: 
     \begin{itemize}
-        \item L'utente
+        \item L'utente seleziona la casella di ordinamento.
+        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordinamento selezionato.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.5.3 Ordinamento delle colonne}
+\subsubsection{UC4.5.3 Ordinamento clustering gerarchico}
 \label{ssub:uc4.5.3}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
+    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map seguendo l'algoritmo di clustering gerarchico il quale aggiunge un dendrogramma alla visualizzazione corrente.
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
+    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine impostato dall'algoritmo di clustring gerarchico.
+    \item \textbf{Scenario principale}: 
     \begin{itemize}
-        \item L'utente
+        \item L'utente seleziona la casella di ordinamento delle colonne.
+        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordinamento del clustering gerarchico, inoltre viene aggiunto il dendrogramma al grafico.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.5.4 Visualizzazione etichette di riga}
+\subsubsection{UC4.5.4 Ordinamento originario}
 \label{ssub:uc4.5.4}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
+    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map seguendo l'ordine orginario del dataset corrente.
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
+    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine orignario del dataset corrente.
+    \item \textbf{Scenario principale}: 
     \begin{itemize}
-        \item L'utente
+        \item L'utente seleziona la casella di ordinamento delle colonne.
+        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordine orignario del dataset corrente.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.5.5 visualizzazione etichette di colonna}
+\subsubsection{UC4.5.5 Ordinamento per dimensione}
 \label{ssub:uc4.5.5}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
+    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map ordinando le dimensioni per un dato algoritmo.
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
+    \item \textbf{Postcondizione}: Le colonne del Distance Map vengono visualizzati secondo l'ordine impostato dall'algoritmo di ordinamento selezionato applicato alle dimensioni.
+    \item \textbf{Scenario principale}: 
     \begin{itemize}
-        \item L'utente
+        \item L'utente seleziona la casella di ordinamento delle colonne.
+        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordine impostato dall'algoritmo di ordinamento selezionato applicato alle dimensioni.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.5.6 Modifica etichette di riga}
+
+\subsubsection{UC4.5.6 Modifica etichette}
 \label{ssub:uc4.5.6}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
+    \item \textbf{Descrizione}: L'utente decide di modificare una o più etichette associate della Distance Map.
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
+    \item \textbf{Postcondizione}: Le etichette della Distance Map vengono modificate secondo la scelta effettuata dall'utente.
     \item \textbf{Scenario principale}:
     \begin{itemize}
-        \item L'utente
+        \item L'utente quali etichette modificare e le modifica.
+        \item Viene aggiornata la visualizzazione delle etichette nella Distance Map.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.5.7 Modifica etichette di colonna}
-\label{ssub:uc4.5.7}
-\begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
-    \begin{itemize}
-        \item L'utente
-    \end{itemize}
-\end{itemize}
 
 \newpage
 \subsubsection{UC4.6 Modifica Proiezione Lineare Multi Asse}
