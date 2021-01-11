@@ -221,7 +221,7 @@
 
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione di un grafico che sfrutta la matrice delle distanze
-                                nella sua costruzione, Force Field o Distance Map.
+                                nella sua costruzione, quindi un Force Field o una Distance Map.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Force Field o una Distance Map. 
     \item \textbf{Postcondizione}: Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
@@ -232,84 +232,75 @@
     \end{enumerate}
     \item \textbf{Generalizzazioni}:
     \begin{itemize}
-        \item Modifica Force Field. (UC4.4)
-        \item Modifica Distance Map. (UC4.5)
-    \end{itemize}
-    
-    \item \textbf{Inclusioni}:
-    \begin{itemize} 
-        \item La \emph{Modifica delle dimensioni considerate} (UC4.3.5) include la modifica dei metadati di visibilità. (UC3.2)
+        \item Modifica Force Field. (\hyperref[ssub:uc4.4]{UC4.4}) 
+        \item Modifica Distance Map. (\hyperref[ssub:uc4.5]{UC4.5}) 
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.3.1 Modifica a matrice delle distanze}
+\subsubsection{UC4.3.1 Modifica della distanza}
 \label{ssub:uc4.3.1}
-\begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
-    \begin{itemize}
-        \item L'utente
-    \end{itemize}
-\end{itemize}
-
-\subsubsection{UC4.3.2 Modifica della distanza}
-\label{subsec:uc4.3.2}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente decide di cambiare l’algoritmo usato per il calcolo delle distanze.
 
-	
     \item \textbf{Attore primario}: Utente.
     
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
-    \item \textbf{Postcondizione}:  Viene modificata la distanza tra i nodi del grafo nella visualizzazione.
+    \item \textbf{Precondizione}:   L'utente ha selezionato la voce di \emph{"Modifica della distanza"} da \hyperref[ssub:uc4.3]{UC4.3}.
+    \item \textbf{Postcondizione}:  La visualizzazione corrente viene aggiornata in rapporto ai nuovi valori della matrice.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente seleziona il menu delle distanze e seleziona uno degli algoritmi presentati nel menù.
-            \item La visualizzazione modifica la distanza tra i nodi secondo l'algoritmo scelto.
+            \item L'utente seleziona uno degli algoritmi presentati dalla modifica della distanza.
+            \item La visualizzazione modifica la distanza tra i punti secondo l'algoritmo scelto.
         \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.3.3 Modifica preprocessing dei dati}
+\subsubsection{UC4.3.2 Modifica preprocessing dei dati}
+\label{ssub:uc4.3.2}
+\begin{itemize}
+    \item \textbf{Descrizione}: L’utente sceglie se normalizzare o standardizzare i dati.
+
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: L'utente ha selezionato la voce di \emph{"Modifica preprocessing dei dati"} da \hyperref[ssub:uc4.3]{UC4.3}.
+    \item \textbf{Postcondizione}: La visualizzazione corrente viene aggiornata in rapporto alla nuova matrice calcolata.
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona la casella \emph{"Normalizza"} o \emph{"Standardizza"} in base alla sua preferenza.
+        \item HDviz ricalcola matrice delle distanze in base alla selezione e aggiorna la visualizzazione.
+    \end{enumerate}
+\end{itemize}
+
+\subsubsection{UC4.3.3 Modifica influenza di una dimensione}
 \label{ssub:uc4.3.3}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
+    \item \textbf{Descrizione}: Per visualizzare correttamente relazioni tra i dati che 
+                                potrebbero perdersi dopo operazioni di standardizzazione o normalizzazione,
+                                l’utente decide di assegnare manualmente dei pesi alle dimensioni.
+
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: L'utente ha selezionato la voce di \emph{"Modifica influenza di una dimensione"} da \hyperref[ssub:uc4.3]{UC4.3}.
+
+    \item \textbf{Postcondizione}: La visualizzazione corrente viene aggiornata in rapporto alla nuova matrice calcolata.
+    \item \textbf{Scenario principale}:  
     \begin{itemize}
-        \item L'utente
+        \item L’utente seleziona una dimensione e le assegna manualmente un peso.
+        \item HDviz ricalcola la matrice delle distanze con i nuovi pesi e aggiorna la visualizzazione.
     \end{itemize}
 \end{itemize}
 
-\subsubsection{UC4.3.4 Modifica influenza di una dimensione}
+\subsubsection{UC4.3.4 Modifica delle dimensioni considerate}
 \label{ssub:uc4.3.4}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
+    \item \textbf{Descrizione}: L'utente decide di manipolare la visibilità delle dimensioni 
+                                del grafico attualmente costruito.
+    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Precondizione}: L'utente ha selezionato la voce di \emph{"Modifica delle dimensioni considerate"} da \hyperref[ssub:uc4.3]{UC4.3}.
+    \item \textbf{Postcondizione}: La visualizzazione corrente viene aggiornata in rapporto alla nuova matrice calcolata.
     \item \textbf{Scenario principale}:
-    \begin{itemize}
-        \item L'utente
-    \end{itemize}
-\end{itemize}
-
-\subsubsection{UC4.3.5 Modifica delle dimensioni considerate}
-\label{ssub:uc4.3.5}
-\begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
-    \item \textbf{Scenario principale}:
-    \begin{itemize}
-        \item L'utente
-    \end{itemize}
+    \begin{enumerate}
+        \item L'utente sceglie le dimensioni che vuole modificare. 
+        \item L'assegna ad ognuna il metadato di visibilità: \emph{"visibile"} o\emph{"nascosta"}.
+        \item HDviz ricalcola la matrice delle distanze con le nuove dimensioni e aggiorna la visualizzazione.
+    \end{enumerate}
 \end{itemize}
 
 \newpage
