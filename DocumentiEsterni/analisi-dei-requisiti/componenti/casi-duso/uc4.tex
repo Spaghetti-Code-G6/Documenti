@@ -22,7 +22,7 @@
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-            \item L'utente modifica i parametri di visualizzazione, interagendo con gli strumenti resi disponbili dal grafico che sta visualizzando,
+            \item L'utente modifica i parametri di visualizzazione, interagendo con gli strumenti resi disponibili dal grafico che sta visualizzando,
                     dal menu di modifica.
             \item La visualizzazione del grafico viene aggiornata in accordo con i parametri modificati.
         \end{enumerate}
@@ -41,7 +41,7 @@
 
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente effettua modifica specifiche al tipo di grafico precedentemente costruito e visualizzato, 
-                                su parametri quindi validi solo per tale visualizzazone, e ne vede le modifiche.
+                                su parametri quindi validi solo per tale visualizzazione, e ne vede le modifiche.
 	
     \item \textbf{Attore primario}: Utente.
     
@@ -164,7 +164,7 @@
     
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
     \item \textbf{Postcondizione}:  Le proiezioni del punto selezionato, se appartiene al dataset importato, 
-                                    venogno evidenziate in tutti i grafici della visualizzazione.
+                                    vengono evidenziate in tutti i grafici della visualizzazione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
@@ -190,13 +190,13 @@
     \item \textbf{Attore primario}: Utente.
     
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatterplot Matrix.
-    \item \textbf{Postcondizione}:  Le proiezioni degli insiemi di punti selezionati, se appartentente al dataset importato, 
+    \item \textbf{Postcondizione}:  Le proiezioni degli insiemi di punti selezionati, se appartenente al dataset importato, 
                                     vengono evidenziate in tutti i grafici della visualizzazione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
             \item L'utente seleziona un insieme di punti di uno Scatterplot della matrice.
-            \item Le proiezioni dei punti contenteni dati vengono evidenziati in tutti gli Scatterplot della visualizzazione.
+            \item Le proiezioni dei punti contenenti dati vengono evidenziati in tutti gli Scatterplot della visualizzazione.
         \end{enumerate}
 
     \item \textbf{Scenario alternativo}:
@@ -265,7 +265,7 @@
     \item \textbf{Scenario principale}:
     \begin{enumerate}
         \item L'utente seleziona la casella \emph{"Normalizza"} o \emph{"Standardizza"} in base alla sua preferenza.
-        \item HDviz ricalcola matrice delle distanze in base alla selezione e aggiorna la visualizzazione.
+        \item HD Viz ricalcola matrice delle distanze in base alla selezione e aggiorna la visualizzazione.
     \end{enumerate}
 \end{itemize}
 
@@ -283,7 +283,7 @@
     \item \textbf{Scenario principale}:  
     \begin{itemize}
         \item L’utente seleziona una dimensione e le assegna manualmente un peso.
-        \item HDviz ricalcola la matrice delle distanze con i nuovi pesi e aggiorna la visualizzazione.
+        \item HD Viz ricalcola la matrice delle distanze con i nuovi pesi e aggiorna la visualizzazione.
     \end{itemize}
 \end{itemize}
 
@@ -299,7 +299,7 @@
     \begin{enumerate}
         \item L'utente sceglie le dimensioni che vuole modificare. 
         \item L'assegna ad ognuna il metadato di visibilità: \emph{"visibile"} o\emph{"nascosta"}.
-        \item HDviz ricalcola la matrice delle distanze con le nuove dimensioni e aggiorna la visualizzazione.
+        \item HD Viz ricalcola la matrice delle distanze con le nuove dimensioni e aggiorna la visualizzazione.
     \end{enumerate}
 \end{itemize}
 
@@ -345,8 +345,8 @@
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente tiene premuto il tasto di selezione e trascina il cursore sponstando il nodo nello spazio della visualizzazione.
-            \item La visualizzazione muove i punti del grafo mantentendo le connessioni tra i nodi.
+            \item L'utente tiene premuto il tasto di selezione e trascina il cursore spostando il nodo nello spazio della visualizzazione.
+            \item La visualizzazione muove i punti del grafo mantenendo le connessioni tra i nodi.
         \end{enumerate}
 \end{itemize}
 
@@ -371,7 +371,7 @@
     \item \textbf{Descrizione}:     L'utente imposta un valore di soglia minimo sulla distanza, gli archi corrispondenti ad una distanza inferiore vengono rimossi;
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é un Force Field;
-    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi associati ad una distanza inferiore al valora di soglia minimo;
+    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi associati ad una distanza inferiore al valore di soglia minimo;
     \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente inserisce nell'apposito campo il valore di soglia minimo;
@@ -426,7 +426,7 @@
 \end{figure}
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L'untente vuole modificare la visualizzazione della Distance Map costruita dal dataset corrente;
+    \item \textbf{Descrizione}: L'utente vuole modificare la visualizzazione della Distance Map costruita dal dataset corrente;
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è un grafico di tipo Distance Map;
     \item \textbf{Postcondizione}: Viene aggiornato il grafico costruito con i nuovi parametri;
@@ -470,7 +470,7 @@
     \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map seguendo l'algoritmo di clustering gerarchico il quale aggiunge un dendrogramma alla visualizzazione corrente.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
-    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine impostato dall'algoritmo di clustring gerarchico.
+    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine impostato dall'algoritmo di clustering gerarchico.
     \item \textbf{Scenario principale}: 
     \begin{itemize}
         \item L'utente seleziona la casella di ordinamento delle colonne.
@@ -481,14 +481,14 @@
 \subsubsection{UC4.5.4 Ordinamento originario}
 \label{ssub:uc4.5.4}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map seguendo l'ordine orginario del dataset corrente.
+    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map seguendo l'ordine originario del dataset corrente.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
-    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine orignario del dataset corrente.
+    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine originario del dataset corrente.
     \item \textbf{Scenario principale}: 
     \begin{itemize}
         \item L'utente seleziona la casella di ordinamento delle colonne.
-        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordine orignario del dataset corrente.
+        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordine originario del dataset corrente.
     \end{itemize}
 \end{itemize}
 
@@ -558,12 +558,12 @@
     
     \item \textbf{Precondizione}:   La visualizzazione costruita corrente è una Proiezione Lineare Multi Asse
                                     e rappresenta al più una dimensione in meno al numero di dimensioni del dataset.
-    \item \textbf{Postcondizione}:  La visualizzazione della PLA aggiunge una dimenisone.
+    \item \textbf{Postcondizione}:  La visualizzazione della PLMA aggiunge una dimensione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
             \item L'utente seleziona la voce "Dimensioni" e seleziona una dimensione da aggiungere alla proiezione.
-            \item La visualizzazione aggiugne la dimensione selezionata e riposiziona i punti.
+            \item La visualizzazione aggiunge la dimensione selezionata e riposiziona i punti.
            
         \end{enumerate}
 \end{itemize}
@@ -578,7 +578,7 @@
     
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Proiezione Lineare Multi Asse
                                     e rappresenta almeno due dimensioni.
-    \item \textbf{Postcondizione}:  La visualizzazione della PLA rimuove una dimenisone.
+    \item \textbf{Postcondizione}:  La visualizzazione della PLMA rimuove una dimensione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
@@ -594,11 +594,11 @@
     \item \textbf{Descrizione}: L'utente decide di spostare gli assi per poter visualizzare diverse proiezioni dello stesso dataset.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Proiezione Lineare Multi Asse.
-    \item \textbf{Postcondizione}: Il grafico viene ridisegnato con gli assi opportunatamente riorientati.
+    \item \textbf{Postcondizione}: Il grafico viene ridisegnato con gli assi opportunamente ri-orientati.
     \item \textbf{Scenario principale}:
     \begin{enumerate}
-        \item L'utente cliccando con il mouse su un asse del grafico trascina l'asse riorientandolo.
-	\item La visualizzazione viene aggiornata con l'asse rioerientato.
+        \item L'utente cliccando con il mouse su un asse del grafico trascina l'asse ri-orientandolo.
+	\item La visualizzazione viene aggiornata con l'asse ri-orientato.
     \end{enumerate}
 \end{itemize}
 
@@ -943,7 +943,7 @@
         \begin{enumerate}
 
             \item L'utente seleziona il pulsante "Annulla modifiche".
-            \item HDviz ripristina i parametri del grafo ai valori precedenti alla selezione del menu di modifica.
+            \item HD Viz ripristina i parametri del grafo ai valori precedenti alla selezione del menu di modifica.
         
         \end{enumerate}
 \end{itemize}
