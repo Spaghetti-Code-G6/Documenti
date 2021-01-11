@@ -15,10 +15,7 @@
 
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente prepara l'applicativo HD Viz alla rappresentazione
-                                grafica dei dati importando l'opportuno dataset e assegna, 
-                                se non già definiti, dei metadati 
-                                che descrivono il tipo del dato di ogni sua dimensione.
+    \item \textbf{Descrizione}: L'utente prepara l'applicativo HD Viz alla visualizzazione dei dati importando un opportuno dataset e assegna, se non già definiti, dei metadati che descrivono il tipo del dato di ogni sua dimensione.
 	
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Attore secondario}: Database;
@@ -50,6 +47,15 @@
     \begin{enumerate}
         \item Inserimento dati da file csv.
         \item Inserimento dati da database.
+    \end{enumerate}
+    
+    \item \textbf{Estensioni}:
+    \begin{enumerate}
+        \item Se il caricamento da file fallise:
+        \begin{enumerate}
+            \item Il caricamento del dataset viene interrotto.
+            \item Viene visualizzato un messaggio di errore. (UC5.1)
+        \end{enumerate}
     \end{enumerate}
 \end{itemize}
 
@@ -246,11 +252,11 @@
     \item \textbf{Postcondizione}:  Viene costruito il dataset dai dati reperiti dall'utente mediante un file di query.
 
 	\item \textbf{Scenario principale}:
-		\begin{enumerate}
-			\item L'utente inserisce nel form una query per il reperimento dei dati che viene eseguita sul server.
+        \begin{enumerate}
+            \item L'utente seleziona il database del server sul quale fare la selezione.
+			\item L'utente inserisce nel form una query per il riperimento dei dati che viene eseguita sul server.
 			\item Viene costruito il dataset dal risultato della ricerca.
         \end{enumerate}
-
     %TODO CApire dove diamine vanno messe le estensioni.
 \end{itemize}
 
