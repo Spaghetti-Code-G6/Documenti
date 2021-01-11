@@ -615,14 +615,13 @@
 
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione della Heat Map
-                                costruita dal dataset corrente.
+    \item \textbf{Descrizione}: L’utente modifica la visualizzazione della Heat Map correntemente visualizzata;
 	
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un grafico di tipo Heat Map.
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è una Heat Map;
 
-    \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
+    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione secondo i nuovi parametri impostati;
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
@@ -630,141 +629,303 @@
         \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.7.1 Modifica scala dei colori}
-\label{ssub:uc4.7.1}
+\paragraph{UC4.7.1 Modifica gradiente di colori}
+\label{par:uc4.7.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole esplorare meglio i dati e decide di 
-                                modificare la scala dei colori applicata alla Heat Map scegliendo una 
-                                tra quelle proposte.
+    \item \textbf{Descrizione}: L’utente modifica il gradiente di colori applicato alla Heat Map scegliendone uno tra quelli proposti;
 	
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Heat Map.
-    \item \textbf{Postcondizione}:  Viene modificata la scala dei colori del grafico nella visualizzazione.
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è una Heat Map;
+    \item \textbf{Postcondizione}:  Il gradiente di colori utilizzato nella visualizzazione della Heat Map é quello selezionato dall'utente;
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente seleziona la voce "Scala dei colori" e seleziona una delle opzioni disponibili.
-            \item La visualizzazione cambia la scala dei colori adottata dalla Heat Map.
+            \item L'utente seleziona la voce "Colori" e seleziona una delle opzioni disponibili;
+            \item La visualizzazione modifica il gradiente di colori utilizzato, impostando quello selezionato dall'utente;
+            \item La visualizzazione viene aggiornata secondo il gradiente di colori impostato.
         \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.7.2 Ordinamento delle righe}
-\label{ssub:uc4.7.2}
+\paragraph{UC4.7.2 Modifica asse}
+\label{par:uc4.7.2}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente per esplorare meglio i dati decide di ordinare le righe della Heat Map
-                                seguendo l'algortimo di clustering gerarchico il quale aggiunge un dendogramma alla visualizzazione corrente.
-	
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Heat Map.
-    \item \textbf{Postcondizione}:  Le righe della Heat Map vengono visualizzati secondo l'ordine imposto dall'algoritmo di ordinamento.
+    \item \textbf{Descrizione}:     L'utente modifica le proprietà dell'asse dell'Heat Map correntemente visualizzata;
+    \item \textbf{Attore primario}: Utente;
 
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item   L'utente seleziona la casella di ordinamento delle righe.
-            \item   La visualizzazione aggiorna l'ordinamento delle righe della Heat Map e viene aggiunto 
-                    il dendogramma relativo alle righe.
-        \end{enumerate}
-\end{itemize}
-
-\subsubsection{UC4.7.3 Ordinamento delle colonne}
-\label{ssub:uc4.7.3}
-\begin{itemize}
-    \item \textbf{Descrizione}: L’utente per esplorare meglio i dati decide di ordinare le colonne della Heat Map
-                                seguendo l'algortimo di clustering gerarchico il quale aggiunge un dendogramma alla visualizzazione corrente.
-	
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Heat Map..
-    \item \textbf{Postcondizione}:  Le colonne della Heat Map vengono visualizzati secondo l'ordine imposto dall'algoritmo di ordinamento.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item   L'utente seleziona la casella di ordinamento delle colonne.
-            \item   La visualizzazione aggiorna l'ordinamento delle colonne della Heat Map 
-                    e viene aggiunto il dendogramma relativo alle righe.
-        \end{enumerate}
-\end{itemize}
-
-
-\subsubsection{UC4.7.4 Visualizzazione etichette di riga}
-\label{ssub:uc4.7.4}
-\begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide se visualizzare le etichette relative alle righe della Heat Map.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Heat Map.
-    \item \textbf{Postcondizione}:  La visualizzazione della Heat Map mostra le etichette delle righe se così scelto dall'utente.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item   L'utente seleziona se visualizzare le etichette per le righe della Heat Map.
-            \item   La visualizzazione aggiorna la visibilità delle etichette delle righe in base alla selezione dell'utente.
-                    
-        \end{enumerate}
-\end{itemize}
-
-
-
-\subsubsection{UC4.7.5 Visualizzazione etichette di colonna}
-\label{ssub:uc4.7.5}
-\begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide se visualizzare le etichette relative alle colonne della Heat Map.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Heat Map.
-    \item \textbf{Postcondizione}:  La visualizzazione della Heat Map mostra le etichette delle colonne se così scelto dall'utente.
-
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item   L'utente seleziona se visualizzare le etichette per le colonne della Heat Map.
-            \item   La visualizzazione aggiorna la visibilità delle etichette delle colonne in base alla selezione dell'utente.
-                    
-        \end{enumerate}
-\end{itemize}
-
-\subsubsection{UC4.7.6 Modifica etichette di riga}
-\label{ssub:uc4.7.6}
-\begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide di modificare una o più etichette associate alla Heat Map.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Heat Map.
-    \item \textbf{Postcondizione}:  Le etichette della Heat Map vengono aggiornate se modificate.
-	\item \textbf{Scenario principale}:
-        \begin{enumerate}
-            \item   L'utente seleziona le etichette da modificare e le modifica.
-            \item   La visualizzazione aggiorna le etichette della Heat Map. %todo: rimuovo? 
-        \end{enumerate}
-\end{itemize}
-
-\subsubsection{UC4.7.7 Aggiunta dimensione}
-\label{ssub:4.7.7}
-\begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map;
+    \item \textbf{Postcondizione}:  Le proprietà visive dell'asse vengono modificate secondo quanto selezionato;
     \item \textbf{Scenario principale}:
     \begin{enumerate}
-        \item L'utente
+        \item L'utente mediante l'apposito bottone effettua l'ordinamento dell'asse della visualizzazione (\hyperref[spar:uc4.7.2.2]{UC4.7.2.2});
+    \end{enumerate}
+    \item \textbf{Scenario secondario}:
+    \begin{enumerate}
+        \item L'utente mediante l'apposito bottone modifica la categoria di etichette associata all'asse della visualizzazione (\hyperref[spar:uc4.7.2.1]{UC4.7.2.1});
+    \end{enumerate}
+    \item \textbf{Generalizzazioni}: 
+    \begin{itemize}
+        \item Modifica righe (\hyperref[par:uc4.7.3]{UC4.7.3});
+        \item Modifica colonne (\hyperref[par:uc4.7.4]{UC4.7.4}).
+    \end{itemize}
+\end{itemize}
+
+\subparagraph{UC4.7.2.1 Modifica etichette}
+\label{spar:uc4.7.2.1}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica la categoria di etichette associata all'asse della visualizzazione;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Etichette" all'interno del campo "Asse";
+    \item \textbf{Postcondizione}:  La categoria di etichette dell'asse della visualizzazione viene modificata;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona una tra le possibili categorie di etichette applicabili, mostrategli in seguito alla pressione del bottone "Etichette";
+        \item La categoria di etichette dell'asse viene modificata in base a quanto precedentemente selezionato.
     \end{enumerate}
 \end{itemize}
 
-\subsubsection{UC4.7.8 Rimozione dimensione}
-\label{ssub:4.7.8}
+\subparagraph{UC4.7.2.2 Ordinamento}
+\label{spar:uc4.7.2.2}
 \begin{itemize}
-    \item \textbf{Descrizione}:
-    \item \textbf{Attore primario}:
-    \item \textbf{Precondizione}:
-    \item \textbf{Postcondizione}:
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento degli elementi dell'asse della visualizzazione;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina";
+    \item \textbf{Postcondizione}:  L'ordine degli elementi dell'asse viene modificato;
     \item \textbf{Scenario principale}:
     \begin{enumerate}
-        \item L'utente
+        \item L'utente seleziona uno tra i possibili ordinamenti degli elementi dell'asse, mostratigli in seguito alla pressione del bottone "Ordina" all'interno del campo "Asse";
+        \item L'ordinamento degli elementi dell'asse della visualizzazione viene modificato in base a quanto precedentemente selezionato.
+    \end{enumerate}
+    \item \textbf{Generalizzazioni}:
+    % \begin{itemize}
+    %     \item Ordinamento clustering gerarchico (\hyperref[spar:uc4.7.2.3]{UC4.7.2.3})
+    %     \item Ordinamento originario (\hyperref[spar:uc4.7.2.4{UC4.7.2.4})
+    % \end{itemize}
+\end{itemize}
+
+\subparagraph{UC4.7.2.3 Ordinamento clustering gerarchico}
+\label{spar:uc4.7.2.3}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento degli elementi dell'asse della visualizzazione con il clustering gerarchico;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Asse";
+    \item \textbf{Postcondizione}:  L'ordine degli elementi dell'asse viene modificato in accordo con il risultato dell'applicazione dell'algoritmo di clustering gerarchico;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona l'ordinamento degli elementi con clustering gerarchico;
+        \item L'ordinamento degli elementi dell'asse della visualizzazione viene modificato in base al risultato dell'algoritmo di clustering gerarchico;
+        \item Viene aggiunto sull'asse di visualizzazione il dendrogramma associato alla clusterizzazione.
+    \end{enumerate}
+\end{itemize}
+
+\subparagraph{UC4.7.2.4 Ordinamento originale}
+\label{spar:uc4.7.2.4}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento degli elementi dell'asse della visualizzazione all'ordine originale dei dati;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Asse";
+    \item \textbf{Postcondizione}:  L'ordine degli elementi dell'asse viene modificato in accordo con l'ordine originale dei dati;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona l'ordinamento degli elementi originale;
+        \item L'ordinamento degli elementi dell'asse della visualizzazione viene modificato in base all'ordine originale dei dati.
+    \end{enumerate}
+\end{itemize}
+
+\paragraph{UC4.7.3 Modifica righe}
+\label{par:uc4.7.3}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica le proprietà delle righe dell'Heat Map correntemente visualizzata;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map;
+    \item \textbf{Postcondizione}:  Le proprietà visive delle righe vengono modificate secondo quanto selezionato;
+    
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente mediante l'apposito bottone effettua l'ordinamento delle righe della visualizzazione (\hyperref[spar:uc4.7.3.2]{UC4.7.3.2});
+    \end{enumerate}
+    \item \textbf{Scenario secondario}:
+    \begin{enumerate}
+        \item L'utente mediante l'apposito bottone modifica la categoria di etichette associata alle righe della visualizzazione (\hyperref[spar:uc4.7.3.1]{UC4.7.3.1}).
+    \end{enumerate}
+\end{itemize}
+    
+\subparagraph{UC4.7.3.1 Modifica etichette righe}
+\label{spar:uc4.7.3.1}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica la categoria di etichette associata alle righe della visualizzazione;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Etichette" all'interno del campo "Righe";
+    \item \textbf{Postcondizione}:  La categoria di etichette delle righe della visualizzazione viene modificata;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona una tra le possibili categorie di etichette applicabili, mostrategli in seguito alla pressione del bottone "Etichette";
+        \item La categoria di etichette delle righe viene modificata in base a quanto precedentemente selezionato.
+    \end{enumerate}
+\end{itemize}
+
+\subparagraph{UC4.7.3.2 Ordinamento righe}
+\label{spar:uc4.7.3.2}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento delle righe della visualizzazione;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Righe";
+    \item \textbf{Postcondizione}:  L'ordine delle righe viene modificato;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona uno tra i possibili ordinamenti delle righe, mostratigli in seguito alla pressione del bottone "Ordina";
+        \item L'ordinamento delle righe della visualizzazione viene modificato in base a quanto precedentemente selezionato.
+    \end{enumerate}
+    \item \textbf{Generalizzazioni}:
+    % \begin{itemize}
+    %     \item Ordinamento clustering gerarchico (\hyperref[spar:uc4.7.3.3]{UC4.7.3.3})
+    %     \item Ordinamento originario (\hyperref[spar:uc4.7.3.4{UC4.7.3.4})
+    % \end{itemize}
+\end{itemize}
+
+\subparagraph{UC4.7.3.3 Ordinamento righe clustering gerarchico}
+\label{spar:uc4.7.3.3}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento delle righe della visualizzazione con il clustering gerarchico;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Righe";
+    \item \textbf{Postcondizione}:  L'ordine delle righe viene modificato in accordo con il risultato dell'applicazione dell'algoritmo di clustering gerarchico;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona l'ordinamento delle righe con clustering gerarchico;
+        \item L'ordinamento delle righe della visualizzazione viene modificato in base al risultato dell'algoritmo di clustering gerarchico;
+        \item Viene aggiunto sull'asse verticale il dendrogramma associato alla clusterizzazione.
+    \end{enumerate}
+\end{itemize}
+
+\subparagraph{UC4.7.3.4 Ordinamento righe originale}
+\label{spar:uc4.7.3.4}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento delle righe della visualizzazione all'ordine originale dei dati;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Righe";
+    \item \textbf{Postcondizione}:  L'ordine delle righe viene modificato in accordo con l'ordine originale dei dati;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona l'ordinamento delle righe originale;
+        \item L'ordinamento delle righe viene modificato in base all'ordine originale dei dati.
+    \end{enumerate}
+\end{itemize}
+
+\subparagraph{UC4.7.3.5 Ordinamento righe con dimensione}
+\label{spar:uc4.7.3.5}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento delle righe della visualizzazione secondo i valori di una dimensione selezionata;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Righe";
+    \item \textbf{Postcondizione}:  L'ordine delle righe viene modificato in accordo con l'ordine della dimensione selezionata;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona l'ordinamento secondo dimensione;
+        \item L'utente seleziona secondo quale dimensione desidera ordinare le righe;
+        \item L'ordinamento delle righe viene modificato in base all'ordine della dimensione scelta.
+    \end{enumerate}
+\end{itemize}
+
+\paragraph{UC4.7.4 Modifica colonne}
+\label{par:uc4.7.4}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica le proprietà delle colonne dell'Heat Map correntemente visualizzata;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map;
+    \item \textbf{Postcondizione}:  Le proprietà visive delle colonne vengono modificate secondo quanto selezionato;
+    
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente mediante l'apposito bottone effettua l'ordinamento delle colonne della visualizzazione (\hyperref[spar:uc4.7.4.2]{UC4.7.4.2});
+    \end{enumerate}
+    \item \textbf{Scenario secondario}:
+    \begin{enumerate}
+        \item L'utente mediante l'apposito bottone modifica la categoria di etichette associata alle colonne della visualizzazione (\hyperref[spar:uc4.7.4.1]{UC4.7.4.1}).
+    \end{enumerate}
+\end{itemize}
+
+\subparagraph{UC4.7.4.1 Modifica etichette colonne}
+\label{spar:uc4.7.4.1}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica la categoria di etichette associata alle colonne della visualizzazione;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Etichette" all'interno del campo "Colonne";
+    \item \textbf{Postcondizione}:  La categoria di etichette delle colonne della visualizzazione viene modificata;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona una tra le possibili categorie di etichette applicabili, mostrategli in seguito alla pressione del bottone "Etichette";
+        \item La categoria di etichette delle colonne viene modificata in base a quanto precedentemente selezionato.
+    \end{enumerate}
+\end{itemize}
+
+\subparagraph{UC4.7.4.2 Ordinamento colonne}
+\label{spar:uc4.7.4.2}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento delle colonne della visualizzazione;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Colonne";
+    \item \textbf{Postcondizione}:  L'ordine delle colonne viene modificato;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona uno tra i possibili ordinamenti delle colonne, mostratigli in seguito alla pressione del bottone "Ordina";
+        \item L'ordinamento delle colonne della visualizzazione viene modificato in base a quanto precedentemente selezionato.
+    \end{enumerate}
+    \item \textbf{Generalizzazioni}:
+    % \begin{itemize}
+    %     \item Ordinamento clustering gerarchico (\hyperref[spar:uc4.7.4.3]{UC4.7.4.3})
+    %     \item Ordinamento originario (\hyperref[spar:uc4.7.4.4{UC4.7.4.4})
+    % \end{itemize}
+\end{itemize}
+
+\subparagraph{UC4.7.4.3 Ordinamento colonne clustering gerarchico}
+\label{spar:uc4.7.4.3}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento delle colonne della visualizzazione con il clustering gerarchico;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Colonne";
+    \item \textbf{Postcondizione}:  L'ordine delle colonne viene modificato in accordo con il risultato dell'applicazione dell'algoritmo di clustering gerarchico;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona l'ordinamento delle colonne con clustering gerarchico;
+        \item L'ordinamento delle colonne della visualizzazione viene modificato in base al risultato dell'algoritmo di clustering gerarchico;
+        \item Viene aggiunto sull'asse orizzontale il dendrogramma associato alla clusterizzazione.
+    \end{enumerate}
+\end{itemize}
+
+\subparagraph{UC4.7.4.4 Ordinamento colonne originale}
+\label{spar:uc4.7.4.4}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica l'ordinamento delle colonne della visualizzazione all'ordine originale delle dimensioni;
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map ed é stato selezionato il bottone "Ordina" all'interno del campo "Colonne";
+    \item \textbf{Postcondizione}:  L'ordine delle colonne viene modificato in accordo con l'ordine originale delle dimensioni;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona l'ordinamento delle colonne originale;
+        \item L'ordinamento delle colonne viene modificato in base all'ordine originale delle dimensioni.
+    \end{enumerate}
+\end{itemize}
+
+\paragraph{UC4.7.5 Modifica dimensione}
+\label{par:uc4.7.5}
+\begin{itemize}
+    \item \textbf{Descrizione}:     L'utente modifica le dimensioni visualizzate nella visualizzazione;
+    \item \textbf{Attore primario}: Utente;
+
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map;
+    \item \textbf{Postcondizione}:  La visualizzazione viene aggiornata in accordo con le modifiche di rappresentazione delle dimensioni effettuate;
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona il pulsante "Rimuovi" in una tra le dimensioni correntemente visualizzate;
+        \item La dimensione selezionata viene rimossa dalla visualizzazione;
+        \item La visualizzazione viene aggiornata in accordo con le modifiche di rappresentazione  delle dimensioni effettuate;
+    \end{enumerate}
+    \item \textbf{Scenario alternativo}: 
+    \begin{enumerate}
+        \item L'utente seleziona il pulsante "Aggiungi" in una tra le dimensioni correntemente non visualizzate;
+        \item La dimensione selezionata viene aggiunta alla visualizzazione;
+        \item La visualizzazione viene aggiornata in accordo con le modifiche di rappresentazione  delle dimensioni effettuate.
     \end{enumerate}
 \end{itemize}
 
