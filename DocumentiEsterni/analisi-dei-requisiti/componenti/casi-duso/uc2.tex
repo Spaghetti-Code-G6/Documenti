@@ -1,4 +1,4 @@
-\subsection{UC2 - Creazione di un grafico}
+\subsection{UC2 - Creazione grafico}
 \label{sub:uc2}
 
 %TODO: Add correct image
@@ -11,25 +11,21 @@
 
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole procedere con la fase di esplorazione
-                                dati mediante la visualizzazione del dataset
-                                attraverso uno dei diversi grafici proposti dall’applicativo
-                                che ne costruisce uno e lo visualizza.
+	\item \textbf{Descrizione}: L’utente seleziona dal menù di creazione di un grafico una tipologia di 
+	visualizzazione, viene poi computato il relativo grafico mediante i dati caricati e infine visualizzato;
 	
     \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   In HD Viz è stato caricato un dataset valido e
-									l'utente ha aperto il menu di creazione di un grafico.
+    \item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
 
-    \item \textbf{Postcondizione}:  Viene calcolato il grafico della tipologia scelta dall'utente dai dati 
-									dal dataset corrente. 
-									
-									Viene inoltre mostrata la nuova visualizzazione all'utente.
+	\item \textbf{Postcondizione}:  Viene visualizzato il grafico della tipologia scelta dall'utente a partire dai dati 
+	correntemente presenti nell'ambiente; 
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente seleziona l'opzione che desidera tra le tipologie di grafico. \hyperref[ssub:uc2.1]{UC2.1}
-			\item HD Viz visualizza il grafico ottenuto dalla costruzione della scelta dell'utente.
+			\item L'utente seleziona l'opzione che desidera tra le tipologie di grafico (\hyperref[ssub:uc2.1]{UC2.1});
+			\item Il sistema calcola il grafico della tipologia selezionata sui dati precedentemente caricati;
+			\item Il sistema visualizza il grafico computato.
 		\end{enumerate}
 \end{itemize}
 
@@ -37,16 +33,15 @@
 \label{ssub:uc2.1}
 \begin{itemize}
 
-	\item \textbf{Descrizione}: L’utente seleziona la tipologia di grafico che desidera costruire.
+	\item \textbf{Descrizione}: L’utente seleziona la tipologia di grafico che desidera costruire;
 
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Attore primario}: Utente;
 
-	\item \textbf{Precondizione}:   Un dataset è stato correttamente importato. 
+	\item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
 	
-    \item \textbf{Postcondizione}:  Viene calcolato il grafico della tipologia selezionata dall'utente.
+    \item \textbf{Postcondizione}:  É stata selezionata la tipologia del grafico che verrà costruito;
 
-	\item \textbf{Generalizzazioni:}:  L'utente seleziona il grafico desiderato tra:
-
+	\item \textbf{Generalizzazioni}:
 		\begin{enumerate}
 			
 			\item Selezione di Scatterplot matrix \hyperref[ssub:uc2.2]{UC2.2}
@@ -60,17 +55,19 @@
 \end{itemize}
 
 
-\subsubsection{UC2.2 - Selezione di Scatter Plot matrix}
+\subsubsection{UC2.2 - Selezione di Scatter Plot Matrix}
 \label{ssub:uc2.2}
 \begin{itemize}
 
     \item \textbf{Attore primario}: Utente;
 
-    \item \textbf{Precondizione}:   L'utente ha selezionato la voce \emph{Scatter Plot Matrix} dal menu di creazione di un grafico.
+	\item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
 
-    \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo \emph{"Scatter Plot Matrix"}.
+	\item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Scatter Plot Matrix} come tipologia del grafico da 
+	costruire;
 
-	\item \textbf{Scenario Principale}: HD Viz calcola uno \emph{Scatter Plot Matrix} dal dataset corrente.
+	\item \textbf{Scenario Principale}: L'utente seleziona \emph{Scatter Plot Matrix} come tipologia di grafico da 
+	costruire.
 \end{itemize}
 
 
@@ -80,11 +77,12 @@
 
     \item \textbf{Attore primario}: Utente;
 
-    \item \textbf{Precondizione}:   L'utente ha selezionato la voce \emph{Force Field} dal menu di creazione di un grafico.
+    \item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
 
-    \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo \emph{"Force Field"}.
+    \item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Force Field} come tipologia del grafico da 
+	costruire;
 	
-	\item \textbf{Scenario Principale}: HD Viz calcola un \emph{Force Field} dal dataset corrente.
+	\item \textbf{Scenario Principale}: L'utente seleziona \emph{Force Field} come tipologia del grafico da costruire.
 
 \end{itemize}
 
@@ -95,11 +93,12 @@
 
     \item \textbf{Attore primario}: Utente;
 
-	\item \textbf{Precondizione}:   L'utente ha selezionato la voce \emph{Heat Map} dal menu di creazione di un grafico.
+	\item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
 
-    \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo \emph{"Heat Map"}.
+    \item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Heat Map} come tipologia del grafico da 
+	costruire;
 
-	\item \textbf{Scenario Principale}: HD Viz calcola una \emph{Heat Map} dal dataset corrente.
+	\item \textbf{Scenario Principale}: L'utente seleziona \emph{Heat Map} come tipologia del grafico da costruire.
 
 \end{itemize}
 
@@ -110,18 +109,23 @@
 
     \item \textbf{Attore primario}: Utente;
 
-    \item \textbf{Precondizione}:   L'utente ha selezionato la voce \emph{Proiezione Lineare Multi Asse} dal menu di creazione di un grafico.
+    \item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
 
-    \item \textbf{Postcondizione}:  Viene calcolato il grafico di tipo \emph{"Proiezione lineare multiasse"}.
-
-	\item \textbf{Scenario Principale}: HD Viz calcola una \emph{Proiezione Lineare Multiasse} dal dataset corrente.
+	\item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Proiezione Lineare Multi Asse} come tipologia del 
+	grafico da costruire;
+	
+	\item \textbf{Scenario Principale}: L'utente seleziona \emph{Proiezione Lineare Multi Asse} come tipologia del 
+	grafico da costruire.
 \end{itemize}
 
 \subsubsection{UC2.6 - Selezione di Distance Map}
-\label{ssub:UC2.6}
+\label{ssub:uc2.6}
 \begin{itemize}
-	\item \textbf{Attore primario}:		Utente;
-	\item \textbf{Precondizione}:		L'utente ha selezionato la voce \emph{Distance Map} dal menu di creazione di un grafico.
-	\item \textbf{Postcondizione}:		Viene calcolato il grafico di tipo\emph{"Distance Map"}.
-	\item \textbf{Scenario Principale}: HD Viz calcola una  \emph{Distance Map} dal dataset corrente.
+	\item \textbf{Attore primario}:	Utente;
+	\item \textbf{Precondizione}:	É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
+
+    \item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Distance Map} come tipologia del grafico da 
+	costruire;
+
+	\item \textbf{Scenario Principale}: L'utente seleziona \emph{Distance Map} come tipologia del grafico da costruire.
 \end{itemize}
