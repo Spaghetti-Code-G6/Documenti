@@ -3,17 +3,24 @@
 
 \rowcolors{2}{white!80!lightgray!90}{white}
 \renewcommand{\arraystretch}{2} %
-\begin{longtable}[H]{>{\centering\bfseries}m{2cm} >{\centering}m{9cm} >{\centering}m{2.5cm} >{\centering\arraybackslash}m{2.5cm}}
+\begin{longtable}[H]{>{\raggedright\bfseries}m{20mm} >{\raggedright}m{90mm} >{\raggedright}m{28mm} >{\raggedright\arraybackslash}m{30mm}}
     \caption{Requisiti funzionali}%
     \label{tab:requisiti_funzionali} \\
     \rowcolor{lightgray}
-    {\textbf{Requisito}} & {\textbf{Descrizione}} & {\textbf{Classificazione}} & {\textbf{Fonte}}  \\
+    \multicolumn{1} {>{\centering\bfseries}m{20mm}} {\textbf{Requisito}} 
+    & \multicolumn{1} {>{\centering}m{90mm}} {\textbf{Descrizione}} 
+    & \multicolumn{1} {>{\centering}m{28mm}} {\textbf{Classificazione}} 
+    & \multicolumn{1} {>{\centering\arraybackslash}m{30mm}} {\textbf{Fonte}} \\
+
     \endfirsthead%
     \rowcolor{lightgray}
-    {\textbf{Requisito}} & {\textbf{Descrizione}} & {\textbf{Classificazione}} & {\textbf{Fonte}}  \\
+    \multicolumn{1} {>{\centering\bfseries}m{20mm}} {\textbf{Requisito}} 
+    & \multicolumn{1} {>{\centering}m{90mm}} {\textbf{Descrizione}} 
+    & \multicolumn{1} {>{\centering}m{28mm}} {\textbf{Classificazione}} 
+    & \multicolumn{1} {>{\centering\arraybackslash}m{30mm}} {\textbf{Fonte}} \\
     \endhead%
-    \rowcolor{white}
-    \multicolumn{4}{c}{\textit{Continua alla pagina successiva}}
+    \rowcolor{lightgray!40}
+    \multicolumn{4}{c}{\textit{Continua alla pagina successiva}} \\
     \endfoot%
     \endlastfoot%
 
@@ -21,365 +28,373 @@
     RFO1
     & L'utente deve poter inserire dati nel sistema
     & Obbligatorio
-    & Capitolato \hyperref[sub:uc1]{UC1} \\
+    & \makecell{
+        Capitolato \\
+        \hyperref[sub:uc1]{UC1}} \\
 
-    RFO2
+    RFO1.1
     & L'utente deve poter effettuare l'inserimento dati da file csv
     & Obbligatorio
-    & Capitolato  \hyperref[ssub:uc1.1]{UC1.1} \\
+    & \makecell{
+        Capitolato  \\
+        \hyperref[ssub:uc1.1]{UC1.1}} \\
 
-    RFO3
+    RFO1.2
     & L'utente deve poter effettuare l'inserimento dati da database
     & Obbligatorio
-    & Capitolato \hyperref[ssub:uc1.3]{UC1.3}\\
+    & \makecell{
+        Capitolato \\
+        \hyperref[ssub:uc1.3]{UC1.3}} \\
 
-    RFO4
+    RFO1.3
     &   L'utente deve poter aprire un collegamento con un server di dati per
         accedere ad uno dei suoi database
     & Obbligatorio
-    & Interno  \hyperref[par:uc1.3.1]{UC1.3.1}\\
+    & \makecell{ Interno \\  \hyperref[par:uc1.3.1]{UC1.3.1}}\\
 
-    RFO5
+    RFO1.4
     &   L'utente deve poter immettere l'indirizzo del server
     & Obbligatorio
-    & Interno  \hyperref[spar:uc1.3.1.1]{UC1.3.1.1}\\
+    & \makecell{ Interno \\  \hyperref[spar:uc1.3.1.1]{UC1.3.1.1}}\\
 
-    RFO6
+    RFO1.5
     &   L'utente deve poter immettere il nome di accesso al server
     & Obbligatorio
-    & Interno  \hyperref[spar:uc1.3.1.2]{UC1.3.1.2}\\
+    & \makecell{ Interno \\  \hyperref[spar:uc1.3.1.2]{UC1.3.1.2}}\\
 
-    RFO7
+    RFO1.6
     &   L'utente deve poter immettere la password di accesso al server
     & Obbligatorio
-    & Interno  \hyperref[spar:uc1.3.1.3]{UC1.3.1.3}\\
+    & \makecell{ Interno \\  \hyperref[spar:uc1.3.1.3]{UC1.3.1.3}}\\
 
-    RFO8
+    RFO1.7
     &   L'utente deve poter importare i dati nel sistema mediante la ricerca
         su un database tra quelli disponibili
     & Obbligatorio
-    & Interno \hyperref[par:uc1.3.2]{UC1.3.2}\\
+    & \makecell{ Interno \\ \hyperref[par:uc1.3.2]{UC1.3.2}}\\
 
-    RFO9
+    RFO1.8
     &   L'utente deve poter inserire il metadato relativo alla categoria
         del dato delle dimensioni del dataset.
     & Obbligatorio
-    & Interno \hyperref[ssub:uc1.4]{UC1.4}\\
+    & \makecell{ Interno \\ \hyperref[ssub:uc1.4]{UC1.4}}\\
 
-    RFO10
+    RFO2
     & L'utente deve poter creare un grafico di sua scelta.
     & Obbligatorio
-    & Capitolato \hyperref[ssub:uc2.1]{UC2.1}\\
+    & \makecell{ Capitolato \\ \hyperref[ssub:uc2.1]{UC2.1}}\\
 
-    RFO11
-    & L'utente deve poter seleziona l'opzione di costruzione di un grafico di tipo Scatter plot matrix
+    RFO2.1
+    & L'utente deve poter seleziona l'opzione di costruzione di un grafico di tipo Scatter Plot
+    Matrix
     & Obbligatorio
-    & Capitolato   \hyperref[ssub:uc2.2]{UC2.2}\\
+    & \makecell{ Capitolato \\   \hyperref[ssub:uc2.2]{UC2.2}}\\
 
-    RFO12
+    RFO2.2
     & L'utente deve poter seleziona l'opzione di costruzione di un grafico di tipo Force Field
     & Obbligatorio
-    & Capitolato  \hyperref[ssub:uc2.3]{UC2.3}\\
+    & \makecell{ Capitolato \\  \hyperref[ssub:uc2.3]{UC2.3}}\\
 
-    RFD13
+    RFD2.3
     & L'utente deve poter seleziona l'opzione di costruzione di un grafico di tipo Heat Map
     & Obbligatorio
-    & Interno  \hyperref[ssub:uc2.4]{UC2.4}\\
+    & \makecell{ Interno \\  \hyperref[ssub:uc2.4]{UC2.4}}\\
 
-    RFO14
+    RFO2.4
     & L'utente deve poter seleziona l'opzione di costruzione di un grafico di tipo PLMA
     & Obbligatorio
-    & Captiolato   \hyperref[ssub:uc2.5]{UC2.5}\\
+    & \makecell{Capitolato \\ \hyperref[ssub:uc2.5]{UC2.5}}\\
 
-    RFO15
+    RFO2.5
     & L'utente deve poter seleziona l'opzione di costruzione di un grafico di tipo Distance Map
     & Obbligatorio
-    & Captiolato  \hyperref[ssub:UC2.6]{UC2.6}\\
+    & \makecell{Capitolato \\ \hyperref[ssub:UC2.6]{UC2.6}}\\
 
-    RFO16
+    RFO3
     & L'utente deve poter modificare le proprietà dei metadati associati al dataset
     & Obbligatorio
-    & Interno  \hyperref[ssub:uc3.1]{UC3.1} \\
+    & \makecell{ Interno \\  \hyperref[ssub:uc3.1]{UC3.1} }\\
 
-    RFO17
+    RFO3.1
     & L'utente deve poter modificare il tipo dei metadati associati al dataset
     & Obbligatorio
-    & Interno\hyperref[sub:uc3.2]{UC3.2} \\
+    & \makecell{ Interno \\\hyperref[ssub:uc3.2]{UC3.2} }\\
 
-    RFO18
+    RFO3.2
     & L'utente deve poter modificare il metadato relativo alla visibilità di una dimensione del dataset
     & Obbligatorio
-    & Interno  \hyperref[sub:uc3.3]{UC3.3} \\
+    & \makecell{ Interno \\  \hyperref[ssub:uc3.3]{UC3.3} }\\
 
-    RFO19
+    RFO3.3
     & L'utente deve poter annullare le modifiche fatte ai metadati
     & Desiderabile
-    & Interno  \hyperref[ssub:uc3.4]{UC3.4} \\
+    & \makecell{ Interno \\  \hyperref[ssub:uc3.4]{UC3.4} }\\
 
-    RFD20
+    RFD4
     & L'utente deve poter modificare ed eventualmete annullare le modifiche effettuate su un grafico
     & Desiderabile
-    & Capitolato \hyperref[ssub:uc4]{UC4} \\
+    & \makecell{ Capitolato \\ \hyperref[sub:uc4]{UC4} }\\
 
-    RFD21
+    RFD4.1
     & L'utente deve poter modificare le proprietà del grafico
     & Desiderabile
-    & Capitolato \hyperref[ssub:uc4.1]{UC4.1} \\
+    & \makecell{ Capitolato \\ \hyperref[ssub:uc4.1]{UC4.1} }\\
 
-    RFD22
+    RFD4.2
     & L'utente deve poter modificare le proprietà della visualizzazione scatter plot matrix
     & Desiderabile
-    & Capitolato \hyperref[ssub:uc4.2]{UC4.2} \\
+    & \makecell{ Capitolato \\ \hyperref[ssub:uc4.2]{UC4.2} }\\
 
-    RFD23
+    RFD4.3
     & L'utente deve poter modificare il numero di dimensioni di rappresentabili dalla matrice di scatterplot
     & Desiderabile
-    & Capitolato \hyperref[ssub:uc4.2.1]{UC4.2.1} \\
+    & \makecell{ Capitolato \\ \hyperref[par:uc4.2.1]{UC4.2.1} }\\
 
-    RFD24
+    RFD4.4
     & l'utente deve poter aggiungere una ulteriore dimensione del dato alla matrice di scatterplot mediante colore
     & Desiderabile
-    & Verbale \hyperref[ssub:uc4.2.2]{UC4.2.2} \\
+    & \makecell{ Verbale \\ \hyperref[par:uc4.2.2]{UC4.2.2} }\\
 
-    RFD25
+    RFD4.5
     & l'utente deve poter aggiungere una ulteriore dimensione del dato alla matrice di scatterplot mediante brillanza
     & Desiderabile
-    & Verbale \hyperref[ssub:uc4.2.3]{UC4.2.3} \\
+    & \makecell{ Verbale \\ \hyperref[par:uc4.2.3]{UC4.2.3} }\\
 
-    RFD26
+    RFD4.6
     & l'utente deve poter selezionare un punto in uno scatter plot della matrice e visualizzarlo negli altri scatter plot.
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.2.4]{UC4.2.4} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.2.4]{UC4.2.4} }\\
 
-    RFD27
+    RFD4.7
     & l'utente deve poter selezionare un insieme di punti in uno scatter plot della matrice e visualizzarlo negli altri scatter plot.
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.2.5]{UC4.2.5} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.2.5]{UC4.2.5} }\\
 
-    RFD28
+    RFD4.8
     & l'utente deve poter selezionare un punto rappresentante un dato in uno scatter plot della matrice e visualizzarlo negli altri scatter plot.
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.2.3]{UC4.2.3} \\
-
-    RFD29
+    & \makecell{ Interno \\ \hyperref[par:uc4.2.3]{UC4.2.3} }\\
+    
+    RFD4.9
     & l'utente deve poter eseguire modifiche sul modo di calcolare la matrice delle distanze
     & Desiderabile
-    & Verbale \hyperref[ssub:uc4.3]{UC4.3} \\
+    & \makecell{ Verbale \\ \hyperref[ssub:uc4.3]{UC4.3} }\\
 
-    RFD30
+    RFD4.10
     & l'utente deve poter scegliere l'algoritmo di calcolo delle distanze tra quelli implementati in HD Viz
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.3.1]{UC4.3.1} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.3.1]{UC4.3.1} }\\
 
-    RFD31
+    RFD4.11
     & l'utente deve poter scegliere se normalizzare, standardizzare o non eseguire alcun tipo di preprocessing sui dati
     & Desiderabile
-    & Verbale \hyperref[ssub:uc4.3.2]{UC4.3.2} \\
+    & \makecell{ Verbale \\ \hyperref[par:uc4.3.2]{UC4.3.2} }\\
 
-    RFD32
+    RFD4.12
     & l'utente deve poter modificare l'influenza di una dimensione
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.3.3]{UC4.3.3} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.3.3]{UC4.3.3} }\\
 
-    RFD33
+    RFD4.13
     & l'utente deve poter scegliere quali dimensioni del dataset considerare per il calcolo delle distanze
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.3.2]{UC4.3.4} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.3.2]{UC4.3.4} }\\
 
-    RFD34
+    RFD4.14
     & L'utente deve poter modificare le proprietà della visualizzazione Force Field
     & Desiderabile
-    & Capitolato \hyperref[ssub:uc4.4]{UC4.4} \\
+    & \makecell{ Capitolato \\ \hyperref[ssub:uc4.4]{UC4.4} }\\
 
-    RFD35
+    RFD4.15
     & L'utente deve poter trascinare i nodi visualizzati dalla visualizzazione force field
     & Desiderabile
-    & Capitolato \hyperref[ssub:uc4.4.1]{UC4.4.1} \\
+    & \makecell{ Capitolato \\ \hyperref[par:uc4.4.1]{UC4.4.1} }\\
 
-    RFD36
+    RFD4.16
     & L'utente deve poter eliminare gli archi che collegano i nodi collegati da forze con valori al di fuori di una certa soglia nella visualizzazione force field
     & Desiderabile
-    & Verbale \hyperref[ssub:uc4.4.2]{UC4.4.2} \\
+    & \makecell{ Verbale \\ \hyperref[par:uc4.4.2]{UC4.4.2} }\\
 
-    RFD37
+    RFD4.17
     & L'utente deve poter eliminare gli archi tra nodi collegati tra di loro con forza inferiori ad una certa soglia
     & Desiderabile
-    & Verbale \hyperref[ssub:uc4.4.3]{UC4.4.3} \\
+    & \makecell{ Verbale \\ \hyperref[par:uc4.4.3]{UC4.4.3} }\\
 
-    RFD38
+    RFD4.18
     & L'utente deve poter eliminare gli archi tra nodi collegati tra di loro con forza superiori ad una certa soglia
     & Desiderabile
-    & Verbale \hyperref[ssub:uc4.4.4]{UC4.4.4} \\
+    & \makecell{ Verbale \\ \hyperref[par:uc4.4.4]{UC4.4.4} }\\
 
-    RFD39
+    RFD4.19
     & L'utente deve poter scalare la forza di attrattività
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.4.5]{UC4.4.5} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.4.5]{UC4.4.5} }\\
 
-    RFD40
+    % NICE
+    RFD4.20
     & L'utente deve poter modificare le proprietà della visualizzazione distance map
     & Desiderabile
-    & Capitolato \hyperref[ssub:uc4.5]{UC4.5} \\
+    & \makecell{ Capitolato \\ \hyperref[ssub:uc4.5]{UC4.5} }\\
 
-    RFD41
+    RFD4.21
     & L'utente deve poter modificare il gradiente di colori tra quelli offerti da HD Viz
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.5.1]{UC4.5.1} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.5.1]{UC4.5.1} }\\
 
-    RFO42
+    RFO4.22
     & L'utente deve poter ordinare la distance map
     & Obbligatorio
-    & Capitolato \hyperref[ssub:uc4.5.2]{UC4.5.2} \\
+    & \makecell{ Capitolato \\ \hyperref[par:uc4.5.2]{UC4.5.2} }\\
 
-    RFO43
+    RFO4.23
     & L'utente deve poter ordinare la distance map mediante clustering gerarchico
     & Obbligatorio
-    & Capitolato \hyperref[ssub:uc4.5.3]{UC4.5.3} \\
+    & \makecell{ Capitolato \\ \hyperref[par:uc4.5.3]{UC4.5.3} }\\
 
-    RFO44
+    RFO4.24
     & L'utente deve poter associare un dendrogramma alla distance map
     & Obbligatorio
-    & Capitolato \hyperref[ssub:uc4.5.2]{UC4.5.2} \\
+    & \makecell{ Capitolato \\ \hyperref[par:uc4.5.2]{UC4.5.2} }\\
 
-    RFD45
+    RFD4.25
     & L'utente deve poter ripristinare l'ordinamento originario
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.5.4]{UC4.5.4} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.5.4]{UC4.5.4} }\\
 
-    RFF46
+    RFF4.26
     & L'utente deve poter ordinare le dimensioni rappresentate nella distance map dei dati per valore
     & Facoltativo
-    & Interno \hyperref[ssub:uc4.5.5]{UC4.5.5} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.5.5]{UC4.5.5} }\\
 
-    RFD47
+    RFD4.27
     & L'utente deve poter modificare le etichette associate alla distance Map
     & Desiderabile
-    & Interno \hyperref[ssub:uc4.5.6]{UC4.5.6} \\
+    & \makecell{ Interno \\ \hyperref[par:uc4.5.6]{UC4.5.6} }\\
 
-    RFD48
+    RFD4.28
     & L'utente deve poter le proprietà della visualizzazione Proiezione Lineare Multi Asse
     & Desiderabile
-    & Interno  \hyperref[ssub:uc4.6.1]{UC4.6} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.6.1]{UC4.6} }\\
 
-    RFD49
+    RFD4.29
     & L'utente deve poter aggiungere una dimensione dalla visualizzazione Proiezione Lineare Multi Asse
     & Desiderabile
-    & Interno  \hyperref[par:uc4.6.1]{UC4.6.1} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.6.1]{UC4.6.1} }\\
 
-    RFD50
+    RFD4.30
     & L'utente deve poter rimuovere una dimensione dalla visualizzazione Proiezione Lineare Multi Asse
     & Desiderabile
-    & Interno  \hyperref[par:uc4.6.2]{UC4.6.2} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.6.2]{UC4.6.2} }\\
 
-    RFD51
+    RFD4.31
     & L'utente deve poter spostare gli asi per visualizzare diverse proiezioni dello stesso dataset nella visualizzazione Proiezione Lineare Multi Asse
     & Desiderabile
-    & Interno  \hyperref[par:uc4.6.3]{UC4.6.3} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.6.3]{UC4.6.3} }\\
 
-    RFD52
+    RFD4.32
     & L'utente deve poter modificare la visualizzazione dell'Heat Map
     & Desiderabile
-    & Interno  \hyperref[ssub:uc4.7]{UC4.7} \\
+    & \makecell{ Interno \\  \hyperref[ssub:uc4.7]{UC4.7} }\\
 
-    RFD53
+    RFD4.33
     & L'utente deve poter modificare la visualizzazione dell'Heat Map
     & Desiderabile
-    & Interno  \hyperref[ssub:uc4.7]{UC4.7} \\
+    & \makecell{ Interno \\  \hyperref[ssub:uc4.7]{UC4.7} }\\
 
-    RFD54
+    RFD4.34
     & L'utente deve poter modificare il gradiente dei colori nell'Heat Map scegliendo tra quelli proposti
     & Desiderabile
-    & Interno  \hyperref[par:uc4.7.1]{UC4.7.1} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.7.1]{UC4.7.1} }\\
 
-    RFD55
+    RFD4.35
     & L'utente deve poter modificare le proprprietà dell'asse nell'Heat Map
     & Desiderabile
-    & Interno  \hyperref[par:uc4.7.2]{UC4.7.2} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.7.2]{UC4.7.2} }\\
 
-    RFD56
+    RFD4.36
     & L'utente deve poter modificare la categoria di etichette assocciata all'asse nell'Heat Map
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.2.1]{UC4.7.2.1} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2.1]{UC4.7.2.1} }\\
 
-    RFD57
+    RFD4.37
     & L'utente deve poter ordinare gli elementi dell'asse nell'Heat Map con ordinamento
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.2.2]{UC4.7.2.2} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2.2]{UC4.7.2.2} }\\
 
-    RFD58
+    RFD4.38
     & L'utente deve poter ordinare gli elementi dell'asse nell'Heat Map con ordinamento clustering gerarchico
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.2.3]{UC4.7.2.3} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2.3]{UC4.7.2.3} }\\
 
-    RFD59
+    RFD4.39
     & L'utente deve poter modificare l'ordinamento degli elementi ritornando all'ordine orginale del dataset
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.2.4]{UC4.7.2.4} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2.4]{UC4.7.2.4} }\\
 
-    RFD60
+    RFD4.40
     & L'utente deve poter modificare le proprietà delle righe nell'Heat Map
     & Desiderabile
-    & Interno  \hyperref[par:uc4.7.3]{UC4.7.3} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.7.3]{UC4.7.3} }\\
 
-    RFD61
+    RFD4.41
     & L'utente deve poter modificare le etichette associate alle righe nell'Heat Map
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.3.1]{UC4.7.3.1} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.1]{UC4.7.3.1} }\\
 
-    RFD62
+    RFD4.42
     & L'utente deve poter modificare l'ordinamento delle righe nella visualizzazione Heat Map
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.3.2]{UC4.7.3.2} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.2]{UC4.7.3.2} }\\
 
-    RFD63
+    RFD4.43
     & L'utente deve poter ordinare le righe nell'Heat Map attraverso l'ordinamento clustering gerarchico
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.3.3]{UC4.7.3.3} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.3]{UC4.7.3.3} }\\
 
-    RFD64
+    RFD4.44
     & L'utente deve poter ordinare le righe nell'Heat Map nell'ordine originario del dataset
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.3.4]{UC4.7.3.4} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.4]{UC4.7.3.4} }\\
 
-    RFD65
+    RFD4.46
     & L'utente deve poter modificare l'ordinamento delle righe nell'Heat Map secondo dei valori di una dimensione selezionata
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.3.5]{UC4.7.3.5} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.5]{UC4.7.3.5} }\\
 
-    RFD66
+    RFD4.47
     & L'utente deve poter modificare le proprietà delle colonne nell'Heat Map
     & Desiderabile
-    & Interno  \hyperref[par:uc4.7.4]{UC4.7.4} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.7.4]{UC4.7.4} }\\
 
-    RFD67
+    RFD4.48
     & L'utente deve poter modificare le etichette associate alle colonne nell'Heat Map
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.4.1]{UC4.7.4.1} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4.1]{UC4.7.4.1} }\\
 
 
-    RFD68
+    RFD4.49
     & L'utente deve poter modificare l'ordinamento delle colonne nella visualizzazione Heat Map
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.4.2]{UC4.7.4.2} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4.2]{UC4.7.4.2} }\\
 
-    RFD69
+    RFD4.50
     & L'utente deve poter ordinare le colonne nell'Heat Map attraverso l'ordinamento clustering gerarchico
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.4.3]{UC4.7.4.3} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4.3]{UC4.7.4.3} }\\
 
-    RFD70
+    RFD4.51
     & L'utente deve poter ordinare le colonne nell'Heat Map nell'ordine originario del dataset
     & Desiderabile
-    & Interno  \hyperref[spar:uc4.7.4.4]{UC4.7.4.4} \\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4.4]{UC4.7.4.4} }\\
 
-    RFD71
+    RFD4.52
     & L'utente deve poter aggiungere o rimuovere dimensioni alla visulizzazione tramite Heat Map
     & Desiderabile
-    & Interno  \hyperref[par:uc4.7.5]{UC4.7.5} \\
+    & \makecell{ Interno \\  \hyperref[par:uc4.7.5]{UC4.7.5} }\\
 
-    RFD72
+    RFD4.53
     & L'utente deve poter scartare le modifiche fatte nella selezione corrente
     & Desiderabile
-    & Interno  \hyperref[ssub:uc4.8]{UC4.8} \\
+    & \makecell{ Interno \\  \hyperref[ssub:uc4.8]{UC4.8} }\\
 
 \end{longtable}
