@@ -1,6 +1,7 @@
 \subsection{UC5 - Visualizzazione Errore}
 \label{sub:uc5}
 
+% TODO: Modifica immagine
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{componenti/casi-duso/diagrammi/UC5.pdf}
@@ -9,7 +10,8 @@
 \end{figure}
 
 \begin{itemize}
-    \item \textbf{Descrizione}: Viene visualizzato un messaggio di errore relativo al fallimento di una specifica operazione.
+    \item \textbf{Descrizione}: Viene visualizzato un messaggio di errore relativo al fallimento di una specifica 
+    operazione.
 
     \item \textbf{Attore primario}: Utente.
     
@@ -94,5 +96,22 @@
     \item \textbf{Postcondizione}:   Viene visualizzato un messaggio di errore sulla validità del risultato della query 
                                         in quanto vuota non permette la formazione di un dataset corretto per l'uso di HD Viz.
 
+\end{itemize}
 
+\subsubsection{UC5.5 - Visualizzazione errore modifica metadato di visibilità}
+\label{ssub:uc5.5}
+
+\begin{itemize}
+    \item \textbf{Descrizione}: Viene visualizzato un messaggio di errore per la modifica impropria di un metadato di visibilità;
+
+    \item \textbf{Attore primario}: Utente;
+    
+    \item \textbf{Precondizione}:   Viene impostato un metadato di visibilità a nascosto, con meno di due metadati di 
+    visibilità impostati a visibile;
+
+    \item \textbf{Postcondizione}:   Viene visualizzato un messaggio di errore per la modifica impropria di un metadato 
+    di visibilità;
+    
+    \item \textbf{Scenario principale}: Viene visualizzato un messaggio di errore per la modifica impropria di un 
+    metadato di visibilità;
 \end{itemize}
