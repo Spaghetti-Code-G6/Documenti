@@ -12,9 +12,9 @@
 
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente modifica il grafico attuale del quale viene fornita la visualizzazione aggiornata.
-	
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   È stato costruito correttamente un grafico (\hyperref[sub:uc2]{UC2})
 
     \item \textbf{Postcondizione}:  Viene visualizzato il grafico modificato con i nuovi parametri.
@@ -31,7 +31,7 @@
             \item L'utente seleziona la voce "Annulla" dal menù di modifica.
             \item Le modifiche vengono scartate e viene ripristinata la visualizzazione del grafico precedente.  (\hyperref[ssub:uc4.8]{UC4.8})
         \end{enumerate}
-    
+
 \end{itemize}
 
 \newpage
@@ -39,11 +39,11 @@
 \label{ssub:uc4.1}
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente effettua modifica specifiche al tipo di grafico precedentemente costruito e visualizzato, 
+    \item \textbf{Descrizione}: L’utente effettua modifica specifiche al tipo di grafico precedentemente costruito e visualizzato,
                                 su parametri quindi validi solo per tale visualizzazione, e ne vede le modifiche.
-	
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   È stato costruito correttamente un grafico. (\hyperref[sub:uc2]{UC2})
 
     \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
@@ -75,9 +75,9 @@
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente modifica la visualizzazione dello Scatter Plot Matrix
                                 costruito dal dataset corrente.
-	
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatter Plot Matrix.
 
     \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
@@ -92,23 +92,23 @@
 \paragraph{UC4.2.1 - Modifica dimensioni della matrice}
 \label{par:uc4.2.1}
 \begin{itemize}
-    \item \textbf{Descrizione}:     L’utente dispone di dati con metadati assegnati e può 
-                                    scegliere fino a 5 dimensioni che possono essere visualizzate nello Scatter Plot 
+    \item \textbf{Descrizione}:     L’utente dispone di dati con metadati assegnati e può
+                                    scegliere fino a 5 dimensioni che possono essere visualizzate nello Scatter Plot
                                     Matrix.
-	
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatter Plot Matrix.
     \item \textbf{Postcondizione}:  Vengono modificate le dimensioni visualizzate nei plot dello Scatter Plot Matrix.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
             \item   L'utente seleziona l'opzione di selezione delle dimensioni.
-            \item   L'utente seleziona fino a cinque dimensioni. 
-           
+            \item   L'utente seleziona fino a cinque dimensioni.
+
             \item   Ad ogni selezione l'utente
                     sceglie una delle dimensioni attuali del grafico e la scarta.
-           
+
             \item   La visualizzazione sostituisce le dimensioni scartate con le nuove selezionate.
         \end{enumerate}
 \end{itemize}
@@ -116,22 +116,22 @@
 \paragraph{UC4.2.2 - Modifica dimensione rappresentata mediante tinta}
 \label{par:uc4.2.2}
 \begin{itemize}
-    
-    \item \textbf{Descrizione}:     L'utente assegna ad una dimensione un insieme di tinte per poterla rappresentare 
+
+    \item \textbf{Descrizione}:     L'utente assegna ad una dimensione un insieme di tinte per poterla rappresentare
                                     graficamente;
-    
+
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è uno Scatter Plot Matrix;
     \item \textbf{Postcondizione}:  Viene aggiunta una dimensione rappresentata mediante tinta;
     \item \textbf{Scenario principale}:
     \begin{enumerate}
-        
-        \item   Interagendo con l'apposito pulsante, l'utente seleziona la dimensione che desidera rappresentare 
+
+        \item   Interagendo con l'apposito pulsante, l'utente seleziona la dimensione che desidera rappresentare
                 mediante tinta, sostituendo così quella precedente;
 
-        \item   L'utente seleziona tra gli intervalli di tinte suggeriti quello con cui i diversi elementi della 
+        \item   L'utente seleziona tra gli intervalli di tinte suggeriti quello con cui i diversi elementi della
                 dimensione scelta saranno visualizzati;
-        
+
         \item   La visualizzazione viene aggiornata in accordo con le modifiche effettuate.
     \end{enumerate}
 \end{itemize}
@@ -146,7 +146,7 @@
     \item \textbf{Postcondizione}:  Viene modificata la dimensione rappresentata mediante brillanza;
     \item \textbf{Scenario principale}:
     \begin{enumerate}
-        \item   Interagendo con l'apposito pulsante, l'utente seleziona la dimensione che desidera rappresentare 
+        \item   Interagendo con l'apposito pulsante, l'utente seleziona la dimensione che desidera rappresentare
                 mediante brillanza, sostituendo così quella precedente;
 
         \item   La visualizzazione viene aggiornata in accordo con la modifica effettuata.
@@ -156,13 +156,13 @@
 \paragraph{UC4.2.4 - Selezione punto}
 \label{par:uc4.2.4}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente seleziona un punto in uno Scatter Plot della matrice per vedere come 
+    \item \textbf{Descrizione}: L'utente seleziona un punto in uno Scatter Plot della matrice per vedere come
                                 esso viene rappresentato negli altri grafici a dispersione della visualizzazione corrente.
-	
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatter Plot Matrix.
-    \item \textbf{Postcondizione}:  Le proiezioni del punto selezionato, se appartiene al dataset importato, 
+    \item \textbf{Postcondizione}:  Le proiezioni del punto selezionato, se appartiene al dataset importato,
                                     vengono evidenziate in tutti i grafici della visualizzazione.
 
 	\item \textbf{Scenario principale}:
@@ -183,13 +183,13 @@
 \paragraph{UC4.2.5 - Selezione insieme di punti}
 \label{par:uc4.2.5}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente seleziona un insieme di punti in uno Scatter Plot della matrice per vedere come 
+    \item \textbf{Descrizione}: L'utente seleziona un insieme di punti in uno Scatter Plot della matrice per vedere come
                                 essi vengono rappresentati negli altri Scatterplot della matrice.
-	
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è uno Scatter Plot Matrix.
-    \item \textbf{Postcondizione}:  Le proiezioni degli insiemi di punti selezionati, se appartenente al dataset importato, 
+    \item \textbf{Postcondizione}:  Le proiezioni degli insiemi di punti selezionati, se appartenente al dataset importato,
                                     vengono evidenziate in tutti i grafici della visualizzazione.
 
 	\item \textbf{Scenario principale}:
@@ -219,20 +219,20 @@
 \end{figure}
 
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione di un grafico che sfrutta la matrice delle distanze
-                                nella sua costruzione, quindi un Force Field o una Distance Map.
+    \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione di un grafico che sfrutta la matrice delle distanze (Force Field e Distance Map)
+                                per la sua costruzione.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Force Field o una Distance Map.
-    \item \textbf{Postcondizione}: Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
+    \item \textbf{Postcondizione}: Viene aggiornato e visualizzato il grafico precedentemente costruito con i parametri opportunamente modificati.
     \item \textbf{Scenario principale}:
     \begin{enumerate}
-        \item   L’utente apporta le modifiche desiderate tra quelle offerte dal grafico con matrice
-                delle distanze e quelle specifiche al tipo di grafico che la visualizzazione attuale rappresenta.
+        \item   L’utente apporta le modifiche desiderate tra quelle offerte dai grafici costruiti tramite matrice
+                delle distanze e quelle specifiche al tipo di grafico attualmente costruito.
     \end{enumerate}
     \item \textbf{Generalizzazioni}:
     \begin{itemize}
         \item Modifica Force Field. (\hyperref[ssub:uc4.4]{UC4.4})
-        \item Modifica Distance Map. (\hyperref[ssub:uc4.5]{UC4.5}) 
+        \item Modifica Distance Map. (\hyperref[ssub:uc4.5]{UC4.5})
     \end{itemize}
 \end{itemize}
 
@@ -242,64 +242,50 @@
     \item \textbf{Descrizione}: L’utente decide di cambiare l’algoritmo usato per il calcolo delle distanze.
 
     \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   L'utente ha selezionato la voce di \emph{"Modifica della distanza"} da (\hyperref[ssub:uc4.3]{UC4.3}).
-    \item \textbf{Postcondizione}:  La visualizzazione corrente viene aggiornata in rapporto ai nuovi valori della matrice.
+
+    \item \textbf{Precondizione}:   L'utente ha selezionato la voce \emph{"Modifica della distanza"} da (\hyperref[ssub:uc4.3]{UC4.3}).
+    \item \textbf{Postcondizione}:  La visualizzazione corrente viene aggiornata in funzione della matrice delle distanze ricalcolata.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente seleziona uno degli algoritmi presentati dalla modifica della distanza.
-            \item La visualizzazione modifica la distanza tra i punti secondo l'algoritmo scelto.
+            \item L'utente seleziona uno degli algoritmi di calcolo della distanza tra "\glossario{Euclidea}", "\glossario{Manhattan}", "\glossario{Minkowski}", "\glossario{Canberra}".
+            \item La distanza tra i punti viene ricalcolata secondo l'algoritmo scelto.
+            \item La visualizzazione del grafico precedentemente costruito viene aggiornata.
         \end{enumerate}
 \end{itemize}
 
 \paragraph{UC4.3.2 - Modifica preprocessing dei dati}
 \label{par:uc4.3.2}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente sceglie se normalizzare o standardizzare i dati.
+    \item \textbf{Descrizione}: L’utente sceglie se normalizzare, standardizzare o non effettuare alcuna operazione preliminare sui dati.
 
     \item \textbf{Attore primario}: Utente.
-    \item \textbf{Precondizione}: L'utente ha selezionato la voce di \emph{"Modifica preprocessing dei dati"} da (\hyperref[ssub:uc4.3]{UC4.3}).
-    \item \textbf{Postcondizione}: La visualizzazione corrente viene aggiornata in rapporto alla nuova matrice calcolata.
+    \item \textbf{Precondizione}: L'utente ha selezionato la voce \emph{"Modifica preprocessing dei dati"} da (\hyperref[ssub:uc4.3]{UC4.3}).
+    \item \textbf{Postcondizione}: La visualizzazione corrente viene aggiornata in funzione della matrice delle distanze ricalcolata.
     \item \textbf{Scenario principale}:
     \begin{enumerate}
-        \item L'utente seleziona la casella \emph{"Normalizza"} o \emph{"Standardizza"} in base alla sua preferenza.
-        \item HD Viz ricalcola matrice delle distanze in base alla selezione e aggiorna la visualizzazione.
+        \item L'utente seleziona la casella \emph{"Normalizza"} o \emph{"Standardizza"}.
+        \item HD Viz ricalcola matrice delle distanze in base alla opzione scelta selezione
+        \item La visualizzazione del grafico precedentemente costruito viene aggiornata.
     \end{enumerate}
 \end{itemize}
 
 \paragraph{UC4.3.3 - Modifica influenza di una dimensione}
 \label{par:uc4.3.3}
 \begin{itemize}
-    \item \textbf{Descrizione}: Per visualizzare correttamente relazioni tra i dati che 
-                                potrebbero perdersi dopo operazioni di standardizzazione o normalizzazione,
+    \item \textbf{Descrizione}: Per visualizzare correttamente relazioni tra i dati,
                                 l’utente decide di assegnare manualmente dei pesi alle dimensioni.
 
     \item \textbf{Attore primario}: Utente.
-    \item \textbf{Precondizione}: L'utente ha selezionato la voce di \emph{"Modifica influenza di una dimensione"} da (\hyperref[ssub:uc4.3]{UC4.3}).
+    \item \textbf{Precondizione}: L'utente ha selezionato la voce \emph{"Modifica influenza di una dimensione"} da (\hyperref[ssub:uc4.3]{UC4.3}).
 
-    \item \textbf{Postcondizione}: La visualizzazione corrente viene aggiornata in rapporto alla nuova matrice calcolata.
-    \item \textbf{Scenario principale}:  
-    \begin{itemize}
-        \item L’utente seleziona una dimensione e le assegna manualmente un peso.
-        \item HD Viz ricalcola la matrice delle distanze con i nuovi pesi e aggiorna la visualizzazione.
-    \end{itemize}
-\end{itemize}
-
-\paragraph{UC4.3.4 - Modifica delle dimensioni considerate}
-\label{par:uc4.3.4}
-\begin{itemize}
-    \item \textbf{Descrizione}: L'utente decide di manipolare la visibilità delle dimensioni 
-                                del grafico attualmente costruito.
-    \item \textbf{Attore primario}: Utente.
-    \item \textbf{Precondizione}: L'utente ha selezionato la voce di \emph{"Modifica delle dimensioni considerate"} da (\hyperref[ssub:uc4.3]{UC4.3}).
-    \item \textbf{Postcondizione}: La visualizzazione corrente viene aggiornata in rapporto alla nuova matrice calcolata.
+    \item \textbf{Postcondizione}: La visualizzazione corrente viene aggiornata in funzione della matrice delle distanze ricalcolata.
     \item \textbf{Scenario principale}:
-    \begin{enumerate}
-        \item L'utente sceglie le dimensioni che vuole modificare. 
-        \item L'assegna ad ognuna il metadato di visibilità: \emph{"visibile"} o\emph{"nascosta"}.
-        \item HD Viz ricalcola la matrice delle distanze con le nuove dimensioni e aggiorna la visualizzazione.
-    \end{enumerate}
+    \begin{itemize}
+        \item L’utente seleziona una dimensione del datset importato e le assegna manualmente un peso.
+        \item HD Viz ricalcola la matrice delle distanze con i nuovi pesi.
+        \item La visualizzazione del grafico precedentemente costruito viene aggiornata.
+    \end{itemize}
 \end{itemize}
 
 \newpage
@@ -317,12 +303,12 @@
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione del grafo Force Field
                                 costruito dal dataset corrente.
-	
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
 
-    \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
+    \item \textbf{Postcondizione}:  Viene aggiornato e visualizzato il grafico precedentemente costruito con i parametri opportunamente modificati.
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
@@ -333,83 +319,82 @@
 \paragraph{UC4.4.1 - Modifica posizione dei nodi}
 \label{par:uc4.4.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente vuole esplorare meglio i dati e decide di 
-                                modificare la posizione dei nodi del grafo, trascinandoli con il 
-                                cursore nell'area definita dal grafico.
-	
+    \item \textbf{Descrizione}: L’utente decide di modificare la posizione dei nodi del grafo,
+                                trascinandoli nell'area definita dal grafico.
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
     \item \textbf{Postcondizione}:  Viene modificata la posizione dei nodi del grafo nella visualizzazione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente tiene premuto il tasto di selezione e trascina il cursore spostando il nodo nello spazio della visualizzazione.
-            \item La visualizzazione muove i punti del grafo mantenendo le connessioni tra i nodi.
+            \item L'utente clicca e trascina un nodo nello spazio della visualizzazione.
+            \item La visualizzazione muove i punti del grafo mantenendo le aggiornate le connessioni tra i nodi.
         \end{enumerate}
 \end{itemize}
 
 \paragraph{UC4.4.2 - Taglio degli archi}
 \label{par:uc4.4.2}
 \begin{itemize}
-    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia sulla distanza, gli archi corrispondenti ad una distanza che non rispetta la soglia vengono rimossi;
+    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia sulla distanza e gli archi che collegano nodi con distanza al di fuori della soglia impostata vengono eliminati;
     \item \textbf{Attore primario}: Utente;
-    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é un Force Field;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è un Force Field;
     \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi in base al valore di soglia impostato;
     \item \textbf{Scenario principale}:
     \begin{itemize}
-        \item L'utente inserisce nell'apposito campo il valore di soglia;
-        \item Gli archi le cui coordinate nella matrice delle distanze non rispettano il valore di soglia vengono rimossi;
-        \item La visualizzazione viene aggiornata rimuovendo gli archi secondo il valore di soglia stabilito.
+        \item L'utente imposta una soglia;
+        \item Gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza che non rispetta la soglia impostata vengono rimossi;
+        \item La visualizzazione viene aggiornata con il grafo opportunamente aggiornato.
     \end{itemize}
 \end{itemize}
 
 \paragraph{UC4.4.3 - Taglio degli archi su limite inferiore}
 \label{par:uc4.4.3}
 \begin{itemize}
-    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia minimo sulla distanza, gli archi corrispondenti ad una distanza inferiore vengono rimossi;
+    \item \textbf{Descrizione}:     L'utente imposta il valore minimo della distanza e gli archi che collegano nodi che nella matrice delle distanze hanno distanza minore al limite inferiorie vengono eliminati;
     \item \textbf{Attore primario}: Utente;
-    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é un Force Field;
-    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi associati ad una distanza inferiore al valore di soglia minimo;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è un Force Field;
+    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione rimuovendo gli archi  che collegano nodi tra loro distanti meno del valore di soglia minimo;
     \item \textbf{Scenario principale}:
     \begin{itemize}
-        \item L'utente inserisce nell'apposito campo il valore di soglia minimo;
-        \item Gli archi le cui coordinate nella matrice delle distanze corrispondono ad una distanza inferiore al valore di soglia minimo vengono rimossi;
-        \item La visualizzazione viene aggiornata rimuovendo gli archi con una distanza associata inferiore al valore di soglia minimo.
+        \item L'utente imposta il valore di soglia minimo;
+        \item Gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza inferiore alla soglia minima impostata vengono rimossi;
+        \item La visualizzazione viene aggiornata con il grafo opportunamente aggiornato.
     \end{itemize}
 \end{itemize}
 
 \paragraph{UC4.4.4 - Taglio degli archi su limite superiore}
 \label{par:uc4.4.4}
 \begin{itemize}
-    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia massimo sulla distanza, gli archi corrispondenti ad una distanza superiore vengono rimossi;
+    \item \textbf{Descrizione}:     L'utente imposta il valore minimo della distanza e gli archi che collegano nodi che nella matrice delle distanze hanno distanza maggiore al limite superiore vengono eliminati;
     \item \textbf{Attore primario}: Utente;
-    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é un Force Field;
-    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi associati ad una distanza superiore al valore di soglia massimo;
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è un Force Field;
+    \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione rimuovendo gli archi  che collegano nodi tra loro distanti più del valore di soglia massimo;
     \item \textbf{Scenario principale}:
     \begin{itemize}
-        \item L'utente inserisce nell'apposito campo il valore di soglia massimo;
-        \item Gli archi le cui coordinate nella matrice delle distanze corrispondono ad una distanza superiore al valore di soglia massimo vengono rimossi;
-        \item La visualizzazione viene aggiornata rimuovendo gli archi con una distanza associata superiore al valore di soglia massimo.
+        \item L'utente imposta il valore di soglia minimo;
+        \item Gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza superiore alla soglia massima impostata vengono rimossi;
+        \item La visualizzazione viene aggiornata con il grafo opportunamente aggiornato.
     \end{itemize}
 \end{itemize}
 
 \paragraph{UC4.4.5 - Modifica scala della forza}
 \label{par:uc4.4.5}
 \begin{itemize}
-    \item \textbf{Descrizione}: Per poter visualizzare meglio i cluster di dati l’utente 
-                                decide di scalare la forza di attrattiva tra i nodi.
+    \item \textbf{Descrizione}: L’utente decide di scalare la forza di attrazione tra i nodi.
 
-	
+
     \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un Force Field.
-    \item \textbf{Postcondizione}:  Viene modificata l'intensità della forza attrattiva tra i nodi del grafo nella visualizzazione.
+
+    \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è un Force Field;
+    \item \textbf{Postcondizione}:  Viene modificata l'intensità della forza di attrazione tra i nodi del grafo nella visualizzazione.
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente seleziona la barra intensità e trascinando il cursore sulla barra varia l’intensità.
+            \item L'utente trascina il cursore sulla barra di intensità varia il valore dell’intensità.
             \item La visualizzazione modifica l'intensità della forza secondo il valore selezionato nel grafo.
+            \item La visualizzazione viene aggiornata con il grafo opportunamente aggiornato.
         \end{enumerate}
 \end{itemize}
 
@@ -429,7 +414,7 @@
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è un grafico di tipo Distance Map;
     \item \textbf{Postcondizione}: Viene aggiornato il grafico costruito con i nuovi parametri;
-    \item \textbf{Scenario principale}: 
+    \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente apporta le modifiche desiderate tra quelle offerte dalla Distance Map.
     \end{itemize}
@@ -438,11 +423,11 @@
 \paragraph{UC4.5.1 - Modifica gradiente di colori}
 \label{par:uc4.5.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente vuole esplorare meglio i dati e decide di modificare la scala dei colori applicata alla Distance Map scegliendo una tra quelle proposte;
+    \item \textbf{Descrizione}: L'utente decide di modificare la scala di colori applicata alla Distance Map scegliendo una tra "\glossario{Blue-Magenta-Yellow}", "\glossario{CoolWarm}", "\glossario{Dim Gray}";
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map;
     \item \textbf{Postcondizione}: Viene modificata la scala dei colori del grafico nella visualizzazione.
-    \item \textbf{Scenario principale}: 
+    \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente seleziona la voce "Scala dei colori" e seleziona una delle opzioni disponibili.
         \item La visualizzazione cambia la scala dei colori adottata dalla Distance Map.
@@ -452,11 +437,11 @@
 \paragraph{UC4.5.2 - Ordinamento}
 \label{par:uc4.5.2}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map il quale aggiunge un dendrogramma alla visualizzazione corrente.
+    \item \textbf{Descrizione}: L'utente decide di ordinare le righe e le colonne del Distance Map al quale viene aggiunto un dendrogramma alla visualizzazione corrente.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
-    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzati secondo l'ordine scelto dall'utente.
-    \item \textbf{Scenario principale}: 
+    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate ordinate.
+    \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente seleziona la casella di ordinamento.
         \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordinamento selezionato.
@@ -466,42 +451,44 @@
 \paragraph{UC4.5.3 - Ordinamento clustering gerarchico}
 \label{par:uc4.5.3}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map seguendo l'algoritmo di clustering gerarchico il quale aggiunge un dendrogramma alla visualizzazione corrente.
+    \item \textbf{Descrizione}: L'utente decide di ordinare le righe e le colonne del Distance Map con l'algoritmo di clustering gerarchico il quale aggiunge un dendrogramma alla visualizzazione corrente.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
-    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine impostato dall'algoritmo di clustering gerarchico.
-    \item \textbf{Scenario principale}: 
+    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine impostato dall'algoritmo di clustering gerarchico e con annesso il dendrogramma prodotto dall'ordinamento.
+    \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente seleziona la casella di ordinamento delle colonne.
-        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordinamento del clustering gerarchico, inoltre viene aggiunto il dendrogramma al grafico.
+        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordinamento del clustering gerarchico e viene aggiunto il dendrogramma al grafico.
     \end{itemize}
 \end{itemize}
 
 \paragraph{UC4.5.4 - Ordinamento originario}
 \label{par:uc4.5.4}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map seguendo l'ordine originario del dataset corrente.
+    \item \textbf{Descrizione}: L'utente decide di ordinare le righe e le colonne del Distance Map seguendo l'ordine originario del dataset corrente.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
     \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate secondo l'ordine originario del dataset corrente.
-    \item \textbf{Scenario principale}: 
+    \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente seleziona la casella di ordinamento delle colonne.
-        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordine originario del dataset corrente.
+        \item Le righe e le colonne della Distance Map vengono ordinate.
+        \item Il grafico viene visualizzato aggiornato.
     \end{itemize}
 \end{itemize}
 
 \paragraph{UC4.5.5 - Ordinamento per dimensione}
 \label{par:uc4.5.5}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente per esplorare meglio i dati decide di ordinare le righe e le colonne del Distance Map ordinando le dimensioni per un dato algoritmo.
+    \item \textbf{Descrizione}: L'utente decide di ordinare in maniera crescente le righe e le colonne del Distance Map secondo il valore delle dimensioni.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
-    \item \textbf{Postcondizione}: Le colonne del Distance Map vengono visualizzati secondo l'ordine impostato dall'algoritmo di ordinamento selezionato applicato alle dimensioni.
-    \item \textbf{Scenario principale}: 
+    \item \textbf{Postcondizione}: Le righe e le colonne del Distance Map vengono visualizzate ordinate secondo il valore delle dimensioni.
+    \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente seleziona la casella di ordinamento delle colonne.
-        \item Le righe e le colonne della Distance Map vengono visualizzate secondo l'ordine impostato dall'algoritmo di ordinamento selezionato applicato alle dimensioni.
+        \item Le righe e le colonne della Distance Map vengono ordinate.
+        \item Il grafico viene visualizzato aggiornato.
     \end{itemize}
 \end{itemize}
 
@@ -509,14 +496,15 @@
 \paragraph{UC4.5.6 - Modifica etichette}
 \label{par:uc4.5.6}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente decide di modificare una o più etichette associate della Distance Map.
+    \item \textbf{Descrizione}: L'utente decide di modificare una etichetta associata alla Distance Map.
     \item \textbf{Attore primario}: Utente.
     \item \textbf{Precondizione}: La visualizzazione costruita dal dataset corrente è una Distance Map.
     \item \textbf{Postcondizione}: Le etichette della Distance Map vengono modificate secondo la scelta effettuata dall'utente.
     \item \textbf{Scenario principale}:
     \begin{itemize}
-        \item L'utente quali etichette modificare e le modifica.
-        \item Viene aggiornata la visualizzazione delle etichette nella Distance Map.
+        \item L'utente sceglie una etichetta da modificare
+        \item L'utente sceglie una dimensione del dato da utilizzare come etichetta.
+        \item Viene aggiornata l'etichetta nella Distance Map.
     \end{itemize}
 \end{itemize}
 
@@ -535,9 +523,9 @@
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente vuole modificare la visualizzazione della Proiezione Lineare Multi Asse
                                 costruita dal dataset corrente.
-	
+
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è un grafico di tipo Proiezione Lineare Multi Asse.
     \item \textbf{Postcondizione}:  Viene aggiornato il grafico costruito e visualizzato con i nuovi parametri.
 
@@ -554,7 +542,7 @@
                                 aggiungendo una dimensione al grafico.
 
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita corrente è una Proiezione Lineare Multi Asse
                                     e rappresenta al più una dimensione in meno al numero di dimensioni del dataset.
     \item \textbf{Postcondizione}:  La visualizzazione della PLMA aggiunge una dimensione.
@@ -563,7 +551,7 @@
         \begin{enumerate}
             \item L'utente seleziona la voce "Dimensioni" e seleziona una dimensione da aggiungere alla proiezione.
             \item La visualizzazione aggiunge la dimensione selezionata e riposiziona i punti.
-           
+
         \end{enumerate}
 \end{itemize}
 
@@ -574,7 +562,7 @@
                                 a patto che essa non sia monodimensionale.
 
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   La visualizzazione costruita dal dataset corrente è una Proiezione Lineare Multi Asse
                                     e rappresenta almeno due dimensioni.
     \item \textbf{Postcondizione}:  La visualizzazione della PLMA rimuove una dimensione.
@@ -583,7 +571,7 @@
         \begin{enumerate}
             \item L'utente seleziona la voce "Dimensioni" e seleziona una dimensione da rimuovere dalla proiezione.
             \item La visualizzazione rimuove la dimensione selezionata e riposiziona i punti.
-           
+
         \end{enumerate}
 \end{itemize}
 
@@ -615,9 +603,9 @@
 
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente modifica la visualizzazione della Heat Map correntemente visualizzata;
-	
+
     \item \textbf{Attore primario}: Utente;
-    
+
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è una Heat Map;
 
     \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione secondo i nuovi parametri impostati;
@@ -632,9 +620,9 @@
 \label{par:uc4.7.1}
 \begin{itemize}
     \item \textbf{Descrizione}: L’utente modifica il gradiente di colori applicato alla Heat Map scegliendone uno tra quelli proposti;
-	
+
     \item \textbf{Attore primario}: Utente;
-    
+
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è una Heat Map;
     \item \textbf{Postcondizione}:  Il gradiente di colori utilizzato nella visualizzazione della Heat Map é quello selezionato dall'utente;
 
@@ -670,7 +658,7 @@
     \begin{enumerate}
         \item L'utente mediante l'apposito bottone modifica la categoria di etichette associata all'asse della visualizzazione (\hyperref[spar:uc4.7.2.1]{UC4.7.2.1});
     \end{enumerate}
-    \item \textbf{Generalizzazioni}: 
+    \item \textbf{Generalizzazioni}:
     \begin{itemize}
         \item Modifica righe (\hyperref[par:uc4.7.3]{UC4.7.3});
         \item Modifica colonne (\hyperref[par:uc4.7.4]{UC4.7.4}).
@@ -754,7 +742,7 @@
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map;
     \item \textbf{Postcondizione}:  Le proprietà visive delle righe vengono modificate secondo quanto selezionato;
-    
+
     \item \textbf{Scenario principale}:
     \begin{enumerate}
         \item L'utente mediante l'apposito bottone effettua l'ordinamento delle righe della visualizzazione (\hyperref[spar:uc4.7.3.2]{UC4.7.3.2});
@@ -764,7 +752,7 @@
         \item L'utente mediante l'apposito bottone modifica la categoria di etichette associata alle righe della visualizzazione (\hyperref[spar:uc4.7.3.1]{UC4.7.3.1}).
     \end{enumerate}
 \end{itemize}
-    
+
 \subparagraph{UC4.7.3.1 - Modifica etichette righe}
 \label{spar:uc4.7.3.1}
 \begin{itemize}
@@ -857,7 +845,7 @@
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset é una Heat Map;
     \item \textbf{Postcondizione}:  Le proprietà visive delle colonne vengono modificate secondo quanto selezionato;
-    
+
     \item \textbf{Scenario principale}:
     \begin{enumerate}
         \item L'utente mediante l'apposito bottone effettua l'ordinamento delle colonne della visualizzazione (\hyperref[spar:uc4.7.4.2]{UC4.7.4.2});
@@ -944,7 +932,7 @@
         \item La dimensione selezionata viene rimossa dalla visualizzazione;
         \item La visualizzazione viene aggiornata in accordo con le modifiche di rappresentazione  delle dimensioni effettuate;
     \end{enumerate}
-    \item \textbf{Scenario alternativo}: 
+    \item \textbf{Scenario alternativo}:
     \begin{enumerate}
         \item L'utente seleziona il pulsante "Aggiungi" in una tra le dimensioni correntemente non visualizzate;
         \item La dimensione selezionata viene aggiunta alla visualizzazione;
@@ -958,7 +946,7 @@
     \item \textbf{Descrizione}: L'utente decide di scartare le modifiche fatte nella corrente selezione di modifica.
 
     \item \textbf{Attore primario}: Utente.
-    
+
     \item \textbf{Precondizione}:   L'utente ha selezionato la voce di Modifica Grafico dal menu.
     \item \textbf{Postcondizione}:  Viene ripristinato il grafo ai parametri precedenti della selezione e visualizzato.
 
@@ -967,9 +955,6 @@
 
             \item L'utente seleziona il pulsante "Annulla modifiche".
             \item HD Viz ripristina i parametri del grafo ai valori precedenti alla selezione del menu di modifica.
-        
+
         \end{enumerate}
 \end{itemize}
-
-
-
