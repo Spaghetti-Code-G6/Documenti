@@ -10,20 +10,32 @@
 
 %TODO: Modifica immagine
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente seleziona una dimensione e modifica il metadato di interesse;
+    \item \textbf{Descrizione}: L’utente seleziona una dimensione e modifica i metadati di interesse;
 	
     \item \textbf{Attore primario}: Utente;
     
     \item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
-    \item \textbf{Postcondizione}:  Vengono aggiornati i metadati modificati della dimensione scelta dall'utente;
+    \item \textbf{Postcondizione}:  Sono stati aggiornati i metadati modificati della dimensione scelta dall'utente e 
+    sono state aggiornate eventuali visualizzazioni presenti, in accordo con i metadati aggiornati;
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-                \item L'utente sceglie una dimensione da modificare (\hyperref[ssub:uc3.1]{UC3.1});
-                \item L'utente esegue le modifiche tra quelle rese possibili (\hyperref[ssub:uc3.2]{UC3.2} e 
-                \hyperref[ssub:uc3.3]{UC3.3});
-                \item Vengono aggiornati i metadati modificati della dimensione scelta dall'utente.
+                \item L'utente seleziona una dimensione da modificare (\hyperref[ssub:uc3.1]{UC3.1});
+                \item L'utente modifica il metadato di tipo e/o quello di visibilità della dimensione selezionata 
+                (\hyperref[ssub:uc3.2]{UC3.2} e \hyperref[ssub:uc3.3]{UC3.3});
+                \item Vengono aggiornati i metadati modificati della dimensione selezionata;
+                \item Vengono aggiornate le eventuali visualizzazioni presenti, in accordo con i metadati 
+                aggiornati.
         \end{enumerate}
+
+    \item \textbf{Scenari alternativi}:
+    \begin{itemize}
+        \item 
+        \begin{enumerate}
+            \item L'utente seleziona una dimensione da modificare (\hyperref[ssub:uc3.1]{UC3.1});
+            \item L'utente deseleziona la dimensione selezionata.
+        \end{enumerate}
+    \end{itemize}
 \end{itemize}
 
 \newpage
