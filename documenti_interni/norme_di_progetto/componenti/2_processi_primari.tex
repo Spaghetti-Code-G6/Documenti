@@ -61,6 +61,19 @@ Il gruppo deve quindi creare un \textsc{piano di progetto}, ovvero pianificare c
     \item \textbf{Preventivo e consuntivo}: viene stimata la quantità di lavoro necessaria per ogni processo del \glossario{ciclo di vita} del progetto. Viene quindi esposto un \glossario{preventivo} e un successivo \glossario{consuntivo}, entrambi relativi ad un dato periodo.
 \end{itemize}
 
+\paragraph{Piano di Qualifica}
+Il \textsc{\glossario{Piano di Qualifica}} raccoglie tutte le regole e le linee guida per garantire che i materiali prodotti siano di qualità. Questo insieme di regole deve essere, come per il piano di progetto, formalizzato in un omonimo documento redatto dai \emph{verificatori}.
+Questo documento è strutturato nel seguente modo:
+\begin{itemize}
+    \item \textbf{Qualità di processo}: sono individuati i processi dagli \glossario{standard di processo}, definiti degli obbiettivi, strategie per attuarli e \glossario{metriche} per controllarli e misurarli;
+    \item \textbf{Qualità di prodotto}: vengono individuate le caratteristiche più importati del prodotto, gli obbiettivi necessari per raggiungerle e le metriche per misurarle;
+    \item \textbf{Specifiche dei test}: vengono definiti dei \glossario{test} attraverso cui il prodotto deve passare per garantire il soddisfacimento dei requisiti;
+    \item \textbf{Standard di qualità}: descritti gli \glossario{standard di qualità} selezionati;
+    \item \textbf{Resoconto delle attività di verifica}: vengono esposti i risultati dei test eseguiti durante il periodo di revisione; le metriche usate per l'ottenimento di questi risultati sono redatte nel documento;
+	\item \textbf{Lista di controllo}:  Lista che contiene gli errori riscontrati. Questa sezione è in continua fase di aggiornamento per l'intera durata del progetto.
+    \item \textbf{Valutazioni per il miglioramento}: vengono elencati i problemi riscontrati durante lo sviluppo del progetto e vengono proposte delle soluzioni che potrebbero portare alla risoluzione o alla mitigazione dei problemi individuati.
+\end{itemize} 
+
 In questo documento si fa uso di un codice identificativo dei rischi. Il codice avrà questa forma:
 \begin{center}
 	\textbf{[Tipologia][Codice]}
@@ -82,21 +95,6 @@ Ogni rischio avrà, oltre al codice, due informazioni:
 	\item \textbf{Occorrenza}: La frequenza con cui occorre il rischio;
 	\item \textbf{Gravità}: Indica la gravità del rischio.
 \end{itemize}
-
-
-\paragraph{Piano di Qualifica}
-Il \textsc{\glossario{Piano di Qualifica}} raccoglie tutte le regole e le linee guida per garantire che i materiali prodotti siano di qualità. Questo insieme di regole deve essere, come per il piano di progetto, formalizzato in un omonimo documento redatto dai \emph{verificatori}.
-Questo documento è strutturato nel seguente modo:
-\begin{itemize}
-    \item \textbf{Qualità di processo}: sono individuati i processi dagli \glossario{standard di processo}, definiti degli obbiettivi, strategie per attuarli e \glossario{metriche} per controllarli e misurarli;
-    \item \textbf{Qualità di prodotto}: vengono individuate le caratteristiche più importati del prodotto, gli obbiettivi necessari per raggiungerle e le metriche per misurarle;
-    \item \textbf{Specifiche dei test}: vengono definiti dei \glossario{test} attraverso cui il prodotto deve passare per garantire il soddisfacimento dei requisiti;
-    \item \textbf{Standard di qualità}: descritti gli \glossario{standard di qualità} selezionati;
-    \item \textbf{Resoconto delle attività di verifica}: vengono esposti i risultati dei test eseguiti durante il periodo di revisione; le metriche usate per l'ottenimento di questi risultati sono redatte nel documento;
-	\item \textbf{Lista di controllo}:  Lista che contiene gli errori riscontrati. Questa sezione è in continua fase di aggiornamento per l'intera durata del progetto.
-    \item \textbf{Valutazioni per il miglioramento}: vengono elencati i problemi riscontrati durante lo sviluppo del progetto e vengono proposte delle soluzioni che potrebbero portare alla risoluzione o alla mitigazione dei problemi individuati.
-\end{itemize} 
-
 
 
 \subsubsection{Strumenti}
@@ -244,8 +242,8 @@ Ogni caso d'uso ha, inoltre, una struttura ben definita, riportata a seguito:
     \item \textbf{Generalizzazioni}: Rappresentano delle possibili specializzazioni del caso d'uso. Non necessariamente presenti.
 \end{itemize}
 
-\paragraph{Tracciamento dei requisiti e dei casi d'uso}
-Per tenere traccia dei casi d'uso e dei requisiti il gruppo ha deciso di usare come strumento l'\glossario{issue tracking system} di GitHub, strumento che tramite il \glossario{workflow} delle \glossario{issue} stesse, diviso tra "To do", "In progress" e "Done", allo stesso tempo tiene sempre aggiornati i membri del gruppo e spinge i componenti del gruppo stesso ad aggiornarne lo stato per far si che il resto del gruppo sia informato sullo stato di avanzamento di tutti i requisiti e dei casi d'uso.
+\paragraph{Tracciamento dei progressi e delle risorse}
+Per tenere traccia dell'andamento del lavoro e dei ruoli assegnati, il gruppo ha deciso di usare come strumento l'\glossario{issue tracking system} di GitHub, strumento che tramite il \glossario{workflow} delle \glossario{issue} stesse, diviso tra "To do", "In progress" e "Done", allo stesso tempo tiene sempre aggiornati i membri del gruppo e spinge i componenti del gruppo stesso ad aggiornarne lo stato per far si che il resto del gruppo sia informato sullo stato di avanzamento di tutti i requisiti e dei casi d'uso.
 
 \paragraph{Metriche}
  Il gruppo ha deciso di tenere traccia del completamento del progetto in base ai requisiti. A questo scopo è stato deciso di calcolare una percentuale di completamento del progetto come il rapporto tra il numero di requisiti implementati e dei requisiti totali moltiplicato per 100. Questo da un metodo molto immediato per capire lo stato di avanzamento del progetto ed è facile da calcolare. Il valore di questo indice varia tra 0 e 100, dove 100 indica che il progetto è completato, mentre 0 indica che deve ancora essere iniziato. \par
@@ -257,7 +255,7 @@ Per tenere traccia dei casi d'uso e dei requisiti il gruppo ha deciso di usare c
     Lo scopo di quest'attività è quello di individuare le caratteristiche che il prodotto deve avere per soddisfare nel modo migliore possibile le caratteristiche del proponente in risposta ai requisiti individuati dall'analisi dei requisiti. In quest'attività bisogna:
     \begin{itemize}
         \item Garantire la qualità del prodotto seguendo un principio di correttezza costruttivo
-        \item Organizzare, suddividere i compiti in modo da diminuire la complessità del problema e riducendolo via via in sottoproblemi sempre più elementari fino ad arrivare ai singoli componenti
+        \item Organizzare e suddividere i compiti in modo da diminuire la complessità del problema e riducendolo via via in sottoproblemi sempre più elementari fino ad arrivare ai singoli componenti
         \item Ottimizzare l'uso di risorse
     \end{itemize}
 
@@ -320,12 +318,12 @@ Per tenere traccia dei casi d'uso e dei requisiti il gruppo ha deciso di usare c
         \item Struttura dei metodi: la struttura dei metodi deve sempre avere alcune caratteristiche:
         \begin{itemize}
             \item I nomi dei metodi devono rispettare la convenzione snake\_case;
-            \item I metodi devono essere i più brevi possibili e non possono essere contenute più istruzioni nella stessa riga;
-            \item Deve essere presente una spaziatura tra la parentesi tonda che contiene i parametri dei metodi e la parentesi graffa di apertura deve essere inserita una spaziatura.
+            \item I metodi devono essere il più brevi possibile e non possono essere contenute più istruzioni nella stessa riga;
+            \item Deve essere presente una spaziatura tra la parentesi tonda che contiene i parametri dei metodi e la parentesi graffa di apertura di blocco.
         \end{itemize}
         \item Univocità dei nomi: le variabili e i metodi devono avere un nome univoco e rappresentativo che permetta di identificarli univocamente e che eviti ambiguità;
-        \item Costanti: i nomi delle costanti devono essere scritte in stampatello maiuscolo;
-        \item Lingua: la lingua utilizzata per i nomi delle variabili e dei metodi devono essere scritti in inglese.
+        \item Costanti: i nomi delle costanti devono essere scritti in stampatello maiuscolo;
+        \item Lingua: la lingua utilizzata per i nomi delle variabili e dei metodi deve essere l'inglese.
     \end{itemize}
     Il gruppo si riserva la possibilità di cambiare, prima di iniziare l'attività di codifica, le norme qui specificate in caso se ne sentisse la necessità.
 
