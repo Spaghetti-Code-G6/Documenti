@@ -7,16 +7,16 @@
     \caption{Requisiti funzionali}%
     \label{tab:requisiti_funzionali} \\
     \rowcolor{lightgray}
-    \multicolumn{1} {>{\centering\bfseries}m{20mm}} {\textbf{Requisito}} 
-    & \multicolumn{1} {>{\centering}m{90mm}} {\textbf{Descrizione}} 
-    & \multicolumn{1} {>{\centering}m{28mm}} {\textbf{Classificazione}} 
+    \multicolumn{1} {>{\centering\bfseries}m{20mm}} {\textbf{Requisito}}
+    & \multicolumn{1} {>{\centering}m{90mm}} {\textbf{Descrizione}}
+    & \multicolumn{1} {>{\centering}m{28mm}} {\textbf{Classificazione}}
     & \multicolumn{1} {>{\centering\arraybackslash}m{30mm}} {\textbf{Fonte}} \\
 
     \endfirsthead%
     \rowcolor{lightgray}
-    \multicolumn{1} {>{\centering\bfseries}m{20mm}} {\textbf{Requisito}} 
-    & \multicolumn{1} {>{\centering}m{90mm}} {\textbf{Descrizione}} 
-    & \multicolumn{1} {>{\centering}m{28mm}} {\textbf{Classificazione}} 
+    \multicolumn{1} {>{\centering\bfseries}m{20mm}} {\textbf{Requisito}}
+    & \multicolumn{1} {>{\centering}m{90mm}} {\textbf{Descrizione}}
+    & \multicolumn{1} {>{\centering}m{28mm}} {\textbf{Classificazione}}
     & \multicolumn{1} {>{\centering\arraybackslash}m{30mm}} {\textbf{Fonte}} \\
     \endhead%
     \rowcolor{lightgray!40}
@@ -51,7 +51,7 @@
         accedere ad uno dei suoi database
     & Obbligatorio
     & \makecell{ Interno \\  \hyperref[par:uc1.3.1]{UC1.3.1}}\\
-    
+
     RFO1.4
     &   L'utente deve poter immettere l'indirizzo del server
     & Obbligatorio
@@ -174,7 +174,7 @@
     & l'utente deve poter selezionare un punto rappresentante un dato in uno scatter plot della matrice e visualizzarlo negli altri scatter plot.
     & Desiderabile
     & \makecell{ Interno \\ \hyperref[par:uc4.2.3]{UC4.2.3} }\\
-    
+
     RFD4.9
     & l'utente deve poter eseguire modifiche sul modo di calcolare la matrice delle distanze
     & Desiderabile
@@ -297,102 +297,41 @@
     & \makecell{ Interno \\  \hyperref[ssub:uc4.7]{UC4.7} }\\
 
     RFD4.33
-    & L'utente deve poter modificare la visualizzazione dell'Heat Map
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[ssub:uc4.7]{UC4.7} }\\
-
-    RFD4.34
     & L'utente deve poter modificare il gradiente dei colori nell'Heat Map scegliendo tra quelli proposti
     & Desiderabile
     & \makecell{ Interno \\  \hyperref[par:uc4.7.1]{UC4.7.1} }\\
 
+    RFD4.34
+    & L'utente deve poter modificare le etichette assocciate agli assi nell'Heat Map
+    & Desiderabile
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2]{UC4.7.2} }\\
+
     RFD4.35
-    & L'utente deve poter modificare le proprprietà dell'asse nell'Heat Map
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[par:uc4.7.2]{UC4.7.2} }\\
-
-    RFD4.36
-    & L'utente deve poter modificare la categoria di etichette assocciata all'asse nell'Heat Map
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2.1]{UC4.7.2.1} }\\
-
-    RFD4.37
-    & L'utente deve poter ordinare gli elementi dell'asse nell'Heat Map con ordinamento
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2.2]{UC4.7.2.2} }\\
-
-    RFD4.38
-    & L'utente deve poter ordinare gli elementi dell'asse nell'Heat Map con ordinamento clustering gerarchico
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2.3]{UC4.7.2.3} }\\
-
-    RFD4.39
-    & L'utente deve poter modificare l'ordinamento degli elementi ritornando all'ordine orginale del dataset
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.2.4]{UC4.7.2.4} }\\
-
-    RFD4.40
-    & L'utente deve poter modificare le proprietà delle righe nell'Heat Map
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[par:uc4.7.3]{UC4.7.3} }\\
-
-    RFD4.41
     & L'utente deve poter modificare le etichette associate alle righe nell'Heat Map
     & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.1]{UC4.7.3.1} }\\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3]{UC4.7.3} }\\
 
-    RFD4.42
-    & L'utente deve poter modificare l'ordinamento delle righe nella visualizzazione Heat Map
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.2]{UC4.7.3.2} }\\
-
-    RFD4.43
-    & L'utente deve poter ordinare le righe nell'Heat Map attraverso l'ordinamento clustering gerarchico
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.3]{UC4.7.3.3} }\\
-
-    RFD4.44
-    & L'utente deve poter ordinare le righe nell'Heat Map nell'ordine originario del dataset
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.4]{UC4.7.3.4} }\\
-
-    RFD4.46
-    & L'utente deve poter modificare l'ordinamento delle righe nell'Heat Map secondo dei valori di una dimensione selezionata
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.3.5]{UC4.7.3.5} }\\
-
-    RFD4.47
-    & L'utente deve poter modificare le proprietà delle colonne nell'Heat Map
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[par:uc4.7.4]{UC4.7.4} }\\
-
-    RFD4.48
+    RFD4.36
     & L'utente deve poter modificare le etichette associate alle colonne nell'Heat Map
     & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4.1]{UC4.7.4.1} }\\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4]{UC4.7.4} }\\
 
-
-    RFD4.49
-    & L'utente deve poter modificare l'ordinamento delle colonne nella visualizzazione Heat Map
+    RFD4.37
+    & L'utente deve poter ordinare gli elementi dell'Heat
     & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4.2]{UC4.7.4.2} }\\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.5]{UC4.7.5} }\\
 
-    RFD4.50
-    & L'utente deve poter ordinare le colonne nell'Heat Map attraverso l'ordinamento clustering gerarchico
+    RFD4.38
+    & L'utente deve poter ordinare gli elementi dell'Heat Map mediante clustering gerarchico
     & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4.3]{UC4.7.4.3} }\\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.6]{UC4.7.6} }\\
 
-    RFD4.51
-    & L'utente deve poter ordinare le colonne nell'Heat Map nell'ordine originario del dataset
+    RFD4.39
+    & L'utente deve poter modificare l'ordinamento degli elementi ritornando all'ordine oroginale del dataset
     & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.4.4]{UC4.7.4.4} }\\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.7]{UC4.7.7} }\\
 
-    RFD4.52
-    & L'utente deve poter aggiungere o rimuovere dimensioni alla visulizzazione tramite Heat Map
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[par:uc4.7.5]{UC4.7.5} }\\
-
-    RFD4.53
+    RFD4.40
     & L'utente deve poter scartare le modifiche fatte nella selezione corrente
     & Desiderabile
     & \makecell{ Interno \\  \hyperref[ssub:uc4.8]{UC4.8} }\\
