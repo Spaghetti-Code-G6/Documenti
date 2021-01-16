@@ -22,10 +22,8 @@
     
     \item \textbf{Precondizione}:   L'utente decide di caricare i dati.
 
-    \item \textbf{Postcondizione}:  Viene caricato un dataset. 
-    
-                                    Ogni colonna del dataset ha associato
-                                    un metatag che indica la tipologia della dimensione.
+    \item \textbf{Postcondizione}:  Viene caricato un dataset e ogni sua dimensione del ha associato
+                                    dei metadati.
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
@@ -36,9 +34,9 @@
    
     \item \textbf{Scenario alternativo}:
 		\begin{enumerate}
-            \item Il dataset caricato presenta metadati non validi o ne è sprovvisto:
+            \item Il dataset caricato presenta metadati di tipo non validi o ne è sprovvisto:
             \begin{enumerate}
-                \item L'utente inserisce manualmente i metadati mancanti. (\hyperref[subsec:UC1.4]{UC1.4})
+                \item L'utente inserisce manualmente i metadati di tipo mancanti. (\hyperref[ssub:uc1.4]{UC1.4})
             \end{enumerate}
         \end{enumerate}
 
@@ -53,7 +51,7 @@
         \item Se il caricamento da file fallise:
         \begin{enumerate}
             \item Il caricamento del dataset viene interrotto.
-            \item Viene visualizzato un messaggio di errore. (UC5.1)
+            \item Viene visualizzato un messaggio di errore. (\hyperref[ssub:uc5.1]{UC5.1})
         \end{enumerate}
     \end{enumerate}
 \end{itemize}
@@ -75,21 +73,21 @@
 		\begin{enumerate}
 			\item L'utente seleziona l'opzione di aggiunta dei dati:
             \begin{enumerate}
-                \item L'utente sceglie di importare i dati da file (UC1.2)
-                \item L'utente seleziona di importare i dati da database (UC1.3)
+                \item L'utente sceglie di importare i dati da file (\hyperref[ssub:uc1.2]{UC1.2})
+                \item L'utente seleziona di importare i dati da database (\hyperref[ssub:uc1.3]{UC1.3})
             \end{enumerate}
         \end{enumerate}
 
         \item \textbf{Generalizzazioni}:
         \begin{enumerate}
-            \item Inserimento dati da file csv. (UC1.2)
-            \item Inserimento dati da database. (UC1.3)
+            \item Inserimento dati da file csv. (\hyperref[ssub:uc1.2]{UC1.2})
+            \item Inserimento dati da database.(\hyperref[ssub:uc1.3]{UC1.3})
         \end{enumerate}
 \end{itemize}
 
 
 \subsubsection{UC1.2 - Inserimento dati da file csv}
-\label{ssub:uc1.1.1}
+\label{ssub:uc1.2}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente importa un dataset non vuoto da un file csv del suo dispositivo.
 
@@ -104,15 +102,6 @@
 			\item L'utente seleziona file di dati valido da importare.
         \end{enumerate}
      
-    \item \textbf{Estensioni}
-    \begin{enumerate}
-    
-        \item Se l'utente importa un file non valido oppure vuoto:
-        \begin{enumerate}
-            \item La creazione del dataset fallico
-            \item Viene visualizzato il messaggio di errore. (UC5.1.1)
-        \end{enumerate}
-    \end{enumerate}
 \end{itemize}
 
 \newpage
@@ -139,8 +128,8 @@
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente effettua la connessione con un database da lui fornito. (UC1.3.1)
-			\item L'utente importa i dati dal form di caricamento dati. (UC1.3.2)
+			\item L'utente effettua la connessione con un database da lui fornito.(\hyperref[par:uc1.3.1]{UC1.3.1})
+			\item L'utente importa i dati dal form di caricamento dati. (\hyperref[par:uc1.3.2]{UC1.3.2})
         \end{enumerate}
 
     \item \textbf{Estensioni}:
@@ -148,19 +137,19 @@
         \item Se l'apertura della connessione con il database fallisce.
         \begin{enumerate}
             \item L'inserimento dei dati viene interrotto.
-            \item Viene visualizzato un messaggio di errore (UC5.2).
+            \item Viene visualizzato un messaggio di errore (\hyperref[ssub:uc5.2]{UC5.2}).
         \end{enumerate}
 
         \item Se il server al quale si è connessi non ha database o tutti sono vuoti.
         \begin{enumerate}
             \item L'inserimento dei dati viene interrotto.
-            \item Viene visualizzato un messaggio di errore (UC5.3).
+            \item Viene visualizzato un messaggio di errore (\hyperref[ssub:uc5.3]{UC5.3}).
         \end{enumerate}
 
         \item Se la query utente è vuota:
         \begin{enumerate}
             \item L'inserimento dei dati viene interrotto.
-            \item Viene visualizzato un messaggio di errore (UC5.4).
+            \item Viene visualizzato un messaggio di errore (\hyperref[ssub:uc5.4]{UC5.4}).
         \end{enumerate}
     \end{enumerate}
 \end{itemize}
@@ -264,7 +253,7 @@
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente assegna ad ogni colonna del dataset importato,
                                 in cui non è già correttamente definito,
-                                dei metatag che ne descrivono le proprietà.
+                                dei metadati che descrivono il tipo di dato.
 
 
     \item \textbf{Attore primario}: Utente.
