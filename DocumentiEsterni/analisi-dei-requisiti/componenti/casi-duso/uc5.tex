@@ -1,4 +1,4 @@
-\subsection{UC5 - Visualizzazione Errore}
+\subsection{UC5 - Visualizzazione errore}
 \label{sub:uc5}
 
 % TODO: Modifica immagine
@@ -10,108 +10,143 @@
 \end{figure}
 
 \begin{itemize}
-    \item \textbf{Descrizione}: Viene visualizzato un messaggio di errore relativo al fallimento di una specifica 
-    operazione.
+    \item \textbf{Descrizione}: L'utente visualizza un messaggio di errore relativo ad un'operazione non eseguita 
+    correttamente;
 
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   Un'operazione fallisce
+    \item \textbf{Precondizione}:   Un'operazione non è stata eseguita correttamente; 
 
-    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore.
+    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore relativo all'operazione;
     
     \item \textbf{Scenario Principale}:
     \begin{enumerate}
-        \item Viene visualizzato il messaggio di errore.
-        \item L'utente conferma di aver preso visione e viene reindirizzato alla home di HD Viz.
+        \item Viene visualizzato il messaggio di errore;
+        \item L'utente conferma la presa visione dell'errore che si è verificato.
+    \end{enumerate}
+
+    \item \textbf{Generalizzazioni}:
+    \begin{enumerate}
+        \item Visualizzazione errore inserimento dati da file (\hyperref[sub:uc6]{UC6});
+        \item Visualizzazione errore di accesso a server (\hyperref[sub:uc7]{UC7});
+        \item Visualizzazione errore server vuoto (\hyperref[sub:uc8]{UC8})
+        \item Visualizzazione errore query utente vuota (\hyperref[sub:uc9]{UC9});
+        \item Visualizzazione errore modifica metadato di visibilità (\hyperref[sub:uc10]{UC10}).
     \end{enumerate}
 
 \end{itemize}
 
 %TODO: Cambiare numerazione? Al momento ha senso da una parte ma non è giustificata qui visto che sottocasi non sono veri e propri.
 
-\subsubsection{UC5.1 - Visualizzazione errore inserimento dati da file}
-\label{ssub:uc5.1}
+\subsubsection{UC6 - Visualizzazione errore inserimento dati da file}
+\label{sub:uc6}
 \begin{itemize}
-    \item \textbf{Descrizione}: All'utente viene mostrato un messaggio d'errore al reperimento
-                                dei dati dal file e continua ad utilizzare 
-                                il software senza aver correttamente caricato un dataset valido.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   Il caricamento di dati dal file.
-
-    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore sul reperimento dei 
-                                    dati che lo avvisa della mancata formazione di un dataset per il
-                                    corretto utilizzo di HD Viz.
-
-\end{itemize}
-
-
-\subsubsection{UC5.2 - Visualizzazione errore di accesso a server}
-\label{ssub:uc5.2}
-\begin{itemize}
-    \item \textbf{Descrizione}: All'utente viene mostrato un messaggio d'errore di accesso
-                                al server al quale HD Viz si dovrebbe connettere, la creazione del dataset viene quindi interrotta.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   L'apertura della connessione con il server fornito dall'utente fallisce.
-
-    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore sull'apertura della connessione 
-                                    con il server e della mancata formazione di un dataset per il corretto utilizzo di HD Viz.
-
-\end{itemize}
-
-
-
-\subsubsection{UC5.3 - Visualizzazione errore server vuoto}
-\label{ssub:uc5.3}
-\begin{itemize}
-    \item \textbf{Descrizione}: Dopo aver aperto una connessione con un server HD Viz stabilisce non esserci
-                                un database valido al reperimento dati per la creazione del dataset, la creazione
-                                del dataset viene quindi interrotta.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   Il server al quale HD Viz si è connesso è vuoto o i suoi database sono vuoti.
-
-    \item \textbf{Postcondizione}:   Viene visualizzato un messaggio di errore sulla validità del server per il reperimento
-                                    dei dati e della mancata formazione di un dataset per il corretto utilizzo di HD Viz.
-
-
-\end{itemize}
-
-
-\subsubsection{UC5.4 - Visualizzazione errore query utente vuota}
-\label{ssub:uc5.4}
-\begin{itemize}
-    \item \textbf{Descrizione}: Messaggio relativo all'esecuzione di una query utente su server che restituisce 
-                                un set di dati vuoto e
-                                perciò la creazione del dataset risulta impossibile e viene interrotta.
-
-    \item \textbf{Attore primario}: Utente.
-    
-    \item \textbf{Precondizione}:   La query eseguita su server restituisce un set di dati vuoto.
-
-    \item \textbf{Postcondizione}:   Viene visualizzato un messaggio di errore sulla validità del risultato della query 
-                                        in quanto vuota non permette la formazione di un dataset corretto per l'uso di HD Viz.
-
-\end{itemize}
-
-\subsubsection{UC5.5 - Visualizzazione errore modifica metadato di visibilità}
-\label{ssub:uc5.5}
-
-\begin{itemize}
-    \item \textbf{Descrizione}: Viene visualizzato un messaggio di errore per la modifica impropria di un metadato di visibilità;
+    \item \textbf{Descrizione}: L'utente visualizza un messaggio di errore dopo aver caricato un file CSV non corretto 
+    o vuoto;
 
     \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   Viene impostato un metadato di visibilità a nascosto, con meno di due metadati di 
-    visibilità impostati a visibile;
+    \item \textbf{Precondizione}:   L'utente carica un file CSV non corretto o vuoto (\hyperref[ssub:uc1.2]{UC1.2});
 
-    \item \textbf{Postcondizione}:   Viene visualizzato un messaggio di errore per la modifica impropria di un metadato 
-    di visibilità;
+    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore relativo alla non correttezza del file 
+    caricato;
+
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item Viene visualizzato un messaggio d'errore relativo alla non correttezza del file caricato;
+        \item L'utente conferma la presa visione dell'errore.
+    \end{enumerate}
+
+\end{itemize}
+
+
+\subsubsection{UC7 - Visualizzazione errore di accesso a server}
+\label{sub:uc7}
+\begin{itemize}
+    \item \textbf{Descrizione}: L'utente visualizza un messaggio di errore dopo il fallimento dell'accesso
+    al server indicato;
+
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Scenario principale}: Viene visualizzato un messaggio di errore per la modifica impropria di un 
+    \item \textbf{Precondizione}:   La connessione con il server indicato dall'utente fallisce 
+    (\hyperref[par:uc1.3.1]{UC1.3.1});
+
+    \item \textbf{Postcondizione}:  Viene visualizzato un messaggio di errore relativo al fallimento della connessione 
+    con il server indicato dall'utente;
+
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item Viene visualizzato un messaggio d'errore relativo alla mancata connessione al server indicato dall'utente;
+        \item L'utente conferma la presa visione dell'errore.
+    \end{enumerate}
+\end{itemize}
+
+
+
+\subsubsection{UC8 - Visualizzazione errore server vuoto}
+\label{sub:uc8}
+\begin{itemize}
+    \item \textbf{Descrizione}: L'utente visualizza un messaggio di errore per la mancanza di database o di dataset 
+    validi nel server connesso;
+
+    \item \textbf{Attore primario}: Utente;
+    
+    \item \textbf{Precondizione}:   Il server connesso non presenta database oppure quelli presenti sono vuoti 
+    (\hyperref[par:uc1.3.2]{UC1.3.2});
+
+    \item \textbf{Postcondizione}:   Viene visualizzato un messaggio di errore relativo alla mancanza di database o di 
+    dataset validi nel server connesso;
+
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item Viene visualizzato un messaggio d'errore relativo alla mancanza di database o di dataset validi nel 
+        server connesso;
+        \item L'utente conferma la presa visione dell'errore.
+    \end{enumerate}
+
+\end{itemize}
+
+
+\subsubsection{UC9 - Visualizzazione errore query utente vuota}
+\label{sub:uc9}
+\begin{itemize}
+    \item \textbf{Descrizione}: L'utente visualizza un messaggio di errore per l'esecuzione di una query sul database 
+    esterno che ha restituito un dataset non valido;
+
+    \item \textbf{Attore primario}: Utente;
+    
+    \item \textbf{Precondizione}:   La query eseguita ha restituito un dataset non valido 
+    (\hyperref[par:uc1.3.2]{UC1.3.2});
+
+    \item \textbf{Postcondizione}:   Viene visualizzato un messaggio di errore relativo alla restituizione di un dataset non valido dall'esecuzione di una query sul database esterno;
+    
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item Viene visualizzato un messaggio d'errore relativo relativo alla restituizione di un dataset non valido 
+        dall'esecuzione di una query sul database esterno;
+        \item L'utente conferma la presa visione dell'errore.
+    \end{enumerate}
+
+\end{itemize}
+
+\subsubsection{UC10 - Visualizzazione errore modifica metadato di visibilità}
+\label{sub:uc10}
+
+\begin{itemize}
+    \item \textbf{Descrizione}: L'utente visualizza un messaggio di errore per la modifica impropria di un metadato di 
+    visibilità;
+
+    \item \textbf{Attore primario}: Utente;
+    
+    \item \textbf{Precondizione}:   Viene impostato un metadato di visibilità a "nascosta", con meno di due dimensioni 
+    visibili;
+
+    \item \textbf{Postcondizione}:   Viene visualizzato un messaggio di errore relativo alla modifica impropria di un 
     metadato di visibilità;
+
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item Viene visualizzato un messaggio di errore relativo alla modifica impropria di un metadato di visibilità;
+        \item L'utente conferma la presa visione dell'errore.
+    \end{enumerate}
 \end{itemize}
