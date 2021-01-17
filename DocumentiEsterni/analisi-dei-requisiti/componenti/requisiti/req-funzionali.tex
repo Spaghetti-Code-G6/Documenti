@@ -67,7 +67,6 @@
     & Obbligatorio
     & \makecell{ Interno \\  \hyperref[spar:uc1.3.1.3]{UC1.3.1.3}}\\
 
-    % TODO: rivedere/confronto
     RFO1.7
     &   L'utente deve poter importare i dati nel sistema mediante la ricerca
         su un database tra quelli disponibili
@@ -130,19 +129,11 @@
     & Obbligatorio
     & \makecell{ Interno \\  \hyperref[ssub:uc3.3]{UC3.3} }\\
 
-    % TODO: rivedere
-    RFO3.3
-    & L'utente deve poter annullare le modifiche fatte ai metadati
-    & Desiderabile
-    & \makecell{ Interno \\  \hyperref[ssub:uc3.4]{UC3.4} }\\
-
-    % TODO: rivedere
     RFD4
-    & L'utente deve poter modificare il grafico visualizzato
+    & L'utente deve poter modificare la visualizzazione del grafico corrente
     & Desiderabile
     & \makecell{ Capitolato \\ \hyperref[sub:uc4]{UC4} }\\
 
-    % TODO: rivedere
     RFD4.1
     & L'utente deve poter modificare le proprietà del grafico
     & Desiderabile
@@ -180,40 +171,52 @@
     & Desiderabile
     & \makecell{ Interno \\ \hyperref[par:uc4.2.5]{UC4.2.5} }\\
 
-    % TODO: duplicato? + ref sbagliato
-    RFD4.8
-    & L'utente deve poter selezionare un punto rappresentante un dato in uno Scatter Plot della matrice e visualizzarlo
-    negli altri scatter plot.
-    & Desiderabile
-    & \makecell{ Interno \\ \hyperref[par:uc4.2.3]{UC4.2.3} }\\
-
     RFD4.9
     & L'utente deve poter modificare i grafici con la matrice delle distanze
     & Desiderabile
     & \makecell{ Verbale \\ \hyperref[ssub:uc4.3]{UC4.3} }\\
 
-    % TODO: duplicare il requisito per ogni algoritmo offerto almeno inizialmente
     RFD4.10
-    & L'utente deve poter scegliere l'algoritmo di calcolo delle distanze tra quelli implementati in HD Viz
+    & L'utente deve poter scegliere l'algoritmo di calcolo della distanza euclidea
+    & Desiderabile
+    & \makecell{ Interno \\ \hyperref[par:uc4.3.1]{UC4.3.1} }\\
+
+    RFD4.10
+    & L'utente deve poter scegliere l'algoritmo di calcolo della distanza Manhattan
+    & Desiderabile
+    & \makecell{ Interno \\ \hyperref[par:uc4.3.1]{UC4.3.1} }\\
+
+    RFD4.10
+    & L'utente deve poter scegliere l'algoritmo di calcolo della distanza Minkowsky
+    & Desiderabile
+    & \makecell{ Interno \\ \hyperref[par:uc4.3.1]{UC4.3.1} }\\
+
+    RFD4.10
+    & L'utente deve poter scegliere l'algoritmo di calcolo della distanza Canberra
     & Desiderabile
     & \makecell{ Interno \\ \hyperref[par:uc4.3.1]{UC4.3.1} }\\
 
     % TODO: duplicare il requisito per ogni preprocessing offerto
     RFD4.11
-    & L'utente deve poter scegliere se normalizzare, standardizzare o non eseguire alcun tipo di preprocessing sui dati
+    & L'utente deve poter scegliere se normalizzare i dati
     & Desiderabile
     & \makecell{ Verbale \\ \hyperref[par:uc4.3.2]{UC4.3.2} }\\
+
+    RFD4.11
+    & L'utente deve poter scegliere se standardizzare i dati
+    & Desiderabile
+    & \makecell{ Verbale \\ \hyperref[par:uc4.3.2]{UC4.3.2} }\\
+
+    RFD4.11
+    & L'utente deve poter scegliere se non eseguire alcun tipo di preprocessing sui dati
+    & Desiderabile
+    & \makecell{ Verbale \\ \hyperref[par:uc4.3.2]{UC4.3.2} }\\
+
 
     RFD4.12
     & L'utente deve poter modificare l'influenza di una dimensione
     & Desiderabile
     & \makecell{ Interno \\ \hyperref[par:uc4.3.3]{UC4.3.3} }\\
-
-    % TODO: remove?
-    RFD4.13
-    & L'utente deve poter scegliere quali dimensioni del dataset considerare per il calcolo delle distanze
-    & Desiderabile
-    & \makecell{ Interno \\ \hyperref[par:uc4.3.2]{UC4.3.4} }\\
 
     RFD4.14
     & L'utente deve poter modificare le proprietà della visualizzazione Force Field
@@ -267,9 +270,18 @@
     & Desiderabile
     & \makecell{ Capitolato \\ \hyperref[ssub:uc4.5]{UC4.5} }\\
 
-    % TODO: duplicare per ogni gradiente(?)
     RFD4.21
-    & L'utente deve poter modificare il gradiente di colori tra quelli offerti da HD Viz
+    & L'utente deve poter modificare il gradiente di colore in "Blue-Magenta-Yellow"
+    & Desiderabile
+    & \makecell{ Interno \\ \hyperref[par:uc4.5.1]{UC4.5.1} }\\
+
+    RFD4.21
+    & L'utente deve poter modificare il gradiente di colore in CoolWarm
+    & Desiderabile
+    & \makecell{ Interno \\ \hyperref[par:uc4.5.1]{UC4.5.1} }\\
+
+    RFD4.21
+    & L'utente deve poter modificare il gradiente di colore in Dim Gray
     & Desiderabile
     & \makecell{ Interno \\ \hyperref[par:uc4.5.1]{UC4.5.1} }\\
 
@@ -308,13 +320,11 @@
     & Desiderabile
     & \makecell{ Interno \\  \hyperref[par:uc4.6.1]{UC4.6} }\\
 
-    % TODO: remove?
     RFD4.29
     & L'utente deve poter aggiungere una dimensione dalla visualizzazione Proiezione Lineare Multi Asse
     & Desiderabile
     & \makecell{ Interno \\  \hyperref[par:uc4.6.1]{UC4.6.1} }\\
 
-    % TODO: remove?
     RFD4.30
     & L'utente deve poter rimuovere una dimensione dalla visualizzazione Proiezione Lineare Multi Asse
     & Desiderabile
@@ -332,7 +342,17 @@
 
     % TODO: duplicare?
     RFD4.33
-    & L'utente deve poter modificare il gradiente dei colori nell'Heat Map scegliendo tra quelli proposti
+    & L'utente deve poter modificare il gradiente di colore nell'Heat Map in Blue-Magenta-Yellow
+    & Desiderabile
+    & \makecell{ Interno \\  \hyperref[par:uc4.7.1]{UC4.7.1} }\\
+
+    RFD4.33
+    & L'utente deve poter modificare il gradiente di colore nell'Heat Map in CoolWarm
+    & Desiderabile
+    & \makecell{ Interno \\  \hyperref[par:uc4.7.1]{UC4.7.1} }\\
+
+    RFD4.33
+    & L'utente deve poter modificare il gradiente di colore nell'Heat Map in Dim Gray
     & Desiderabile
     & \makecell{ Interno \\  \hyperref[par:uc4.7.1]{UC4.7.1} }\\
 
@@ -367,7 +387,7 @@
     & \makecell{ Interno \\  \hyperref[spar:uc4.7.5.7]{UC4.7.5.7} }\\
 
     RFD4.40
-    & L'utente deve poter ripristinare la visualizzazione corrente ad uno stato pari a quello di creazione
+    & L'utente deve poter ripristinare la visualizzazione corrente con le proprietà di default
     & Desiderabile
     & \makecell{ Interno \\  \hyperref[ssub:uc4.8]{UC4.8} }\\
 
