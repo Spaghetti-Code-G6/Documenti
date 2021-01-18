@@ -26,7 +26,7 @@ definite, così da permettere agli stessi di svolgere al meglio la loro funzione
 
 Il ciclo di vita di un documento deve seguire i seguenti passi:
 \begin{itemize}
-    \item \textbf{Creazione del documento}: il documento viene creato a partire da un template, viene già fornito del registro delle modifiche e degli elenchi di figure e tabelle;
+    \item \textbf{Creazione del documento}: il documento viene creato a partire da un template e viene già fornito del registro delle modifiche e degli elenchi di figure e tabelle;
     \item \textbf{Stesura}: il documento viene scritto da più membri del gruppo, riportando i vari incrementi nel registro delle modifiche;
     \item \textbf{Revisione}: dopo la stesura il documento viene revisionato da una o più persone che valutano se il documento rispetta o meno le norme decise. È obbligatorio che un redattore non verifichi il suo stesso documento, nel caso in cui il documento sia stato scritto da più persone un redattore può essere anche verificatore a patto che non verifichi una sezione da lui scritta;
     \item \textbf{Approvazione}: dopo la revisione il \emph{responsabile} deve approvare il documento. Da quel momento il documento è considerato completo.
@@ -47,10 +47,10 @@ I documenti prodotti vengono suddivisi in due macrocategorie:
 \begin{itemize}
     \item \textbf{Informali}: In questa macrocategoria rientrano i documenti non soggetti a versionamento, in 
     particolare fanno parte di questa categoria i verbali, i quali fungono da resoconto degli incontri. I verbali 
-    vengono a loro volta distinti in:
+    vengono a loro volta distinti in verbali interni ed esterni:
     \begin{itemize}
-        \item \textbf{Verbali Interni}: A questa categoria appartengono i verbali degli incontri interni del gruppo;
-        \item \textbf{Verbali Esterni}: A questa categoria appartengono i verbali degli incontri con membri esterni al 
+        \item \textbf{Verbali Interni}: a questa categoria appartengono i verbali degli incontri interni del gruppo;
+        \item \textbf{Verbali Esterni}: a questa categoria appartengono i verbali degli incontri con membri esterni al 
         gruppo, quali potrebbero essere i committenti e/o i proponenti.
     \end{itemize}
     
@@ -122,7 +122,7 @@ di ogni singola pagina rimane fissa ed è così strutturata:
     \item Il contenuto della pagina;
     \item A piè di pagina si trova, sulla destra, il numero della pagina corrente e il numero di pagine totali.
 \end{itemize}
-Ai documenti informali non viene applicato nessun versionamento, questo fa si che il registro delle modifiche presenti 
+Ai documenti informali non viene applicato nessun versionamento, questo fa sí che il registro delle modifiche presenti 
 sempre tre righe: una corrispondente alla stesura, una corrispondente alla verifica e una corrispondente 
 all'approvazione. I verbali dunque presentano la seguente struttura:
 \begin{itemize}
@@ -149,8 +149,8 @@ stampatello minuscolo e la separazione delle parole mediante il carattere \gloss
 
 Di seguito sono indicati i differenti stili del testo adottati nei documenti, con il relativo significato:
 \begin{itemize}
-    \item \textbf{Grassetto}: Stile utilizzato per singole parole da enfatizzare;
-    \item \textbf{Corsivo}: Utilizzato per i nomi propri o per evidenziare frasi complete;
+    \item \textbf{Grassetto}: utilizzato per singole parole da enfatizzare;
+    \item \textbf{Corsivo}: utilizzato per i nomi propri o per evidenziare frasi complete;
     \item \textbf{Monospace}: utilizzato per riportare frammenti di codice;
     \item \textbf{Stampatello maiuscolo}: utilizzato per le sigle o per riferirsi a dei documenti.
 \end{itemize}
@@ -218,7 +218,7 @@ pagina.
 \paragraph{\LaTeX}
 \label{par:latex}
 
-Questo strumento è stato scelto dal gruppo per far si che ci fosse uniformità nella stesura dei documenti e al contempo 
+Questo strumento è stato scelto dal gruppo per far sí che ci fosse uniformità nella stesura dei documenti e al contempo 
 per avere uno strumento che permettesse grande flessibilità nella stesura stessa.
 
 \paragraph{Draw.io}
@@ -278,9 +278,9 @@ Un documento ha sempre associato un codice di versione, che si presenta nella fo
 In questa notazione i significati sono i seguenti:
 \begin{itemize}
     \item La \textbf{X} indica l'ultima versione approvata dal \emph{responsabile};
-    \item La \textbf{Y} indica l'ultima versione verificata da uno dei \emph{verificatori}; la numerazione ricomincia 
-    da 0 quando cambia \textbf{X}
-    \item La \textbf{Z} indica l'ultima versione stesa dai \emph{redattori}; la numerazione ricomincia da 0 quando 
+    \item La \textbf{Y} indica l'ultima versione verificata da uno dei \emph{verificatori}, la numerazione ricomincia 
+    da 0 quando cambia \textbf{X};
+    \item La \textbf{Z} indica l'ultima versione stesa dai \emph{redattori}, la numerazione ricomincia da 0 quando 
     cambia \textbf{X} o \textbf{Y}.
 \end{itemize}
 
@@ -293,17 +293,17 @@ sistema di versionamento \emph{Git}.
 \paragraph{Repository}
 \label{par:repo}
 
-Il gruppo ha creato, per il progetto, un'organizzazione su \emph{GitHub}, inoltre ha provvedut a crearea due repository:
+Il gruppo ha creato per il progetto un'organizzazione su \emph{GitHub} e ha provveduto a creare due repository:
 \begin{itemize}
-    \item \textbf{Documenti}: Al link \url{https://github.com/Spaghetti-Code-G6/Documenti} si trova il repository di 
+    \item \textbf{Documenti}: al link \url{https://github.com/Spaghetti-Code-G6/Documenti} si trova il repository di 
     tutti i documenti prodotti dal gruppo;
-    \item \textbf{Codice}: Al link \url{https://github.com/Spaghetti-Code-G6/Codice} è possibile, invece, trovare il 
+    \item \textbf{Codice}: al link \url{https://github.com/Spaghetti-Code-G6/Codice} è possibile, invece, trovare il 
     repository con il codice prodotto dal gruppo.
 \end{itemize}
 
 \paragraph{Struttura del repository}
 \label{par:struttura_repo}
-Il repository \emph{Codice} è ancora inutilizzato, mentre il repository Documenti è così strutturato:
+Il repository \emph{Codice} è ancora inutilizzato, mentre il repository \glossario{Documenti} è così strutturato:
 \begin{itemize}
     \item \textbf{Documenti esterni}: questa directory contiene tutti i documenti destinati ad uso esterno, ovvero 
     indirizzati al proponente e ai committenti. All'interno della cartella ogni documento si trova nell'omonima 
@@ -334,7 +334,7 @@ Nella directory dei documenti sono presenti i seguenti tipi di file:
 La repo dei documenti presenta un branch \emph{main} e diversi branch per la stesura dei singoli documenti. Per 
 lavorare su un documento si eseguono i seguenti passi:
 \begin{itemize}
-    \item Bisogna per prima cosa posizionarsi sul repository locale;
+    \item Posizionarsi sul repository locale;
     \item Aprire il terminale;
     \item Spostarsi sul branch in cui si vuole lavorare con il comando git checkout seguito dal nome del branch;
     \item Eseguire il comando git pull per sincronizzare eventuali cambiamenti del repository remoto;
@@ -378,7 +378,7 @@ Le aspettative sono le seguenti:
 \subsubsection{Attività}
 Il processo di gestione della qualità è suddiviso nelle seguenti parti:
 \begin{itemize}
-    \item \textbf{Pianificazione}: Vengono stabiliti gli obbiettivi dei controlli di qualità;
+    \item \textbf{Pianificazione}: Vengono stabiliti gli obiettivi dei controlli di qualità;
     \item \textbf{Esecuzione}: Vengono messe in pratica le regole prefissate nella pianificazione;
     \item \textbf{Valutazione}: Confronto dei valori ottenuti cono quelli attesi.
 \end{itemize}
@@ -402,8 +402,8 @@ Il gruppo ha deciso di seguire delle regole per l'istanziazione dei processi in 
 efficiente la qualità e rendere più semplice l'esecuzione del processo di gestione della qualità. Le regole imposte, 
 relative all'istanziazione dei processi, sono le seguenti:
 \begin{itemize}
-    \item Ogni processo deve avere un solo obbiettivo;
-    \item L'obbiettivo di un processo non deve sovrapporsi agli obbiettivi di altri processi;
+    \item Ogni processo deve avere un solo obiettivo;
+    \item L'obiettivo di un processo non deve sovrapporsi agli obiettivi di altri processi;
     \item L'organizzazione delle risorse affidate a un processo deve tenere conto delle risorse già assegnate agli 
     altri processi, allo scopo di massimizzare l'\glossario{efficienza} dell'impiego delle risorse umane;
     \item Ogni processo deve essere pianificato;
@@ -437,10 +437,10 @@ Questo tipo di analisi si effettua sia sui documenti che sul codice e ne valuta 
 regole. Essa può avvenire sia manualmente (e.g. controllo sul lessico utilizzato in un documento) che automaticamente 
 (e.g. controllo sugli errori ortografici).
 \subparagraph{Analisi dinamica}
-Questo tipo di analisi, applicabile al solo prodotto software, prevede la sua esecuzione, e viene effettuata tramite test.
+Questo tipo di analisi, applicabile al solo prodotto software, prevede la sua esecuzione e viene effettuata tramite test.
 
 \paragraph{Test}
-I test sono il cuore dell'analisi dinamica, il loro scopo è mostrare che il prodotto software funzioni come richiesto. 
+I test sono il cuore dell'analisi dinamica e il loro scopo è mostrare che il prodotto software funzioni come richiesto. 
 Per definire un test bisogna definire una serie di parametri:
 \begin{itemize}
     \item \textbf{Ambiente}: Sistema in cui il test viene eseguito;
@@ -455,7 +455,7 @@ prima della progettazione.
 
 \paragraph{Codice identificativo dei test}
 I test vengono descritti da un codice identificativo univoco che permette di distinguerli, inoltre ne viene fornita una 
-descrizione ed uno stato. I valori che quest'ultimo può assumere sono:
+descrizione ed uno stato. I valori che quest'ultimo può assumere sono i seguenti:
 \begin{itemize}
     \item Implementato;
     \item Non implementato;
@@ -468,7 +468,7 @@ Il codice identificativo si presenta nella forma:
     \textbf{T[Tipologia][Id]}
 \end{center}
 La tipologia del test varia tra alcuni valori identificativi della tipologia di test, tuttavia, non essendo ancora i 
-tipi di test definiti, queste saranno elencate successivamente.\\
+tipi di test definiti, questi saranno elencate successivamente.\\
 L'id invece è un campo numerico che permette di identificare il test in base ad una numerazione progressiva.
 
 \subsubsection{Metriche}
