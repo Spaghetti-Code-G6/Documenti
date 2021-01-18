@@ -28,12 +28,8 @@
   SpaghettiCode
 }
 
-\setDescrizione{Documento contenente tutte le convenzioni, regole e strumenti adottati che il gruppo \emph{SpaghettiCode} ha deciso di adottare per lo sviluppo del capitolato \emph{HD Viz}.}
-
-
-\disabilitaElencoFigure{}
-\disabilitaElencoTabelle{}
-
+\setDescrizione{Documento contenente tutte le convenzioni, regole e strumenti di cui il gruppo \emph{SpaghettiCode} ha 
+deciso di avvalersi per lo sviluppo del capitolato \emph{HD Viz}.}
 
 \setModifiche{
   v1.0.0 & Paparazzo Giorgia & Responsabile & 2021-01-05 & Verifica e approvazione documento \\
@@ -51,27 +47,26 @@
   v0.0.1 & Pagotto Manuel & Analista & 2020-12-17 & Creazione del documento
 }
 
+\disabilitaElencoFigure
+\disabilitaElencoTabelle
+
 \begin{document}
 
 \input{../../risorse/template}
 
-\section{Introduzione}
-\label{sec:introduzione}
-\subfile{componenti/1_introduzione.tex}
+\input{componenti/1_introduzione.tex}
 \newpage
 
-\section{Processi primari}
-\label{sec:processi_primari}
-\subfile{componenti/2_processi_primari.tex}
+
+\input{componenti/2_processi_primari.tex}
 \newpage
 
-\section{Processi di supporto}
-\label{sec:processi_di_supporto}
-\subfile{componenti/3_processi_di_supporto.tex}
+
+\input{componenti/3_processi_di_supporto.tex}
 \newpage
 
-\section{Processi organizzativi}
-\label{sec:processi_organizativi}
-\subfile{componenti/4_processi_organizzativi.tex}
+\input{componenti/4_processi_organizzativi.tex}
 
 \end{document}
+
+% TODO: aggiungere al glossario: Aspell, branch, GitHub Projects, punto elenco, trattino, Trello, underscore
