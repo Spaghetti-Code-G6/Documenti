@@ -3,17 +3,29 @@
 
 \rowcolors{2}{white!80!lightgray!90}{white}
 \renewcommand{\arraystretch}{2}
-\begin{longtable}[H]{>{\centering\bfseries}m{8cm} >{\centering\arraybackslash}m{8cm}}
+\begin{longtable}[H]{|>{\centering\bfseries}m{8cm} | >{\centering\arraybackslash}m{8cm} |}
     
+    \hline
     \rowcolor{lightgray}
     {\textbf{Requisiti}} & {\textbf{Fonte}}  \\
+    \hline
+
     \endfirsthead%
+
+    \hline
     \rowcolor{lightgray}
     {\textbf{Requisiti}} & {\textbf{Fonte}}  \\
+    \hline
+
     \endhead%
-    \rowcolor{white}
-    \multicolumn{2}{c}{\textit{Continua alla pagina successiva}}
+
+    \hline
+    \rowcolor{lightgray!40}
+    \multicolumn{2}{|c|}{\textit{Continua alla pagina successiva}} \\
+    \hline
+
     \endfoot%
+
     \endlastfoot%
     %CORPO TABELLA
 
@@ -117,6 +129,8 @@
     RVO10 & Capitolato \\
     RVD11 & Capitolato \\
     RVO12 & Interno\\
+    \hline
+    \rowcolor{white}
     \caption{Requisiti - Fonte}%
     \label{tab:requisiti_fonte}
 \end{longtable}

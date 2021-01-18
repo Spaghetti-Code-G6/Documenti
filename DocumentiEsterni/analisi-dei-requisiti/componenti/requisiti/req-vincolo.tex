@@ -1,32 +1,38 @@
 \subsection{Requisiti di vincolo}
 \label{sub:requisiti_di_vincolo}
 
-\rowcolors{2}{white}{white!80!lightgray!90}
+\rowcolors{2}{white!80!lightgray!90}{white}
 \renewcommand{\arraystretch}{2} %
-\begin{longtable}[H]{>{\raggedright\arraybackslash}p{20mm} p{90mm} p{22mm} p{30mm}}
+\begin{longtable}[H]{| >{\raggedright\bfseries}m{20mm} | >{\raggedright}m{90mm} | >{\centering}m{25mm} | >{\centering\arraybackslash}m{30mm}|}
 
+    \hline
     \rowcolor{lightgray}
-    \multicolumn{1}{ >{\centering\bfseries}m{20mm} }{\textbf{Requisito}}
-    & \multicolumn{1}{ >{\centering}m{90mm}}{\textbf{Descrizione}}
-    & \multicolumn{1}{ >{\centering}m{22mm}}{\textbf{Importanza}}
-    & \multicolumn{1}{ >{\centering\arraybackslash}m{30mm}}{\textbf{Fonte}} \\
-
+    \multicolumn{1} {| >{\centering\bfseries}m{20mm}| } {\textbf{Requisito}}
+    & \multicolumn{1} {>{\centering}m{90mm}| } {\textbf{Descrizione}}
+    & \multicolumn{1} {>{\centering}m{25mm}| } {\textbf{Importanza}}
+    & \multicolumn{1} {>{\centering\arraybackslash}m{30mm}| } {\textbf{Fonte}} \\
+    \hline
+    
     \endfirsthead%
-
+    
+    \hline
     \rowcolor{lightgray}
-    \multicolumn{1}{ >{\centering\bfseries}m{20mm}}{\textbf{Requisito}}
-    & \multicolumn{1}{ >{\centering}m{90mm}}{\textbf{Descrizione}}
-    & \multicolumn{1}{ >{\centering}m{22mm}}{\textbf{Importanza}}
-    & \multicolumn{1}{ >{\centering\arraybackslash}m{30mm}}{\textbf{Fonte}} \\
+    \multicolumn{1} {>{\centering\bfseries}m{20mm}| } {\textbf{Requisito}}
+    & \multicolumn{1} {>{\centering}m{90mm}| } {\textbf{Descrizione}}
+    & \multicolumn{1} {>{\centering}m{25mm}| } {\textbf{Importanza}}
+    & \multicolumn{1} {>{\centering\arraybackslash}m{30mm}| } {\textbf{Fonte}} \\
+    \hline
+    
     \endhead%
-
+    
+    \hline
     \rowcolor{lightgray!40}
-    \multicolumn{4}{c}{\textit{Continua alla pagina successiva}} \\
-
+    \multicolumn{4}{|c|}{\textit{Continua alla pagina successiva}} \\
+    \hline
+    
     \endfoot%
-
+    
     \endlastfoot%
-    %CORPO TABELLA
 
     RVO1
         & L'applicativo deve essere sviluppato in tecnologia HTML/CSS/Javascript
@@ -89,6 +95,8 @@
         Obbligatorio &
         Interno \\
 
+    \hline
+    \rowcolor{white}
     \caption{Requisiti di vincolo}%
     \label{tab:requisiti_di_vincolo}
 \end{longtable}
