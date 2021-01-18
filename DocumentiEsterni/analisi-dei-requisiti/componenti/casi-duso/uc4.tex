@@ -277,7 +277,7 @@
     \item \textbf{Scenario principale}:
     \begin{enumerate}
         \item L'utente seleziona la casella \emph{"Normalizza"} o \emph{"Standardizza"};
-        \item HD Viz ricalcola la matrice delle distanze in base alla opzione scelta;
+        \item HD Viz ricalcola la matrice delle distanze in base all'opzione scelta;
         \item La visualizzazione del grafico precedentemente costruito viene aggiornata.
     \end{enumerate}
 \end{itemize}
@@ -331,8 +331,7 @@
 \paragraph{UC4.4.1 - Modifica posizione dei nodi}
 \label{par:uc4.4.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide di modificare la posizione dei nodi del grafo,
-                                trascinandoli nell'area definita dal grafico;
+    \item \textbf{Descrizione}: L’utente modifica la posizione dei nodi del grafo, trascinandoli nell'area definita dal grafico;
 
     \item \textbf{Attore primario}: Utente;
 
@@ -342,21 +341,21 @@
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
             \item L'utente clicca e trascina un nodo nello spazio della visualizzazione;
-            \item La visualizzazione muove i punti del grafo mantenendo le aggiornate le connessioni tra i nodi.
+            \item La visualizzazione muove i punti del grafo mantenendo le connessioni tra i nodi.
         \end{enumerate}
 \end{itemize}
 
 \paragraph{UC4.4.2 - Taglio degli archi}
 \label{par:uc4.4.2}
 \begin{itemize}
-    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia sulla distanza e gli archi che collegano nodi con distanza al di fuori della soglia impostata vengono eliminati;
+    \item \textbf{Descrizione}:     L'utente imposta un valore di soglia sulla distanza e vengono eliminati gli archi che collegano nodi con distanza al di fuori della soglia impostata;
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è un Force Field;
     \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione, rimuovendo gli archi in base al valore di soglia impostato;
     \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente imposta una soglia;
-        \item Gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza che non rispetta la soglia impostata vengono rimossi;
+        \item Vengono rimossi gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza che non rispetta la soglia impostata;
         \item La visualizzazione viene aggiornata con il grafo opportunamente aggiornato.
     \end{itemize}
 
@@ -370,14 +369,14 @@
 \paragraph{UC4.4.3 - Taglio degli archi su limite inferiore}
 \label{par:uc4.4.3}
 \begin{itemize}
-    \item \textbf{Descrizione}:     L'utente imposta il valore minimo della distanza e gli archi che collegano nodi che nella matrice delle distanze hanno distanza minore al limite inferiore vengono eliminati;
+    \item \textbf{Descrizione}:     L'utente imposta il valore minimo della distanza e vengono eliminati gli archi che collegano nodi che nella matrice delle distanze hanno distanza minore al limite inferiore;
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è un Force Field;
     \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione rimuovendo gli archi  che collegano nodi tra loro distanti meno del valore di soglia minimo;
     \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente imposta il valore di soglia minimo;
-        \item Gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza inferiore alla soglia minima impostata vengono rimossi;
+        \item Vengono rimossi gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza inferiore alla soglia minima impostata;
         \item La visualizzazione viene aggiornata con il grafo opportunamente aggiornato.
     \end{itemize}
 \end{itemize}
@@ -385,14 +384,14 @@
 \paragraph{UC4.4.4 - Taglio degli archi su limite superiore}
 \label{par:uc4.4.4}
 \begin{itemize}
-    \item \textbf{Descrizione}:     L'utente imposta il valore minimo della distanza e gli archi che collegano nodi che nella matrice delle distanze hanno distanza maggiore al limite superiore vengono eliminati;
+    \item \textbf{Descrizione}:     L'utente imposta il valore minimo della distanza e vengono eliminati gli archi che collegano nodi che nella matrice delle distanze hanno distanza maggiore al limite superiore;
     \item \textbf{Attore primario}: Utente;
     \item \textbf{Precondizione}:   La visualizzazione correntemente costruita dal dataset è un Force Field;
     \item \textbf{Postcondizione}:  Viene aggiornata la visualizzazione rimuovendo gli archi  che collegano nodi tra loro distanti più del valore di soglia massimo;
     \item \textbf{Scenario principale}:
     \begin{itemize}
         \item L'utente imposta il valore di soglia minimo;
-        \item Gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza superiore alla soglia massima impostata vengono rimossi;
+        \item Vengono rimossi gli archi che collegano nodi che nella matrice delle distanze risultano avere una distanza superiore alla soglia massima impostata;
         \item La visualizzazione viene aggiornata con il grafo opportunamente aggiornato.
     \end{itemize}
 \end{itemize}
@@ -400,7 +399,7 @@
 \paragraph{UC4.4.5 - Modifica scala della forza}
 \label{par:uc4.4.5}
 \begin{itemize}
-    \item \textbf{Descrizione}: L’utente decide di scalare la forza di attrazione tra i nodi;
+    \item \textbf{Descrizione}: L’utente decide di modificare la scala della forza di attrazione tra i nodi;
 
 
     \item \textbf{Attore primario}: Utente;
