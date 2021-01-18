@@ -1,25 +1,31 @@
 \documentclass[../analisi-dei-requisiti.tex]{subfiles}
 
 \begin{document}%
-\subsection{Struttura}%
-\label{subs:struttura}
-
 \subsection{Attori}%
 \label{subs:attori}
 
 \subsubsection{Attori primari}%
 \label{sssec:attori_primari}
+\begin{description}
+ \item \textbf{Utente}: Si fa riferimento all'utente che ha intenzione di effettuare l'analisi di un determinato dataset attraverso la \emph{exploratory data analysis (EDA)}.
+\end{description}
 
 \subsubsection{Attori secondari}
 \label{sssec:attori_secondari}
-
-\subsection{Elenco dei casi d'uso}
-\label{subs:elenco_dei_casi_duso}
+\begin{description}
+    \item \textbf{Database}: Fonte esterna dalla l'utente può effettuare query che ritorneranno i dati da visualizzare nei grafici.
+\end{description}
 
 \input{componenti/casi-duso/uc1.tex}
+\newpage
 \input{componenti/casi-duso/uc2.tex}
+\newpage
 \input{componenti/casi-duso/uc3.tex}
-\input{componenti/casi-duso/uc9.tex}
+\newpage
+\input{componenti/casi-duso/uc4.tex}
+\newpage
+\input{componenti/casi-duso/uc5.tex}
+
 %TODO aggiungere altri casi d'uso
 
 \end{document}
