@@ -1,89 +1,158 @@
-\subsubsection{UC2 - Selezione del grafico per la visualizzazione}
+\subsection{UC2 - Creazione grafico}
 \label{sub:uc2}
 
+%TODO: Add correct image
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{componenti/casi-duso/diagrammi/UC2.pdf}
+    \includegraphics[width=0.8\textwidth]{componenti/casi-duso/diagrammi/UC2.pdf}
     \caption{Diagramma rappresentante UC2}
     \label{fig:UC2}
 \end{figure}
 
+
 \begin{itemize}
-	\item \textbf{Descrizione}: L'utente sceglie con quale tipologia di grafico visualizzare i dati;
-	\item \textbf{Attore primario}: Utente;
-	\item \textbf{Precondizione}: I dati o il progetto sono stati importati correttamente in HD Viz (UC1 \refSec{sub:uc1});
-	\item \textbf{Postcondizione}: L'utente ha selezionato con quale tipologia di grafico visualizzerà i dati;
+	\item \textbf{Descrizione}: L’utente seleziona dal menù di creazione di un grafico una tipologia di 
+	visualizzazione, viene poi computato il relativo grafico mediante i dati caricati e infine visualizzato;
+	
+    \item \textbf{Attore primario}: Utente;
+    
+    \item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
+
+	\item \textbf{Postcondizione}:  Viene visualizzato il grafico della tipologia scelta dall'utente a partire dai dati 
+	correntemente presenti nell'ambiente; 
+
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item Vengono mostrati all'utente le tipologie di grafico disponibili dall'applicativo;
-			\item L'utente sceglie la tipologia di grafico con cui visualizzare i dati;
+			\item L'utente seleziona l'opzione che desidera tra le tipologie di grafico (\hyperref[ssub:uc2.1]{UC2.1});
+			\item Il sistema calcola il grafico della tipologia selezionata sui dati precedentemente caricati;
+			\item Il sistema visualizza il grafico computato.
 		\end{enumerate}
-	\item \textbf{Generalizzazioni}: L'utente seleziona una tra le seguenti opzioni:
-		\begin{itemize}
-			\item \emph{\glossario{Scatter Plot Matrix}} (UC2.1 \refSec{ssub:uc2.1})
-			\item \emph{\glossario{Force Field}} (UC2.2 \refSec{ssub:uc2.2})
-			\item \emph{\glossario{Heat Map}} (UC2.3 \refSec{ssub:uc2.3})
-			\item \emph{\glossario{Proiezione Lineare Multi Asse}} (UC2.4 \refSec{ssub:uc2.4})
-		\end{itemize}
 \end{itemize}
 
-\paragraph{UC2.1 - Selezionato \emph{Scatter Plot Matrix}}
+\subsubsection{UC2.1 - Selezione grafico}
 \label{ssub:uc2.1}
-
 \begin{itemize}
-	\item \textbf{Descrizione}: L'utente sceglie \emph{Scatter Plot Matrix} come tipologia di grafico con cui visualizzare i dati;
-	\item \textbf{Attore primario}: Utente;
-	\item \textbf{Precondizione}: I dati o il progetto sono stati importati correttamente in HD Viz (UC1 \refSec{sub:uc1});
-	\item \textbf{Postcondizione}: L'utente ha selezionato \emph{Scatter Plot Matrix} come tipologia di grafico con cui visualizzare i dati;
-	\item \textbf{Scenario principale}:
+
+	\item \textbf{Descrizione}: L’utente seleziona la tipologia di grafico che desidera costruire;
+
+    \item \textbf{Attore primario}: Utente;
+
+	\item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
+	
+    \item \textbf{Postcondizione}:  É stata selezionata la tipologia del grafico che verrà costruito;
+
+	\item \textbf{Generalizzazioni}:
 		\begin{enumerate}
-			\item Vengono mostrati all'utente le tipologie di grafico disponibili dall'applicativo;
-			\item L'utente sceglie \emph{Scatter Plot Matrix} come tipologia di grafico con qui visualizzare i dati;
+			
+			\item Selezione di Scatterplot matrix \hyperref[ssub:uc2.2]{UC2.2};
+			\item Selezione di Force Field \hyperref[ssub:uc2.3]{UC2.3};
+			\item Selezione di Heat Map \hyperref[ssub:uc2.4]{UC2.4};
+			\item Selezione di Proiezione Lineare Multiasse \hyperref[ssub:uc2.5]{UC2.5};
+			\item Selezione di Distance Map \hyperref[ssub:uc2.6]{UC2.6}.
+			
 		\end{enumerate}
+
 \end{itemize}
 
-\paragraph{UC2.2 - Selezionato \emph{Force Field}}
+
+\subsubsection{UC2.2 - Selezione di Scatter Plot Matrix}
 \label{ssub:uc2.2}
-
 \begin{itemize}
-	\item \textbf{Descrizione}: L'utente sceglie \emph{Force Field} come tipologia di grafico con cui visualizzare i dati;
-	\item \textbf{Attore primario}: Utente;
-	\item \textbf{Precondizione}: I dati o il progetto sono stati importati correttamente in HD Viz (UC1 \refSec{sub:uc1});
-	\item \textbf{Postcondizione}: L'utente ha selezionato \emph{Force Field} come tipologia di grafico con cui visualizzare i dati;
-	\item \textbf{Scenario principale}:
-		\begin{enumerate}
-			\item Vengono mostrati all'utente le tipologie di grafico disponibili dall'applicativo;
-			\item L'utente sceglie \emph{Force Field} come tipologia di grafico con qui visualizzare i dati;
-		\end{enumerate}
+
+	\item \textbf{Descrizione}: L’utente seleziona \emph{Scatter Plot Matrix} come tipologia di grafico che desidera 
+	costruire;
+
+    \item \textbf{Attore primario}: Utente;
+
+	\item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
+
+	\item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Scatter Plot Matrix} come tipologia del grafico da 
+	costruire;
+
+	\item \textbf{Scenario Principale}:
+	\begin{enumerate}
+		\item L'utente seleziona \emph{Scatter Plot Matrix} come tipologia di grafico da costruire.
+	\end{enumerate}
 \end{itemize}
 
 
-\paragraph{UC2.3 - Selezionato \emph{Heat Map}}
+\subsubsection{UC2.3 - Selezione di Force Field}
 \label{ssub:uc2.3}
+\begin{itemize}
 
-	\begin{itemize}
-		\item \textbf{Descrizione}: L'utente sceglie \emph{Heat Map} come tipologia di grafico con cui visualizzare i dati;
-		\item \textbf{Attore primario}: Utente;
-		\item \textbf{Precondizione}: I dati o il progetto sono stati importati correttamente in HD Viz (UC1 \refSec{sub:uc1});
-		\item \textbf{Postcondizione}: L'utente ha selezionato \emph{Heat Map} come tipologia di grafico con cui visualizzare i dati;
-		\item \textbf{Scenario principale}:
-			\begin{enumerate}
-				\item Vengono mostrati all'utente le tipologie di grafico disponibili dall'applicativo;
-				\item L'utente sceglie \emph{Heat Map} come tipologia di grafico con qui visualizzare i dati;
-			\end{enumerate}
-	\end{itemize}
+	\item \textbf{Descrizione}: L’utente seleziona \emph{Force Field} come tipologia di grafico che desidera 
+	costruire;
 
-\paragraph{UC2.4 - Selezionato \emph{0o}}
+    \item \textbf{Attore primario}: Utente;
+
+    \item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
+
+    \item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Force Field} come tipologia del grafico da 
+	costruire;
+	
+	\item \textbf{Scenario Principale}: 
+	\begin{enumerate}
+		\item L'utente seleziona \emph{Force Field} come tipologia del grafico da costruire.
+	\end{enumerate}
+
+\end{itemize}
+
+
+\subsubsection{UC2.4 - Selezione di Heat Map}
 \label{ssub:uc2.4}
+\begin{itemize}
 
-	\begin{itemize}
-		\item \textbf{Descrizione}: L'utente sceglie \emph{Proiezione Lineare Multi Asse} come tipologia di grafico con cui visualizzare i dati;
-		\item \textbf{Attore primario}: Utente;
-		\item \textbf{Precondizione}: I dati o il progetto sono stati importati correttamente in HD Viz (UC1 \refSec{sub:uc1});
-		\item \textbf{Postcondizione}: L'utente ha selezionato \emph{Proiezione Lineare Multi Asse} come tipologia di grafico con cui visualizzare i dati;
-		\item \textbf{Scenario principale}:
-			\begin{enumerate}
-				\item Vengono mostrati all'utente le tipologie di grafico disponibili dall'applicativo;
-				\item L'utente sceglie \emph{Proiezione Lineare Multi Asse} come tipologia di grafico con qui visualizzare i dati;
-			\end{enumerate}
-	\end{itemize}
+	\item \textbf{Descrizione}: L’utente seleziona \emph{Heat Map} come tipologia di grafico che desidera 
+	costruire;
+
+    \item \textbf{Attore primario}: Utente;
+
+	\item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
+
+    \item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Heat Map} come tipologia del grafico da 
+	costruire;
+
+	\item \textbf{Scenario Principale}: 
+	\begin{enumerate}
+		\item L'utente seleziona \emph{Heat Map} come tipologia del grafico da costruire.
+	\end{enumerate}
+
+\end{itemize}
+
+
+\subsubsection{UC2.5 - Selezione di Proiezione Lineare Multi Asse}
+\label{ssub:uc2.5}
+\begin{itemize}
+
+	\item \textbf{Descrizione}: L’utente seleziona \emph{Proiezione Lineare Multi Asse} come tipologia di grafico che 
+	desidera costruire;
+
+    \item \textbf{Attore primario}: Utente;
+
+    \item \textbf{Precondizione}:   É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
+
+	\item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Proiezione Lineare Multi Asse} come tipologia del 
+	grafico da costruire;
+	
+	\item \textbf{Scenario Principale}: 
+	\begin{enumerate}
+		\item L'utente seleziona \emph{Proiezione Lineare Multi Asse} come tipologia del grafico da costruire.
+	\end{enumerate}
+\end{itemize}
+
+\subsubsection{UC2.6 - Selezione di Distance Map}
+\label{ssub:uc2.6}
+\begin{itemize}
+	\item \textbf{Descrizione}: L’utente seleziona \emph{Distance Map} come tipologia di grafico che desidera 
+	costruire;
+	\item \textbf{Attore primario}:	Utente;
+	\item \textbf{Precondizione}:	É stato creato un ambiente valido (\hyperref[sub:uc1]{UC1});
+
+    \item \textbf{Postcondizione}:  L'utente ha selezionato \emph{Distance Map} come tipologia del grafico da 
+	costruire;
+
+	\item \textbf{Scenario Principale}: 
+	\begin{enumerate}
+		\item L'utente seleziona \emph{Distance Map} come tipologia del grafico da costruire.
+	\end{enumerate}
+\end{itemize}
