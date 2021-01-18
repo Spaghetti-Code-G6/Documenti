@@ -4,8 +4,6 @@
 \rowcolors{2}{white!80!lightgray!90}{white}
 \renewcommand{\arraystretch}{2} %
 \begin{longtable}[H]{>{\raggedright\bfseries}m{20mm} >{\raggedright}m{90mm} >{\raggedright}m{28mm} >{\raggedright\arraybackslash}m{30mm}}
-    \caption{Requisiti funzionali}%
-    \label{tab:requisiti_funzionali} \\
     \rowcolor{lightgray}
     \multicolumn{1} {>{\centering\bfseries}m{20mm}} {\textbf{Requisito}}
     & \multicolumn{1} {>{\centering}m{90mm}} {\textbf{Descrizione}}
@@ -39,7 +37,7 @@
     & Obbligatorio
     & \makecell{
         Capitolato \\
-        \hyperref[sub:uc1.1]{UC1.1}} \\
+        \hyperref[ssub:uc1.1]{UC1.1}} \\
 
     RFO1.2
     & L'utente deve poter effettuare l'inserimento dei dati da file CSV
@@ -90,7 +88,7 @@
     RFO2
     &  L'utente deve poter creare un grafico
     & Obbligatorio
-    & \makecell{ Interno \\ \hyperref[ssub:uc2]{UC2}}\\
+    & \makecell{ Interno \\ \hyperref[sub:uc2]{UC2}}\\
 
     RFO2.1
     & L'utente deve poter selezionare la costruzione di un grafico di sua scelta
@@ -342,7 +340,7 @@
     RFD4.6
     & L'utente deve poter modificare le proprietà della visualizzazione Proiezione Lineare Multi Asse
     & Desiderabile
-    & \makecell{ Interno \\  \hyperref[par:uc4.6]{UC4.6} }\\
+    & \makecell{ Interno \\  \hyperref[ssub:uc4.6]{UC4.6} }\\
 
     RFD4.6.1
     & L'utente deve poter aggiungere una dimensione dalla visualizzazione Proiezione Lineare Multi Asse
@@ -404,15 +402,15 @@
     & Desiderabile
     & \makecell{ Interno \\  \hyperref[par:uc4.7.5]{UC4.7.5} }\\
 
-    RFD4.7.6
+    RFD4.7.5.6
     & L'utente deve poter ordinare gli elementi dell'Heat Map mediante clustering gerarchico
     & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.6]{UC4.7.6} }\\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.5.6]{UC4.7.5.6} }\\
 
-    RFD4.7.7
+    RFD4.7.5.7
     & L'utente deve poter modificare l'ordinamento degli elementi ritornando all'ordine originale del dataset
     & Desiderabile
-    & \makecell{ Interno \\  \hyperref[spar:uc4.7.7]{UC4.7.7} }\\
+    & \makecell{ Interno \\  \hyperref[spar:uc4.7.5.7]{UC4.7.5.7} }\\
 
     RFD4.8
     & L'utente deve poter ripristinare la visualizzazione corrente con le proprietà di default
@@ -422,31 +420,32 @@
     RFO5
     & L'utente deve essere informato in caso di errori
     & Obbligatorio
-    & \makecell{ Interno \\  \hyperref[ssub:uc5]{UC5} }\\
+    & \makecell{ Interno \\  \hyperref[sub:uc5]{UC5} }\\
 
     RFO6
     & L'utente deve essere informato in caso di errore durante l'inserimento di un file
     & Obbligatorio
-    & \makecell{ Interno \\  \hyperref[ssub:uc6]{UC6} }\\
+    & \makecell{ Interno \\  \hyperref[sub:uc6]{UC6} }\\
 
     RFO7
     & L'utente deve essere informato in caso di errore durante l'accesso al database
     & Obbligatorio
-    & \makecell{ Interno \\  \hyperref[ssub:uc7]{UC7} }\\
+    & \makecell{ Interno \\  \hyperref[sub:uc7]{UC7} }\\
 
     RFO8
     & L'utente deve essere informato in caso di errore se il database non contiene alcun dato
     & Obbligatorio
-    & \makecell{ Interno \\  \hyperref[ssub:uc8]{UC8} }\\
+    & \makecell{ Interno \\  \hyperref[sub:uc8]{UC8} }\\
 
     RFO9
     & L'utente deve essere informato in caso la query usata per recuperare i dati non ritorni nessun dato
     & Obbligatorio
-    & \makecell{ Interno \\  \hyperref[ssub:uc9]{UC9} }\\
+    & \makecell{ Interno \\  \hyperref[sub:uc9]{UC9} }\\
 
     RFO10
     & L'utente deve essere informato in caso provi a modificare la visibilità di un dato quando non può farlo
     & Obbligatorio
-    & \makecell{ Interno \\  \hyperref[ssub:uc10]{UC10} }\\
-
+    & \makecell{ Interno \\  \hyperref[sub:uc10]{UC10} }\\
+    \caption{Requisiti funzionali}%
+    \label{tab:requisiti_funzionali} \\
 \end{longtable}

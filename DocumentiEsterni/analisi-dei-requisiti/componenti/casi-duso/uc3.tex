@@ -30,7 +30,7 @@
 
     \item \textbf{Scenari alternativi}:
     \begin{itemize}
-        \item 
+        \item L'utente interrompe le modifiche che stava apportando:
         \begin{enumerate}
             \item L'utente seleziona una dimensione da modificare (\hyperref[ssub:uc3.1]{UC3.1});
             \item L'utente deseleziona la dimensione selezionata.
@@ -51,7 +51,10 @@
     \item \textbf{Postcondizione}:  Viene selezionata la dimensione del dataset della quale desidera modificare i 
     metadati;
 
-	\item \textbf{Scenario principale}: L'utente seleziona una dimensione tra quelle del dataset corrente.
+    \item \textbf{Scenario principale}:
+    \begin{enumerate}
+        \item L'utente seleziona una dimensione tra quelle del dataset corrente.
+    \end{enumerate}
 \end{itemize}
 
 \subsubsection{UC3.2 - Modifica metadato di tipo}
@@ -99,12 +102,12 @@
     \end{enumerate}
     
     \item \textbf{Estensioni}:
-    \begin{enumerate}
-        \item Se l'utente imposta come "nascosta" un metadato di visibilità, con meno di due dimensioni visibili:
+    \begin{itemize}
+        \item L'utente imposta come "nascosta" un metadato di visibilità, con meno di due dimensioni visibili:
         \begin{enumerate}
             \item Il metadato di visibilità della dimensione selezionata viene impostato a 
             visibile;
             \item Viene visualizzato il messaggio di errore (\hyperref[sub:uc10]{UC10}).
         \end{enumerate}
-    \end{enumerate}
+    \end{itemize}
 \end{itemize}

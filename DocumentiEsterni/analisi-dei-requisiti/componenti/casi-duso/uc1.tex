@@ -20,68 +20,50 @@
     \item \textbf{Attore secondario}: Database;
     
     
-    \item \textbf{Precondizione}:   L'utente decide di caricare i dati.
+    \item \textbf{Precondizione}:   L'utente decide di caricare i dati;
 
     \item \textbf{Postcondizione}:  Viene caricato un dataset e ogni sua dimensione del ha associato
-                                    dei metadati.
+                                    dei metadati;
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente seleziona l'opzione di aggiunta dei dati.
-            \item L'utente seleziona la fonte dei dati da importare e li importa.
-            \item Il dataset caricato è corretto e provvisto di validi metatag.
+			\item L'utente seleziona l'opzione di aggiunta dei dati;
+            \item L'utente seleziona la fonte dei dati da importare e li importa;
+            \item Il dataset caricato è corretto e provvisto di metadati validi.
         \end{enumerate}
    
-    \item \textbf{Scenario alternativo}:
-		\begin{enumerate}
+    \item \textbf{Scenari alternativi}:
+		\begin{itemize}
             \item Il dataset caricato presenta metadati di tipo non validi o ne è sprovvisto:
             \begin{enumerate}
-                \item L'utente inserisce manualmente i metadati di tipo mancanti. (\hyperref[ssub:uc1.4]{UC1.4})
+                \item L'utente inserisce manualmente i metadati di tipo mancanti (\hyperref[ssub:uc1.4]{UC1.4}).
             \end{enumerate}
-        \end{enumerate}
-
-    \item \textbf{Generalizzazioni}:
-    \begin{enumerate}
-        \item Inserimento dati da file csv.
-        \item Inserimento dati da database.
-    \end{enumerate}
-    
-    \item \textbf{Estensioni}:
-    \begin{enumerate}
-        \item Se il caricamento da file fallise:
-        \begin{enumerate}
-            \item Il caricamento del dataset viene interrotto.
-            \item Viene visualizzato un messaggio di errore. (\hyperref[sub:uc6]{UC6})
-        \end{enumerate}
-    \end{enumerate}
+        \end{itemize}
 \end{itemize}
 
 \subsubsection{UC1.1 - Inserimento dati}
 \label{ssub:uc1.1}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente decide di impostare l'ambiente creando un dataset i cui 
-                                dati vengono caricati da file csv oppure da database al quale l'utente ha accesso.
+                                dati vengono caricati da file csv oppure da database al quale l'utente ha accesso;
 
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Attore primario}: Utente;
     \item \textbf{Attore secondario}: Database;
     
-    \item \textbf{Precondizione}:   L'utente decide di caricare i dati.
+    \item \textbf{Precondizione}:   L'utente decide di caricare i dati;
 
-    \item \textbf{Postcondizione}:  Viene caricato un dataset non vuoto dalla fonte scelta dall'utente. 
+    \item \textbf{Postcondizione}:  Viene caricato un dataset non vuoto dalla fonte scelta dall'utente;
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente seleziona l'opzione di aggiunta dei dati:
-            \begin{enumerate}
-                \item L'utente sceglie di importare i dati da file (\hyperref[ssub:uc1.2]{UC1.2})
-                \item L'utente seleziona di importare i dati da database (\hyperref[ssub:uc1.3]{UC1.3})
-            \end{enumerate}
+            \item Viene caricato un dataset dalla fonte scelta dall'utente.
         \end{enumerate}
 
         \item \textbf{Generalizzazioni}:
         \begin{enumerate}
-            \item Inserimento dati da file csv. (\hyperref[ssub:uc1.2]{UC1.2})
-            \item Inserimento dati da database.(\hyperref[ssub:uc1.3]{UC1.3})
+            \item Inserimento dati da file csv (\hyperref[ssub:uc1.2]{UC1.2};
+            \item Inserimento dati da database (\hyperref[ssub:uc1.3]{UC1.3}).
         \end{enumerate}
 \end{itemize}
 
@@ -89,19 +71,27 @@
 \subsubsection{UC1.2 - Inserimento dati da file csv}
 \label{ssub:uc1.2}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente importa un dataset non vuoto da un file csv del suo dispositivo.
+    \item \textbf{Descrizione}: L'utente importa un dataset non vuoto da un file csv del suo dispositivo;
 
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   L'utente selezione l'opzione di caricare i dati da un file csv.
-    \item \textbf{Postcondizione}:  Viene caricato un dataset. 
+    \item \textbf{Precondizione}:   L'utente selezione l'opzione di caricare i dati da un file csv;
+    \item \textbf{Postcondizione}:  Viene caricato un dataset;
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente seleziona l'opzione di aggiunta dei dati mediante file.
-			\item L'utente seleziona file di dati valido da importare.
+			\item L'utente seleziona l'opzione di aggiunta dei dati mediante file;
+			\item L'utente seleziona il file csv di dati valido da importare.
         \end{enumerate}
-     
+
+    \item \textbf{Estensioni}:
+    \begin{itemize}
+        \item Se il caricamento da file fallisce:
+        \begin{enumerate}
+            \item Il caricamento del dataset viene interrotto;
+            \item Viene visualizzato un messaggio di errore (\hyperref[sub:uc6]{UC6}).
+        \end{enumerate}
+    \end{itemize}
 \end{itemize}
 
 \newpage
@@ -118,40 +108,40 @@
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente si connette ad un database di cui dispone accesso e 
                                 crea un dataset non vuoto dal risultato di una ricerca delle tabelle che gli interessano
-                                visualizzare successivamente in HD Viz.
-    \item \textbf{Attore primario}: Utente.
+                                visualizzare successivamente in HD Viz;
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Attore secondario}: Database.
+    \item \textbf{Attore secondario}: Database;
     
-    \item \textbf{Precondizione}:   L'utente decide di caricare i dati mediante un database. 
-    \item \textbf{Postcondizione}:  Viene caricato un dataset da un database. 
+    \item \textbf{Precondizione}:   L'utente decide di caricare i dati mediante un database;
+    \item \textbf{Postcondizione}:  Viene caricato un dataset da un database; 
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente effettua la connessione con un database da lui fornito.(\hyperref[par:uc1.3.1]{UC1.3.1})
-			\item L'utente importa i dati dal form di caricamento dati. (\hyperref[par:uc1.3.2]{UC1.3.2})
+			\item L'utente effettua la connessione con un database da lui fornito (\hyperref[par:uc1.3.1]{UC1.3.1});
+			\item L'utente importa i dati dal form di caricamento dati (\hyperref[par:uc1.3.2]{UC1.3.2}).
         \end{enumerate}
 
     \item \textbf{Estensioni}:
-    \begin{enumerate}
-        \item Se l'apertura della connessione con il database fallisce.
+    \begin{itemize}
+        \item Se l'apertura della connessione con il database fallisce:
         \begin{enumerate}
-            \item L'inserimento dei dati viene interrotto.
+            \item L'inserimento dei dati viene interrotto;
             \item Viene visualizzato un messaggio di errore (\hyperref[sub:uc7]{UC7}).
         \end{enumerate}
 
-        \item Se il server al quale si è connessi non ha database o tutti sono vuoti.
+        \item Se il server al quale si è connessi non ha database o tutti sono vuoti:
         \begin{enumerate}
-            \item L'inserimento dei dati viene interrotto.
+            \item L'inserimento dei dati viene interrotto;
             \item Viene visualizzato un messaggio di errore (\hyperref[sub:uc8]{UC8}).
         \end{enumerate}
 
         \item Se la query utente è vuota:
         \begin{enumerate}
-            \item L'inserimento dei dati viene interrotto.
+            \item L'inserimento dei dati viene interrotto;
             \item Viene visualizzato un messaggio di errore (\hyperref[sub:uc9]{UC9}).
         \end{enumerate}
-    \end{enumerate}
+    \end{itemize}
 \end{itemize}
 
 
@@ -168,17 +158,17 @@
 \label{par:uc1.3.1}
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente apre una connessione con un server di dati del quale 
-                                dispone le credenziali di accesso. 
+                                dispone le credenziali di accesso;
 
-    \item \textbf{Attore primario}: Utente.
-    \item \textbf{Attore secondario}: Database.
+    \item \textbf{Attore primario}: Utente;
+    \item \textbf{Attore secondario}: Database;
     
-    \item \textbf{Precondizione}:   L'utente decide di caricare i dati mediante un database.
-    \item \textbf{Postcondizione}:  Viene aperta la connessione con un server di dati.
+    \item \textbf{Precondizione}:   L'utente decide di caricare i dati mediante un database;
+    \item \textbf{Postcondizione}:  Viene aperta la connessione con un server di dati;
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente immette i campi necessari per l'acceso: indirizzo, nome utente e password.
+			\item L'utente immette i campi necessari per l'acceso: indirizzo, nome utente e password;
 			\item HD Viz si connette al server con i valori immessi dall'utente.
         \end{enumerate}
     \end{itemize}
@@ -187,13 +177,16 @@
 \subparagraph{UC1.3.1.1 - Inserimento indirizzo}
 \label{spar:uc1.3.1.1}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente inserisce l'indirizzo del server al quale vuole accedere.
-    \item \textbf{Attore primario}: Utente.    
+    \item \textbf{Descrizione}: L'utente inserisce l'indirizzo del server al quale vuole accedere;
+    \item \textbf{Attore primario}: Utente;
    
-    \item \textbf{Precondizione}:   L'utente decide di caricare un dataset mediante un database.
-    \item \textbf{Postcondizione}:  Viene inserito l'indirizzo del server di dati.
+    \item \textbf{Precondizione}:   L'utente decide di caricare un dataset mediante un database;
+    \item \textbf{Postcondizione}:  Viene inserito l'indirizzo del server di dati;
     
-    \item \textbf{Scenario Principale}: L'utente inserisce l'indirizzo di connessione.
+    \item \textbf{Scenario Principale}: 
+    \begin{enumerate}
+        \item L'utente inserisce l'indirizzo di connessione.
+    \end{enumerate}
 
 \end{itemize}
 
@@ -201,11 +194,11 @@
 \subparagraph{UC1.3.1.2 - Inserimento nome utente}
 \label{spar:uc1.3.1.2}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente inserisce il nome utente per accedere al server.
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Descrizione}: L'utente inserisce il nome utente per accedere al server;
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   L'utente decide di caricare i dataset mediante un database.
-    \item \textbf{Postcondizione}:  Viene inserito il nome utente per l'accesso al server di dati.
+    \item \textbf{Precondizione}:   L'utente decide di caricare i dataset mediante un database;
+    \item \textbf{Postcondizione}:  Viene inserito il nome utente per l'accesso al server di dati;
 
     \item \textbf{Scenario Principale}: L'utente inserisce il nome d'accesso.
 \end{itemize}
@@ -214,11 +207,11 @@
 \subparagraph{UC1.3.1.3 - Inserimento password}
 \label{spar:uc1.3.1.3}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente inserisce la password per accedere al server.
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Descrizione}: L'utente inserisce la password per accedere al server;
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   L'utente decide di caricare i dataset mediante un database.
-    \item \textbf{Postcondizione}:  Viene caricato un dataset dal database.
+    \item \textbf{Precondizione}:   L'utente decide di caricare i dataset mediante un database;
+    \item \textbf{Postcondizione}:  Viene caricato un dataset dal database;
 
     \item \textbf{Scenario Principale}: L'utente inserisce la password d'accesso.
 
@@ -230,19 +223,19 @@
 \begin{itemize}
     \item \textbf{Descrizione}: L'utente ottiene i dati che da inserire nel nuovo dataset da un database
                                 del server con cui ha una connessione aperta al momento, mediante 
-                                l'esecuzione di una query personalizzata che fornisce in un form.
+                                l'esecuzione di una query personalizzata che fornisce in un form;
 
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Attore secondario}: Database.
+    \item \textbf{Attore secondario}: Database;
     
-    \item \textbf{Precondizione}:   L'utente ha aperto una connessione con un server dati.
-    \item \textbf{Postcondizione}:  Viene costruito il dataset dai dati reperiti dall'utente mediante un file di query.
+    \item \textbf{Precondizione}:   L'utente ha aperto una connessione con un server dati;
+    \item \textbf{Postcondizione}:  Viene costruito il dataset dai dati reperiti dall'utente mediante un file di query;
 
 	\item \textbf{Scenario principale}:
         \begin{enumerate}
-            \item L'utente seleziona il database del server sul quale fare la selezione.
-			\item L'utente inserisce nel form una query per il riperimento dei dati che viene eseguita sul server.
+            \item L'utente seleziona il database del server sul quale fare la selezione;
+			\item L'utente inserisce nel form una query per il riperimento dei dati che viene eseguita sul server;
 			\item Viene costruito il dataset dal risultato della ricerca.
         \end{enumerate}
     %TODO Capire dove diamine vanno messe le estensioni.
@@ -251,19 +244,19 @@
 \subsubsection{UC1.4 - Inserimento metadati}
 \label{ssub:uc1.4}
 \begin{itemize}
-    \item \textbf{Descrizione}: L'utente assegna ad ogni colonna del dataset importato,
+    \item \textbf{Descrizione}: L'utente assegna ad ogni dimensione del dataset importato,
                                 in cui non è già correttamente definito,
-                                dei metadati che descrivono il tipo di dato.
+                                dei metadati che descrivono il tipo di dato;
 
 
-    \item \textbf{Attore primario}: Utente.
+    \item \textbf{Attore primario}: Utente;
     
-    \item \textbf{Precondizione}:   L'utente ha caricato un dataset e non tutti i suoi metadati sono validi o definiti.
-    \item \textbf{Postcondizione}:  Il dataset caricato è provvisto di metadati validi. 
+    \item \textbf{Precondizione}:   L'utente ha caricato un dataset e non tutti i suoi metadati sono validi o definiti;
+    \item \textbf{Postcondizione}:  Il dataset caricato è provvisto di metadati validi;
 
 	\item \textbf{Scenario principale}:
 		\begin{enumerate}
-            \item L'utente assegna ad ogni colonna del dataset il tipo di dato che rappresenta (metatag) scegliendo tra:
+            \item L'utente assegna ad ogni dimensione del dataset il relativo metadato di tipo scegliendo tra:
                     Nominale, Ordinale, Intervallo o Rapporto.
         \end{enumerate}
 
